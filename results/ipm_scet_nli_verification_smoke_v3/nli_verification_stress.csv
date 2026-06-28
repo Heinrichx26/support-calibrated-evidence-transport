@@ -1,0 +1,2 @@
+dataset,retriever,stress_rows,stress_supported,stress_true_supported,stress_false_supported,stress_support_precision,mean_conflict_score
+scifact,nli_verification_loop,8661,980,42,938,0.04285714285714286,0.1733719031339639

@@ -1,0 +1,2 @@
+dataset,score_column,scet_support_precision,scet_supported_per_100,scet_certificate_per_100,min_matched_certificate_per_100,matched_support_precision,matched_supported_per_100,matched_certificate_per_100,matched_threshold,precision_margin_vs_matched
+scifact,nli_verifier_score,0.4142857142857143,41.42857142857143,100.0,90.0,0.2857142857142857,26.666666666666668,93.33333333333333,0.25,0.12857142857142861

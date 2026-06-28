@@ -1,0 +1,4 @@
+dataset,retriever,stress_rows,stress_supported,stress_true_supported,stress_false_supported,stress_support_precision,mean_conflict_score
+fever,retrieval_verification_loop,1387467,60582,1471,59111,0.024281139612426134,0.14782888992246535
+hover,retrieval_verification_loop,45129,9139,1382,7757,0.15122004595688807,0.18659808228098726
+scifact,retrieval_verification_loop,20864,946,47,899,0.049682875264270614,0.09663067535440972

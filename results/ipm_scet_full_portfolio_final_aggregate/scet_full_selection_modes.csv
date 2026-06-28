@@ -1,0 +1,13 @@
+seed,dataset,selection_mode,support_threshold,view_columns,has_portfolio_transport,semantic_portfolio_mean_weight
+7,scifact,support_portfolio_transport,0.98,bm25_score;tfidf_score;dense_score;entity_score;relation_score;sbert_mini_lm_score;e5_small_v2_score;bge_m3_score;cross_encoder_score,True,0.0
+7,fever,semantic_equal_transport,1.0,dense_score;sbert_mini_lm_score;e5_small_v2_score;bge_m3_score;cross_encoder_score,False,0.0
+7,hover,semantic_equal_transport,1.0,dense_score;sbert_mini_lm_score;e5_small_v2_score;bge_m3_score;cross_encoder_score,False,0.0
+13,scifact,single_view_cross_encoder_score,1.0,cross_encoder_score,False,0.0
+13,fever,semantic_equal_transport,1.0,dense_score;sbert_mini_lm_score;e5_small_v2_score;bge_m3_score;cross_encoder_score,False,0.0
+13,hover,support_portfolio_transport,0.98,bm25_score;tfidf_score;dense_score;entity_score;relation_score;sbert_mini_lm_score;e5_small_v2_score;bge_m3_score;cross_encoder_score,True,0.0
+17,scifact,semantic_reliability_transport,1.0,dense_score;sbert_mini_lm_score;e5_small_v2_score;bge_m3_score;cross_encoder_score,False,0.0
+17,fever,semantic_equal_transport,1.0,dense_score;sbert_mini_lm_score;e5_small_v2_score;bge_m3_score;cross_encoder_score,False,0.0
+17,hover,semantic_reliability_transport,1.0,dense_score;sbert_mini_lm_score;e5_small_v2_score;bge_m3_score;cross_encoder_score,False,0.0
+29,scifact,semantic_reliability_transport,1.0,dense_score;sbert_mini_lm_score;e5_small_v2_score;bge_m3_score;cross_encoder_score,False,0.0
+29,fever,semantic_equal_transport,1.0,dense_score;sbert_mini_lm_score;e5_small_v2_score;bge_m3_score;cross_encoder_score,False,0.0
+29,hover,semantic_reliability_transport,1.0,dense_score;sbert_mini_lm_score;e5_small_v2_score;bge_m3_score;cross_encoder_score,False,0.0

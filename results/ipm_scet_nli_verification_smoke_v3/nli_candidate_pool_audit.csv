@@ -1,0 +1,2 @@
+dataset,queries,candidate_rows,mean_candidates_per_query,median_candidates_per_query,gold_queries,gold_support_rows,mean_gold_rows_per_gold_query
+scifact,210.0,21000.0,100.0,100.0,135.0,261.0,1.9333333333333333

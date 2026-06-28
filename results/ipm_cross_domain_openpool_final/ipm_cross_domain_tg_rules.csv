@@ -1,0 +1,3 @@
+﻿"dataset","retriever","tg_mode","tg_score_column","tg_view_threshold","tg_view_weights_json","queries","rows"
+"scifact","mvec_tg_semantic","single_view","e5_small_v2_score","1","{}","210","21000"
+"fever","mvec_tg_semantic","consensus","_mvec_mean_score","5","{}","13999","1399900"

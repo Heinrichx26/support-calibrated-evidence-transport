@@ -1,0 +1,2 @@
+dataset,retriever,queries,gold_queries,recall_at_5,mrr,ndcg_at_10,supported_positive,supported_negative,support_precision,supported_per_100,evidence_hit
+scifact,nli_verification_loop,210,135,0.6370370370370371,0.4585197105613903,0.45825708181210306,112,938,0.10666666666666667,53.333333333333336,0.42911877394636017

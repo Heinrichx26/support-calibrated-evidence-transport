@@ -1,0 +1,10 @@
+dataset,retriever,stress_rows,stress_supported,stress_true_supported,stress_false_supported,stress_support_precision,mean_conflict_score,audit_mode,candidate_mode,candidate_scope,candidates_per_query
+scifact,bm25,45871,958,29,929,0.030271398747390398,0.15661938987937415,full,full,large_candidate_pool_k500,500
+scifact,mvec_tg,45871,958,29,929,0.030271398747390398,0.15661938987937415,full,full,large_candidate_pool_k500,500
+scifact,scet,42821,511,30,481,0.05870841487279843,0.1594509397697123,full,full,large_candidate_pool_k500,500
+fever,bm25,2633388,64648,4680,59968,0.07239203068927114,0.11407055681770954,full,full,open_evidence_pair_pool_k500,500
+fever,mvec_tg,2633388,64648,4680,59968,0.07239203068927114,0.11407055681770954,full,full,open_evidence_pair_pool_k500,500
+fever,scet,3868383,33585,3627,29958,0.10799464046449307,0.07332400335693516,full,full,open_evidence_pair_pool_k500,500
+hover,bm25,5296,1226,257,969,0.2096247960848287,0.12245573538305424,full,smoke,sampled_validation_k500,500
+hover,mvec_tg,5296,1226,257,969,0.2096247960848287,0.12245573538305424,full,smoke,sampled_validation_k500,500
+hover,scet,5376,167,97,70,0.5808383233532934,0.12094157609184282,full,smoke,sampled_validation_k500,500
