@@ -1,0 +1,4 @@
+stress_rows,stress_supported,stress_true_supported,stress_false_supported,stress_support_precision,mean_conflict_score,dataset,retriever
+9096,924,44,880,0.047619047619047616,0.16388358984153056,scifact,rag_utility
+610243,59578,1245,58333,0.020896975393601663,0.19390367801982006,fever,rag_utility
+44485,8798,1528,7270,0.17367583541714027,0.18912289056108464,hover,rag_utility

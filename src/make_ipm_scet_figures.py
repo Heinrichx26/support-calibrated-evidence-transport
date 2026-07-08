@@ -13,6 +13,8 @@ PROJECT = Path(__file__).resolve().parents[1]
 FIG_DIR = PROJECT / "figures"
 SCET_RESULTS = PROJECT / "results" / "ipm_scet_full_seed13_portfolio_v2" / "scet_summary.csv"
 SCET_STRESS = PROJECT / "results" / "ipm_scet_full_seed13_portfolio_v2" / "scet_stress_summary.csv"
+RAG_UTILITY_RESULTS = PROJECT / "results" / "ipm_rag_utility_full_seed13_portfolio_v2" / "rag_utility_summary.csv"
+RAG_UTILITY_STRESS = PROJECT / "results" / "ipm_rag_utility_full_seed13_portfolio_v2" / "rag_utility_stress_summary.csv"
 
 EXPORT_EXTENSIONS = (".pdf", ".svg", ".png", ".tif")
 DATASET_ORDER = ["scifact", "fever", "hover"]
@@ -26,9 +28,10 @@ METHOD_LABEL = {
     "e5_small_v2": "E5-small",
     "mvec_tg_semantic": "MVEC-TG semantic",
     "bge_m3": "BGE-M3",
-    "cross_encoder": "Cross-encoder",
+    "rag_utility": "RAG utility",
     "scet": "SCET",
 }
+EVIDENCE_LIST_METHODS = {"bge_m3", "rag_utility", "mvec_tg_semantic"}
 
 PALETTE = {
     "blue": "#0072B2",
@@ -211,6 +214,10 @@ def make_results_figure() -> list[Path]:
     set_style()
     summary = read_csv_required(SCET_RESULTS)
     stress = read_csv_required(SCET_STRESS)
+    summary = pd.concat([summary, read_csv_required(RAG_UTILITY_RESULTS)], ignore_index=True)
+    stress = pd.concat([stress, read_csv_required(RAG_UTILITY_STRESS)], ignore_index=True)
+    summary = summary[summary["retriever"].isin(EVIDENCE_LIST_METHODS | {"scet"})].copy()
+    stress = stress[stress["retriever"].isin(EVIDENCE_LIST_METHODS | {"scet"})].copy()
     table = best_comparison_rows(summary, stress)
 
     x = np.arange(len(table))
