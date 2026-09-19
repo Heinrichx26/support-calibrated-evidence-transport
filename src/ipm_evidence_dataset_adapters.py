@@ -251,7 +251,6 @@ def build_scifact_candidates(
                 "dense": cand["evidence_text"],
                 "entity": cand["evidence_source"],
                 "source_context": cand["evidence_source"],
-                "claim_relation": label,
             }
             rows.append(
                 {
@@ -282,15 +281,27 @@ def fever_evidence_pairs(row: dict[str, Any]) -> set[str]:
     return pairs
 
 
-def _fever_candidate_pool(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+def load_fever_sentence_cache(raw_root: Path = RAW_DEFAULT / "fever") -> dict[str, str]:
+    path = raw_root / "wikipedia_sentence_cache.json"
+    if not path.exists() or path.stat().st_size == 0:
+        return {}
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if isinstance(data, dict):
+        return {str(key): str(value) for key, value in data.items() if value}
+    return {}
+
+
+def _fever_candidate_pool(rows: list[dict[str, Any]], sentence_cache: dict[str, str] | None = None) -> list[dict[str, Any]]:
+    cache = sentence_cache or {}
     seen: dict[str, dict[str, Any]] = {}
     for row in rows:
         for pair in fever_evidence_pairs(row):
             title, sentence_id = pair.rsplit("::", 1)
             clean_title = title.replace("_", " ")
+            cached_text = cache.get(pair)
             seen[pair] = {
                 "candidate_id": pair,
-                "evidence_text": f"{clean_title}. Sentence {sentence_id}.",
+                "evidence_text": cached_text or f"{clean_title}. Sentence {sentence_id}.",
                 "evidence_source": title,
             }
     return list(seen.values())
@@ -302,9 +313,10 @@ def build_fever_candidates(
     limit: int | None = None,
     candidates_per_query: int = 50,
     candidate_pool: list[dict[str, Any]] | None = None,
+    sentence_cache: dict[str, str] | None = None,
 ) -> pd.DataFrame:
     claims = read_jsonl(path, limit=limit)
-    pool = candidate_pool if candidate_pool is not None else _fever_candidate_pool(claims)
+    pool = candidate_pool if candidate_pool is not None else _fever_candidate_pool(claims, sentence_cache=sentence_cache)
     pool_index = build_candidate_token_index(pool)
     pool_scope = "open_pool" if candidate_pool is not None else "split_pool"
     rows: list[dict[str, Any]] = []
@@ -325,7 +337,6 @@ def build_fever_candidates(
                 "dense": cand["evidence_text"],
                 "entity": cand["evidence_source"],
                 "source_context": cand["evidence_source"],
-                "claim_relation": label,
                 "candidate_scope": pool_scope,
             }
             rows.append(
@@ -348,12 +359,16 @@ def build_fever_candidates(
     return validate_unified_schema(pd.DataFrame(rows))
 
 
-def collect_fever_candidate_pool(paths: list[Path], limit_per_path: int | None = None) -> list[dict[str, Any]]:
+def collect_fever_candidate_pool(
+    paths: list[Path],
+    limit_per_path: int | None = None,
+    sentence_cache: dict[str, str] | None = None,
+) -> list[dict[str, Any]]:
     """Collect a de-duplicated FEVER title-sentence evidence pool from one or more claim files."""
     seen: dict[str, dict[str, Any]] = {}
     for path in paths:
         for row in read_jsonl(path, limit=limit_per_path):
-            for candidate in _fever_candidate_pool([row]):
+            for candidate in _fever_candidate_pool([row], sentence_cache=sentence_cache):
                 seen[candidate["candidate_id"]] = candidate
     return list(seen.values())
 
@@ -599,7 +614,6 @@ def build_hover_candidates(
                 "dense": cand["evidence_text"],
                 "entity": cand["evidence_source"],
                 "source_context": cand["evidence_source"],
-                "claim_relation": label,
                 "candidate_scope": pool_scope,
             }
             rows.append(
@@ -664,13 +678,18 @@ def build_dataset(dataset: str, mode: str, out: Path, raw_root: Path = RAW_DEFAU
         table = build_scifact_candidates(root, split="dev", limit=limit, candidates_per_query=candidates_per_query)
     elif dataset == "fever":
         root = ensure_fever_files(raw_root / "fever")
-        pool = collect_fever_candidate_pool([root / "train.jsonl", root / "shared_task_dev.jsonl"])
+        fever_cache = load_fever_sentence_cache(root)
+        pool = collect_fever_candidate_pool(
+            [root / "train.jsonl", root / "shared_task_dev.jsonl"],
+            sentence_cache=fever_cache,
+        )
         table = build_fever_candidates(
             root / "shared_task_dev.jsonl",
             split="dev",
             limit=limit,
             candidates_per_query=candidates_per_query,
             candidate_pool=pool,
+            sentence_cache=fever_cache,
         )
     elif dataset == "hover":
         root = ensure_hover_files(raw_root / "hover")

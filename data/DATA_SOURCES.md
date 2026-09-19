@@ -23,6 +23,8 @@ The adapter downloads and extracts the public release when the files are missing
 
 The adapter downloads the public JSONL files when available.
 
+FEVER evidence text is restored from current Wikipedia pages using title-sentence identifiers. About 72% of scored rows receive restored sentence text. Remaining rows keep the title-sentence identifier when current Wikipedia sentence splits differ from the 2017 identifiers. The helper `src/ipm_fever_wikipedia_sentence_cache.py` writes `data/raw_open/evidence_retrieval/fever/wikipedia_sentence_cache.json`. Claim labels are not used in `compute_conflict_scores`.
+
 ## HoVer
 
 - Source: public HoVer data and HotpotQA-style Wikipedia context files.

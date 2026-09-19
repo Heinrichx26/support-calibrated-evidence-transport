@@ -333,12 +333,12 @@ def compute_conflict_scores(frame: pd.DataFrame, view_columns: list[str]) -> pd.
     evidence_neg = evidence_terms.map(lambda terms: len(terms & NEGATION_TERMS))
     negation_mismatch = ((query_neg > 0) ^ (evidence_neg > 0)).astype(float)
     conflict_word = evidence_terms.map(lambda terms: float(bool(terms & CONFLICT_TERMS)))
-    target_label = frame["target_label"].astype(str).str.upper()
-    label_conflict = (
-        target_label.str.contains("SUPPORT").astype(float) * conflict_word
-        + target_label.str.contains("REFUTE|CONTRADICT").astype(float) * negation_mismatch * 0.5
-    ).clip(0.0, 1.0)
-    raw = 0.35 * view_disagreement + 0.35 * high_similarity_unanchored + 0.15 * negation_mismatch + 0.15 * label_conflict
+    raw = (
+        0.35 * view_disagreement
+        + 0.35 * high_similarity_unanchored
+        + 0.15 * negation_mismatch
+        + 0.15 * conflict_word
+    )
     return raw.clip(0.0, 1.0)
 
 

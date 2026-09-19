@@ -4,7 +4,7 @@ import unittest
 
 import pandas as pd
 
-from ipm_scet_evidence_transport import apply_scet_model, fit_scet_model
+from ipm_scet_evidence_transport import apply_scet_model, compute_conflict_scores, fit_scet_model
 
 
 class SCETCalibrationNoLeakageTests(unittest.TestCase):
@@ -38,6 +38,25 @@ class SCETCalibrationNoLeakageTests(unittest.TestCase):
         self.assertEqual(set(model.calibration_query_ids), {"c1", "c2"})
         self.assertTrue(set(model.calibration_query_ids).isdisjoint(set(applied["query_id"])))
         self.assertGreater(model.view_reliability["good_view_score"], model.view_reliability["noisy_view_score"])
+
+    def test_conflict_scores_ignore_claim_labels(self) -> None:
+        frame = pd.DataFrame(
+            {
+                "query_text": ["the drug reduces fever", "the drug reduces fever"],
+                "evidence_text": ["the drug reduces fever", "the result contradicts the claim"],
+                "target_label": ["SUPPORT", "SUPPORT"],
+                "dense_score": [0.9, 0.9],
+                "entity_score": [0.8, 0.1],
+                "relation_score": [0.8, 0.1],
+            }
+        )
+        views = ["dense_score", "entity_score", "relation_score"]
+        original = compute_conflict_scores(frame, views)
+        flipped = frame.copy()
+        flipped["target_label"] = ["REFUTES", "NOT ENOUGH INFO"]
+        changed = compute_conflict_scores(flipped, views)
+        pd.testing.assert_series_equal(original.reset_index(drop=True), changed.reset_index(drop=True))
+        self.assertGreater(float(original.iloc[1]), float(original.iloc[0]))
 
 
 if __name__ == "__main__":
