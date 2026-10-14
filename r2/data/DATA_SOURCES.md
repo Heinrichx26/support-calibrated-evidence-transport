@@ -1,0 +1,1 @@
+The accompanying release asset contains frozen verified candidate text, raw scores and original SciFact abstracts. Provider links, version hashes and rerun commands are documented in ../README.md. FEVER scored text uses the original June 2017 snapshot. Missing annotated sentences remain in recall denominators.

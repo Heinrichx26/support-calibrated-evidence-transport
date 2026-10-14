@@ -1,0 +1,41 @@
+{
+  "partitions": [
+    {
+      "seed": 13,
+      "selected_single": "ce",
+      "scet_precision": 0.5774125874125874,
+      "single_precision": 0.5415586286372803,
+      "scet_volume": 102.15015358239874,
+      "single_volume": 99.17851275091077
+    },
+    {
+      "seed": 17,
+      "selected_single": "ce",
+      "scet_precision": 0.584588390115514,
+      "single_precision": 0.5327507864383083,
+      "scet_volume": 97.70697906993357,
+      "single_volume": 102.18587041931566
+    },
+    {
+      "seed": 29,
+      "selected_single": "ce",
+      "scet_precision": 0.5898538263112639,
+      "single_precision": 0.5400608160667563,
+      "scet_volume": 99.69283520251446,
+      "single_volume": 101.0143581684406
+    },
+    {
+      "seed": 7,
+      "selected_single": "ce",
+      "scet_precision": 0.5950473951061798,
+      "single_precision": 0.5481377889003386,
+      "scet_volume": 97.21408672048003,
+      "single_volume": 97.04978927066219
+    }
+  ],
+  "delta_precision": 0.046098544725715396,
+  "ci_low": 0.038469929541066254,
+  "ci_high": 0.053325906597921524,
+  "bootstrap_repetitions": 1000,
+  "bootstrap_unit": "query cluster shared across partitions"
+}

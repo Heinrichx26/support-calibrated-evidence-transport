@@ -1,0 +1,46 @@
+{
+  "scifact": {
+    "claims": 300,
+    "rows": 30000,
+    "candidates_mean": 100.0,
+    "candidates_min": 100,
+    "candidates_max": 100,
+    "fully_verified": 300,
+    "gold_total": 366,
+    "gold_verified": 366,
+    "verdicts": {
+      "SUPPORT": 124,
+      "NOT_ENOUGH_INFO": 112,
+      "CONTRADICT": 64
+    }
+  },
+  "fever": {
+    "claims": 19998,
+    "rows": 1972857,
+    "candidates_mean": 98.65271527152716,
+    "candidates_min": 66,
+    "candidates_max": 100,
+    "fully_verified": 19859,
+    "gold_total": 22258,
+    "gold_verified": 22031,
+    "verdicts": {
+      "NOT_ENOUGH_INFO": 6666,
+      "SUPPORTS": 6666,
+      "REFUTES": 6666
+    }
+  },
+  "hover": {
+    "claims": 4000,
+    "rows": 164379,
+    "candidates_mean": 41.09475,
+    "candidates_min": 3,
+    "candidates_max": 100,
+    "fully_verified": 2415,
+    "gold_total": 13670,
+    "gold_verified": 11684,
+    "verdicts": {
+      "SUPPORTED": 2000,
+      "NOT_SUPPORTED": 2000
+    }
+  }
+}

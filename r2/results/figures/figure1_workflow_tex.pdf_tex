@@ -1,0 +1,83 @@
+%% Creator: Inkscape 1.4.4 (dcaf3e7, 2026-05-05), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'figure1_workflow_tex.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{744bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.2641129)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{figure1_workflow_tex.pdf}}%
+    \put(0.10332661,0.23860887){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Original corpus\end{tabular}}}}%
+    \put(0.10332661,0.21804435){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Sentence identities\end{tabular}}}}%
+    \put(0.10332661,0.19747984){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Verified text\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{figure1_workflow_tex.pdf}}%
+    \put(0.36038306,0.22832661){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Fixed candidate pool\end{tabular}}}}%
+    \put(0.36038306,0.2077621){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Random tie keys\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{figure1_workflow_tex.pdf}}%
+    \put(0.61743952,0.22832661){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Evidence views\end{tabular}}}}%
+    \put(0.61743952,0.2077621){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Raw cross-query scores\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{figure1_workflow_tex.pdf}}%
+    \put(0.88457661,0.22832661){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Held-out admission\end{tabular}}}}%
+    \put(0.88457661,0.2077621){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Frozen form and threshold\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{figure1_workflow_tex.pdf}}%
+    \put(0.36038306,0.0672379){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Fitting queries\end{tabular}}}}%
+    \put(0.36038306,0.04667339){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}View transforms and models\end{tabular}}}}%
+    \put(0.36038306,0.02610886){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Scoring-form selection\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{figure1_workflow_tex.pdf}}%
+    \put(0.61743952,0.0672379){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Threshold calibration\end{tabular}}}}%
+    \put(0.61743952,0.04667339){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Workload order statistic\end{tabular}}}}%
+    \put(0.61743952,0.02610886){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Optional risk testing\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{figure1_workflow_tex.pdf}}%
+    \put(0.88457661,0.0672379){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Admission record\end{tabular}}}}%
+    \put(0.88457661,0.04667339){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Source, score, rank\end{tabular}}}}%
+    \put(0.88457661,0.02610886){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Yield and coverage\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{figure1_workflow_tex.pdf}}%
+  \end{picture}%
+\endgroup%

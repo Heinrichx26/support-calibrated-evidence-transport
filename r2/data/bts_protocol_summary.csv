@@ -1,0 +1,5 @@
+protocol,rows,reviewed,mvec_tg_support_precision,teacher_support_precision,mvec_tg_supported,teacher_supported,added_supported,precision_change,row_unit_note
+airport_holdout,2206075,220612,0.6148290151028882,0.6255843427660283,98961,97062,1899,-0.010755327663140024,protocol evaluation rows used in the corresponding split
+carrier_holdout,4077709,407798,0.5919947751769735,0.5941651197158111,191478,190067,1411,-0.0021703445388375764,protocol evaluation rows used in the corresponding split
+cross_year,4401659,440166,0.6167468742909685,0.6236841784643875,206588,204763,1825,-0.006937304173418979,"expanded protocol table rows, not the 2024-2025 fixed-queue evaluation records"
+rolling,4077709,407775,0.608314217656044,0.6135349942601419,195594,193924,1670,-0.005220776604097921,protocol evaluation rows used in the corresponding split

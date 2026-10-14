@@ -1,0 +1,5 @@
+dataset,seed,calibration_queries,error_queries,nonempty_feasible,simultaneous_upper_bound,p_value
+scifact,13,30,0,True,0.18103627252208526,0.0012379400392853797
+scifact,17,30,0,False,0.0,
+scifact,29,30,0,False,0.0,
+scifact,7,30,0,False,0.0,

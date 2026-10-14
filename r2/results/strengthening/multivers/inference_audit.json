@@ -1,0 +1,8 @@
+{
+  "smoke": false,
+  "documents": 19944,
+  "new_documents": 16328,
+  "truncated_documents": 0,
+  "all_scores_finite": true,
+  "elapsed_seconds": 954.2810000000754
+}

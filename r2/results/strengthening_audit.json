@@ -1,0 +1,153 @@
+{
+  "exact_budget": [
+    {
+      "dataset": "scifact",
+      "pool": 100,
+      "four_partitions": true,
+      "all_methods_equal_items": true,
+      "query_pairing_verified": true,
+      "selected_single_matches_fitting_choice": true,
+      "paired_interval_recomputed": {
+        "comparator": "selected_single",
+        "delta_precision": -0.005952380952380959,
+        "ci_low": -0.03748826114683029,
+        "ci_high": 0.02443481680038387,
+        "bootstrap_repetitions": 1000,
+        "unique_query_clusters": 296
+      },
+      "complete_set_stages_monotone": true
+    },
+    {
+      "dataset": "scifact",
+      "pool": 500,
+      "four_partitions": true,
+      "all_methods_equal_items": true,
+      "query_pairing_verified": true,
+      "selected_single_matches_fitting_choice": true,
+      "paired_interval_recomputed": {
+        "comparator": "selected_single",
+        "delta_precision": -0.0035714285714285726,
+        "ci_low": -0.011517159976638882,
+        "ci_high": 0.0,
+        "bootstrap_repetitions": 1000,
+        "unique_query_clusters": 296
+      },
+      "complete_set_stages_monotone": true
+    },
+    {
+      "dataset": "fever",
+      "pool": 100,
+      "four_partitions": true,
+      "all_methods_equal_items": true,
+      "query_pairing_verified": true,
+      "selected_single_matches_fitting_choice": true,
+      "paired_interval_recomputed": {
+        "comparator": "selected_single",
+        "delta_precision": 0.04391385098935641,
+        "ci_low": 0.03651536811896403,
+        "ci_high": 0.050898413088108774,
+        "bootstrap_repetitions": 1000,
+        "unique_query_clusters": 19832
+      },
+      "complete_set_stages_monotone": true
+    },
+    {
+      "dataset": "fever",
+      "pool": 500,
+      "four_partitions": true,
+      "all_methods_equal_items": true,
+      "query_pairing_verified": true,
+      "selected_single_matches_fitting_choice": true,
+      "paired_interval_recomputed": {
+        "comparator": "selected_single",
+        "delta_precision": -0.015714285714285736,
+        "ci_low": -0.024443833806516078,
+        "ci_high": -0.006658478997095976,
+        "bootstrap_repetitions": 1000,
+        "unique_query_clusters": 993
+      },
+      "complete_set_stages_monotone": true
+    },
+    {
+      "dataset": "hover",
+      "pool": 100,
+      "four_partitions": true,
+      "all_methods_equal_items": true,
+      "query_pairing_verified": true,
+      "selected_single_matches_fitting_choice": true,
+      "paired_interval_recomputed": {
+        "comparator": "selected_single",
+        "delta_precision": -0.00044642857142856984,
+        "ci_low": -0.0027724111255837437,
+        "ci_high": 0.0017544847896395228,
+        "bootstrap_repetitions": 1000,
+        "unique_query_clusters": 3961
+      },
+      "complete_set_stages_monotone": true
+    },
+    {
+      "dataset": "hover",
+      "pool": 500,
+      "four_partitions": true,
+      "all_methods_equal_items": true,
+      "query_pairing_verified": true,
+      "selected_single_matches_fitting_choice": true,
+      "paired_interval_recomputed": {
+        "comparator": "selected_single",
+        "delta_precision": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "bootstrap_repetitions": 1000,
+        "unique_query_clusters": 989
+      },
+      "complete_set_stages_monotone": true
+    }
+  ],
+  "batch_rule_outcome_and_order_invariant": true,
+  "diagnostics": [
+    {
+      "dataset": "scifact",
+      "mapping_matches_original": true,
+      "calibration_prevalence_reference": true,
+      "simultaneous_bounds_verified": true
+    },
+    {
+      "dataset": "fever",
+      "mapping_matches_original": true,
+      "calibration_prevalence_reference": true,
+      "simultaneous_bounds_verified": true
+    },
+    {
+      "dataset": "hover",
+      "mapping_matches_original": true,
+      "calibration_prevalence_reference": true,
+      "simultaneous_bounds_verified": true
+    }
+  ],
+  "multivers": {
+    "document_pairs": 19944,
+    "candidate_pairs": 30000,
+    "no_duplicate_or_missing_pairs": true,
+    "all_probabilities_finite": true,
+    "sentence_adaptation_verified": true,
+    "official_parameters_and_source_verified": true,
+    "exact_budget_interval": {
+      "comparator": "multivers",
+      "delta_precision": -0.25,
+      "ci_low": -0.3067130871657265,
+      "ci_high": -0.1914188602331189,
+      "bootstrap_repetitions": 1000,
+      "unique_query_clusters": 296
+    },
+    "precision_mean": 0.6107142857142858,
+    "precision_sample_sd": 0.026190476190476212,
+    "interpretation": "Full-abstract MultiVerS exceeds sentence-context SCET on SciFact; contexts are identified with results."
+  },
+  "supplementary_tables": 22,
+  "status": "passed",
+  "source_hashes": {
+    "audit_r2_strengthening.py": "56e0c74fe8e43e10e65dc3d328be87a3d3853b59c69ae0baa73cf5b98dd28bca",
+    "strengthen_r2_analysis.py": "4881d1076101cb6e474a351da00c8b1683b158de227fe54be2d44c8f06eae5fe",
+    "run_multivers_r2.py": "78168d99b0bd58d638f415b76372499f28c2663280b3c54e3dede8e0252ffd5e"
+  }
+}
