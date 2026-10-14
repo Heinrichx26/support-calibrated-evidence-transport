@@ -4,16 +4,23 @@ import argparse, concurrent.futures, hashlib, json, math, requests, time
 R2=Path(__file__).resolve().parents[1]
 p=argparse.ArgumentParser();p.add_argument('--smoke',action='store_true');a=p.parse_args()
 root=R2/'data/models/multivers';root.mkdir(parents=True,exist_ok=True)
-base='https://scifact.s3.us-west-2.amazonaws.com/longchecker/latest/checkpoints/fever_sci.ckpt'
-head=requests.head(base,timeout=30);head.raise_for_status()
-version=head.headers['x-amz-version-id'];url=base+'?versionId='+version
-total=int(head.headers['Content-Length']);size=2**20 if a.smoke else 32*2**20
+record=json.loads((root/'checkpoint_manifest.json').read_text(encoding='utf-8'))
+version='GYe58tFsyvvn1n7rib5H4wrsiq32ZY5Y'
+expected_sha256='6b48f1b83eaedbc2570bc50135518ef3cf6f3c6dcdd380a9a3a433918e7f982d'
+assert record['version_id']==version and record['sha256']==expected_sha256
+url=record['url']
+assert url.endswith('?versionId='+version)
+head=requests.head(url,timeout=30);head.raise_for_status()
+assert head.headers['x-amz-version-id']==version
+total=int(head.headers['Content-Length'])
+assert total==record['bytes']==5253768950
+size=2**20 if a.smoke else 32*2**20
 parts=root/'parts';parts.mkdir(exist_ok=True)
 count=4 if a.smoke else math.ceil(total/size)
 start=time.monotonic()
 def get(i):
     first=i*size;last=min(total,(i+1)*size)-1
-    target=parts/(('smoke' if a.smoke else 'part')+f'{i:04d}')
+    target=parts/(('smoke_'+version+'_' if a.smoke else 'part')+f'{i:04d}')
     if target.exists() and target.stat().st_size==last-first+1:return i
     for retry in range(5):
         try:
@@ -39,6 +46,6 @@ else:
         for i in range(count):
             with (parts/f'part{i:04d}').open('rb') as source:
                 for chunk in iter(lambda:source.read(2**20),b''):f.write(chunk);h.update(chunk)
+    assert h.hexdigest()==expected_sha256,'Checkpoint hash differs from the frozen experiment'
     target.with_suffix('.assembling').replace(target)
-    (root/'checkpoint_manifest.json').write_text(json.dumps({'url':url,'version_id':version,'bytes':total,'sha256':h.hexdigest(),'checkpoint':'fever_sci','training':'FEVER, PubMedQA, Evidence Inference'},indent=2),encoding='utf-8')
     print('Checkpoint complete',h.hexdigest(),flush=True)

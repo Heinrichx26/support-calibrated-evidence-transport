@@ -10,6 +10,7 @@
     "torch": "2.11.0+cu128",
     "transformers": "5.17.0",
     "sentence-transformers": "6.1.0",
-    "huggingface-hub": "1.32.0"
+    "huggingface-hub": "1.32.0",
+    "requests": "2.34.2"
   }
 }

@@ -286,8 +286,8 @@
   },
   {
     "path": "requirements-neural.txt",
-    "bytes": 198,
-    "sha256": "d7e38efb90780585f3c73c740f39f1dc6164b96467406030f553ea7c69c68654"
+    "bytes": 215,
+    "sha256": "6b409d85ad8f841c407c49ac4556d42342809b93832b12e34cde1cbd4991eced"
   },
   {
     "path": "requirements.txt",
@@ -6276,8 +6276,8 @@
   },
   {
     "path": "results/reproduction_environment.json",
-    "bytes": 338,
-    "sha256": "4daa931613c7d34070a2e6672a6b703d6b01eca9e08a66a3a5c33d3edef3dd81"
+    "bytes": 365,
+    "sha256": "2974da669ef8d172e3fa91456d26b406f7ee9b8484e583ce37d9ecc807d518ae"
   },
   {
     "path": "results/scifact_full_provenance.csv",
@@ -8506,8 +8506,8 @@
   },
   {
     "path": "src/download_multivers.py",
-    "bytes": 2692,
-    "sha256": "cc7837d9409945b9056355f5c674b13666f9ed0171b5ab15667df3dbb80211b0"
+    "bytes": 2833,
+    "sha256": "917ae49c643a0ed47dbd9a7c79dd8ede77e35888ace663e51a2ae6bf34c955e0"
   },
   {
     "path": "src/export_r2_tables.py",
