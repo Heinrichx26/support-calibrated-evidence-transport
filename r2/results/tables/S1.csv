@@ -1,0 +1,10 @@
+Setting,Value,Procedure,Additional detail
+Outer split,30% calibration; 70% evaluation,Query-level SHA1 ordering,"13, 17, 29, 7"
+Calibration allocation,67% fitting; 33% threshold calibration,Disjoint query sets,Three inner fitting folds
+Workload targets,"25, 50, 100, 200, 300, 400, 500",Items per 100 calibration queries,Primary target 100
+Score transformations,Fitting empirical midranks,1001 quantiles per view,Frozen across queries
+Eligible rank,5,Fixed identifier-derived random ties,Tie seed 73
+Conflict penalties,"0, 0.1, 0.25, 0.5",Selected on fitting queries,Shared stress upper quartile
+Logistic regularization,"C = 0.1, 1, 10",Query- and class-balanced weights,Inner-fold predictions
+Uncertainty,1000 paired query-cluster draws,Mean of four precision differences,Bootstrap seed 20261015
+Risk testing,α = 0.20; δ = 0.05,20 fixed thresholds; Bonferroni,Query-level error event

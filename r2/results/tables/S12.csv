@@ -1,0 +1,15 @@
+Dataset,Seed,Feasible,Cutoff,Query error,Cov.,"Items/
+100","Ann./
+100"
+SciFact,13,Yes,0.975,0.010,0.029,2.9,1.9
+SciFact,17,Empty rule,∞,0.000,0.000,0.0,0.0
+SciFact,29,Empty rule,∞,0.000,0.000,0.0,0.0
+SciFact,7,Empty rule,∞,0.000,0.000,0.0,0.0
+FEVER,13,Empty rule,∞,0.000,0.000,0.0,0.0
+FEVER,17,Empty rule,∞,0.000,0.000,0.0,0.0
+FEVER,29,Yes,0.975,0.150,0.471,65.7,44.5
+FEVER,7,Empty rule,∞,0.000,0.000,0.0,0.0
+HoVer,13,Yes,0.975,0.121,0.415,68.4,49.8
+HoVer,17,Empty rule,∞,0.000,0.000,0.0,0.0
+HoVer,29,Empty rule,∞,0.000,0.000,0.0,0.0
+HoVer,7,Empty rule,∞,0.000,0.000,0.0,0.0

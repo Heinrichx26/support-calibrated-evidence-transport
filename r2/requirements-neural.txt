@@ -1,0 +1,6 @@
+# Optional raw neural scoring. Select the appropriate torch wheel for the host.
+-r requirements-admission.txt
+torch==2.11.0
+transformers==5.17.0
+sentence-transformers==6.1.0
+huggingface-hub==1.32.0

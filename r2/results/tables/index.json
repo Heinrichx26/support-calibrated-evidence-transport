@@ -1,0 +1,210 @@
+[
+  {
+    "table": "Table_1",
+    "title": "Manuscript Table 1",
+    "file": "Table_1.csv",
+    "rows": 3,
+    "columns": 4,
+    "sha256": "d8544bd2991ed0822d114f3b8a0f6097513e936f0f4dcc548bba31317bd617c7"
+  },
+  {
+    "table": "Table_2",
+    "title": "Manuscript Table 2",
+    "file": "Table_2.csv",
+    "rows": 3,
+    "columns": 5,
+    "sha256": "9efb952bc4489950500c7dd4ee8ab4aae013782830cd36b05bb7942cb34a0b0d"
+  },
+  {
+    "table": "Table_3",
+    "title": "Manuscript Table 3",
+    "file": "Table_3.csv",
+    "rows": 15,
+    "columns": 8,
+    "sha256": "c7cebbe514ac7e48c1e2f8da843d02171801d17d59038449d351ae33f6882548"
+  },
+  {
+    "table": "Table_4",
+    "title": "Manuscript Table 4",
+    "file": "Table_4.csv",
+    "rows": 3,
+    "columns": 6,
+    "sha256": "4a5066a8ccb19f19e871262ff5e36560c16da2401bf617c8194a75f931c1ad29"
+  },
+  {
+    "table": "S1",
+    "title": "Frozen experiment settings",
+    "file": "S1.csv",
+    "rows": 9,
+    "columns": 4,
+    "sha256": "65ef99572b83e0e35aa8c6d26ebab0722891f80fd9a330e66e6e48ba08480cc3"
+  },
+  {
+    "table": "S2",
+    "title": "Candidate sentence provenance before verification filtering",
+    "file": "S2.csv",
+    "rows": 23,
+    "columns": 5,
+    "sha256": "cb94d858deab972895f3c8cfe89f8c02f9d3b4353ccb6333b246c632c88184e7"
+  },
+  {
+    "table": "S3",
+    "title": "Exact neural checkpoints",
+    "file": "S3.csv",
+    "rows": 5,
+    "columns": 5,
+    "sha256": "1ba504790ba4a45cf9be2e506a10219acf6acf522dd9afa61c1985db6aca0c9a"
+  },
+  {
+    "table": "S4",
+    "title": "All scorer outputs at the common calibration target",
+    "file": "S4.csv",
+    "rows": 75,
+    "columns": 8,
+    "sha256": "fd9cc561c45bcde94ae9f2d4546b3dfdeba6247699b28a124f535aeea5fb8158"
+  },
+  {
+    "table": "S5",
+    "title": "Calibration-fixed workload curves",
+    "file": "S5.csv",
+    "rows": 126,
+    "columns": 8,
+    "sha256": "79a8d275db56e6a858849dbe47c5f92d5590a9d27c082158a087a5244e8b29fd"
+  },
+  {
+    "table": "S6",
+    "title": "Queries with complete verified annotated evidence",
+    "file": "S6.csv",
+    "rows": 15,
+    "columns": 8,
+    "sha256": "614d92b213b84d6ba3fcbbe43c21407db01f8c1314fc7ab0ed6362d520c4296c"
+  },
+  {
+    "table": "S7",
+    "title": "Results by claim verdict",
+    "file": "S7.csv",
+    "rows": 32,
+    "columns": 8,
+    "sha256": "98f8df49f5c0ddfac537803228193445b35ccb6f7e12316ead77637622a23039"
+  },
+  {
+    "table": "S8",
+    "title": "SciFact directional-support analysis",
+    "file": "S8.csv",
+    "rows": 7,
+    "columns": 6,
+    "sha256": "27151988de2770c8e525ed6a774e0e186ad4a21bc6d8941c15d8b55d875a9adf"
+  },
+  {
+    "table": "S9",
+    "title": "Larger candidate-pool audit",
+    "file": "S9.csv",
+    "rows": 21,
+    "columns": 8,
+    "sha256": "643a77ba3d847f436b2ccad9057019fddcc7f702d0f4efe514ddf8c7875ebe66"
+  },
+  {
+    "table": "S10",
+    "title": "Paired precision differences from SCET",
+    "file": "S10.csv",
+    "rows": 45,
+    "columns": 5,
+    "sha256": "cd18d876a4b38f7999469989b23c4d21fc70621e690c9ea46c96c45e9e699d9a"
+  },
+  {
+    "table": "S11",
+    "title": "Selected forms and frozen thresholds",
+    "file": "S11.csv",
+    "rows": 12,
+    "columns": 6,
+    "sha256": "7bfb7bb10205300eceea026c64976ba2e779c7c0bb63e402a46665340c9778a3"
+  },
+  {
+    "table": "S12",
+    "title": "Learn-then-Test query-risk results",
+    "file": "S12.csv",
+    "rows": 12,
+    "columns": 8,
+    "sha256": "7df41a2dd7480e9ff3d918c83483abe95ea7b926a817002f76611494df1e788d"
+  },
+  {
+    "table": "S13",
+    "title": "Separate monotone probability diagnostic",
+    "file": "S13.csv",
+    "rows": 12,
+    "columns": 6,
+    "sha256": "6b950c39cb1d791eaab397eadc1f998a7f9954ed162adc44b74889ba86bd36a9"
+  },
+  {
+    "table": "S14",
+    "title": "BTS protocol units and precision",
+    "file": "S14.csv",
+    "rows": 4,
+    "columns": 6,
+    "sha256": "370c7bacf66c5214955de3ef2869cb3f209cb13ab599fd7a733f62142261f513"
+  },
+  {
+    "table": "S15",
+    "title": "Shared-stress admission counts",
+    "file": "S15.csv",
+    "rows": 21,
+    "columns": 4,
+    "sha256": "5b7b784c736b3bd717caf556dff54c9f34dd01e6d1dbde2f560218b7321bc13d"
+  },
+  {
+    "table": "S16",
+    "title": "Ranking quality and complete-set retention",
+    "file": "S16.csv",
+    "rows": 33,
+    "columns": 6,
+    "sha256": "1cd03e00711934a72c32cccc7d8456564be978667f6cd07faa8968769b4a26cd"
+  },
+  {
+    "table": "S17",
+    "title": "Fixed-batch comparison with a 100-candidate cap",
+    "file": "S17.csv",
+    "rows": 46,
+    "columns": 6,
+    "sha256": "44de65f0310a8ae696c8952aac9a90907ae2262724e9c92c2f1dd9c1cfdc3748"
+  },
+  {
+    "table": "S18",
+    "title": "Fixed-batch comparison with a 500-candidate cap",
+    "file": "S18.csv",
+    "rows": 45,
+    "columns": 6,
+    "sha256": "43a21443f5b0e9f266f5720302b8bef687387c051fd4373b62a6c4763fbb18aa"
+  },
+  {
+    "table": "S19",
+    "title": "SciFact document-context comparison",
+    "file": "S19.csv",
+    "rows": 3,
+    "columns": 6,
+    "sha256": "05835513e1c41cd76fcfa2ba18c312c8d659b0d7bd76094631884c0f45955357"
+  },
+  {
+    "table": "S20",
+    "title": "Probability diagnostics with a prevalence reference",
+    "file": "S20.csv",
+    "rows": 3,
+    "columns": 6,
+    "sha256": "8020f92ae33521621aa3603e6616f48253bdf5838c414771ffa4b7a97a598785"
+  },
+  {
+    "table": "S21",
+    "title": "Complete-set recall through admission stages",
+    "file": "S21.csv",
+    "rows": 18,
+    "columns": 6,
+    "sha256": "a577ea2ff85f9ed3edd0faa03ef0cd08b4172f4856ab8f20dacf975db0221202"
+  },
+  {
+    "table": "S22",
+    "title": "Calibration-side query-risk bounds",
+    "file": "S22.csv",
+    "rows": 12,
+    "columns": 6,
+    "sha256": "1824d66af7f124f7c6d449fa2a16d70e99d33447e6bc758834178661123e2c35"
+  }
+]

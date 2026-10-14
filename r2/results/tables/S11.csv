@@ -1,0 +1,13 @@
+Dataset,Seed,SCET form,Penalty,Selected single,Threshold
+SciFact,13,Logistic portfolio C=0.1,0,BGE-M3,0.909534
+SciFact,17,BGE-M3,0,BGE-M3,0.986737
+SciFact,29,Logistic portfolio C=1,0,Cross-encoder,0.974345
+SciFact,7,Cross-encoder,0,Cross-encoder,0.987300
+FEVER,13,Logistic portfolio C=1,0,Cross-encoder,0.958882
+FEVER,17,Logistic portfolio C=10,0,Cross-encoder,0.965200
+FEVER,29,Logistic portfolio C=1,0.1,Cross-encoder,0.953504
+FEVER,7,Logistic portfolio C=1,0,Cross-encoder,0.961811
+HoVer,13,E5,0.1,E5,0.965366
+HoVer,17,Cross-encoder,0,Cross-encoder,0.972957
+HoVer,29,E5,0,E5,0.977393
+HoVer,7,E5,0,E5,0.973502

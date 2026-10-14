@@ -1,0 +1,91 @@
+Dataset,Method,Precision (SD),Coverage,Recall,Set recall
+SciFact,SCET,"0.376
+(0.010)",0.364,0.350,0.425
+SciFact,Selected single,"0.380
+(0.011)",0.364,0.353,0.431
+SciFact,BM25,"0.252
+(0.008)",0.325,0.244,0.333
+SciFact,TF-IDF,"0.274
+(0.021)",0.360,0.261,0.343
+SciFact,LSA,"0.061
+(0.010)",0.351,0.055,0.075
+SciFact,Long-token overlap,"0.140
+(0.008)",0.352,0.133,0.178
+SciFact,Claim-token coverage,"0.250
+(0.009)",0.344,0.234,0.300
+SciFact,MiniLM,"0.255
+(0.011)",0.296,0.223,0.289
+SciFact,E5,"0.343
+(0.015)",0.325,0.314,0.369
+SciFact,BGE-M3,"0.323
+(0.002)",0.323,0.280,0.347
+SciFact,Cross-encoder,"0.380
+(0.011)",0.364,0.353,0.431
+SciFact,NLI relevance,"0.113
+(0.011)",0.344,0.087,0.124
+SciFact,NLI directional,"0.220
+(0.002)",0.362,0.211,0.264
+SciFact,NLI entailment,"0.213
+(0.010)",0.365,0.210,0.266
+SciFact,Conflict pressure,"0.258
+(0.022)",0.355,0.236,0.319
+FEVER,SCET,"0.542
+(0.027)",0.651,0.618,0.646
+FEVER,Selected single,"0.558
+(0.025)",0.647,0.631,0.656
+FEVER,BM25,"0.451
+(0.009)",0.568,0.536,0.557
+FEVER,TF-IDF,"0.459
+(0.009)",0.647,0.541,0.574
+FEVER,LSA,"0.086
+(0.003)",0.372,0.099,0.104
+FEVER,Long-token overlap,"0.268
+(0.006)",0.509,0.319,0.324
+FEVER,Claim-token coverage,"0.437
+(0.015)",0.583,0.512,0.547
+FEVER,MiniLM,"0.438
+(0.009)",0.558,0.484,0.513
+FEVER,E5,"0.516
+(0.013)",0.669,0.605,0.645
+FEVER,BGE-M3,"0.494
+(0.004)",0.608,0.561,0.582
+FEVER,Cross-encoder,"0.575
+(0.011)",0.639,0.641,0.663
+FEVER,NLI relevance,"0.004
+(0.001)",0.314,0.005,0.006
+FEVER,NLI directional,"0.386
+(0.009)",0.434,0.413,0.423
+FEVER,NLI entailment,"0.383
+(0.008)",0.435,0.414,0.424
+FEVER,Conflict pressure,"0.534
+(0.038)",0.595,0.600,0.622
+HoVer,SCET,"0.607
+(0.012)",0.532,0.214,0.056
+HoVer,Selected single,"0.607
+(0.012)",0.532,0.214,0.056
+HoVer,BM25,"0.443
+(0.012)",0.400,0.141,0.032
+HoVer,TF-IDF,"0.488
+(0.012)",0.527,0.174,0.036
+HoVer,LSA,"0.020
+(0.005)",0.330,0.007,0.000
+HoVer,Long-token overlap,"0.215
+(0.005)",0.428,0.078,0.007
+HoVer,Claim-token coverage,"0.219
+(0.014)",0.384,0.085,0.010
+HoVer,MiniLM,"0.461
+(0.013)",0.467,0.159,0.020
+HoVer,E5,"0.619
+(0.011)",0.531,0.219,0.062
+HoVer,BGE-M3,"0.541
+(0.003)",0.503,0.182,0.033
+HoVer,Cross-encoder,"0.597
+(0.006)",0.547,0.205,0.040
+HoVer,NLI relevance,"0.000
+(0.000)",0.286,0.000,0.000
+HoVer,NLI directional,"0.276
+(0.007)",0.414,0.087,0.009
+HoVer,NLI entailment,"0.150
+(0.011)",0.354,0.050,0.004
+HoVer,Conflict pressure,"0.549
+(0.009)",0.493,0.190,0.048

@@ -10,7 +10,16 @@ The repository contains code, protocol settings, model manifests, summary tables
 
 Python 3.11 with numpy, pandas, pyarrow, scipy, scikit-learn and matplotlib reproduces the admission analyses from the supplied raw scores. torch, transformers, sentence-transformers and huggingface-hub are used for neural scoring. Use the exact provider revisions in data/scored/*.json. Source corpora and checkpoints remain available from their original providers: https://github.com/allenai/scifact ; https://fever.ai/dataset/fever.html ; https://github.com/hover-nlp/hover ; https://hotpotqa.github.io/ . Candidate identifiers, source text hashes, unresolved counts and provenance appear in the retained inputs and audits.
 
+Install the tested admission dependencies with `python -m pip install -r requirements-admission.txt`. Optional raw neural scoring uses `requirements-neural.txt`; select the torch wheel appropriate to the host. The actual package versions, including the torch provider build, are recorded in results/reproduction_environment.json. The scoring program resolves the five immutable checkpoint revisions directly and downloads that exact revision when it is absent from the provider cache.
+
 ## Run and inspect
+
+Generate every manuscript and supplementary table directly from the saved results:
+
+    python src/export_r2_tables.py --smoke
+    python src/export_r2_tables.py
+
+The 26 UTF-8 CSV tables and their hashes are written to results/tables/. Every header and displayed cell has been checked against the corresponding Word table. This export requires no manuscript files and performs no experimental scoring.
 
 Run a smoke check before a full experiment:
 

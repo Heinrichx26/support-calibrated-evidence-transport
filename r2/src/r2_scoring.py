@@ -28,6 +28,13 @@ MODELS = {
     'ce': 'cross-encoder/ms-marco-MiniLM-L6-v2',
     'nli': 'cross-encoder/nli-MiniLM2-L6-H768'
 }
+MODEL_REVISIONS = {
+    'sentence-transformers/all-MiniLM-L6-v2': '1110a243fdf4706b3f48f1d95db1a4f5529b4d41',
+    'intfloat/e5-small-v2': 'ffb93f3bd4047442299a41ebb6fa998a38507c52',
+    'BAAI/bge-m3': '5617a9f61b028005a4858fdac845db406aefb181',
+    'cross-encoder/ms-marco-MiniLM-L6-v2': '233902d25c440f23af6f7d6e94d2946bac0bee0a',
+    'cross-encoder/nli-MiniLM2-L6-H768': 'b95119ce93d3e065de6214e38cd4a97b0f2f2c6d',
+}
 
 
 def sha_file(path):
@@ -39,11 +46,14 @@ def sha_file(path):
 
 
 def snapshot(name):
-    root = Path.home() / '.cache/huggingface/hub' / ('models--' + name.replace('/', '--'))
-    ref = root / 'refs/main'
-    rev = ref.read_text().strip() if ref.exists() else sorted((root / 'snapshots').iterdir())[-1].name
+    from huggingface_hub import snapshot_download
+    from huggingface_hub.constants import HF_HUB_CACHE
+    rev = MODEL_REVISIONS[name]
+    root = Path(HF_HUB_CACHE) / ('models--' + name.replace('/', '--'))
     path = root / 'snapshots' / rev
-    assert (path / 'config.json').exists(), name
+    if not (path / 'config.json').exists():
+        path = Path(snapshot_download(repo_id=name, revision=rev))
+    assert path.name == rev and (path / 'config.json').is_file(), (name, rev)
     return path, rev
 
 
