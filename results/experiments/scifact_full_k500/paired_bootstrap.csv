@@ -1,0 +1,15 @@
+comparator,delta_precision_mean,ci_low,ci_high,repetitions,unique_query_clusters,partitions,method
+bm25,0.11719304512954978,0.0708572989928782,0.1669931579743637,1000,296,4,paired query cluster percentile bootstrap; shared query weights across partitions
+tfidf,0.08628316416871248,0.031169543373643582,0.13984181949795715,1000,296,4,paired query cluster percentile bootstrap; shared query weights across partitions
+lsa,0.2801008196968594,0.21773708396161712,0.33880394604122827,1000,296,4,paired query cluster percentile bootstrap; shared query weights across partitions
+entity,0.206475033807016,0.14702592657371627,0.26693897527180555,1000,296,4,paired query cluster percentile bootstrap; shared query weights across partitions
+relation,0.09339742477949005,0.03163476661575278,0.1504547497885139,1000,296,4,paired query cluster percentile bootstrap; shared query weights across partitions
+minilm,0.10053956106116682,0.05272253126567083,0.15434850186562696,1000,296,4,paired query cluster percentile bootstrap; shared query weights across partitions
+e5,0.032267605554574516,-0.00979805935894103,0.07880699155650144,1000,296,4,paired query cluster percentile bootstrap; shared query weights across partitions
+bge,0.05661532953079643,0.012068220159588007,0.10029620866300586,1000,296,4,paired query cluster percentile bootstrap; shared query weights across partitions
+ce,0.0,0.0,0.0,1000,296,4,paired query cluster percentile bootstrap; shared query weights across partitions
+nli_relevance,0.23170972525467157,0.16221367621233032,0.2936161401989056,1000,296,4,paired query cluster percentile bootstrap; shared query weights across partitions
+nli_directional,0.1434072000405711,0.07899829641754938,0.2032176812593785,1000,296,4,paired query cluster percentile bootstrap; shared query weights across partitions
+nli_entailment,0.1488205147190079,0.08525468309234038,0.20935687861150742,1000,296,4,paired query cluster percentile bootstrap; shared query weights across partitions
+conflict_pressure,0.10651079949449538,0.05686248058387602,0.15578687316445902,1000,296,4,paired query cluster percentile bootstrap; shared query weights across partitions
+scet_zero_penalty,0.0,0.0,0.0,1000,296,4,paired query cluster percentile bootstrap; shared query weights across partitions

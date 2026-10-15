@@ -1,0 +1,12 @@
+[
+  {
+    "seed": 7,
+    "disjoint_queries": true,
+    "outcome_invariant_scores": true,
+    "order_invariant_admission": true,
+    "all_finite_raw_scores": true,
+    "fitting_queries": 4019,
+    "threshold_queries": 1980,
+    "evaluation_queries": 13999
+  }
+]

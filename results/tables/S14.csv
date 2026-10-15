@@ -1,0 +1,5 @@
+Protocol,Evaluation rows,Queue entries,Reference,Structured,Change
+Airport holdout,"2,206,075","220,612",0.6256,0.6148,-0.0108
+Carrier holdout,"4,077,709","407,798",0.5942,0.5920,-0.0022
+Cross-year,"4,401,659","440,166",0.6237,0.6167,-0.0069
+Rolling,"4,077,709","407,775",0.6135,0.6083,-0.0052

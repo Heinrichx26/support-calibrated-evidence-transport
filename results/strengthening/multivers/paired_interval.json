@@ -1,0 +1,8 @@
+{
+  "comparator": "multivers",
+  "delta_precision": -0.2341902075918832,
+  "ci_low": -0.28222652186039426,
+  "ci_high": -0.18468734056267644,
+  "bootstrap_repetitions": 1000,
+  "unique_query_clusters": 296
+}

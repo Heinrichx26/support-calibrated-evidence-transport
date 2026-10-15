@@ -1,0 +1,16 @@
+{
+  "pairs": 30000,
+  "truncated_pairs": 3,
+  "truncation_fraction": 0.0001,
+  "model": "cross-encoder/ms-marco-MiniLM-L6-v2",
+  "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+  "id2label": {
+    "0": "LABEL_0"
+  },
+  "max_length": 256,
+  "pair_order": "claim,evidence",
+  "transformers": "5.17.0",
+  "torch": "2.11.0+cu128",
+  "adaptive_batch_final": 128,
+  "input_sha256": "74659379b29254dc6b8cb2a2ecbf3b1189e185bdf6db8579cc0c9c2fd2ecf2d5"
+}

@@ -1,0 +1,12 @@
+{
+  "smoke": false,
+  "pool": 100,
+  "score_pairs": 30000,
+  "finite_scores": true,
+  "query_splits_disjoint": true,
+  "exact_budget_verified": true,
+  "protocol_sha256": "d9bb54d84abcdf1125cbf01326a3531ca141ff273c96cc6a2bec78074ec9e0c4",
+  "multivers_scores_sha256": "637e44b84c4a0457f6e0ccd6c10c38e260b688cd27b97b1a1fde47d860ab1f30",
+  "code_sha256": "63d8e5b09e3b1b62d03f6fb6a5a5ae0554eb181e263209e114b45c8fd926e518",
+  "elapsed_seconds": 8.437999999965541
+}

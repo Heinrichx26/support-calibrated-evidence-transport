@@ -1,0 +1,2 @@
+pool,seed,selected_form,penalty,selected_single,fit_queries,calibration_queries,evaluation_queries
+100,13,multivers,0,multivers,60,30,12

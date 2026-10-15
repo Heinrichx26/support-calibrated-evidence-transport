@@ -1,0 +1,7 @@
+Method,Precision (SD),Items/100,Recall,Set recall,Input context
+SCET,"0.349
+(0.016)",118.9,0.376,0.447,Title and sentence
+Cross-encoder,"0.366
+(0.018)",124.2,0.420,0.494,Title and sentence
+MultiVerS,"0.583
+(0.123)",115.6,0.562,0.644,Title and full abstract

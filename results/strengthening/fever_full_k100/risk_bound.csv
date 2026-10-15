@@ -1,0 +1,5 @@
+dataset,seed,calibration_queries,error_queries,nonempty_feasible,simultaneous_upper_bound,p_value
+fever,13,1980,0,False,0.0,
+fever,17,1980,0,False,0.0,
+fever,29,1980,281,True,0.16519811731158685,1.058180722501086e-11
+fever,7,1980,0,False,0.0,

@@ -1,0 +1,42 @@
+[
+  {
+    "seed": 13,
+    "disjoint_queries": true,
+    "outcome_invariant_scores": true,
+    "order_invariant_admission": true,
+    "all_finite_raw_scores": true,
+    "fitting_queries": 60,
+    "threshold_queries": 30,
+    "evaluation_queries": 210
+  },
+  {
+    "seed": 17,
+    "disjoint_queries": true,
+    "outcome_invariant_scores": true,
+    "order_invariant_admission": true,
+    "all_finite_raw_scores": true,
+    "fitting_queries": 60,
+    "threshold_queries": 30,
+    "evaluation_queries": 210
+  },
+  {
+    "seed": 29,
+    "disjoint_queries": true,
+    "outcome_invariant_scores": true,
+    "order_invariant_admission": true,
+    "all_finite_raw_scores": true,
+    "fitting_queries": 60,
+    "threshold_queries": 30,
+    "evaluation_queries": 210
+  },
+  {
+    "seed": 7,
+    "disjoint_queries": true,
+    "outcome_invariant_scores": true,
+    "order_invariant_admission": true,
+    "all_finite_raw_scores": true,
+    "fitting_queries": 60,
+    "threshold_queries": 30,
+    "evaluation_queries": 210
+  }
+]

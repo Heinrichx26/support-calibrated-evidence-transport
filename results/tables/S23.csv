@@ -1,0 +1,9 @@
+Method,Input context,Precision (SD),Recall,Set recall,Coverage
+SCET,Title and sentence,"0.361
+(0.017)",0.317,0.384,0.371
+MultiVerS,Title and abstract,"0.611
+(0.026)",0.537,0.635,0.465
+SCET with MultiVerS,Title and abstract,"0.611
+(0.026)",0.537,0.635,0.465
+MultiVerS,Title and sentence,"0.537
+(0.011)",0.487,0.580,0.442

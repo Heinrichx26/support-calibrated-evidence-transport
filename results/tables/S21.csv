@@ -1,0 +1,19 @@
+Dataset,Pool cap,Method,Available,Eligible,Admitted
+SciFact,100,SCET,1.000,0.852,0.384
+SciFact,100,Selected single,1.000,0.824,0.395
+SciFact,100,Cross-encoder,1.000,0.833,0.442
+SciFact,500,SCET,1.000,0.807,0.425
+SciFact,500,Selected single,1.000,0.813,0.431
+SciFact,500,Cross-encoder,1.000,0.813,0.431
+FEVER,100,SCET,0.990,0.941,0.691
+FEVER,100,Selected single,0.990,0.946,0.652
+FEVER,100,Cross-encoder,0.990,0.946,0.652
+FEVER,500,SCET,0.992,0.940,0.646
+FEVER,500,Selected single,0.992,0.946,0.656
+FEVER,500,Cross-encoder,0.992,0.946,0.663
+HoVer,100,SCET,0.606,0.237,0.063
+HoVer,100,Selected single,0.606,0.237,0.063
+HoVer,100,Cross-encoder,0.606,0.210,0.043
+HoVer,500,SCET,0.594,0.166,0.056
+HoVer,500,Selected single,0.594,0.166,0.056
+HoVer,500,Cross-encoder,0.594,0.157,0.040

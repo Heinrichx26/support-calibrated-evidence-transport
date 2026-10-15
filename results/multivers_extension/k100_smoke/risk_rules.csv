@@ -1,0 +1,10 @@
+pool,seed,method,alpha,nonempty_feasible,simultaneous_upper_bound,threshold,calibration_queries
+100,13,scet,0.1,False,0.0,inf,30
+100,13,scet,0.2,False,0.0,inf,30
+100,13,scet,0.3,True,0.2950419076588973,0.9491352639053,30
+100,13,multivers,0.1,False,0.0,inf,30
+100,13,multivers,0.2,False,0.0,inf,30
+100,13,multivers,0.3,True,0.2950419076588973,0.24579672082628207,30
+100,13,scet_multivers,0.1,False,0.0,inf,30
+100,13,scet_multivers,0.2,False,0.0,inf,30
+100,13,scet_multivers,0.3,True,0.2950419076588973,0.996128106760025,30

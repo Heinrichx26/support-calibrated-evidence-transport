@@ -1,0 +1,4 @@
+Dataset,Candidate,Evidence target,Sentence provenance
+SciFact,Abstract sentence,Annotated evidence; stance groups,Original scientific abstract
+FEVER,Wikipedia sentence,Annotated evidence; claim verdict,June 2017 snapshot
+HoVer,Context sentence,Annotated multi-hop set; claim verdict,Original HotpotQA contexts

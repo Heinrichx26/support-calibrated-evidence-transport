@@ -1,0 +1,13 @@
+Dataset,Seed,Queries,Errors,Rule,Upper bound
+SciFact,13,30,0,Nonempty,0.181
+SciFact,17,30,0,Empty rule,0.000
+SciFact,29,30,0,Empty rule,0.000
+SciFact,7,30,0,Empty rule,0.000
+FEVER,13,1980,0,Empty rule,0.000
+FEVER,17,1980,0,Empty rule,0.000
+FEVER,29,1980,281,Nonempty,0.165
+FEVER,7,1980,0,Empty rule,0.000
+HoVer,13,396,46,Nonempty,0.168
+HoVer,17,396,0,Empty rule,0.000
+HoVer,29,396,0,Empty rule,0.000
+HoVer,7,396,0,Empty rule,0.000

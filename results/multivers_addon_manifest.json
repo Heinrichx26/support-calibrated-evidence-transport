@@ -1,0 +1,1287 @@
+[
+  {
+    "path": "MULTIVERS_ADDITIONAL_EXPERIMENTS.md",
+    "bytes": 1832,
+    "sha256": "c5df11163d7d61e3617c51d23498b9a327e893c6c10d637d3600cf58ba0ff27d"
+  },
+  {
+    "path": "data/multivers_extension_protocol.json",
+    "bytes": 1978,
+    "sha256": "d9bb54d84abcdf1125cbf01326a3531ca141ff273c96cc6a2bec78074ec9e0c4"
+  },
+  {
+    "path": "results/multivers_extension/combination_audit.json",
+    "bytes": 450,
+    "sha256": "f603d28664210e5678857268d50659062c729609a61e776c3f1f757f28599658"
+  },
+  {
+    "path": "results/multivers_extension/context/full/audit.json",
+    "bytes": 506,
+    "sha256": "90bdb4342595ca15b6ea61650a193093763a76c160e2ca42ec63f4a910ababf2"
+  },
+  {
+    "path": "results/multivers_extension/context/full/paired_intervals.csv",
+    "bytes": 1944,
+    "sha256": "2748f2b868335afbc972efd2c1a82648dac42d11609771a3e595f14dfc937a6a"
+  },
+  {
+    "path": "results/multivers_extension/context/full/query_seed13_multivers_full_exact_budget.csv",
+    "bytes": 12272,
+    "sha256": "00b3103b36f379c3ea0eadf3d2b7cbd968eb9b35698f7e87ab64e2470a94891b"
+  },
+  {
+    "path": "results/multivers_extension/context/full/query_seed13_multivers_full_prospective_100.csv",
+    "bytes": 12272,
+    "sha256": "b7f9b950b195809b993255fb3ff4cd534de2537f6b1a3ff0b5d60792784f16e9"
+  },
+  {
+    "path": "results/multivers_extension/context/full/query_seed13_multivers_single_exact_budget.csv",
+    "bytes": 12219,
+    "sha256": "d3824b8cc22cb119dd98c9867a9de2214b45f75fbc2c40aa583dfc6366a6a1cc"
+  },
+  {
+    "path": "results/multivers_extension/context/full/query_seed13_multivers_single_prospective_100.csv",
+    "bytes": 12219,
+    "sha256": "bd3140a38d20d7f8fe87aba1db9bfe06072ff6daf6d57ac6b7a95c78340f282a"
+  },
+  {
+    "path": "results/multivers_extension/context/full/query_seed17_multivers_full_exact_budget.csv",
+    "bytes": 12228,
+    "sha256": "be3de937651d79015ca53adf77180335322a4d21d6113c06be6216420515df02"
+  },
+  {
+    "path": "results/multivers_extension/context/full/query_seed17_multivers_full_prospective_100.csv",
+    "bytes": 12228,
+    "sha256": "c8e72e4fe548f61e5a4c51477ad26b7d3f68119f7bed8bc305a5f8101b086c08"
+  },
+  {
+    "path": "results/multivers_extension/context/full/query_seed17_multivers_single_exact_budget.csv",
+    "bytes": 12098,
+    "sha256": "558da119509b5c0f3987f5a940e8ff0b825eb33ad324155721fe2320c254f562"
+  },
+  {
+    "path": "results/multivers_extension/context/full/query_seed17_multivers_single_prospective_100.csv",
+    "bytes": 12098,
+    "sha256": "b029b216609b4d3893636b998ec08e2c83e76380d746c9b9b814ec765c459a9f"
+  },
+  {
+    "path": "results/multivers_extension/context/full/query_seed29_multivers_full_exact_budget.csv",
+    "bytes": 12284,
+    "sha256": "021483e3b64fb6b7b998985708228cb8f90e5291b0a1fb8acca4f538e974367c"
+  },
+  {
+    "path": "results/multivers_extension/context/full/query_seed29_multivers_full_prospective_100.csv",
+    "bytes": 12284,
+    "sha256": "041f868c253e6a86322437f102b0bb4167a72a9d737ab7e1fdc64eed23f37940"
+  },
+  {
+    "path": "results/multivers_extension/context/full/query_seed29_multivers_single_exact_budget.csv",
+    "bytes": 12279,
+    "sha256": "e470e1a6eea57f5fded523db7bfecf432185946e5cfd377221d273463b5b4341"
+  },
+  {
+    "path": "results/multivers_extension/context/full/query_seed29_multivers_single_prospective_100.csv",
+    "bytes": 12279,
+    "sha256": "783e473ee300c523f874ecd33f1429f1d062acf08260304157063b83335fbae6"
+  },
+  {
+    "path": "results/multivers_extension/context/full/query_seed7_multivers_full_exact_budget.csv",
+    "bytes": 12135,
+    "sha256": "fd8831c9686077b5c0c6581b66c129bc1405d9c047e00e124a74364a95480834"
+  },
+  {
+    "path": "results/multivers_extension/context/full/query_seed7_multivers_full_prospective_100.csv",
+    "bytes": 12135,
+    "sha256": "2905e6b9971f202c17654d79802c0bd26c8f737e8e507e78b05881bfbfa4c248"
+  },
+  {
+    "path": "results/multivers_extension/context/full/query_seed7_multivers_single_exact_budget.csv",
+    "bytes": 12153,
+    "sha256": "b951ce6c195a0ed36e85b5d68f0327d89c52877b1bef75f01c0b07664d27f83f"
+  },
+  {
+    "path": "results/multivers_extension/context/full/query_seed7_multivers_single_prospective_100.csv",
+    "bytes": 12153,
+    "sha256": "6b923ed602fc699cfeca54966f80c40d263c29db207dcd1660b4aad0ac170177"
+  },
+  {
+    "path": "results/multivers_extension/context/full/rules.csv",
+    "bytes": 1330,
+    "sha256": "3aa0b3e706624fb607aa9aff63a2e3b9a84fbb9a5e3f5e517a91eb1ac72c9f2b"
+  },
+  {
+    "path": "results/multivers_extension/context/full/summary.csv",
+    "bytes": 4754,
+    "sha256": "3b473bf683032134440a077a7e98663f6a07ee2923b1a2213e0719d96ffbe1f8"
+  },
+  {
+    "path": "results/multivers_extension/context/smoke/audit.json",
+    "bytes": 506,
+    "sha256": "7f90406f5ad896cc2938378fa62041c3dab4262ff729039f7ea37b427110a65c"
+  },
+  {
+    "path": "results/multivers_extension/context/smoke/query_seed13_multivers_full_exact_budget.csv",
+    "bytes": 892,
+    "sha256": "174844f3b2cfc2fea22334cf4cf96298fea4f4a4affdcee99f70e14a94ac8c88"
+  },
+  {
+    "path": "results/multivers_extension/context/smoke/query_seed13_multivers_full_prospective_100.csv",
+    "bytes": 892,
+    "sha256": "74684e7436227a66bc1e2d3bbb436c72951062502ee36864628f28e9ff150d46"
+  },
+  {
+    "path": "results/multivers_extension/context/smoke/query_seed13_multivers_single_exact_budget.csv",
+    "bytes": 907,
+    "sha256": "e9debb582fcf46bb7eb157fcd474e969611e5774b63ef32ca1f26ac38dade648"
+  },
+  {
+    "path": "results/multivers_extension/context/smoke/query_seed13_multivers_single_prospective_100.csv",
+    "bytes": 907,
+    "sha256": "f94b0073d8babadbf886fec32401659b9da677df003fb594702078ccae14c40a"
+  },
+  {
+    "path": "results/multivers_extension/context/smoke/rules.csv",
+    "bytes": 384,
+    "sha256": "ef981e836c5093cf2ec88ae83a9306517d653488a5a68408b3331d37efd375d4"
+  },
+  {
+    "path": "results/multivers_extension/context/smoke/summary.csv",
+    "bytes": 1007,
+    "sha256": "e52c86867e995ee30e4806d0ee26f3d5042da582f365b75cbfb7e072054fc540"
+  },
+  {
+    "path": "results/multivers_extension/final_audit.json",
+    "bytes": 676,
+    "sha256": "8724646cc13e0a05b1733d1f3eb208a33365c911ac901a4954d1b2779d8ab2a8"
+  },
+  {
+    "path": "results/multivers_extension/inference_single/audit.json",
+    "bytes": 241,
+    "sha256": "df4cc371556714c53d7c842c45e1ec171f47beadc10766a344e381eceb62881a"
+  },
+  {
+    "path": "results/multivers_extension/inference_single/candidate_scores.parquet",
+    "bytes": 294126,
+    "sha256": "8cd40f39b57864abf66af4e496801a0c64050865d3e6da346e4e4b4eb3d1e5d6"
+  },
+  {
+    "path": "results/multivers_extension/inference_single/candidate_scores_smoke.parquet",
+    "bytes": 3222,
+    "sha256": "d3209031753446cb1faed6ce36ce78d84afef14b76c9c81be9408ff33bfaefba"
+  },
+  {
+    "path": "results/multivers_extension/inference_single/model_manifest.json",
+    "bytes": 1477,
+    "sha256": "79bbc83d1167ca21797fd4824c64a3a7ecca4776fd0a5ab3b036ea763a5e104d"
+  },
+  {
+    "path": "results/multivers_extension/inference_single/scores.jsonl",
+    "bytes": 6956757,
+    "sha256": "36cfc9175c2c215527802e37345c67174c29a7f2971117e853046eadd6a1af9d"
+  },
+  {
+    "path": "results/multivers_extension/inference_single/scores_smoke.jsonl",
+    "bytes": 14720,
+    "sha256": "391928c9c0a693305c27e68857faca882555e55c0b59c790685d3d8f09f7afd4"
+  },
+  {
+    "path": "results/multivers_extension/inference_single/smoke_audit.json",
+    "bytes": 235,
+    "sha256": "e7cd57c135fbcdedcfe33f931dce5d982db5607cbafb5aa81c4b7ac07a781a80"
+  },
+  {
+    "path": "results/multivers_extension/k100/audit.json",
+    "bytes": 472,
+    "sha256": "c98bb15430bd307f7508f3abdf71872d361cf81d3c394c82337e738128134ef4"
+  },
+  {
+    "path": "results/multivers_extension/k100/mean_sd.csv",
+    "bytes": 18235,
+    "sha256": "c5f51b2ac7760a1b89dc5f2386e2c9ba2ba1fc2cb8ba68385bab317bf0be4e15"
+  },
+  {
+    "path": "results/multivers_extension/k100/model_seed13.json",
+    "bytes": 363180,
+    "sha256": "6ea860912348b2cb491db752e2787a2ed7ee6ae45b4bd0cbe2ddf10aafb72683"
+  },
+  {
+    "path": "results/multivers_extension/k100/model_seed17.json",
+    "bytes": 362381,
+    "sha256": "49424ed1b50e680b63671077a4ae1dd4ebfcbe49e0dfd0ea74faf7c8796b55db"
+  },
+  {
+    "path": "results/multivers_extension/k100/model_seed29.json",
+    "bytes": 362219,
+    "sha256": "10a27734b0bfa384ffe96a49b4c3179a1b53fc06213e0a35e662adb3763f86e5"
+  },
+  {
+    "path": "results/multivers_extension/k100/model_seed7.json",
+    "bytes": 362003,
+    "sha256": "40be8517e84c2157756a8a9008ba43b434def92158538a533cb759f3a88831d6"
+  },
+  {
+    "path": "results/multivers_extension/k100/paired_intervals.csv",
+    "bytes": 13934,
+    "sha256": "eb036809a8549ae8710ef0cfd3e3ccd3e5307379ce6996a2a0149a8a47466a45"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_multivers_exact_budget.csv",
+    "bytes": 12272,
+    "sha256": "00b3103b36f379c3ea0eadf3d2b7cbd968eb9b35698f7e87ab64e2470a94891b"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_multivers_prospective_100.csv",
+    "bytes": 12272,
+    "sha256": "b7f9b950b195809b993255fb3ff4cd534de2537f6b1a3ff0b5d60792784f16e9"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_multivers_prospective_200.csv",
+    "bytes": 12272,
+    "sha256": "b9e163628ee5ddf0d3cab1e9fc146e58766a6a4d0bad2d64a6893342ba53b3b2"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_multivers_prospective_25.csv",
+    "bytes": 12272,
+    "sha256": "bcce99dd31af06b766747bde9135c466e5131db49dec075b4a549607f0b727ad"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_multivers_prospective_300.csv",
+    "bytes": 12272,
+    "sha256": "ada91887a1a09411048ca8869f2e609181546a7bc922a03829c3b11137ef37e9"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_multivers_prospective_400.csv",
+    "bytes": 12272,
+    "sha256": "f0ed41c57bc65ce67d3f4d2209984f8d809555fb291c04be520ac4fee2d79986"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_multivers_prospective_50.csv",
+    "bytes": 12272,
+    "sha256": "042fba12d36a5c9ca4b1b8359a118c8951e75279e5b7989f3ad125b41124adb3"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_multivers_prospective_500.csv",
+    "bytes": 12272,
+    "sha256": "12338dfea7b22e13213cf747a003992a04e65dd6459af7ec36eb92702d261452"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_multivers_risk_0.1.csv",
+    "bytes": 12272,
+    "sha256": "dd744b8f406688e73da1441e799a67dda7410d285262590cd3e518e3941f331f"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_multivers_risk_0.2.csv",
+    "bytes": 12272,
+    "sha256": "dd744b8f406688e73da1441e799a67dda7410d285262590cd3e518e3941f331f"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_multivers_risk_0.3.csv",
+    "bytes": 12272,
+    "sha256": "120a8e1b61abcdee09c79b60c6ebb3550f0c4ca76c94770234ef55f126f38722"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_scet_exact_budget.csv",
+    "bytes": 12417,
+    "sha256": "0be2ecf05b05c83834c08651c710e750e8678c0aab41a0d0fae69bbca7d86b3f"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_scet_multivers_exact_budget.csv",
+    "bytes": 12272,
+    "sha256": "00b3103b36f379c3ea0eadf3d2b7cbd968eb9b35698f7e87ab64e2470a94891b"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_scet_multivers_prospective_100.csv",
+    "bytes": 12272,
+    "sha256": "b7f9b950b195809b993255fb3ff4cd534de2537f6b1a3ff0b5d60792784f16e9"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_scet_multivers_prospective_200.csv",
+    "bytes": 12272,
+    "sha256": "b9e163628ee5ddf0d3cab1e9fc146e58766a6a4d0bad2d64a6893342ba53b3b2"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_scet_multivers_prospective_25.csv",
+    "bytes": 12272,
+    "sha256": "bcce99dd31af06b766747bde9135c466e5131db49dec075b4a549607f0b727ad"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_scet_multivers_prospective_300.csv",
+    "bytes": 12272,
+    "sha256": "ada91887a1a09411048ca8869f2e609181546a7bc922a03829c3b11137ef37e9"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_scet_multivers_prospective_400.csv",
+    "bytes": 12272,
+    "sha256": "f0ed41c57bc65ce67d3f4d2209984f8d809555fb291c04be520ac4fee2d79986"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_scet_multivers_prospective_50.csv",
+    "bytes": 12272,
+    "sha256": "042fba12d36a5c9ca4b1b8359a118c8951e75279e5b7989f3ad125b41124adb3"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_scet_multivers_prospective_500.csv",
+    "bytes": 12272,
+    "sha256": "12338dfea7b22e13213cf747a003992a04e65dd6459af7ec36eb92702d261452"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_scet_multivers_risk_0.1.csv",
+    "bytes": 12272,
+    "sha256": "dd744b8f406688e73da1441e799a67dda7410d285262590cd3e518e3941f331f"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_scet_multivers_risk_0.2.csv",
+    "bytes": 12272,
+    "sha256": "dd744b8f406688e73da1441e799a67dda7410d285262590cd3e518e3941f331f"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_scet_multivers_risk_0.3.csv",
+    "bytes": 12272,
+    "sha256": "120a8e1b61abcdee09c79b60c6ebb3550f0c4ca76c94770234ef55f126f38722"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_scet_prospective_100.csv",
+    "bytes": 12417,
+    "sha256": "f00d6414d1ca5602bbc8fdb7f87b79f53624bc0f51a93d09268e6ed638b6395d"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_scet_prospective_200.csv",
+    "bytes": 12417,
+    "sha256": "e01d9b59f18dda599dd8f0d1ac4594475ae08574b4fdf69df4b276d652ae5455"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_scet_prospective_25.csv",
+    "bytes": 12417,
+    "sha256": "cdc6df6a2f20827451d5d326bb3f83139226e4dfee30882b9b11b6fb2dfc8ff2"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_scet_prospective_300.csv",
+    "bytes": 12417,
+    "sha256": "8f0e65190beb0db70e5eb07df842fcb047c220163327ec92cd3be99b22e06d65"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_scet_prospective_400.csv",
+    "bytes": 12417,
+    "sha256": "9a13f96f782aa35779f9094cf82fb8e8b9273462283146fda2e47fb4b1256f67"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_scet_prospective_50.csv",
+    "bytes": 12417,
+    "sha256": "ce28a7febcac90c9a0cc8f4c6ef0f8dd4a2f2a7c675dca0e5b23524eef4ef1fd"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_scet_prospective_500.csv",
+    "bytes": 12417,
+    "sha256": "481d3190c6ea955a9e60ff1777328b62bed5bc9d6f0966b75283eee71f8607f0"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_scet_risk_0.1.csv",
+    "bytes": 12417,
+    "sha256": "c9f7fcc37523679167f4b08d04a0916b759782fbc12078f47f7f1d3674f24a81"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_scet_risk_0.2.csv",
+    "bytes": 12417,
+    "sha256": "c9f7fcc37523679167f4b08d04a0916b759782fbc12078f47f7f1d3674f24a81"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed13_scet_risk_0.3.csv",
+    "bytes": 12417,
+    "sha256": "c4cf4725423191558adb0ee293b233f0f007b8d79ab09278ba3c5011734d9ac3"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_multivers_exact_budget.csv",
+    "bytes": 12228,
+    "sha256": "be3de937651d79015ca53adf77180335322a4d21d6113c06be6216420515df02"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_multivers_prospective_100.csv",
+    "bytes": 12228,
+    "sha256": "c8e72e4fe548f61e5a4c51477ad26b7d3f68119f7bed8bc305a5f8101b086c08"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_multivers_prospective_200.csv",
+    "bytes": 12228,
+    "sha256": "e15775c193a004684ada1a1625334201d53fb299ee8aedc78aaffc240d90682d"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_multivers_prospective_25.csv",
+    "bytes": 12228,
+    "sha256": "13957c6e13728886cc229cbf5ccc550110567ec66702f10d687857c4c1914da0"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_multivers_prospective_300.csv",
+    "bytes": 12228,
+    "sha256": "14178d8ebad96d67f78868f2fef54fb73f7697996086bfa5213690b186850d22"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_multivers_prospective_400.csv",
+    "bytes": 12228,
+    "sha256": "1a002010ca1890724d5f4b49e8b58bbad131a53f54349a099d621efe824e3603"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_multivers_prospective_50.csv",
+    "bytes": 12228,
+    "sha256": "6d0a72b2a753d60549ddbb3bd0aaf3921038a9dc7e07bf73297ef64b74dd86d5"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_multivers_prospective_500.csv",
+    "bytes": 12228,
+    "sha256": "1cdf06911a200e6dc8341d1a8b525d8c3aafa7c34e369f8a211ba5753146e32c"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_multivers_risk_0.1.csv",
+    "bytes": 12228,
+    "sha256": "279f2b1c7731cd4b7907961cec7ec1246428c03c9ca62c09698f13757f11798a"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_multivers_risk_0.2.csv",
+    "bytes": 12228,
+    "sha256": "279f2b1c7731cd4b7907961cec7ec1246428c03c9ca62c09698f13757f11798a"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_multivers_risk_0.3.csv",
+    "bytes": 12228,
+    "sha256": "55da5d49b31cdd6edcf60ff137ad8450077679d79c29f54447090cc6ad670f42"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_scet_exact_budget.csv",
+    "bytes": 12534,
+    "sha256": "e173b3b0728c550e1a063704dbd339455c0cf642dca7b5a091a3edddb47a57d2"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_scet_multivers_exact_budget.csv",
+    "bytes": 12228,
+    "sha256": "be3de937651d79015ca53adf77180335322a4d21d6113c06be6216420515df02"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_scet_multivers_prospective_100.csv",
+    "bytes": 12228,
+    "sha256": "c8e72e4fe548f61e5a4c51477ad26b7d3f68119f7bed8bc305a5f8101b086c08"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_scet_multivers_prospective_200.csv",
+    "bytes": 12228,
+    "sha256": "e15775c193a004684ada1a1625334201d53fb299ee8aedc78aaffc240d90682d"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_scet_multivers_prospective_25.csv",
+    "bytes": 12228,
+    "sha256": "13957c6e13728886cc229cbf5ccc550110567ec66702f10d687857c4c1914da0"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_scet_multivers_prospective_300.csv",
+    "bytes": 12228,
+    "sha256": "14178d8ebad96d67f78868f2fef54fb73f7697996086bfa5213690b186850d22"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_scet_multivers_prospective_400.csv",
+    "bytes": 12228,
+    "sha256": "1a002010ca1890724d5f4b49e8b58bbad131a53f54349a099d621efe824e3603"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_scet_multivers_prospective_50.csv",
+    "bytes": 12228,
+    "sha256": "6d0a72b2a753d60549ddbb3bd0aaf3921038a9dc7e07bf73297ef64b74dd86d5"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_scet_multivers_prospective_500.csv",
+    "bytes": 12228,
+    "sha256": "1cdf06911a200e6dc8341d1a8b525d8c3aafa7c34e369f8a211ba5753146e32c"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_scet_multivers_risk_0.1.csv",
+    "bytes": 12228,
+    "sha256": "279f2b1c7731cd4b7907961cec7ec1246428c03c9ca62c09698f13757f11798a"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_scet_multivers_risk_0.2.csv",
+    "bytes": 12228,
+    "sha256": "279f2b1c7731cd4b7907961cec7ec1246428c03c9ca62c09698f13757f11798a"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_scet_multivers_risk_0.3.csv",
+    "bytes": 12228,
+    "sha256": "55da5d49b31cdd6edcf60ff137ad8450077679d79c29f54447090cc6ad670f42"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_scet_prospective_100.csv",
+    "bytes": 12534,
+    "sha256": "290e88b40621bfbd2097c67f4c86f1cd3f8cc8fd80cbee590f66e3db92d2a0c0"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_scet_prospective_200.csv",
+    "bytes": 12534,
+    "sha256": "cf948e13c4bab32b840c7d10ccdae7d30b272f3b9f4c4a7f8d99d394f0f36a67"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_scet_prospective_25.csv",
+    "bytes": 12534,
+    "sha256": "ed6341416d880639939d52dac2193b834a02a6182f2ee26d2f9a33262336dcbc"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_scet_prospective_300.csv",
+    "bytes": 12534,
+    "sha256": "ccb316734427ce34c425d81cd7077f86b32eab1e64b9514d31d2b0e2481e5846"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_scet_prospective_400.csv",
+    "bytes": 12534,
+    "sha256": "c1981ced2d28c541679a76f9b7df54324d635987c5588b66492dab16d914be53"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_scet_prospective_50.csv",
+    "bytes": 12534,
+    "sha256": "f6d14a01878dc155a9191f8e4261ac4e3749541aa9de86ca9c2976f029d12555"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_scet_prospective_500.csv",
+    "bytes": 12534,
+    "sha256": "33e39308b0af46fd4090257a29d753d1b5a2e2b1faeec8b008153e35587c6cae"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_scet_risk_0.1.csv",
+    "bytes": 12534,
+    "sha256": "fe73c980726a30f8d839532b28801b6deed1d4d20ef02ddd6f831dea193cda46"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_scet_risk_0.2.csv",
+    "bytes": 12534,
+    "sha256": "fe73c980726a30f8d839532b28801b6deed1d4d20ef02ddd6f831dea193cda46"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed17_scet_risk_0.3.csv",
+    "bytes": 12534,
+    "sha256": "bf896fcfbea03c216eab8b1b9325828345369a50ef6557bf14183cea9b7c0c6b"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_multivers_exact_budget.csv",
+    "bytes": 12284,
+    "sha256": "021483e3b64fb6b7b998985708228cb8f90e5291b0a1fb8acca4f538e974367c"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_multivers_prospective_100.csv",
+    "bytes": 12284,
+    "sha256": "041f868c253e6a86322437f102b0bb4167a72a9d737ab7e1fdc64eed23f37940"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_multivers_prospective_200.csv",
+    "bytes": 12284,
+    "sha256": "87126bff00de73fc6decd98a5fa22eedfdf12a7d72b566fdb73394664ac8718e"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_multivers_prospective_25.csv",
+    "bytes": 12284,
+    "sha256": "5319d82ab74e1eb6212125b930b8b6a3d9b0ea8f6d3288f7bebe7abc7d22b4c6"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_multivers_prospective_300.csv",
+    "bytes": 12284,
+    "sha256": "e8182dcf4c5d846e389b821106d4b1eaff0797120081991e44a60fc16ecb6673"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_multivers_prospective_400.csv",
+    "bytes": 12284,
+    "sha256": "3c1c3f716332d900ee3cc0f22d5d67f1632d8f0974ff05dd309adcc6942dd498"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_multivers_prospective_50.csv",
+    "bytes": 12284,
+    "sha256": "fabbc01651170335b76b3df6ecbf5bb0d2ec59145a8e8c9bc8677f40e55613cf"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_multivers_prospective_500.csv",
+    "bytes": 12284,
+    "sha256": "9bdf9a068a9e2e8b4327c1b80320971c2a59e3451d94f3b6f52b66eff786a56b"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_multivers_risk_0.1.csv",
+    "bytes": 12284,
+    "sha256": "4b0786bedb158e943376e1a25d8964f6203e2ae444d91c0dfeebb2666ce18e7d"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_multivers_risk_0.2.csv",
+    "bytes": 12284,
+    "sha256": "4b0786bedb158e943376e1a25d8964f6203e2ae444d91c0dfeebb2666ce18e7d"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_multivers_risk_0.3.csv",
+    "bytes": 12284,
+    "sha256": "dc33454cc99faad78b8b777367e82285f39373962d32bf968728b1a569a3037d"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_scet_exact_budget.csv",
+    "bytes": 12395,
+    "sha256": "b2316c0f373253d79328f6b3a9030493dfb8d4c8d22a8d881346c0494b32d147"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_scet_multivers_exact_budget.csv",
+    "bytes": 12284,
+    "sha256": "021483e3b64fb6b7b998985708228cb8f90e5291b0a1fb8acca4f538e974367c"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_scet_multivers_prospective_100.csv",
+    "bytes": 12284,
+    "sha256": "041f868c253e6a86322437f102b0bb4167a72a9d737ab7e1fdc64eed23f37940"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_scet_multivers_prospective_200.csv",
+    "bytes": 12284,
+    "sha256": "87126bff00de73fc6decd98a5fa22eedfdf12a7d72b566fdb73394664ac8718e"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_scet_multivers_prospective_25.csv",
+    "bytes": 12284,
+    "sha256": "5319d82ab74e1eb6212125b930b8b6a3d9b0ea8f6d3288f7bebe7abc7d22b4c6"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_scet_multivers_prospective_300.csv",
+    "bytes": 12284,
+    "sha256": "e8182dcf4c5d846e389b821106d4b1eaff0797120081991e44a60fc16ecb6673"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_scet_multivers_prospective_400.csv",
+    "bytes": 12284,
+    "sha256": "3c1c3f716332d900ee3cc0f22d5d67f1632d8f0974ff05dd309adcc6942dd498"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_scet_multivers_prospective_50.csv",
+    "bytes": 12284,
+    "sha256": "fabbc01651170335b76b3df6ecbf5bb0d2ec59145a8e8c9bc8677f40e55613cf"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_scet_multivers_prospective_500.csv",
+    "bytes": 12284,
+    "sha256": "9bdf9a068a9e2e8b4327c1b80320971c2a59e3451d94f3b6f52b66eff786a56b"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_scet_multivers_risk_0.1.csv",
+    "bytes": 12284,
+    "sha256": "4b0786bedb158e943376e1a25d8964f6203e2ae444d91c0dfeebb2666ce18e7d"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_scet_multivers_risk_0.2.csv",
+    "bytes": 12284,
+    "sha256": "4b0786bedb158e943376e1a25d8964f6203e2ae444d91c0dfeebb2666ce18e7d"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_scet_multivers_risk_0.3.csv",
+    "bytes": 12284,
+    "sha256": "dc33454cc99faad78b8b777367e82285f39373962d32bf968728b1a569a3037d"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_scet_prospective_100.csv",
+    "bytes": 12395,
+    "sha256": "265707f9769776663cda85be4db7e1e9e3099fc18d300f2cdc0483047e0724c3"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_scet_prospective_200.csv",
+    "bytes": 12395,
+    "sha256": "ce7159b59d5cb33210faba1e463bb57be408218dcfeeca202cd6bf933004cf3a"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_scet_prospective_25.csv",
+    "bytes": 12395,
+    "sha256": "19f59aa3c54ca631041ce2890ab1df239902c57463e0cb5b84cda278fe549f48"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_scet_prospective_300.csv",
+    "bytes": 12395,
+    "sha256": "64fc09d979c9fc4af498f52d57406a0be46906ded3315499f223907a467bfdc9"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_scet_prospective_400.csv",
+    "bytes": 12395,
+    "sha256": "6fa69e33c12649f750717a32d6b2ec195d8b739b427030a28a95c504c6a961b7"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_scet_prospective_50.csv",
+    "bytes": 12395,
+    "sha256": "8322cbb0b045e02822594cf71a0ba4357f0994538d5233ee0710b092463f5a86"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_scet_prospective_500.csv",
+    "bytes": 12395,
+    "sha256": "89930e6353fc3ad0284b7c6fdd671f45b3671984e5a268527afb47b841c51b82"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_scet_risk_0.1.csv",
+    "bytes": 12395,
+    "sha256": "b36fff838fbbdf6f2066669fbd396f9e484165efda70d520f49bd122e91e7fc8"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_scet_risk_0.2.csv",
+    "bytes": 12395,
+    "sha256": "b36fff838fbbdf6f2066669fbd396f9e484165efda70d520f49bd122e91e7fc8"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed29_scet_risk_0.3.csv",
+    "bytes": 12395,
+    "sha256": "dbf3a88c25927af729ff9d2828a3990ae05e0072648ae7768370de0ef3d0ce59"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_multivers_exact_budget.csv",
+    "bytes": 12135,
+    "sha256": "fd8831c9686077b5c0c6581b66c129bc1405d9c047e00e124a74364a95480834"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_multivers_prospective_100.csv",
+    "bytes": 12135,
+    "sha256": "2905e6b9971f202c17654d79802c0bd26c8f737e8e507e78b05881bfbfa4c248"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_multivers_prospective_200.csv",
+    "bytes": 12135,
+    "sha256": "eb855b74959c323c20a71dfeba3773bb1a30d84d5442dd7d379bc2d9ef0fcb4b"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_multivers_prospective_25.csv",
+    "bytes": 12135,
+    "sha256": "cbdbdf64cd8e402db90667f9efba228cd8c7249872cb24d008428f63d596cbd2"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_multivers_prospective_300.csv",
+    "bytes": 12135,
+    "sha256": "a004611ca275142ac1a3bf2ac4e021d8cf2caf4fb662c1509207e0623af0b26a"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_multivers_prospective_400.csv",
+    "bytes": 12135,
+    "sha256": "7d49a412d2ddc724262ad02c83ef7e77a601ed9767fdc58051ee6ba99866f77b"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_multivers_prospective_50.csv",
+    "bytes": 12135,
+    "sha256": "2214c96d60b858633de7957f4db1cf752fd3bb934c9b490678ad58b91781fcdb"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_multivers_prospective_500.csv",
+    "bytes": 12135,
+    "sha256": "a8ea60806e1ecbed79b884bb92decdd117ac4eb8b0bd05f77e1065677e1dc091"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_multivers_risk_0.1.csv",
+    "bytes": 12135,
+    "sha256": "7864937e9eac9155ec552148f577ff220be469faf2d5e591aa823d870f0affad"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_multivers_risk_0.2.csv",
+    "bytes": 12135,
+    "sha256": "7864937e9eac9155ec552148f577ff220be469faf2d5e591aa823d870f0affad"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_multivers_risk_0.3.csv",
+    "bytes": 12135,
+    "sha256": "54bbdcf62f214bcca9f749947f68dd30ea87c9e9f1a815b6fbc080b94bdc086b"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_scet_exact_budget.csv",
+    "bytes": 12434,
+    "sha256": "a71f395878044e98912e8fb97768a1dc0f0a2ef494bc75337a0f42ded5ec2a8c"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_scet_multivers_exact_budget.csv",
+    "bytes": 12135,
+    "sha256": "fd8831c9686077b5c0c6581b66c129bc1405d9c047e00e124a74364a95480834"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_scet_multivers_prospective_100.csv",
+    "bytes": 12135,
+    "sha256": "2905e6b9971f202c17654d79802c0bd26c8f737e8e507e78b05881bfbfa4c248"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_scet_multivers_prospective_200.csv",
+    "bytes": 12135,
+    "sha256": "eb855b74959c323c20a71dfeba3773bb1a30d84d5442dd7d379bc2d9ef0fcb4b"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_scet_multivers_prospective_25.csv",
+    "bytes": 12135,
+    "sha256": "cbdbdf64cd8e402db90667f9efba228cd8c7249872cb24d008428f63d596cbd2"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_scet_multivers_prospective_300.csv",
+    "bytes": 12135,
+    "sha256": "a004611ca275142ac1a3bf2ac4e021d8cf2caf4fb662c1509207e0623af0b26a"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_scet_multivers_prospective_400.csv",
+    "bytes": 12135,
+    "sha256": "7d49a412d2ddc724262ad02c83ef7e77a601ed9767fdc58051ee6ba99866f77b"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_scet_multivers_prospective_50.csv",
+    "bytes": 12135,
+    "sha256": "2214c96d60b858633de7957f4db1cf752fd3bb934c9b490678ad58b91781fcdb"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_scet_multivers_prospective_500.csv",
+    "bytes": 12135,
+    "sha256": "a8ea60806e1ecbed79b884bb92decdd117ac4eb8b0bd05f77e1065677e1dc091"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_scet_multivers_risk_0.1.csv",
+    "bytes": 12135,
+    "sha256": "7864937e9eac9155ec552148f577ff220be469faf2d5e591aa823d870f0affad"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_scet_multivers_risk_0.2.csv",
+    "bytes": 12135,
+    "sha256": "7864937e9eac9155ec552148f577ff220be469faf2d5e591aa823d870f0affad"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_scet_multivers_risk_0.3.csv",
+    "bytes": 12135,
+    "sha256": "54bbdcf62f214bcca9f749947f68dd30ea87c9e9f1a815b6fbc080b94bdc086b"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_scet_prospective_100.csv",
+    "bytes": 12434,
+    "sha256": "4b79517c5fddbe7b1f992fd2103d49fdef93914b29a059e5e2269ab4933fa352"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_scet_prospective_200.csv",
+    "bytes": 12434,
+    "sha256": "de75b142fef7e6393cdd09015a58bb610f66736172ccf4c20b836802b5ca3421"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_scet_prospective_25.csv",
+    "bytes": 12434,
+    "sha256": "02179d7b36b7cbb20fa04ec9fdcd09da324d5a2c60ebf0465d68821cfde4d834"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_scet_prospective_300.csv",
+    "bytes": 12434,
+    "sha256": "6311ce4b74ccfd2178a77838196032d20aededac4c454f32c3261e1a8d8e2227"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_scet_prospective_400.csv",
+    "bytes": 12434,
+    "sha256": "befa846cba389a2d85d360882e0db40bb7cf8d76ee9d1da07307a7ff9fc0bdab"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_scet_prospective_50.csv",
+    "bytes": 12434,
+    "sha256": "14a850817ab2b253d7798bd54b752731ed590a3aff84b677a5c4d4c2bc685ac9"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_scet_prospective_500.csv",
+    "bytes": 12434,
+    "sha256": "bd934746059ac54ab6591fb257f24bdceef7947a81795a0ad750fcd9125189ab"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_scet_risk_0.1.csv",
+    "bytes": 12434,
+    "sha256": "9ee504c84624093a88437983f9fd0cc21f0420836a559b61a32f3b219bd4c2e9"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_scet_risk_0.2.csv",
+    "bytes": 12434,
+    "sha256": "9ee504c84624093a88437983f9fd0cc21f0420836a559b61a32f3b219bd4c2e9"
+  },
+  {
+    "path": "results/multivers_extension/k100/query_seed7_scet_risk_0.3.csv",
+    "bytes": 12434,
+    "sha256": "105af1c2d2feb90762c198fa55089ee150cd222a7d8e03f32282f14112a1da55"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_rules.csv",
+    "bytes": 1831,
+    "sha256": "ccf7bd8d47e69d9e535756fe550599f6d881a5437e4c4227d0b86c1bcb63d5e5"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed13_multivers_0.1.json",
+    "bytes": 4587,
+    "sha256": "3252f52f98abfc6ea67d530fd62bab483e0d072c5f1bcf01b00e37b7dfc50c8a"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed13_multivers_0.2.json",
+    "bytes": 4592,
+    "sha256": "da751a24de87f36aae20c0412969749bffab5b68e992056232cbc7d209620ca2"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed13_multivers_0.3.json",
+    "bytes": 4609,
+    "sha256": "081bb22c1e3d64d674ad190d6ade1011cfb4accd7152e4cba4b0e08279ab9591"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed13_scet_0.1.json",
+    "bytes": 4515,
+    "sha256": "86782f965946d36a102ab33a3fbaa0cfdb0361f3cdc8baa649329395a6b84543"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed13_scet_0.2.json",
+    "bytes": 4522,
+    "sha256": "f0488cd8033f0432d827f6b8eefe435a1e0f1425c0ab209b9dddf4581700872f"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed13_scet_0.3.json",
+    "bytes": 4538,
+    "sha256": "8dd3d494d2f56a263edc68302af89c1edecef9ecd40105239ad135df0b39f35b"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed13_scet_multivers_0.1.json",
+    "bytes": 4515,
+    "sha256": "9e2c3c487571155bcf1635eb6b6b227e5ef8e1f13e391771c51729b978cc4b86"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed13_scet_multivers_0.2.json",
+    "bytes": 4520,
+    "sha256": "3bcf6d73f5ab31a2adcbe5c58277ccdaad9d583f8a5196152265a7dcfb3099f8"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed13_scet_multivers_0.3.json",
+    "bytes": 4537,
+    "sha256": "d1964be0bc281edab11fd620c5b50877466acb5182ca17378d6eac8f6e28540b"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed17_multivers_0.1.json",
+    "bytes": 4557,
+    "sha256": "537f386b500ab735aba75228ef4534a2ce64a0299db6bbe55a1b26c7eb19b773"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed17_multivers_0.2.json",
+    "bytes": 4604,
+    "sha256": "a560e62aca26c4b9c0bfafc04f7eca0cf6948fc3cc5e91b877bb65ec9f9750c8"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed17_multivers_0.3.json",
+    "bytes": 4618,
+    "sha256": "48b9048632f6d6245ef37c4105ee1750e81ce2670e9f5f751d7712ceee82222c"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed17_scet_0.1.json",
+    "bytes": 4434,
+    "sha256": "a466a0be57e152cb534340ee01a0a1a16528276adfc6c36229859a1f9f685c7f"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed17_scet_0.2.json",
+    "bytes": 4530,
+    "sha256": "91c8568e239911105a12de6f3d88bd59ce0839b75a69c5b2f7cfaccfb45cf117"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed17_scet_0.3.json",
+    "bytes": 4547,
+    "sha256": "d7faa54823c6b5b283312dcc5c62774e4a7be16928bcaafccfb0f8f258c6a582"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed17_scet_multivers_0.1.json",
+    "bytes": 4471,
+    "sha256": "04b6cfc56c44292792efff3d0a69879df73ce75bbcfbe3bfd24185d23ea664f4"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed17_scet_multivers_0.2.json",
+    "bytes": 4518,
+    "sha256": "6ce58498b7ffe25c9ef3d6c1e73734e343bb8030cabd9b5f664aaa0fe75a70b6"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed17_scet_multivers_0.3.json",
+    "bytes": 4532,
+    "sha256": "17e971efef9120273a2a3f2d543520d8fcf2a6b8c62df1a2d65879ef620a25a6"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed29_multivers_0.1.json",
+    "bytes": 4610,
+    "sha256": "a6df516a3c60ec1a61c3424dff0448cdf965d6052c21bdc59cc656b6e4a2eb8a"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed29_multivers_0.2.json",
+    "bytes": 4616,
+    "sha256": "751bc13c1c1c636066b3957a12de9f914c8648533f1ea65199ad1fcc5f607b8e"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed29_multivers_0.3.json",
+    "bytes": 4634,
+    "sha256": "ff5475a739a88dbabcbb10d890219bd1d91d5a3d5830d2ffec79d1116f8c06ad"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed29_scet_0.1.json",
+    "bytes": 4535,
+    "sha256": "b6b9ca115aefe51abfa00685812f83653548ef147cc2ef34518cf1643ad605ea"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed29_scet_0.2.json",
+    "bytes": 4541,
+    "sha256": "8de8ba71b7a48305d7930b703fce0262cac531004ab85a17a73e409d147e88b7"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed29_scet_0.3.json",
+    "bytes": 4556,
+    "sha256": "b075afed66ed7211ebdcb93970b7ca35df992a6a9222ab43fe1c2ce91c4deff8"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed29_scet_multivers_0.1.json",
+    "bytes": 4531,
+    "sha256": "076eae748ccacd8012f2c72485e3f4e9d42d6282206424c9d6efcea9583e9bf1"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed29_scet_multivers_0.2.json",
+    "bytes": 4537,
+    "sha256": "27bc3a54ff5984619131f3a66e47f3b078c7702c100f493516e92405c0ad6e0f"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed29_scet_multivers_0.3.json",
+    "bytes": 4555,
+    "sha256": "6886b2cd3004de83b9a691d6aa0952f20c03eea59b90ac31362cc5f3c8c58962"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed7_multivers_0.1.json",
+    "bytes": 4592,
+    "sha256": "2d40cc09a46842d48cb6b23ee3d6e500911598809f3847fb9561bd11f8ebe08a"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed7_multivers_0.2.json",
+    "bytes": 4598,
+    "sha256": "c2e5673634c7f7b313abf3b5b91ce3b45c8005e825176621ee6e03ae6f14f44f"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed7_multivers_0.3.json",
+    "bytes": 4617,
+    "sha256": "4e6dda947ed4d622608e25f0a5fe5eb0cc07abfdf7d98a6c1ebc2f7f8f083888"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed7_scet_0.1.json",
+    "bytes": 4514,
+    "sha256": "a3199b21d5693028d38183d11c91e4d336da4abbaed991fa4f6efbb407949094"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed7_scet_0.2.json",
+    "bytes": 4522,
+    "sha256": "f2bcd863ce04aeacd254c414c0e50139286bd2a59f2505d186d368914f632fde"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed7_scet_0.3.json",
+    "bytes": 4540,
+    "sha256": "885b54d9c5a6047c8dfd170b29800b70d2082b04b1c2b0fd70f56afd2fc0e215"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed7_scet_multivers_0.1.json",
+    "bytes": 4527,
+    "sha256": "4a72994ae0902bf0c03fdb5a92762f2964d9112ab478f25ad10eff3f4e45e8e1"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed7_scet_multivers_0.2.json",
+    "bytes": 4533,
+    "sha256": "2895b31d3b5bbe861a463d2a24c8c7d2da26900c3360e9f03b6e90e2c39d9bd6"
+  },
+  {
+    "path": "results/multivers_extension/k100/risk_seed7_scet_multivers_0.3.json",
+    "bytes": 4552,
+    "sha256": "0c85878e9055a669e9362a5ab6f5b639df4f214c13bc87e019dd5e02f4142394"
+  },
+  {
+    "path": "results/multivers_extension/k100/selected_forms.csv",
+    "bytes": 259,
+    "sha256": "d568413397cb96cfc338ea71e497fda6bbeeb5e192eb1722ffaac414206f7d3f"
+  },
+  {
+    "path": "results/multivers_extension/k100/summary.csv",
+    "bytes": 33208,
+    "sha256": "8f146990b09bb1208bed9dc4e46bce2c0a248fab67637be809cdaa9de4f8d681"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/audit.json",
+    "bytes": 472,
+    "sha256": "8b096ab46010cc80919cc7ef87af86c2d1a5f6838b8ce499dab31e4e706cc117"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/mean_sd.csv",
+    "bytes": 3265,
+    "sha256": "46c5daefc942ae640e679a28f1e64726ed83605b049908697d5a5ce129d117b8"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/model_seed13.json",
+    "bytes": 360775,
+    "sha256": "48eda6ec012d2cd91c75d6301938b55fc9600fb340a2117392b06f606a3e6923"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/query_seed13_multivers_exact_budget.csv",
+    "bytes": 892,
+    "sha256": "174844f3b2cfc2fea22334cf4cf96298fea4f4a4affdcee99f70e14a94ac8c88"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/query_seed13_multivers_prospective_100.csv",
+    "bytes": 892,
+    "sha256": "74684e7436227a66bc1e2d3bbb436c72951062502ee36864628f28e9ff150d46"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/query_seed13_multivers_risk_0.1.csv",
+    "bytes": 892,
+    "sha256": "03f40622464324160bbbc0522cdb8a5276ea50db57190880fb03973d17194912"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/query_seed13_multivers_risk_0.2.csv",
+    "bytes": 892,
+    "sha256": "03f40622464324160bbbc0522cdb8a5276ea50db57190880fb03973d17194912"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/query_seed13_multivers_risk_0.3.csv",
+    "bytes": 892,
+    "sha256": "9cb294ef8417df1cae1b1176ffe387a1b550f0fab054212a724bfdaa8dffb0f3"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/query_seed13_scet_exact_budget.csv",
+    "bytes": 951,
+    "sha256": "97f98790960257d97b8e24e8d82e0b8bab806d764d834eac4616f35854ccfe32"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/query_seed13_scet_multivers_exact_budget.csv",
+    "bytes": 892,
+    "sha256": "174844f3b2cfc2fea22334cf4cf96298fea4f4a4affdcee99f70e14a94ac8c88"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/query_seed13_scet_multivers_prospective_100.csv",
+    "bytes": 892,
+    "sha256": "74684e7436227a66bc1e2d3bbb436c72951062502ee36864628f28e9ff150d46"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/query_seed13_scet_multivers_risk_0.1.csv",
+    "bytes": 892,
+    "sha256": "03f40622464324160bbbc0522cdb8a5276ea50db57190880fb03973d17194912"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/query_seed13_scet_multivers_risk_0.2.csv",
+    "bytes": 892,
+    "sha256": "03f40622464324160bbbc0522cdb8a5276ea50db57190880fb03973d17194912"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/query_seed13_scet_multivers_risk_0.3.csv",
+    "bytes": 892,
+    "sha256": "9cb294ef8417df1cae1b1176ffe387a1b550f0fab054212a724bfdaa8dffb0f3"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/query_seed13_scet_prospective_100.csv",
+    "bytes": 951,
+    "sha256": "1f382f5931cf3736d36768256e966ef99c2a0a135a153206d00e11dab0fcc280"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/query_seed13_scet_risk_0.1.csv",
+    "bytes": 951,
+    "sha256": "886b677e71e01cee207e400ff7286bdc7811972bc8c3e2e7844fc916e280019e"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/query_seed13_scet_risk_0.2.csv",
+    "bytes": 951,
+    "sha256": "886b677e71e01cee207e400ff7286bdc7811972bc8c3e2e7844fc916e280019e"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/query_seed13_scet_risk_0.3.csv",
+    "bytes": 951,
+    "sha256": "5f010a2a93ec4d9cc28eefc1b3e6dc33d43274e89df81d0b6adebe3b4b92de7b"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/risk_rules.csv",
+    "bytes": 532,
+    "sha256": "a53a636f8c23f2a8df21b671b1d9112cfd8de9b2698c03e3b39540747dc29fac"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/risk_seed13_multivers_0.1.json",
+    "bytes": 4587,
+    "sha256": "3252f52f98abfc6ea67d530fd62bab483e0d072c5f1bcf01b00e37b7dfc50c8a"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/risk_seed13_multivers_0.2.json",
+    "bytes": 4592,
+    "sha256": "da751a24de87f36aae20c0412969749bffab5b68e992056232cbc7d209620ca2"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/risk_seed13_multivers_0.3.json",
+    "bytes": 4609,
+    "sha256": "081bb22c1e3d64d674ad190d6ade1011cfb4accd7152e4cba4b0e08279ab9591"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/risk_seed13_scet_0.1.json",
+    "bytes": 4515,
+    "sha256": "86782f965946d36a102ab33a3fbaa0cfdb0361f3cdc8baa649329395a6b84543"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/risk_seed13_scet_0.2.json",
+    "bytes": 4522,
+    "sha256": "f0488cd8033f0432d827f6b8eefe435a1e0f1425c0ab209b9dddf4581700872f"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/risk_seed13_scet_0.3.json",
+    "bytes": 4538,
+    "sha256": "8dd3d494d2f56a263edc68302af89c1edecef9ecd40105239ad135df0b39f35b"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/risk_seed13_scet_multivers_0.1.json",
+    "bytes": 4515,
+    "sha256": "9e2c3c487571155bcf1635eb6b6b227e5ef8e1f13e391771c51729b978cc4b86"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/risk_seed13_scet_multivers_0.2.json",
+    "bytes": 4520,
+    "sha256": "3bcf6d73f5ab31a2adcbe5c58277ccdaad9d583f8a5196152265a7dcfb3099f8"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/risk_seed13_scet_multivers_0.3.json",
+    "bytes": 4537,
+    "sha256": "d1964be0bc281edab11fd620c5b50877466acb5182ca17378d6eac8f6e28540b"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/selected_forms.csv",
+    "bytes": 139,
+    "sha256": "71d9af82a9bab57720908fecee0fcac850ae27912ecb30b67bb402bb04ace794"
+  },
+  {
+    "path": "results/multivers_extension/k100_smoke/summary.csv",
+    "bytes": 2588,
+    "sha256": "6ee12da17e6615c5601fe3b578e5bc9f727d9aaa4cb8c66514c86c5643e613d0"
+  },
+  {
+    "path": "results/table_to_result_index.json",
+    "bytes": 2690,
+    "sha256": "40a9c81f0bd91bcaf4ea0b7a45eb8a68cc101d9decb8737d9c311fb36723b7fb"
+  },
+  {
+    "path": "results/tables/S23.csv",
+    "bytes": 320,
+    "sha256": "5441feebbb853af983d8d1d62682e7b5229d01beae81ad3c0306fa734c585313"
+  },
+  {
+    "path": "results/tables/S24.csv",
+    "bytes": 464,
+    "sha256": "37a0038ece7bb0435f6ece8b5ddc9e3a9736554d1972bb7ba69da119c8af88ae"
+  },
+  {
+    "path": "results/tables/index.json",
+    "bytes": 6389,
+    "sha256": "4f57dc54c5daefb8bc539205f3baab3d9f37b4cd903dcae8d6fb11564b451896"
+  },
+  {
+    "path": "src/audit_multivers_extension.py",
+    "bytes": 6507,
+    "sha256": "c4d45d94cb557e4b1495749030ceefd524ad1fb46d6bf254752d776c0832b99a"
+  },
+  {
+    "path": "src/evaluate_multivers_context.py",
+    "bytes": 4454,
+    "sha256": "db790b8ca133cea0ede66a85049ce14fa9046fea213fdc40d69eeaf57dea7334"
+  },
+  {
+    "path": "src/export_r2_tables.py",
+    "bytes": 22698,
+    "sha256": "b0bab0bc1e5f15afe1f4e7ed38d4afcde56c9e06b74676230c7b377c043ee37f"
+  },
+  {
+    "path": "src/infer_multivers_context.py",
+    "bytes": 4774,
+    "sha256": "6b77db0d03f194129468bae559f26954d6a0255059badad8fc8aebe6a1548aae"
+  },
+  {
+    "path": "src/multivers_extension_tables.py",
+    "bytes": 2991,
+    "sha256": "a5d6277eb7f0f87bf1b81b8b807b7ad61539b4414bd298648c6e0efc71ede98f"
+  },
+  {
+    "path": "src/run_multivers_extension.py",
+    "bytes": 11907,
+    "sha256": "63d8e5b09e3b1b62d03f6fb6a5a5ae0554eb181e263209e114b45c8fd926e518"
+  },
+  {
+    "path": "src/run_multivers_r2.py",
+    "bytes": 11491,
+    "sha256": "fed3a8759c6aa4866f14605cb285ebd8cd106a45c126b27146d975087c6ededf"
+  }
+]

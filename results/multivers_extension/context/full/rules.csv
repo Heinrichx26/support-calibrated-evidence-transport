@@ -1,0 +1,17 @@
+seed,method,analysis,threshold,tie_cutoff,target,calibration_volume
+13,multivers_full,prospective_100,0.02029191887056414,28d68dfe71ae31c7,100.0,100.0
+13,multivers_full,exact_budget,0.048142121886485256,14edf187f63cca05,,
+13,multivers_single,prospective_100,0.004434853792190552,28d68dfe71ae31c7,100.0,100.0
+13,multivers_single,exact_budget,0.029535293579101562,6aa8c3f1c2c23ba7,,
+17,multivers_full,prospective_100,0.10825773915712489,67cf4d169aad3eae,100.0,100.0
+17,multivers_full,exact_budget,0.04131404736084754,023e81815f8e3ddf,,
+17,multivers_single,prospective_100,0.05315467715263367,9408a8038bfa1c63,100.0,100.0
+17,multivers_single,exact_budget,0.033881235867738724,a76a8a8884e5230e,,
+29,multivers_full,prospective_100,0.019155082965426118,77cfd627a6e23499,100.0,100.0
+29,multivers_full,exact_budget,0.059313561720575336,c877915dc9d8c548,,
+29,multivers_single,prospective_100,0.0072962562553584576,77cfd627a6e23499,100.0,100.0
+29,multivers_single,exact_budget,0.04620569199323654,a04f90f15e30908b,,
+7,multivers_full,prospective_100,0.03688496157337795,de0a73df0bda0907,100.0,100.0
+7,multivers_full,exact_budget,0.04958077861361154,7c013bdcb4ce1d93,,
+7,multivers_single,prospective_100,0.00955985113978386,ca3b16f5f5694357,100.0,100.0
+7,multivers_single,exact_budget,0.037149667739868164,1e8db11547f366a5,,

@@ -1,0 +1,4 @@
+Dataset,Prevalence,Mapped Brier,Prior Brier,Mapped ECE,Prior ECE
+SciFact,0.0123,0.0112,0.0122,0.0026,0.0016
+FEVER,0.0111,0.0076,0.0110,0.0038,0.0003
+HoVer,0.0711,0.0540,0.0661,0.0212,0.0008

@@ -1,0 +1,47 @@
+Dataset,Verdict,Membership,Provenance,Rows (share)
+SciFact,Contradict,Other,Original abstract,"6,269
+(100.00%)"
+SciFact,Contradict,Annotated,Original abstract,"131
+(100.00%)"
+SciFact,Not enough info,Other,Original abstract,"11,200
+(100.00%)"
+SciFact,Support,Other,Original abstract,"12,165
+(100.00%)"
+SciFact,Support,Annotated,Original abstract,"235
+(100.00%)"
+FEVER,Not enough info,Other,Original 2017 snapshot,"656,806
+(98.53%)"
+FEVER,Not enough info,Other,Unresolved,"9,794
+(1.47%)"
+FEVER,Refutes,Other,Original 2017 snapshot,"646,529
+(98.67%)"
+FEVER,Refutes,Other,Unresolved,"8,743
+(1.33%)"
+FEVER,Refutes,Annotated,Original 2017 snapshot,"11,205
+(98.91%)"
+FEVER,Refutes,Annotated,Unresolved,"123
+(1.09%)"
+FEVER,Supports,Other,Original 2017 snapshot,"647,491
+(98.75%)"
+FEVER,Supports,Other,Unresolved,"8,179
+(1.25%)"
+FEVER,Supports,Annotated,Original 2017 snapshot,"10,826
+(99.05%)"
+FEVER,Supports,Annotated,Unresolved,"104
+(0.95%)"
+HoVer,Not supported,Other,Original context,"76,283
+(99.82%)"
+HoVer,Not supported,Other,Unresolved,"136
+(0.18%)"
+HoVer,Not supported,Annotated,Original context,"5,870
+(85.99%)"
+HoVer,Not supported,Annotated,Unresolved,"956
+(14.01%)"
+HoVer,Supported,Other,Original context,"76,412
+(99.80%)"
+HoVer,Supported,Other,Unresolved,"152
+(0.20%)"
+HoVer,Supported,Annotated,Original context,"5,814
+(84.95%)"
+HoVer,Supported,Annotated,Unresolved,"1,030
+(15.05%)"

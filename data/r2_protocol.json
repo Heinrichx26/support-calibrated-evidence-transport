@@ -1,0 +1,23 @@
+{
+  "version": "R2_2026_10_15",
+  "seeds": [13, 17, 29, 7],
+  "outer_calibration_fraction": 0.3,
+  "fitting_share_of_calibration": 0.67,
+  "inner_folds": 3,
+  "primary_workload_per_100": 100,
+  "workload_targets_per_100": [25, 50, 100, 200, 300, 400, 500],
+  "eligible_rank": 5,
+  "tie_seed": 73,
+  "bootstrap_repetitions": 1000,
+  "bootstrap_seed": 20261015,
+  "large_pool_max_queries": {"scifact": 300, "fever": 1000, "hover": 1000},
+  "large_pool_sampling": "lowest SHA256 of dataset and query identifier under seed 20261015",
+  "conflict_weights": [0.35, 0.35, 0.15, 0.15],
+  "conflict_penalties": [0, 0.1, 0.25, 0.5],
+  "portfolio_regularization_C": [0.1, 1, 10],
+  "risk_control": {"query_error_target": 0.2, "failure_probability": 0.05, "threshold_grid": [0.5, 0.525, 0.55, 0.575, 0.6, 0.625, 0.65, 0.675, 0.7, 0.725, 0.75, 0.775, 0.8, 0.825, 0.85, 0.875, 0.9, 0.925, 0.95, 0.975]},
+  "maximum_pair_sequence_length": 256,
+  "all_scorers_use_identical_candidates": true,
+  "text_verification": "official annotated snapshot or original abstract/HotpotQA sentence; unverified current-page reconstructions excluded",
+  "freeze_note": "Declared before R2 outcome computation. Query sampling and splits depend only on fixed identifiers. Score transforms, model fitting, scorer selection and thresholds receive calibration queries only."
+}

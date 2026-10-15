@@ -1,0 +1,18 @@
+{
+  "pairs": 164379,
+  "truncated_pairs": 19,
+  "truncation_fraction": 0.0001155865408598422,
+  "model": "cross-encoder/nli-MiniLM2-L6-H768",
+  "revision": "b95119ce93d3e065de6214e38cd4a97b0f2f2c6d",
+  "id2label": {
+    "0": "contradiction",
+    "1": "entailment",
+    "2": "neutral"
+  },
+  "max_length": 256,
+  "pair_order": "evidence,claim",
+  "transformers": "5.17.0",
+  "torch": "2.11.0+cu128",
+  "adaptive_batch_final": 256,
+  "input_sha256": "dca36c6d31f81715bf2a38eeb8ad43d1be6dfadc7a0b599af1d633835a020644"
+}

@@ -1,0 +1,46 @@
+Dataset,Comparator,Difference,95% interval,Query clusters
+SciFact,BM25,0.110,"[0.066, 0.155]",296
+SciFact,TF-IDF,0.066,"[0.015, 0.114]",296
+SciFact,LSA,0.242,"[0.181, 0.297]",296
+SciFact,Long-token overlap,0.194,"[0.137, 0.250]",296
+SciFact,Claim-token coverage,0.080,"[0.021, 0.133]",296
+SciFact,MiniLM,0.060,"[0.017, 0.106]",296
+SciFact,E5,0.011,"[-0.025, 0.051]",296
+SciFact,BGE-M3,0.024,"[-0.012, 0.057]",296
+SciFact,Cross-encoder,-0.017,"[-0.047, 0.014]",296
+SciFact,NLI relevance,0.175,"[0.105, 0.241]",296
+SciFact,NLI directional,0.100,"[0.045, 0.151]",296
+SciFact,NLI entailment,0.103,"[0.048, 0.154]",296
+SciFact,Conflict pressure,0.026,"[-0.004, 0.052]",296
+SciFact,SCET zero penalty,0.000,"[0.000, 0.000]",296
+SciFact,Calibration-selected single,0.010,"[-0.016, 0.034]",Shared query clusters
+FEVER,BM25,0.168,"[0.159, 0.178]",19832
+FEVER,TF-IDF,0.157,"[0.149, 0.166]",19832
+FEVER,LSA,0.462,"[0.453, 0.471]",19832
+FEVER,Long-token overlap,0.279,"[0.270, 0.287]",19832
+FEVER,Claim-token coverage,0.157,"[0.148, 0.166]",19832
+FEVER,MiniLM,0.161,"[0.153, 0.169]",19832
+FEVER,E5,0.078,"[0.070, 0.086]",19832
+FEVER,BGE-M3,0.111,"[0.103, 0.119]",19832
+FEVER,Cross-encoder,0.046,"[0.038, 0.053]",19832
+FEVER,NLI relevance,0.563,"[0.555, 0.572]",19832
+FEVER,NLI directional,0.183,"[0.174, 0.191]",19832
+FEVER,NLI entailment,0.182,"[0.173, 0.190]",19832
+FEVER,Conflict pressure,-0.001,"[-0.002, 0.001]",19832
+FEVER,SCET zero penalty,-0.000,"[-0.001, 0.000]",19832
+FEVER,Calibration-selected single,0.046,"[0.038, 0.053]",Shared query clusters
+HoVer,BM25,0.086,"[0.068, 0.104]",3961
+HoVer,TF-IDF,0.095,"[0.076, 0.111]",3961
+HoVer,LSA,0.450,"[0.431, 0.468]",3961
+HoVer,Long-token overlap,0.198,"[0.179, 0.216]",3961
+HoVer,Claim-token coverage,0.174,"[0.153, 0.192]",3961
+HoVer,MiniLM,0.117,"[0.102, 0.131]",3961
+HoVer,E5,-0.010,"[-0.015, -0.004]",3961
+HoVer,BGE-M3,0.053,"[0.039, 0.067]",3961
+HoVer,Cross-encoder,0.007,"[-0.006, 0.020]",3961
+HoVer,NLI relevance,0.652,"[0.636, 0.667]",3961
+HoVer,NLI directional,0.273,"[0.252, 0.292]",3961
+HoVer,NLI entailment,0.378,"[0.358, 0.397]",3961
+HoVer,Conflict pressure,-0.008,"[-0.014, -0.002]",3961
+HoVer,SCET zero penalty,-0.002,"[-0.004, 0.001]",3961
+HoVer,Calibration-selected single,-0.002,"[-0.004, 0.001]",Shared query clusters
