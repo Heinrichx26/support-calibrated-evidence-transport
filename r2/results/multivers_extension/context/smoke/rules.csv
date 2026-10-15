@@ -1,0 +1,5 @@
+seed,method,analysis,threshold,tie_cutoff,target,calibration_volume
+13,multivers_full,prospective_100,0.02029191887056414,28d68dfe71ae31c7,100.0,100.0
+13,multivers_full,exact_budget,0.05986388990657332,7f14e0a682349ce3,,
+13,multivers_single,prospective_100,0.004434853792190552,28d68dfe71ae31c7,100.0,100.0
+13,multivers_single,exact_budget,0.06000363081693649,b86bb8f8a0786f46,,

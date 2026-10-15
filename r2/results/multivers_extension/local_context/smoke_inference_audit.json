@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "smoke": true,
+  "claims": 60,
+  "pairs": 495,
+  "source_sha256": "8de2b7966cb51a94c6ba0b0aaea8019aa76d0b211b2f0e86c4ab189d6e2ffbf9",
+  "protocol_sha256": "6319fdf50a129ef8793ef4ccfb23c5882d2037f0123f4764d119674f2493749f",
+  "scores_sha256": "a2834f235f22bd01c2d730262bc7bd3ca732073c54c4fd477e3b8e1ebdd0714e",
+  "outcomes_enter_network": false,
+  "elapsed_seconds": 13.48499999998603
+}

@@ -1,0 +1,15 @@
+{
+  "decision": "stop_without_manuscript_method_update",
+  "status": "One complete prespecified development run followed the previously successful smoke. All candidate results and out-of-fold scores are retained.",
+  "datasets": {
+    "scifact_development": {"best_existing_histogram_dual": 0.5628670565273962, "matching_binary_dual": 0.5554615892498451, "dual_tail20": 0.550908},
+    "healthver_training": {"best_existing_histogram_dual": 0.522378, "matching_binary_dual": 0.509896, "dual_tail20": 0.440692},
+    "covidfact_training": {"best_existing_histogram_dual": 0.507209, "matching_binary_dual": 0.497961, "dual_tail20": 0.428941}
+  },
+  "reason": "The ranking objectives do not improve over the matching binary-loss control or existing dual-context histogram calibrators across the three development collections. The SciFact full-development gate is false. Tail loss has substantial losses on the two external training collections.",
+  "precision_source": "development/mean.csv contains full-precision values; the decision summary above rounds selected external-training results to six decimals.",
+  "external_test_evaluation_started": false,
+  "reserved_label_evaluation_started": false,
+  "manuscript_change": false,
+  "further_search_authorized_by_this_protocol": false
+}

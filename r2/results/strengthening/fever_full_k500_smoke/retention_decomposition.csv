@@ -1,0 +1,4 @@
+dataset,pool,seed,method,capacity_ceiling,pool_set_recall,eligible_set_recall,admitted_set_recall
+fever,500,13,scet,1.0,1.0,0.8571428571428571,0.7142857142857143
+fever,500,13,selected_single,1.0,1.0,0.8571428571428571,0.7142857142857143
+fever,500,13,ce,1.0,1.0,0.8571428571428571,0.7142857142857143

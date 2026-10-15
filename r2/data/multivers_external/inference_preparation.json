@@ -1,0 +1,27 @@
+{
+  "healthver:train": {
+    "claims": 1393,
+    "file_sha256": "30dae131d1727a5865d0eb1b17f06595e40405c118c1cd0a6eef10ebd516ad32"
+  },
+  "healthver:dev": {
+    "claims": 230,
+    "file_sha256": "58188d24ec6959509464c42d98c761ac2811083b1bc57af87415d4ef92e80fd6"
+  },
+  "healthver:test": {
+    "claims": 230,
+    "file_sha256": "4e12cf948c8402024ccef8826281eebc6a346cae515124ce0a1197f29bb7a405"
+  },
+  "covidfact:train": {
+    "claims": 903,
+    "file_sha256": "81641dd2fc8f43f617aebcc35d64c5264837b96e4d637187aed831aa7359d333"
+  },
+  "covidfact:test": {
+    "claims": 313,
+    "file_sha256": "a79d824eaafe6ffbad84a0aaf71109a5ddd7488d8650f90419d1ebdf36783d99"
+  },
+  "rows": 79395,
+  "outcome_fields_retained": false,
+  "archive_sha256": "0ce25066f18572af3307438a08d0d318a734d97d1d8c27ca43b51e81ae3d683c",
+  "origin": "https://scifact.s3.us-west-2.amazonaws.com/longchecker/latest/data.tar.gz",
+  "code_sha256": "36d86f0a0e5e87863843ff41bf6c9314714b44e45c02744f6e01bf44817318ad"
+}

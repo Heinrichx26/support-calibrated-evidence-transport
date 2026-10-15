@@ -1,0 +1,14 @@
+{
+  "version": "2026-10-15-external-acceptance-v1",
+  "primary_datasets": ["healthver", "covidfact"],
+  "confirmation_test_splits": "Official test splits; no outcomes examined before method-family freeze and train-only selection.",
+  "model_family": "Exact candidate family from run_multivers_admission_calibration.py, frozen before external train selection. Use the supplied document pools, no gold injection. All raw controls retain their original admissions under the common top-five-union screen.",
+  "fitting": "HealthVer official train; its official dev is threshold calibration. CovidFact train source components with hash remainder zero modulo five are threshold calibration; the remaining components are fitting. Exclude fitting claims whose normalized text is duplicated in calibration or test, and calibration claims duplicated in test. The exclusion uses inference text only. No test annotations enter fitting, selection or thresholds.",
+  "selection": "Four source-grouped folds within the fitting set. Select the contextual full-plus-isolated acceptance calibrator, best single-context control, and best of three arithmetic blends independently by mean exact-budget precision. Ties prefer earlier declared methods.",
+  "primary_comparisons": "Selected acceptance calibrator versus selected single-context control and selected arithmetic fusion, separately on each of the two test datasets. Four co-primary comparisons.",
+  "primary_metric": "Evidence precision at exactly 100 sentences per 100 claims; at most five per claim. The budget is reallocated within every bootstrap sample.",
+  "secondary": "Raw full rationale, full product, isolated rationale; same-capacity full-only control; no-context-feature ablation; all-candidate-training ablation. Report prospective thresholds, evidence recall, coverage and complete evidence-set recall.",
+  "bootstrap": "2000 paired source-component resamples. Report pointwise 95% and Bonferroni simultaneous 98.75% intervals for the four primary comparisons. No single favorable dataset or comparison suffices for a general precision-increment claim.",
+  "stopping": "One external test evaluation after freezes. Retain all tested methods and failed trials. Any post-test change requires new confirmation data.",
+  "success": "Both primary comparisons improve on each dataset and all four simultaneous lower bounds exceed zero. Assess secondary metrics for material tradeoffs before updating the manuscript."
+}

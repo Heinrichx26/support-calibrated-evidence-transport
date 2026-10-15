@@ -1,0 +1,13 @@
+{
+  "smoke": true,
+  "pairs": 30000,
+  "same_checkpoint": true,
+  "same_tokenizer_and_forward": true,
+  "candidate_identities_identical": true,
+  "full_context_reproduces_previous_result": false,
+  "source_score_hashes": {
+    "multivers_full": "637e44b84c4a0457f6e0ccd6c10c38e260b688cd27b97b1a1fde47d860ab1f30",
+    "multivers_single": "8cd40f39b57864abf66af4e496801a0c64050865d3e6da346e4e4b4eb3d1e5d6"
+  },
+  "code_sha256": "db790b8ca133cea0ede66a85049ce14fa9046fea213fdc40d69eeaf57dea7334"
+}

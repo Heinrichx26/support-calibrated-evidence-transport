@@ -1,0 +1,10 @@
+{
+  "version": "2026-10-15-before-confirmation-analysis",
+  "primary": "Controlled-pool exact-budget evidence precision of the frozen selected portfolio versus raw rationale and the independently selected best control.",
+  "co_primary_intervals": "Familywise 95% coverage by reporting 97.5% percentile intervals for each of the two co-primary comparisons, with 2000 paired source-family bootstrap replicates.",
+  "resampling": "Resample the 328 source families with replacement; retain all claims and candidates in a family. Reallocate the exact budget of one admitted candidate per sampled claim in each bootstrap replicate. The fitted scoring models and calibration thresholds remain frozen.",
+  "sensitivity": "Also report ordinary 95% intervals and fixed-decision bootstrap intervals; natural lexical pools; independent prospective thresholds; evidence recall, complete-set recall, coverage and workload.",
+  "support_criterion": "Both co-primary point gains and simultaneous lower confidence limits must exceed zero for a confirmed precision increment over raw rationale and the stronger selected control. Report any metric tradeoffs. If either lower limit includes zero, describe the strength of evidence as inconclusive. A nonpositive point gain against the best control does not establish the added portfolio contribution.",
+  "stopping": "One confirmation evaluation. No new hyperparameter, model, threshold, operating point or sample selection based on these outcomes. Preserve all unfavorable exploratory results.",
+  "manuscript_gate": "Only a supported and accurately qualified improvement can change the submission manuscript. An inconclusive or unfavorable method extension remains in the development records."
+}

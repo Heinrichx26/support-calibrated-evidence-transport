@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "smoke": false,
+  "source_sha256": "cba036aafbc2eac4d3774968918e1a49bc7e52ea9c13628ff5c9ca63c1a86232",
+  "input_sha256": "8d28efd7fee0c524820820a7b65c192ed994fc1c447d6636df5105f984532e30",
+  "output_sha256": "619ac21f438fad15766abdb8488129acb3c4ec18d642366ba88d826f8a89d901",
+  "rows": 53953,
+  "lexical_transform_fit_on_development_only": true,
+  "lexical_reconstruction_max_errors": {
+    "raw_bm25": 1.52587890625e-05,
+    "raw_tfidf": 1.1920928955078125e-07,
+    "raw_lsa": 1.5854835510253906e-05,
+    "raw_entity": 0.0,
+    "raw_relation": 0.0
+  },
+  "neural_models": {
+    "sentence-transformers/all-MiniLM-L6-v2": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "intfloat/e5-small-v2": "ffb93f3bd4047442299a41ebb6fa998a38507c52",
+    "BAAI/bge-m3": "5617a9f61b028005a4858fdac845db406aefb181",
+    "cross-encoder/ms-marco-MiniLM-L6-v2": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+    "cross-encoder/nli-MiniLM2-L6-H768": "b95119ce93d3e065de6214e38cd4a97b0f2f2c6d"
+  },
+  "outcome_use": "Annotation columns are retained for later evaluation; no scoring function receives them as model inputs.",
+  "elapsed_seconds": 599.1870000000345
+}

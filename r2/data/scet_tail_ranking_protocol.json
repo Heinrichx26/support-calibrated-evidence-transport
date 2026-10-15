@@ -1,0 +1,15 @@
+{
+  "version": "2026-10-15-tail-ranking-development-v1",
+  "status": "Method development only. All previous test results remain sealed for this candidate family.",
+  "seed": 2026101591,
+  "datasets": ["scifact_development", "healthver_training", "covidfact_training"],
+  "input_policy": "Saved frozen full-abstract and isolated-sentence scores. For the external datasets, only fitting IDs saved before the previous external test are used. No external development/test outcomes are read.",
+  "family": "Compare binary logistic gradient boosting with a pairwise logistic surrogate for partial AUC over the highest-scoring 5% or 20% of training negatives. All losses use the same tree capacity and full-context versus dual-context feature ablation.",
+  "capacity": {"rounds": 120, "learning_rate": 0.05, "max_depth": 3, "leaves": 7, "minimum_leaf": 30, "l2": 5},
+  "weights": "Equal total weight per claim and available pool. Positive and negative weights are normalized separately in the pairwise loss.",
+  "folds": "Four deterministic source-component folds. Each development prediction is made by a model fitted without that component. Smoke evaluates fold zero only, on the previously inspected SciFact development data.",
+  "metric": "Mean precision over candidate pools at exactly 100 admitted sentences per 100 claims, at most five per claim. Tie keys are fixed and independent of annotations.",
+  "matched_controls": "Raw full rationale, full product, isolated rationale, three arithmetic blends, existing histogram calibrators of depths two and three, and matching full-context gradient boosters with every new objective.",
+  "smoke_gate": "Finite, label/order-invariant scores; exact workload; nonzero positive/negative mass; numerical directional derivative check for the fixed-tail pairwise loss. Continue only if some dual-context new model exceeds the best raw control and is within 0.005 of existing dual-context calibration.",
+  "stopping": "One smoke and at most one four-fold development run for this family. Retain every candidate result. Development selection alone cannot authorize a confirmatory manuscript claim; further validation must use a newly specified independent evaluation."
+}

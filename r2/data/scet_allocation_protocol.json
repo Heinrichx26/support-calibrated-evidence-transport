@@ -1,0 +1,18 @@
+{
+  "version": "2026-10-15-allocation-sensitivity-v1",
+  "seed": 2026101517,
+  "datasets": ["scifact", "fever", "hover"],
+  "partitions": [13, 17, 29, 7],
+  "candidate_pool_size": 100,
+  "workload": "Exactly one admitted sentence per query on average, across the evaluation batch.",
+  "caps": [1, 2, 3, 5],
+  "scores": "Use the previously frozen original SCET scorer and raw cross-encoder scores on all datasets, plus the previously frozen MultiVerS rationale scores on SciFact. No model is refitted and no transformer inference is performed.",
+  "allocation": "For each fixed cap, retain the first cap candidates per query according to the method score and label-independent tie key. Admit the highest-scoring candidates across the batch until its query-count budget is exhausted. Cap one reduces exactly to one sentence per query. All methods receive the same cap family and budget.",
+  "fitting_choice": "For each previously frozen scorer and partition, choose a cap by fitting-query evidence precision at the same batch budget. Equal precision prefers the smaller cap. Freeze this choice before accessing evaluation annotations. This allocation sensitivity is exploratory because the original evaluation outcomes were previously inspected, and scorer fitting is not repeated inside this cap selection.",
+  "primary_comparisons": ["SCET cap 5 versus cross-encoder cap 1", "SCET cap 1 versus cross-encoder cap 1", "SCET fitting-selected cap versus cross-encoder fitting-selected cap", "SCET cap 5 versus cross-encoder cap 5", "MultiVerS cap 5 versus MultiVerS cap 1 on SciFact"],
+  "metrics": ["evidence_precision", "coverage", "evidence_recall", "all_facts_recall", "false_admission_no_evidence", "query_error_rate"],
+  "uncertainty": "Paired query-cluster bootstrap with 1000 replicates. Use the same weight for a query wherever it occurs across the four overlapping partitions and average partition-level metric differences. Pointwise two-sided 95% percentile intervals are descriptive; no familywise superiority claim is made.",
+  "smoke": "One partition and twelve fitting/evaluation queries per dataset. Verify finite scores, exact workload, cap-one query coverage, cap constraints and label/order invariance of the budget decision. Full analysis follows only when all checks pass and the policies exhibit a meaningful allocation difference.",
+  "test_policy": "Existing HealthVer and COVID-Fact evaluation files and labels remain unread. No candidate or cap is selected on any evaluation outcome. Retain all fixed-cap results, including losses.",
+  "stopping": "One smoke and one full fixed-family analysis. The main method and previous frozen results remain intact."
+}

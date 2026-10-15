@@ -1,0 +1,20 @@
+{
+  "query_count": 537,
+  "source_families": 328,
+  "candidate_rows_union": 53953,
+  "claim_document_pairs": 36473,
+  "official_split": "SciFact train",
+  "checkpoint": "fever_sci, without SciFact training",
+  "exclusion": "Any cited/evidence source shared with the 300 previously evaluated dev claims, or maximum character TF-IDF cosine >=0.85 with dev claims.",
+  "natural_pool": "Top 100 lexical-overlap sentences, independent of gold annotations.",
+  "controlled_pool": "Same original controlled-pool construction: retain all annotated gold sentences and fill to 100 from lexical retrieval.",
+  "inference_input": "Claim text, document title, all abstract sentences; labels, source-family identifiers and pool flags never enter the network.",
+  "uncertainty": "Bootstrap source families, preserving claim variants.",
+  "evaluation_gate": "No outcome evaluation before final method specification and fitted models are frozen.",
+  "source_sha256": {
+    "claims_train.jsonl": "f4c8fa82d8bd0653a9cc8d61a6ea48c25eacea64e90af5dbf390ebb1b74372f0",
+    "claims_dev.jsonl": "86f0435d08fdb65d1aa41d1472684f57e6e71930626497bdf4d7a9ec1a632217",
+    "corpus.jsonl": "b8d6c89624cb2ed74dee8938effc4f5d8bd2086887880af8110d64be4ceade62"
+  },
+  "code_sha256": "41e8aa9bcdb7607f7fda2c1173cbdc16c01f0c3fe6e0db72dcc520bebce592ce"
+}

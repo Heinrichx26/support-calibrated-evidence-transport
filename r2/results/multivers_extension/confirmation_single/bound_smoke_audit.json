@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "source_sha256": "e51f64482675965e189fec0f78fc50636b2cd982111980be5337a26d6bfba937",
+  "development_pairs": 30000,
+  "required_pairs": 30000,
+  "all_admission_decisions_identical_to_exhaustive": true,
+  "labels_accessed": false,
+  "bounds": [
+    {
+      "pool": "controlled_pool",
+      "batch_threshold_lower_bound": 0.04140472412109376,
+      "prospective_threshold": 0.03824891149997712,
+      "required_pairs": 30000,
+      "omitted_upper_bound_strictly_below_both_boundaries": true
+    },
+    {
+      "pool": "natural_pool",
+      "batch_threshold_lower_bound": 0.04140472412109376,
+      "prospective_threshold": 0.03824891149997712,
+      "required_pairs": 30000,
+      "omitted_upper_bound_strictly_below_both_boundaries": true
+    }
+  ]
+}

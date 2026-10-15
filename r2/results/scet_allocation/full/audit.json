@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "smoke": false,
+  "code_sha256": "431ee8ef99b743f85d2d64f032bdc9466a7586659cd63ccd539b903530235cf4",
+  "protocol_sha256": "d55f74edbcc2ed99fb8302510bb6b61cacc50e0cc988442cea2e5f00b8b527df",
+  "exact_budgets_verified": true,
+  "cap_one_covers_all_queries": true,
+  "decisions_label_and_order_invariant": false,
+  "allocation_difference": true,
+  "external_evaluation_files_read": false,
+  "models_refitted": false,
+  "exploratory_allocation_analysis": true,
+  "elapsed_seconds": 277.26500000001397
+}

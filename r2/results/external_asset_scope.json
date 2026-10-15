@@ -1,0 +1,44 @@
+{
+  "tables": [
+    "S25",
+    "S26",
+    "S27",
+    "S28",
+    "S29",
+    "S30"
+  ],
+  "all_table_exports": 34,
+  "saved_trial_directories": [
+    "adaptive_calibration",
+    "admission_calibration",
+    "admission_operators",
+    "confirmation_evaluation",
+    "confirmation_inference",
+    "confirmation_scoring",
+    "confirmation_single",
+    "context",
+    "context_calibration",
+    "dual_calibration",
+    "ensemble_exploration",
+    "external_evaluation",
+    "external_inference",
+    "final_portfolio",
+    "fitting_size",
+    "inference_single",
+    "k100",
+    "k100_smoke",
+    "local_context",
+    "probability_fusion",
+    "rank_blends",
+    "rationale_extension"
+  ],
+  "extra_results": [
+    "results/scet_allocation",
+    "results/substantive_strengthening/set_size",
+    "results/scet_tail_ranking"
+  ],
+  "extra_sources": [],
+  "source_text_redistributed": false,
+  "neural_checkpoint_redistributed": false,
+  "all_saved_external_comparisons_included": true
+}

@@ -1,0 +1,25 @@
+{
+  "url": "https://scifact.s3.us-west-2.amazonaws.com/longchecker/latest/checkpoints/fever_sci.ckpt?versionId=GYe58tFsyvvn1n7rib5H4wrsiq32ZY5Y",
+  "version_id": "GYe58tFsyvvn1n7rib5H4wrsiq32ZY5Y",
+  "bytes": 5253768950,
+  "sha256": "6b48f1b83eaedbc2570bc50135518ef3cf6f3c6dcdd380a9a3a433918e7f982d",
+  "checkpoint": "fever_sci",
+  "training": "FEVER, PubMedQA, Evidence Inference",
+  "encoder_revision": "b190dd42e462d2dee634d1162c839710079f97ab",
+  "ignored_nonpersistent_buffers": [
+    "encoder.embeddings.position_ids"
+  ],
+  "tokenizer_files": {
+    "config.json": "43868659490a91c0be4ad5e93cb39e9819e6f7c2a2dc996f5f5d2c1ae73b0f77",
+    "merges.txt": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+    "tokenizer.json": "847bbeab6174d66a88898f729d52fa8d355fafe1bea101cf960dd404581df70e",
+    "vocab.json": "9e7f63c2d15d666b52e21d250d2e513b87c9b713cfa6987a82ed89e5e6e50655"
+  },
+  "strict_parameter_load": true,
+  "official_forward_sha256": "e4c41ef94c8c165f4a99132e7653931ee38197a007c7d91013b03dd6ddfc4ed4",
+  "input": "claim, title, all abstract sentences; official EOS and global attention",
+  "score": "rationale probability times (1 - document NOT ENOUGH INFO probability)",
+  "torch": "2.12.0+cu126",
+  "precision": "float16 autocast",
+  "batching": "Length ordering; at most 8192 padded tokens; reduce batch after memory pressure"
+}

@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "smoke": false,
+  "useful_signal_over_fusion": true,
+  "source_sha256": "d5ec046eecbca6ae671554e0177e832ddc68a9c0e36b10e4d17bb3a2fcd9f1ce",
+  "protocol_sha256": "0a70da9e56fced7cd7f100f4aaee48bf27e07f8ace39277deddb251b1fe31a1d",
+  "chosen": "boost:context:2:0:0",
+  "single_control": "boost:full_context:3:0:1",
+  "arithmetic_control": "mean:0.5:1",
+  "candidate_rows": 10729,
+  "claims": 837,
+  "source_groups_disjoint": true,
+  "all_results_exploratory": true,
+  "elapsed_seconds": 49.375
+}

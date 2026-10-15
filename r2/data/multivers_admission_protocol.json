@@ -1,0 +1,23 @@
+{
+  "version": "2026-10-15-admission-operators-v1",
+  "status": "Exploratory evaluation on previously inspected SciFact development outcomes.",
+  "seeds": [13, 17, 29, 7],
+  "selection": "Four query-disjoint folds of the original fitting queries; mean evidence precision at one admitted item per query on average. Exact ties prefer earlier, simpler candidates.",
+  "baselines": ["rationale", "product"],
+  "operators": {
+    "document_rank_discount": [0.1, 0.3, 1.0],
+    "query_rank_discount": [0.1, 0.3, 1.0],
+    "document_other_mass_discount": [0.1, 0.3, 1.0],
+    "maximal_marginal_relevance": [0.05, 0.15, 0.3],
+    "one_candidate_per_document": [1],
+    "one_candidate_per_query": [1]
+  },
+  "scoring": "Use raw rationale probability. Rank discounts divide probability by 1+lambda*(rank-1). Mass discount divides by 1+lambda*sum of other full-abstract rationale probabilities. MMR subtracts lambda times maximum sentence TF-IDF cosine similarity to previously selected evidence in that query; select five greedily.",
+  "similarity": "Sentence-only word unigram/bigram TF-IDF on the fixed original SciFact corpus, English stopwords; no query outcomes.",
+  "controls": "Original product, raw rationale, fitting-selected operator family, and fixed one-per-document/query quotas. Use identical candidate pools and review budgets.",
+  "calibration": "Original 30 threshold queries, after operator selection; target 100 items per 100 queries.",
+  "evaluation": "Exact matched batch budget plus independently calibrated prospective workload, precision, coverage, evidence recall and complete-set recall.",
+  "smoke": "All fitting-fold choices for seed 13; first 12 evaluation IDs; assert outcome and row-order invariance, exact admission counts and nonincreasing MMR marginal scores.",
+  "full_run": "Require passing smoke audit with unchanged source and protocol hashes; one full evaluation of this family.",
+  "interpretation": "Intervals condition on frozen selected rules and do not account for preceding exploratory searches. New unused data are required for confirmation."
+}

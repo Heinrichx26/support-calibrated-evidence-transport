@@ -55,7 +55,7 @@ class Native(nn.Module):
         self.nei_label=1;self.label_threshold=None;self.rationale_threshold=.5
 
 
-def load_model():
+def load_model(manifest_path=None):
     compatibility_modules()
     ckpt=torch.load(MODEL/'fever_sci.ckpt',map_location='cpu',mmap=True,weights_only=False)
     state=ckpt['state_dict']
@@ -86,7 +86,7 @@ def load_model():
         input='claim, title, all abstract sentences; official EOS and global attention',
         score='rationale probability times (1 - document NOT ENOUGH INFO probability)',
         torch=torch.__version__,precision='float16 autocast',batching='Length ordering; at most 8192 padded tokens; reduce batch after memory pressure')
-    (MODEL/'inference_manifest.json').write_text(json.dumps(record,indent=2),encoding='utf-8')
+    (Path(manifest_path) if manifest_path else MODEL/'inference_manifest.json').write_text(json.dumps(record,indent=2),encoding='utf-8')
     return model,tokenizer
 
 

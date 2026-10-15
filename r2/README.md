@@ -1,3 +1,11 @@
+# Current complete numerical release
+
+The current frozen code, result summaries and all 34 exported tables are supplied by the [complete R2 release](https://github.com/Heinrichx26/support-calibrated-evidence-transport/releases/tag/r2-complete-2026-10-15). Download its `R2_external_calibration_reproducibility.zip` and checksum and follow [EXTERNAL_CALIBRATION_REPRODUCTION.md](EXTERNAL_CALIBRATION_REPRODUCTION.md). Extract into a new directory before replaying the external experiments or exporting every current table. The repository retains small files; raw probabilities, numerical candidate matrices, frozen model files and detailed query outcomes are in the release asset.
+
+Tables S25–S27 report the two external collections, score controls, ablations and four primary simultaneous precision intervals. Tables S28–S30 report exploratory allocation and complete evidence-set analyses. All saved exploratory trials, including unsuccessful ranking-objective development, are retained. The source archive and checkpoint versions and their full hashes are fixed in the provided manifests.
+
+The original full input matrices for rerunning the original seven experiment configurations remain in the earlier archive linked below. The instructions that follow document those original experiments; use the complete asset's table exporter for all current tables.
+
 # R2 evidence admission experiments
 
 This release replaces the R1 experiment procedure for the second revision. All prospective methods use fitting queries to select scoring forms and independent calibration queries to freeze admission thresholds. Candidate labels represent annotated verification-evidence membership. Directional support is evaluated separately on SciFact. Within-query normalization is removed; queries may receive zero admitted items.
@@ -19,7 +27,7 @@ Generate every manuscript and supplementary table directly from the saved result
     python src/export_r2_tables.py --smoke
     python src/export_r2_tables.py
 
-The 26 UTF-8 CSV tables and their hashes are written to results/tables/. Every header and displayed cell has been checked against the corresponding Word table. This export requires no manuscript files and performs no experimental scoring.
+The 34 UTF-8 CSV tables and their hashes are written to results/tables/. Every header and displayed cell has been checked against the corresponding Word table. This export requires no manuscript files and performs no experimental scoring.
 
 Run a smoke check before a full experiment:
 

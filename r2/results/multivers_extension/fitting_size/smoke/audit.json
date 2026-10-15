@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "smoke": true,
+  "source_sha256": "7663899a4aa8c73c3adcf5da82b4ffdaf3de0567b046a3b7821a968a3063c4ca",
+  "status": "exploratory robustness diagnosis on previously inspected dev outcomes",
+  "frozen_architecture": "portfolio:0",
+  "new_hyperparameters_tested": false,
+  "confirmation_outcomes_accessed": false,
+  "new_confirmation_model_changed": false
+}

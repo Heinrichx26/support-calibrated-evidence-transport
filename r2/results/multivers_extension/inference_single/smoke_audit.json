@@ -1,0 +1,9 @@
+{
+  "smoke": true,
+  "pairs": 64,
+  "scores_finite": true,
+  "scores_in_unit_interval": true,
+  "duplicate_pairs": false,
+  "code_sha256": "6b77db0d03f194129468bae559f26954d6a0255059badad8fc8aebe6a1548aae",
+  "seconds": 6.625
+}

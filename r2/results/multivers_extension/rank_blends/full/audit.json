@@ -1,0 +1,26 @@
+{
+  "smoke": false,
+  "candidate_family": [
+    "multivers_rank",
+    "rationale_rank",
+    "semantic_rank",
+    "nli_rank",
+    "rank_geometric_mv_rationale",
+    "rank_consensus_mv_rationale",
+    "rank_consensus_rationale_semantic",
+    "rank_rationale_semantic_gap",
+    "rank_rationale_nli_gap",
+    "blend_rationale_mv_0.25",
+    "blend_rationale_semantic_0.25",
+    "blend_rationale_nli_0.25",
+    "blend_rationale_mv_0.5",
+    "blend_rationale_semantic_0.5",
+    "blend_rationale_nli_0.5",
+    "blend_rationale_mv_0.75",
+    "blend_rationale_semantic_0.75",
+    "blend_rationale_nli_0.75"
+  ],
+  "test_labels_used_for_selection": false,
+  "selection": "four query-disjoint folds inside fitting queries",
+  "code_sha256": "403d642d610e5718991ccefe85d76f25f15ae521cec9aa961fe8c433dabffb72"
+}

@@ -1,0 +1,11 @@
+{
+  "version": "2026-10-15-local-context-v1",
+  "seed": 2026101582,
+  "development_status": "All original 300 and previous 537 SciFact claims are exploratory.",
+  "candidate_screen": "Union of within-claim top five under full rationale, full product, isolated rationale, and arithmetic full/isolated weights 0.25, 0.5, 0.75 in each pool. This preserves every eligible candidate for each of these six controls.",
+  "new_context": "For each screened sentence, use the document title and the target sentence plus its immediate preceding and following sentences. Retain the original order and use the target sentence rationale output.",
+  "smoke": "First 32 source groups in a fixed hash ordering; infer all screened candidates. Require finite outputs, correct target index, exact budgets, unchanged control admissions, and a useful precision signal before full inference.",
+  "development": "Four source-grouped folds, equal training weight per claim and candidate pool. Compare raw contexts, arithmetic fusion, constrained dual-context calibration and constrained three-context calibration. Tune only on development data.",
+  "new_information_control": "Local-only score and fixed three-score blends receive the same screened candidates as learned fusion.",
+  "stopping": "If the local-context smoke has no useful precision signal, stop full local inference. No external test outcomes are used for adjustment."
+}

@@ -1,0 +1,7 @@
+Dataset,Method,Precision,Coverage,Recall,Set recall
+HealthVer,SCET calibration,0.613,0.457,0.137,0.390
+HealthVer,Selected single context,0.578,0.465,0.131,0.374
+HealthVer,Selected arithmetic blend,0.422,0.339,0.103,0.291
+COVID-Fact,SCET calibration,0.655,0.738,0.423,0.585
+COVID-Fact,Selected single context,0.633,0.716,0.410,0.572
+COVID-Fact,Selected arithmetic blend,0.575,0.687,0.360,0.492

@@ -1,0 +1,10 @@
+{
+  "version": "2026-10-15-admission-calibration-v1",
+  "seed": 2026101583,
+  "data_status": "All 837 SciFact claims are previously evaluated exploratory data. All trials are retained.",
+  "operator": "Fit evidence acceptance calibration on the union of top-five full rationale, full product, single rationale and three arithmetic fusion rankings. The same candidate screen is applied to all controls and learned models.",
+  "training": "Equal total weight per claim and per available candidate pool; compare observed prevalence and class-balanced loss. Calibrators use full-only or full plus isolated scores with equal model capacities. Include constrained logistic with smaller regularization, and constrained/unconstrained boosting. Predictor features exclude outcomes, source IDs, pool flags and query text.",
+  "evaluation": "Four source-grouped development folds. Precision at exactly one admitted sentence per claim on average, maximum five per claim. Equal mean over controlled and natural pools.",
+  "smoke": "First two source-grouped folds. Require finite predictions, unchanged raw-control admissions, outcome/row invariance and an improvement over the arithmetic fusion control before completing this family.",
+  "stopping": "One smoke run and one development run for this candidate family. No claims of untouched confirmation on the development set."
+}

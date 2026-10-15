@@ -1,0 +1,28 @@
+{
+  "smoke": false,
+  "pool": 100,
+  "candidate_family": [
+    "multivers",
+    "mv_ce_geometric",
+    "mv_e5_geometric",
+    "mv_nli_geometric",
+    "mv_min_ce",
+    "mv_min_e5",
+    "mv_min_semantic",
+    "mv_mean_ce",
+    "mv_mean_semantic",
+    "mv_gate_ce",
+    "mv_gate_nli",
+    "mv_gate_semantic",
+    "mv_rationale_rank",
+    "mv_document_rank",
+    "mv_rationale_document_geometric",
+    "mv_rationale_document_min",
+    "mv_rationale_heavy_document",
+    "mv_document_heavy_rationale"
+  ],
+  "selection": "four query-disjoint folds inside fitting partition",
+  "test_labels_used_for_selection": false,
+  "exact_budget": true,
+  "code_sha256": "7a59b11cd4c675afd98a28b5a9b36ed58da94a4e370b5a258f379c9ad135c8cc"
+}

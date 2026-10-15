@@ -1,0 +1,25 @@
+{
+  "smoke": true,
+  "pool": 100,
+  "query_splits_disjoint": true,
+  "test_labels_used_for_selection": false,
+  "threshold_calibration_independent": true,
+  "views": [
+    "raw_bm25",
+    "raw_tfidf",
+    "raw_lsa",
+    "raw_entity",
+    "raw_relation",
+    "raw_minilm",
+    "raw_e5",
+    "raw_bge",
+    "raw_ce",
+    "raw_nli_relevance",
+    "raw_nli_directional",
+    "raw_nli_entailment",
+    "raw_multivers",
+    "raw_multivers_rationale"
+  ],
+  "code_sha256": "50d9be8e083f459deca0b6f8c5cba2122f0e3f2122dd16ab6b9f72ac944000fe",
+  "elapsed_seconds": 1006334.484
+}

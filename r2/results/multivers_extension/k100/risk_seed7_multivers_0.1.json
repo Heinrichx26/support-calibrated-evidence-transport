@@ -1,0 +1,187 @@
+{
+  "alpha": 0.1,
+  "nonempty_feasible": false,
+  "upper_bound": 0.0,
+  "tests": [
+    {
+      "threshold": 5.29346861810609e-05,
+      "queries": 30,
+      "errors": 14,
+      "p_value": 0.9999999644052073,
+      "upper_bound": 0.7245569242717241,
+      "admitted": 61,
+      "passes": false
+    },
+    {
+      "threshold": 0.00010650578498783148,
+      "queries": 30,
+      "errors": 14,
+      "p_value": 0.9999999644052073,
+      "upper_bound": 0.7245569242717241,
+      "admitted": 60,
+      "passes": false
+    },
+    {
+      "threshold": 0.0002114978099683643,
+      "queries": 30,
+      "errors": 14,
+      "p_value": 0.9999999644052073,
+      "upper_bound": 0.7245569242717241,
+      "admitted": 58,
+      "passes": false
+    },
+    {
+      "threshold": 0.001238641538532191,
+      "queries": 30,
+      "errors": 13,
+      "p_value": 0.9999996949340546,
+      "upper_bound": 0.695886144572808,
+      "admitted": 50,
+      "passes": false
+    },
+    {
+      "threshold": 0.0016589797245615053,
+      "queries": 30,
+      "errors": 13,
+      "p_value": 0.9999996949340546,
+      "upper_bound": 0.695886144572808,
+      "admitted": 50,
+      "passes": false
+    },
+    {
+      "threshold": 0.004688442094422457,
+      "queries": 30,
+      "errors": 10,
+      "p_value": 0.9999109221261769,
+      "upper_bound": 0.603753521466903,
+      "admitted": 42,
+      "passes": false
+    },
+    {
+      "threshold": 0.005998249922034508,
+      "queries": 30,
+      "errors": 9,
+      "p_value": 0.9995456448850946,
+      "upper_bound": 0.5708568804908338,
+      "admitted": 41,
+      "passes": false
+    },
+    {
+      "threshold": 0.009879081062735875,
+      "queries": 30,
+      "errors": 9,
+      "p_value": 0.9995456448850946,
+      "upper_bound": 0.5708568804908338,
+      "admitted": 38,
+      "passes": false
+    },
+    {
+      "threshold": 0.013437835287683237,
+      "queries": 30,
+      "errors": 9,
+      "p_value": 0.9995456448850946,
+      "upper_bound": 0.5708568804908338,
+      "admitted": 36,
+      "passes": false
+    },
+    {
+      "threshold": 0.0161453907156897,
+      "queries": 30,
+      "errors": 8,
+      "p_value": 0.9979801709947417,
+      "upper_bound": 0.5367452527286571,
+      "admitted": 35,
+      "passes": false
+    },
+    {
+      "threshold": 0.022518864393914984,
+      "queries": 30,
+      "errors": 8,
+      "p_value": 0.9979801709947417,
+      "upper_bound": 0.5367452527286571,
+      "admitted": 34,
+      "passes": false
+    },
+    {
+      "threshold": 0.030062072816373228,
+      "queries": 30,
+      "errors": 7,
+      "p_value": 0.9922163807620786,
+      "upper_bound": 0.5013029299634997,
+      "admitted": 32,
+      "passes": false
+    },
+    {
+      "threshold": 0.038906990134955896,
+      "queries": 30,
+      "errors": 7,
+      "p_value": 0.9922163807620786,
+      "upper_bound": 0.5013029299634997,
+      "admitted": 29,
+      "passes": false
+    },
+    {
+      "threshold": 0.05847333673664983,
+      "queries": 30,
+      "errors": 6,
+      "p_value": 0.9741732113380901,
+      "upper_bound": 0.4643700375529365,
+      "admitted": 22,
+      "passes": false
+    },
+    {
+      "threshold": 0.0966206209923589,
+      "queries": 30,
+      "errors": 3,
+      "p_value": 0.6474391717918474,
+      "upper_bound": 0.34175851776421856,
+      "admitted": 15,
+      "passes": false
+    },
+    {
+      "threshold": 0.12351212385888988,
+      "queries": 30,
+      "errors": 3,
+      "p_value": 0.6474391717918474,
+      "upper_bound": 0.34175851776421856,
+      "admitted": 15,
+      "passes": false
+    },
+    {
+      "threshold": 0.16108510650897936,
+      "queries": 30,
+      "errors": 3,
+      "p_value": 0.6474391717918474,
+      "upper_bound": 0.34175851776421856,
+      "admitted": 14,
+      "passes": false
+    },
+    {
+      "threshold": 0.19698353229034263,
+      "queries": 30,
+      "errors": 3,
+      "p_value": 0.6474391717918474,
+      "upper_bound": 0.34175851776421856,
+      "admitted": 13,
+      "passes": false
+    },
+    {
+      "threshold": 0.29662197190918044,
+      "queries": 30,
+      "errors": 2,
+      "p_value": 0.4113512395595059,
+      "upper_bound": 0.2950419076588973,
+      "admitted": 9,
+      "passes": false
+    },
+    {
+      "threshold": 0.3868334545521316,
+      "queries": 30,
+      "errors": 1,
+      "p_value": 0.18369501919260378,
+      "upper_bound": 0.2430978194813538,
+      "admitted": 8,
+      "passes": false
+    }
+  ]
+}

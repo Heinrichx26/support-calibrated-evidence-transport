@@ -1,0 +1,22 @@
+{
+  "version": "2026-10-15-context-calibration-v1",
+  "status": "Method development on the previously inspected 300 SciFact dev claims; confirmation on source-separated, unscored SciFact train claims.",
+  "seed": 20261015,
+  "original_seeds": [13, 17, 29, 7],
+  "inner_folds": 4,
+  "groups": ["scores", "context"],
+  "logistic_C": [0.01, 0.1, 1.0],
+  "histogram_l2": [1.0, 10.0],
+  "histogram": {"learning_rate": 0.05, "max_iter": 120, "max_leaf_nodes": 7, "max_depth": 3, "min_samples_leaf": 80, "early_stopping": false},
+  "score_features": ["logit_rationale", "logit_document_evidence", "document_direction_confidence"],
+  "context_features": ["log_document_sentence_count", "relative_sentence_position", "log_other_rationale_mass", "other_rationale_max", "document_rationale_entropy", "log_document_candidate_rank", "log_query_candidate_rank", "query_max_rationale", "query_second_rationale", "log_query_rationale_mass", "log_query_high_rationale_count"],
+  "weights": "Each fitting query has equal total weight; inverse class frequency is computed only from fitting rows.",
+  "selection": "Four inner folds, grouped by cited/evidence source families. Precision at exactly one admitted item per query on average. Exact ties prefer raw scores, then fewer features, then stronger regularization in declared candidate order.",
+  "comparisons": "Choose separately among raw/logistic/histogram score-only candidates and all candidates including context. This isolates the added contextual information from classifier flexibility.",
+  "pooled_development": "Hold out source families whose SHA256(20261015:calibration:family) mod 5 equals zero for threshold calibration. Use other source families for grouped model selection and final fitting. No performance on confirmation data is inspected during development.",
+  "confirmation": "537 train claims retained after source and text separation, 328 source families. Both original controlled pools and natural lexical top-100 pools; all methods share each pool and review budget. Freeze chosen models, source hashes and protocol before accessing confirmation performance.",
+  "primary_confirmation": "Evidence precision at exactly 100 items per 100 queries, controlled pools; compare all-candidate selected system with both raw rationale and separately selected score-only control. Report natural pools, prospective workload, coverage and evidence recall as sensitivity analyses.",
+  "uncertainty": "Paired source-family bootstrap with 2000 replicates; preserve all related claims. Fixed-batch intervals condition on the frozen selected batch. Report uncertainty and all declared comparisons.",
+  "smoke": "Run seed 13 fitting and first 12 evaluation IDs; verify score independence from evaluation labels, verdict, row order; check exact budget. Full development requires unchanged protocol/source and passing smoke.",
+  "stopping": "One full development run, freeze best selected system and score-only control, then one confirmation evaluation. No confirmation-driven candidate or threshold tuning."
+}

@@ -1,0 +1,10 @@
+# Tested with Python 3.11. Admission, summaries, intervals and plots.
+numpy==2.4.6
+pandas==2.3.3
+pyarrow==24.0.0
+scipy==1.17.1
+scikit-learn==1.9.0
+matplotlib==3.10.9
+
+joblib==1.5.3
+threadpoolctl==3.6.0

@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "smoke": false,
+  "protocol_sha256": "ff313e4dd65819bf3fb500ff94e1e9e2a19ebb32e1d8e64b62f5577fe620e603",
+  "code_sha256": "a0d678f61c185d4b49e165bffd66400efbd6dba22bc411da445674d5b324c029",
+  "fitting_query_selection_only": true,
+  "independent_threshold_queries": true,
+  "outcome_and_row_order_invariance": false,
+  "exact_budget_verified": true,
+  "exploratory": true,
+  "elapsed_seconds": 4.969000000040978
+}

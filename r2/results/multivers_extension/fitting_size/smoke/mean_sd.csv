@@ -1,0 +1,13 @@
+,,evidence_precision,evidence_precision,coverage,coverage,evidence_recall,evidence_recall,volume_per_100,volume_per_100
+,,mean,std,mean,std,mean,std,mean,std
+analysis,method,,,,,,,,
+exact_budget,dual_blend,0.5833333333333334,,0.5833333333333334,,0.525,,100.0,
+exact_budget,full_calibration,0.25,,0.5,,0.2,,100.0,
+exact_budget,portfolio,0.4166666666666667,,0.5833333333333334,,0.325,,100.0,
+exact_budget,product,0.5,,0.5,,0.475,,100.0,
+exact_budget,rationale,0.5,,0.5833333333333334,,0.475,,100.0,
+prospective_100,dual_blend,0.3684210526315789,,0.6666666666666666,,0.525,,158.33333333333334,
+prospective_100,full_calibration,0.3,,0.6666666666666666,,0.425,,166.66666666666666,
+prospective_100,portfolio,0.3,,0.75,,0.725,,250.0,
+prospective_100,product,0.24,,0.6666666666666666,,0.475,,208.33333333333334,
+prospective_100,rationale,0.2727272727272727,,0.6666666666666666,,0.475,,183.33333333333334,

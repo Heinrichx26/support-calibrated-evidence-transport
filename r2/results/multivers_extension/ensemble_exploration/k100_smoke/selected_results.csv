@@ -1,0 +1,2 @@
+seed,method,selected_by_inner_cv,inner_cv_precision,fit_precision,test_precision,test_items,threshold
+13,mv_rationale_rank,1,0.6166666666666667,0.65,0.5,12,0.9914473747135232

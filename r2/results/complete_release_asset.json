@@ -1,0 +1,14 @@
+{
+  "release_tag": "r2-complete-2026-10-15",
+  "release_url": "https://github.com/Heinrichx26/support-calibrated-evidence-transport/releases/tag/r2-complete-2026-10-15",
+  "asset": "R2_external_calibration_reproducibility.zip",
+  "bytes": 82620049,
+  "sha256": "3207a03ddca9f6e27961e27b112d6adc06066e2423e25d1db2455a1d6300f5c3",
+  "members": 1444,
+  "table_count": 34,
+  "independent_extraction_verified": true,
+  "upstream_text_restored_by_pinned_provider": true,
+  "source_text_redistributed": false,
+  "neural_weights_redistributed": false,
+  "original_base_asset": "https://github.com/Heinrichx26/support-calibrated-evidence-transport/releases/tag/r2-2026-10-15"
+}

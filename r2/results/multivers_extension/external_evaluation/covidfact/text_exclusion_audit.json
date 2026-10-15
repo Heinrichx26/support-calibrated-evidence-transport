@@ -1,0 +1,8 @@
+{
+  "fitting_before": 745,
+  "fitting_after": 741,
+  "calibration_before": 158,
+  "calibration_after": 158,
+  "test_outcomes_accessed": false,
+  "rule": "Exact equality after lowercase word normalization."
+}

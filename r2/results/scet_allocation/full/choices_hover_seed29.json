@@ -1,0 +1,18 @@
+[
+  {
+    "dataset": "hover",
+    "seed": 29,
+    "method": "scet",
+    "selected_cap": 1,
+    "fitting_queries": 804,
+    "fitting_precision_by_cap": "{\"1\": 0.8034825870646766, \"2\": 0.7562189054726368, \"3\": 0.722636815920398, \"5\": 0.6803482587064676}"
+  },
+  {
+    "dataset": "hover",
+    "seed": 29,
+    "method": "ce",
+    "selected_cap": 1,
+    "fitting_queries": 804,
+    "fitting_precision_by_cap": "{\"1\": 0.8246268656716418, \"2\": 0.7412935323383084, \"3\": 0.6878109452736318, \"5\": 0.6467661691542289}"
+  }
+]

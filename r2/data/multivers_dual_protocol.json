@@ -1,0 +1,17 @@
+{
+  "version": "2026-10-15-dual-context-v1",
+  "status": "Exploratory development; new source-separated confirmation performance has not been accessed.",
+  "seed": 20261015,
+  "inner_folds": 4,
+  "groups": ["full", "isolated", "dual", "dual_context"],
+  "logistic_C": [0.01, 0.1, 1.0],
+  "histogram_l2": [1.0, 10.0],
+  "histogram": {"learning_rate": 0.05, "max_iter": 120, "max_leaf_nodes": 7, "max_depth": 3, "min_samples_leaf": 80, "early_stopping": false},
+  "simple_blend_weights_full": [0.25, 0.5, 0.75],
+  "features": "Full and isolated contexts each provide logit rationale, logit document evidence, and document support/refutation direction confidence. Dual adds their predicted direction agreement and rationale/document-evidence differences. Dual_context additionally receives the frozen contextual metadata from the previous protocol.",
+  "selection": "Same source-family-grouped four folds and 240 fitting / 60 threshold calibration development queries. Compare a separately tuned single-context control (all full/isolated raw and classifier candidates) against all candidates. Ties prefer raw scores and simpler declared candidates.",
+  "budget": "Primary precision at exactly 100 admitted items per 100 queries, max within-query rank five.",
+  "smoke": "Two inner folds first to verify finite scores, row-order/outcome invariance, exact budgets; full selection uses four folds only after passing smoke.",
+  "confirmation": "Use the same 537 source-separated reserved claims only after models and thresholds are frozen. Primary controlled pools plus natural pools. Matched models use identical information availability and candidate filtering.",
+  "stopping": "One full development run. Confirmation outcomes will not be used for candidate or threshold tuning."
+}

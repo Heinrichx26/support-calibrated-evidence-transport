@@ -1,0 +1,15 @@
+{
+  "abstract": {
+    "rows": 36473,
+    "unique": true,
+    "sha256": "6d8e6a95453b86d577d60cc50649c04df7fcb271526c105f2c060e568f49a9d0"
+  },
+  "single": {
+    "rows": 53953,
+    "unique": true,
+    "sha256": "406ff7b86c6322e6eb11ad7945d110fa5f6072680002cdbfeb1ee8b66abb7941"
+  },
+  "all_exact_budgets_verified": true,
+  "new_word_edits": false,
+  "public_release_updated": false
+}

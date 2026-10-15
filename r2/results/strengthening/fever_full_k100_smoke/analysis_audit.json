@@ -1,0 +1,12 @@
+{
+  "dataset": "fever",
+  "pool": 100,
+  "smoke": true,
+  "all_counts_equal": true,
+  "budget": 100,
+  "eligible_rank": 5,
+  "single_scores": "raw, without within-query normalization",
+  "selection": "Frozen fitting-selected scorer and SCET form; test batch budget set before outcomes.",
+  "interpretation": "Fixed-batch ordering analysis; primary prospective rules retain independent calibration thresholds.",
+  "code_sha256": "4881d1076101cb6e474a351da00c8b1683b158de227fe54be2d44c8f06eae5fe"
+}

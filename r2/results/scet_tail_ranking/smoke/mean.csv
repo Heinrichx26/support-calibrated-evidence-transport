@@ -1,0 +1,17 @@
+dataset,method,precision
+scifact_development,full_product,0.5115151515151515
+scifact_development,full_raw,0.5160606060606061
+scifact_development,hist:dual:2,0.5822727272727273
+scifact_development,hist:dual:3,0.5766666666666667
+scifact_development,hist:full:2,0.5407575757575758
+scifact_development,hist:full:3,0.5407575757575758
+scifact_development,lgb:dual:binary,0.5822727272727273
+scifact_development,lgb:dual:tail05,0.516969696969697
+scifact_development,lgb:dual:tail20,0.5698484848484848
+scifact_development,lgb:full:binary,0.5295454545454545
+scifact_development,lgb:full:tail05,0.48015151515151516
+scifact_development,lgb:full:tail20,0.5407575757575758
+scifact_development,mean:0.25,0.5562121212121212
+scifact_development,mean:0.5,0.5653030303030303
+scifact_development,mean:0.75,0.5675757575757576
+scifact_development,single_raw,0.5381818181818182

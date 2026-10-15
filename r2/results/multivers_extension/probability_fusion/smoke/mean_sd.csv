@@ -1,0 +1,11 @@
+,,evidence_precision,evidence_precision,volume_per_100,volume_per_100,coverage,coverage,evidence_recall,evidence_recall,all_facts_recall,all_facts_recall
+,,mean,std,mean,std,mean,std,mean,std,mean,std
+analysis,method,,,,,,,,,,
+exact_budget,fusion_selected,0.5,,100.0,,0.5833333333333334,,0.475,,0.6,
+exact_budget,multivers,0.5,,100.0,,0.5,,0.475,,0.6,
+exact_budget,multivers_rationale,0.5,,100.0,,0.5833333333333334,,0.475,,0.6,
+exact_budget,mv_only_selected,0.5,,100.0,,0.5833333333333334,,0.475,,0.6,
+prospective_100,fusion_selected,0.2727272727272727,,183.33333333333334,,0.6666666666666666,,0.475,,0.6,
+prospective_100,multivers,0.24,,208.33333333333334,,0.6666666666666666,,0.475,,0.6,
+prospective_100,multivers_rationale,0.2727272727272727,,183.33333333333334,,0.6666666666666666,,0.475,,0.6,
+prospective_100,mv_only_selected,0.2727272727272727,,183.33333333333334,,0.6666666666666666,,0.475,,0.6,

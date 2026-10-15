@@ -1,0 +1,17 @@
+{
+  "four_partitions_complete": true,
+  "same_candidates": true,
+  "previous_multivers_reproduced": true,
+  "exact_budget_verified": true,
+  "test_outcome_invariance": true,
+  "candidate_order_invariance": true,
+  "independent_query_metrics_match": true,
+  "risk_test_and_upper_bound_agree": true,
+  "combination_precision_gain_over_multivers": 0.0,
+  "protocol_sha256": "d9bb54d84abcdf1125cbf01326a3531ca141ff273c96cc6a2bec78074ec9e0c4",
+  "context_comparison_complete": true,
+  "context_pair_count": 30000,
+  "same_checkpoint_verified": true,
+  "raw_probability_score_construction_verified": true,
+  "smoke_prediction_max_difference": 5.684341886080802e-14
+}

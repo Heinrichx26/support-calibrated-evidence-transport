@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "smoke": true,
+  "source_sha256": "6b32281e97f4ebd5c7e2e0da5694f73d1557f070125e4aa0e1da63e35c165ac6",
+  "protocol_sha256": "3d80648a476c60582f9697f210d178d8521db90b91ba47948b17cd2dbb206823",
+  "useful_dual_signal": true,
+  "source_group_separation": true,
+  "outcome_row_invariance": true,
+  "all_evaluated_data_are_exploratory": true,
+  "chosen": "monotone:dual:2:1",
+  "single_control": "full_raw",
+  "arithmetic_control": "mean:0.75:1",
+  "elapsed_seconds": 69.76500000001397
+}

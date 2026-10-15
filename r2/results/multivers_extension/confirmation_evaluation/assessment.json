@@ -1,0 +1,41 @@
+{
+  "supported_increment": false,
+  "positive_point_gains_both_controls": true,
+  "interpretation": "inconclusive_precision_increment",
+  "query_count": 537,
+  "source_families": 328,
+  "bootstrap_repetitions": 2000,
+  "co_primary": [
+    {
+      "pool": "controlled_pool",
+      "method": "selected",
+      "reference": "rationale",
+      "analysis": "exact_budget",
+      "bootstrap": "budget_reselected",
+      "delta_precision": 0.027932960893854775,
+      "ci95_low": 0.0019010504974711184,
+      "ci95_high": 0.05084985609210102,
+      "simultaneous_ci_low": -0.0018975783003008033,
+      "simultaneous_ci_high": 0.05461781480054788
+    },
+    {
+      "pool": "controlled_pool",
+      "method": "selected",
+      "reference": "best_control",
+      "analysis": "exact_budget",
+      "bootstrap": "budget_reselected",
+      "delta_precision": 0.003724394785847296,
+      "ci95_low": -0.02868344080181146,
+      "ci95_high": 0.043646753091384036,
+      "simultaneous_ci_low": -0.032491147296560406,
+      "simultaneous_ci_high": 0.047900857419186836
+    }
+  ],
+  "manuscript_update_authorized_by_evidence": false,
+  "all_declared_comparisons_reported": true,
+  "confirmation_tuning_performed": false,
+  "source_sha256": "878ad23d5972e3ec9f248724f74f2967580c1f69c8749f0df335c115d1abcf6f",
+  "plan_sha256": "3a1542fbed84870b064f00ecd7cdb9f39b6443b1959ad220bcb0e88df49eb887",
+  "freeze_sha256": "5b623ac613228f3d26247d0cbb73c087c5ab51272e219bdc285158505bf7b0b9",
+  "elapsed_seconds": 6.578000000095926
+}

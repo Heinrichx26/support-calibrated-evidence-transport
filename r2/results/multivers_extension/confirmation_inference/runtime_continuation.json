@@ -1,0 +1,7 @@
+{
+  "initial_source_sha256": "102ad1ecd0140b8b8aef707adffe2ce307f0a82ba52d3beaca9276b7f3be215e",
+  "continued_source_sha256": "8316bb6ef658e7411f0696a92d7cbc4f4dbf983da0ac81c2e7eca0972b177017",
+  "model_parameters_changed": false,
+  "score_formula_changed": false,
+  "reason": "Reduce padded-token batch budget to avoid Windows shared-memory fallback; resume completed predictions."
+}

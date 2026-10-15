@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "useful_precision_signal": false,
+  "controls_admissions_unchanged": true,
+  "claims": 60,
+  "inference_source_sha256": "8de2b7966cb51a94c6ba0b0aaea8019aa76d0b211b2f0e86c4ab189d6e2ffbf9",
+  "protocol_sha256": "6319fdf50a129ef8793ef4ccfb23c5882d2037f0123f4764d119674f2493749f",
+  "interpretation": "Exploratory smoke, used only for deciding whether to expand inference."
+}

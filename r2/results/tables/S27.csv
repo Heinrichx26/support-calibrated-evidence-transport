@@ -1,0 +1,5 @@
+Dataset,Comparator,Difference,95% interval,Simultaneous interval
+HealthVer,Selected single context,0.035,"[-0.029, 0.071]","[-0.046, 0.085]"
+HealthVer,Selected arithmetic blend,0.191,"[0.076, 0.333]","[0.053, 0.377]"
+COVID-Fact,Selected single context,0.022,"[-0.006, 0.056]","[-0.014, 0.063]"
+COVID-Fact,Selected arithmetic blend,0.080,"[-0.003, 0.152]","[-0.019, 0.172]"

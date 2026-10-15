@@ -206,5 +206,69 @@
     "rows": 12,
     "columns": 6,
     "sha256": "1824d66af7f124f7c6d449fa2a16d70e99d33447e6bc758834178661123e2c35"
+  },
+  {
+    "table": "S23",
+    "title": "SciFact combinations and context ablation",
+    "file": "S23.csv",
+    "rows": 4,
+    "columns": 6,
+    "sha256": "5441feebbb853af983d8d1d62682e7b5229d01beae81ad3c0306fa734c585313"
+  },
+  {
+    "table": "S24",
+    "title": "SciFact comparison under common query-risk constraints",
+    "file": "S24.csv",
+    "rows": 6,
+    "columns": 6,
+    "sha256": "37a0038ece7bb0435f6ece8b5ddc9e3a9736554d1972bb7ba69da119c8af88ae"
+  },
+  {
+    "table": "S25",
+    "title": "External calibration at fixed workload",
+    "file": "S25.csv",
+    "rows": 6,
+    "columns": 6,
+    "sha256": "b6e048f645b4972b41833a9aece1bf75dc34186a5b504550e48e2bf24560c998"
+  },
+  {
+    "table": "S26",
+    "title": "External score controls and ablations",
+    "file": "S26.csv",
+    "rows": 12,
+    "columns": 6,
+    "sha256": "278d45646cc6f104cbca06efcaa49729d031ebc01e0b3f3b750eef2ec8b10b4a"
+  },
+  {
+    "table": "S27",
+    "title": "Paired external precision differences",
+    "file": "S27.csv",
+    "rows": 4,
+    "columns": 5,
+    "sha256": "58b56eec1100a1c17470993afb9319a1aeff0afb808018a34e1cab3c1e1f704a"
+  },
+  {
+    "table": "S28",
+    "title": "Admission allocation at equal workload",
+    "file": "S28.csv",
+    "rows": 11,
+    "columns": 6,
+    "sha256": "8dafbf725effe95a1fd0996ff461992692919e9471f4f3707dc9ce4944f39623"
+  },
+  {
+    "table": "S29",
+    "title": "Paired differences between admission allocations",
+    "file": "S29.csv",
+    "rows": 7,
+    "columns": 5,
+    "sha256": "74a4fb0f9c18bf1792f53d841bd68db2e5496364e2684839fbc6273d5965578a"
+  },
+  {
+    "table": "S30",
+    "title": "Complete evidence sets at equal sentence budgets",
+    "file": "S30.csv",
+    "rows": 12,
+    "columns": 6,
+    "sha256": "d9a79bf0ac515cd573053307d4f21cbe3d4316017cd156454687c8949e54feff"
   }
 ]

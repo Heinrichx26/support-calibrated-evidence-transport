@@ -25,7 +25,15 @@
   "S20": "results/strengthening/*_full_k100/probability_reference.csv",
   "S21": "results/strengthening/*_full_k*/retention_decomposition.csv",
   "S22": "results/strengthening/*_full_k100/risk_bound.csv; results/experiments/*_full_k100/model_seed*.json",
+  "S23": "results/multivers_extension/k100/summary.csv; context/full/summary.csv; context/full/paired_intervals.csv",
+  "S24": "results/multivers_extension/k100/summary.csv; risk_rules.csv; risk_seed*.json",
   "Figure 1": "results/figures/figure1_workflow.drawio; figure1_workflow.svg; src/make_r2_figures.py",
   "Figure 2": "results/experiments/*_full_k100/primary.csv; model_seed*.json; src/make_r2_figures.py",
-  "Figures 3 and 4": "results/experiments/*_full_k100/volume_mean_sd.csv; src/make_r2_figures.py"
+  "Figures 3 and 4": "results/experiments/*_full_k100/volume_mean_sd.csv; src/make_r2_figures.py",
+  "S25": "results/multivers_extension/external_evaluation/summary.csv; */query_*_exact_budget.csv",
+  "S26": "results/multivers_extension/external_evaluation/summary.csv; */query_*_exact_budget.csv",
+  "S27": "results/multivers_extension/external_evaluation/paired_intervals.csv; */scores_*.parquet; */freeze.json; data/multivers_external_analysis.json",
+  "S28": "results/scet_allocation/full/summary.csv; query_*.csv; data/scet_allocation_protocol.json",
+  "S29": "results/scet_allocation/full/paired_intervals.csv; query_*.csv; data/scet_allocation_protocol.json",
+  "S30": "results/substantive_strengthening/set_size/full/mean_sd.csv; by_partition.csv; query_outcomes.csv"
 }

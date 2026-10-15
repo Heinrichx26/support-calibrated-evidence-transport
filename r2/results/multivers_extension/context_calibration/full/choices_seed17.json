@@ -1,0 +1,5 @@
+{
+  "seed": 17,
+  "chosen": "scores:logistic:0.01",
+  "score_control": "scores:logistic:0.01"
+}

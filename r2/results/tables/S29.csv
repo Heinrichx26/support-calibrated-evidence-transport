@@ -1,0 +1,27 @@
+Dataset,Comparison,Precision difference,Set-recall difference,No-evidence admission difference
+SciFact,SCET 5 − Cross-encoder 1,"-0.032
+[-0.087, 0.030]","-0.208
+[-0.273, -0.139]","-0.873
+[-0.921, -0.820]"
+SciFact,SCET 5 − Cross-encoder 5,"-0.032
+[-0.075, 0.007]","-0.058
+[-0.117, -0.004]","0.042
+[0.004, 0.084]"
+SciFact,MultiVerS 5 − MultiVerS 1,"0.168
+[0.099, 0.241]","-0.013
+[-0.091, 0.062]","-0.938
+[-0.982, -0.889]"
+FEVER,SCET 5 − Cross-encoder 1,"-0.012
+[-0.020, -0.003]","-0.118
+[-0.126, -0.111]","-0.666
+[-0.677, -0.654]"
+FEVER,SCET 5 − Cross-encoder 5,"0.044
+[0.036, 0.052]","0.038
+[0.030, 0.046]","-0.124
+[-0.138, -0.111]"
+HoVer,SCET 5 − Cross-encoder 1,"-0.154
+[-0.169, -0.139]","0.063
+[0.056, 0.071]",—
+HoVer,SCET 5 − Cross-encoder 5,"0.007
+[-0.006, 0.021]","0.020
+[0.014, 0.025]",—

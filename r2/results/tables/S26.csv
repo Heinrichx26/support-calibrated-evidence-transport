@@ -1,0 +1,13 @@
+Dataset,Method,Precision,Coverage,Recall,Set recall
+HealthVer,Abstract rationale,0.430,0.326,0.094,0.280
+HealthVer,Abstract joint score,0.426,0.317,0.094,0.291
+HealthVer,Sentence rationale,0.448,0.365,0.119,0.308
+HealthVer,Matched abstract context,0.578,0.465,0.131,0.374
+HealthVer,Without context features,0.470,0.396,0.118,0.313
+HealthVer,All-candidate fitting,0.596,0.500,0.148,0.401
+COVID-Fact,Abstract rationale,0.569,0.696,0.360,0.502
+COVID-Fact,Abstract joint score,0.569,0.693,0.358,0.498
+COVID-Fact,Sentence rationale,0.553,0.629,0.315,0.422
+COVID-Fact,Matched abstract context,0.623,0.719,0.407,0.565
+COVID-Fact,Without context features,0.581,0.674,0.346,0.470
+COVID-Fact,All-candidate fitting,0.671,0.757,0.434,0.597

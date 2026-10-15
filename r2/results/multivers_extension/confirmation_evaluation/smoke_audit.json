@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "source_sha256": "878ad23d5972e3ec9f248724f74f2967580c1f69c8749f0df335c115d1abcf6f",
+  "plan_sha256": "3a1542fbed84870b064f00ecd7cdb9f39b6443b1959ad220bcb0e88df49eb887",
+  "freeze_sha256": "5b623ac613228f3d26247d0cbb73c087c5ab51272e219bdc285158505bf7b0b9",
+  "reserved_outcomes_accessed": false,
+  "exact_bootstrap_budget_matches_direct_selection": true,
+  "row_order_outcome_invariance": true
+}

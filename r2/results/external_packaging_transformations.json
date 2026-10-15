@@ -1,0 +1,77 @@
+[
+  {
+    "path": "data/multivers_external/probabilities.parquet",
+    "original_sha256": "6a2594892facb0cb73f6f2a58d2f965cc6e3e519cf3def1e9fdad598fc7efeee",
+    "removed_columns": [
+      "query_text",
+      "evidence_text"
+    ],
+    "packaged_sha256": "aa14269e4ff7be1012b10cd35af3b6cefa46220feaa324648a4f93c233f825ff",
+    "numeric_values_and_identifiers_preserved": true
+  },
+  {
+    "path": "data/multivers_external/inference_candidates.parquet",
+    "original_sha256": "f0b5166a4d4e164c4692e4a781294d28ca6f207ee74ea7700a76dfb5783ddc42",
+    "removed_columns": [
+      "query_text",
+      "evidence_text"
+    ],
+    "packaged_sha256": "4088cf25d9cdd163fb05b00ca6c4339dbff4b47cadad74b5c3ef2f0807dc1da5",
+    "numeric_values_and_identifiers_preserved": true
+  },
+  {
+    "path": "data/multivers_adaptive/development.parquet",
+    "original_sha256": "eb3b61c489a0aee253494ca86f955ae8b5ba8c8c22bec5a9f0344696e3ea9868",
+    "removed_columns": [
+      "query_text",
+      "evidence_text"
+    ],
+    "packaged_sha256": "c151bc9e9551de3879c0bb2641d831b38e9df449e70a8bb1c410b2c304221fcd",
+    "numeric_values_and_identifiers_preserved": true
+  },
+  {
+    "path": "data/multivers_confirmation/candidates.parquet",
+    "original_sha256": "8d28efd7fee0c524820820a7b65c192ed994fc1c447d6636df5105f984532e30",
+    "removed_columns": [
+      "query_text",
+      "evidence_text"
+    ],
+    "packaged_sha256": "afe805c3191620b5140e2b417bcfb8f642aa158eecb18192fe47cc7c3790c929",
+    "numeric_values_and_identifiers_preserved": true
+  },
+  {
+    "path": "data/multivers_confirmation/queries.json",
+    "original_sha256": "481626dcb03f6dc0631dae41f8ebfb7ff5004187b45ff633c6fa6959f0e3e3bb",
+    "removed_fields": "source text",
+    "packaged_sha256": "42d74b54f332f321548dead76e4a1b254344648051ea29ef7ea1ba093952b288"
+  },
+  {
+    "path": "data/multivers_confirmation/scored.parquet",
+    "original_sha256": "619ac21f438fad15766abdb8488129acb3c4ec18d642366ba88d826f8a89d901",
+    "removed_columns": [
+      "query_text",
+      "evidence_text"
+    ],
+    "packaged_sha256": "db41820af7fde35ff917962e269ee209d69a598b491c37ed01766d20b0aabc9a",
+    "numeric_values_and_identifiers_preserved": true
+  },
+  {
+    "path": "data/multivers_confirmation/scored_smoke.parquet",
+    "original_sha256": "97a6b8d7f8d0cb200c3fe375b0d5182fe5093ce4552de3633faf7577be3b969a",
+    "removed_columns": [
+      "query_text",
+      "evidence_text"
+    ],
+    "packaged_sha256": "095e45ec44f37ee5f169a13f8c9d02f9a97df16c9fd12d634477bc23a5159be4",
+    "numeric_values_and_identifiers_preserved": true
+  },
+  {
+    "path": "data/multivers_local/smoke_inputs.parquet",
+    "original_sha256": "0bedc9e32c4717c51dd30ce21c0f1ca86b7b5c6bd85d1b4b92aa1dc6032d15c3",
+    "removed_columns": [
+      "query_text"
+    ],
+    "packaged_sha256": "a40a5b8c476b95f229703e96faafc9474e12a72d642f1145f4254e34c3f23a62",
+    "numeric_values_and_identifiers_preserved": true
+  }
+]

@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "smoke": true,
+  "pool": 100,
+  "budget": "100 sentences per 100 held-out queries",
+  "methods": [
+    "scet_batch",
+    "ce_batch",
+    "ce_top1",
+    "scet_top1"
+  ],
+  "source_sha256": "32b560054e43e691d5c2ee7a97059365357c0368fe7070ccc7e15be064c7adb1",
+  "source_files_sha256": {
+    "data\\processed\\scifact_full_queries.json": "a39ec115aca27a14000ab986baa92437cf02a3e272cde612ba86a9a748302aa2",
+    "results\\strengthening\\scifact_full_k100\\query_seed13_scet.csv": "0be2ecf05b05c83834c08651c710e750e8678c0aab41a0d0fae69bbca7d86b3f",
+    "results\\strengthening\\scifact_full_k100\\query_seed13_ce.csv": "6f39704f584afa19df4ff7638ee8c56bc8524d67df585724c650d40de4659cf1",
+    "results\\scet_allocation\\full\\query_scifact_seed13_ce_cap1.csv": "eb3cdb53f3472bff67508d8e070d0460f1fef80342176a8efab28b6d9c3dc9c1",
+    "results\\experiments\\scifact_full_k100\\query_seed13_scet_top1.csv": "5651f0481e645486d1b4d36f3207c96b2751463ee6cd28fe12f180a2139c2a3f",
+    "data\\processed\\fever_full_queries.json": "16178c07738634d72e4d4cc5b2a31de1ba87fe80c4579741d81d397cd2b22dcd",
+    "results\\strengthening\\fever_full_k100\\query_seed13_scet.csv": "59b6b9e6b08d9d804e549e8fc237900afbd3ec85205ecd14d2ab55131c5fc241",
+    "results\\strengthening\\fever_full_k100\\query_seed13_ce.csv": "ba3129c395c64dc16d609ec77b1d094983c7a5b936b1a723ab52a33bf05af104",
+    "results\\scet_allocation\\full\\query_fever_seed13_ce_cap1.csv": "7d394b62a690b1f13a4ecb55a84ca5981254c88aa46316232da4d7b16217ab3b",
+    "results\\experiments\\fever_full_k100\\query_seed13_scet_top1.csv": "82bb4f44a2b82c51fb4f318b2cef1281173a17519073eb48ec7262857200189c",
+    "data\\processed\\hover_full_queries.json": "590d9554ac0d067e44faaa58436c0db7a43fab807134246eee84e9ba8feab77c",
+    "results\\strengthening\\hover_full_k100\\query_seed13_scet.csv": "faec488143ad2d8d0a7a9c1e68ff2b44a2520dd4c35b37db1c7b8e0ce7cca48d",
+    "results\\strengthening\\hover_full_k100\\query_seed13_ce.csv": "82b3affd8f8bf01f45d20605a453d0b996dfd63eb2253eacc728ed4116683e0f",
+    "results\\scet_allocation\\full\\query_hover_seed13_ce_cap1.csv": "fec2e2ad85a3252289d85e79a03afbc59c405f922bca71addd61c700fc1b0619",
+    "results\\experiments\\hover_full_k100\\query_seed13_scet_top1.csv": "064b72d85a2c237ccf1184b2fa16d63dc368186f811e05f85042777cf776029f"
+  },
+  "independent_smoke_query_checks": {
+    "scifact:13:scet_batch": 12,
+    "scifact:13:ce_batch": 12,
+    "scifact:13:ce_top1": 12,
+    "scifact:13:scet_top1": 12,
+    "fever:13:scet_batch": 12,
+    "fever:13:ce_batch": 12,
+    "fever:13:ce_top1": 12,
+    "fever:13:scet_top1": 12,
+    "hover:13:scet_batch": 12,
+    "hover:13:ce_batch": 12,
+    "hover:13:ce_top1": 12,
+    "hover:13:scet_top1": 12
+  },
+  "definition": "Minimum size among original nonempty annotated evidence sets; no missing annotations removed from denominators.",
+  "analysis_scope": "Descriptive stratification of already frozen decisions; no model selection or thresholds updated.",
+  "partition_counts": "Per-partition counts are separate; overlapping queries are not summed as independent observations."
+}

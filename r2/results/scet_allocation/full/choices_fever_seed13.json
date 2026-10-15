@@ -1,0 +1,18 @@
+[
+  {
+    "dataset": "fever",
+    "seed": 13,
+    "method": "scet",
+    "selected_cap": 5,
+    "fitting_queries": 4019,
+    "fitting_precision_by_cap": "{\"1\": 0.5727792983329186, \"2\": 0.5969146553869121, \"3\": 0.5956705648171187, \"5\": 0.5994028365264992}"
+  },
+  {
+    "dataset": "fever",
+    "seed": 13,
+    "method": "ce",
+    "selected_cap": 1,
+    "fitting_queries": 4019,
+    "fitting_precision_by_cap": "{\"1\": 0.5971634735008708, \"2\": 0.5702911171933317, \"3\": 0.5498880318487186, \"5\": 0.5429211246578751}"
+  }
+]

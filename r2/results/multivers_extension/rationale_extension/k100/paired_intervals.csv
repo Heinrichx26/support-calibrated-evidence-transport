@@ -1,0 +1,11 @@
+analysis,method,reference,metric,difference,ci_low,ci_high,query_clusters,bootstrap_repetitions
+exact_budget,scet_rationale_extension,multivers,evidence_precision,0.00952380952380949,-0.004797208391282923,0.023632781375719166,296,1000
+exact_budget,scet_rationale_extension,multivers,annotated_per_100,0.9523809523809543,-0.48183397699627284,2.5444347394816047,296,1000
+exact_budget,scet_rationale_extension,multivers,coverage,0.009523809523809504,-0.001250939140086426,0.022305293637658506,296,1000
+exact_budget,scet_rationale_extension,multivers,evidence_recall,0.004164135383498108,-0.006549498601680381,0.017569593295452345,296,1000
+exact_budget,scet_rationale_extension,multivers,all_facts_recall,0.0056267806267805975,-0.006981540215095074,0.019679863009636332,296,1000
+exact_budget,scet_rationale_extension,multivers_rationale,evidence_precision,-0.010714285714285732,-0.01786191053848627,-0.003683664806982562,296,1000
+exact_budget,scet_rationale_extension,multivers_rationale,annotated_per_100,-1.0714285714285712,-1.995422535211267,-0.23255813953488413,296,1000
+exact_budget,scet_rationale_extension,multivers_rationale,coverage,-0.004761904761904759,-0.010664776574136763,0.0011114864864864792,296,1000
+exact_budget,scet_rationale_extension,multivers_rationale,evidence_recall,-0.005639097744360888,-0.011380190762436349,-0.0008134890825320612,296,1000
+exact_budget,scet_rationale_extension,multivers_rationale,all_facts_recall,-0.007518796992481203,-0.014820384294068525,-0.0017602555894809394,296,1000

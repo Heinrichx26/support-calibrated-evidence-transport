@@ -1,0 +1,26 @@
+[
+  {
+    "dataset": "scifact",
+    "seed": 17,
+    "method": "scet",
+    "selected_cap": 3,
+    "fitting_queries": 60,
+    "fitting_precision_by_cap": "{\"1\": 0.2833333333333333, \"2\": 0.38333333333333336, \"3\": 0.43333333333333335, \"5\": 0.4166666666666667}"
+  },
+  {
+    "dataset": "scifact",
+    "seed": 17,
+    "method": "ce",
+    "selected_cap": 3,
+    "fitting_queries": 60,
+    "fitting_precision_by_cap": "{\"1\": 0.36666666666666664, \"2\": 0.4166666666666667, \"3\": 0.43333333333333335, \"5\": 0.4}"
+  },
+  {
+    "dataset": "scifact",
+    "seed": 17,
+    "method": "multivers",
+    "selected_cap": 5,
+    "fitting_queries": 60,
+    "fitting_precision_by_cap": "{\"1\": 0.43333333333333335, \"2\": 0.55, \"3\": 0.6333333333333333, \"5\": 0.6666666666666666}"
+  }
+]

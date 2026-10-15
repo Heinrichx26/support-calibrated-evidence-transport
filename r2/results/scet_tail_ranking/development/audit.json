@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "smoke": false,
+  "code_sha256": "e40767a52b5443cf3a6d7259844f050ad15a96281d88ce0d45fe6b0f101fe2e3",
+  "protocol_sha256": "6fd4d7b28ee22ed0942916a0aa0558f85048a39fc571f0a5cb94ddd87df7848d",
+  "useful_direction": false,
+  "smoke_best_new": 0.5554615892498451,
+  "smoke_best_existing_scet": 0.5628670565273962,
+  "smoke_best_raw": 0.5261687925941895,
+  "previous_external_test_labels_read": false,
+  "all_new_results_development_only": true,
+  "derivatives_numerically_verified": true,
+  "elapsed_seconds": 290.2970000000205
+}

@@ -1,0 +1,5 @@
+seed,chosen,score_control
+13,scores:logistic:1,scores:logistic:1
+17,scores:logistic:0.01,scores:logistic:0.01
+29,scores:logistic:1,scores:logistic:1
+7,rationale,rationale

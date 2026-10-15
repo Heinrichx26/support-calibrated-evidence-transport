@@ -1,0 +1,19 @@
+{
+  "experimental_integrity_passed": true,
+  "combination_gain": 0.0,
+  "combination_gain_interval": [
+    0.0,
+    0.0
+  ],
+  "combination_useful_as_independent_performance_improvement": false,
+  "all_four_partitions_select_multivers": true,
+  "context_difference": 0.0738095238095238,
+  "context_difference_interval": [
+    0.0130593110501821,
+    0.1343172442288304
+  ],
+  "context_difference_statistically_distinct_from_zero": true,
+  "usable_for_manuscript": "Controlled comparison and interpretation of the selected scorer; no independent combination gain.",
+  "larger_pool_extension_triggered": false,
+  "remaining_contribution_risk": "High for independent superiority on SciFact; existing FEVER k100 gain remains the main comparative positive result."
+}

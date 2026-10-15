@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "outcomes_used": false,
+  "checked_pairs": 729,
+  "max_probability_difference": 0.0205078125,
+  "decision_changes": [
+    {
+      "pool": "controlled_pool",
+      "analysis": "exact_budget",
+      "changed_admission_indicators": 0
+    },
+    {
+      "pool": "controlled_pool",
+      "analysis": "prospective_100",
+      "changed_admission_indicators": 1
+    },
+    {
+      "pool": "natural_pool",
+      "analysis": "exact_budget",
+      "changed_admission_indicators": 0
+    },
+    {
+      "pool": "natural_pool",
+      "analysis": "prospective_100",
+      "changed_admission_indicators": 1
+    }
+  ],
+  "all_checked_pairs_use_original_attention_window": true,
+  "boundary_margin": 0.003,
+  "source_sha256": "c143042e27dde141551339499cf4b93b899d717f405b9f20da77e0e820953b57",
+  "before_sha256": "f535b56e968a741dde52d9efd453103854ab586b7cb64fcedc41725d85a0582c",
+  "after_sha256": "406ff7b86c6322e6eb11ad7945d110fa5f6072680002cdbfeb1ee8b66abb7941",
+  "elapsed_seconds": 47.89000000001397
+}

@@ -1,0 +1,25 @@
+dataset,group,reference,delta_set_recall,ci95_low,ci95_high,bootstrap_repetitions,unique_query_clusters,interpretation
+scifact,annotated_queries,ce_batch,-0.058297760174695165,-0.11563250407170259,-0.0020306769422591547,1000,296,Conditional on frozen admissions and observed query partitions.
+scifact,annotated_queries,ce_top1,-0.20807018488907036,-0.2712521775072176,-0.1372656787719059,1000,296,Conditional on frozen admissions and observed query partitions.
+scifact,annotated_queries,scet_top1,-0.17632254656248464,-0.23216754209830986,-0.11651731532488908,1000,296,Conditional on frozen admissions and observed query partitions.
+scifact,singleton_set,ce_batch,-0.0609852110512384,-0.1215431334832044,-0.0022776595946702328,1000,296,Conditional on frozen admissions and observed query partitions.
+scifact,singleton_set,ce_top1,-0.2220140710673095,-0.2895742762766902,-0.14919923688062545,1000,296,Conditional on frozen admissions and observed query partitions.
+scifact,singleton_set,scet_top1,-0.18883753426923802,-0.2459479804864245,-0.13082115837378394,1000,296,Conditional on frozen admissions and observed query partitions.
+scifact,multisentence_set,ce_batch,0.0,0.0,0.0,1000,296,Conditional on frozen admissions and observed query partitions.
+scifact,multisentence_set,ce_top1,0.09821428571428571,0.0,0.3333333333333333,1000,296,Conditional on frozen admissions and observed query partitions.
+scifact,multisentence_set,scet_top1,0.09821428571428571,0.0,0.3333333333333333,1000,296,Conditional on frozen admissions and observed query partitions.
+fever,annotated_queries,ce_batch,0.03809065814853779,0.029783471003495834,0.04615759947439185,1000,19832,Conditional on frozen admissions and observed query partitions.
+fever,annotated_queries,ce_top1,-0.1184669642332975,-0.12653129698902324,-0.11023560185875388,1000,19832,Conditional on frozen admissions and observed query partitions.
+fever,annotated_queries,scet_top1,-0.0846941868463329,-0.09235589726425161,-0.07693890510551285,1000,19832,Conditional on frozen admissions and observed query partitions.
+fever,singleton_set,ce_batch,0.04476616204030101,0.035708369809441094,0.05363820862423659,1000,19832,Conditional on frozen admissions and observed query partitions.
+fever,singleton_set,ce_top1,-0.13495822596444262,-0.14364913341855554,-0.12593323931031894,1000,19832,Conditional on frozen admissions and observed query partitions.
+fever,singleton_set,scet_top1,-0.09780522845807918,-0.10630697542949548,-0.08941081318308601,1000,19832,Conditional on frozen admissions and observed query partitions.
+fever,multisentence_set,ce_batch,-0.028564996432110492,-0.04400372872293478,-0.01345939860895531,1000,19832,Conditional on frozen admissions and observed query partitions.
+fever,multisentence_set,ce_top1,0.04627509312609886,0.03505208798493388,0.059287499018415284,1000,19832,Conditional on frozen admissions and observed query partitions.
+fever,multisentence_set,scet_top1,0.04627509312609886,0.03505208798493388,0.059287499018415284,1000,19832,Conditional on frozen admissions and observed query partitions.
+hover,annotated_queries,ce_batch,0.019553571428571434,0.013801845130546886,0.025255641467586628,1000,3961,Conditional on frozen admissions and observed query partitions.
+hover,annotated_queries,ce_top1,0.06294642857142857,0.05582650394118805,0.0699512790874121,1000,3961,Conditional on frozen admissions and observed query partitions.
+hover,annotated_queries,scet_top1,0.06294642857142857,0.05582650394118805,0.0699512790874121,1000,3961,Conditional on frozen admissions and observed query partitions.
+hover,multisentence_set,ce_batch,0.019553571428571434,0.013801845130546886,0.025255641467586628,1000,3961,Conditional on frozen admissions and observed query partitions.
+hover,multisentence_set,ce_top1,0.06294642857142857,0.05582650394118805,0.0699512790874121,1000,3961,Conditional on frozen admissions and observed query partitions.
+hover,multisentence_set,scet_top1,0.06294642857142857,0.05582650394118805,0.0699512790874121,1000,3961,Conditional on frozen admissions and observed query partitions.

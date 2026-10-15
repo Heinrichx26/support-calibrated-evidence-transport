@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "smoke": true,
+  "protocol_sha256": "c61831e21474df60cc4312ff5c22020f85667eeb13af77db27b354080b00a8c0",
+  "code_sha256": "31ce0c5e15c6dd558b7294212c39da9746b64dcda3852210eb26f4779280ff22",
+  "row_order_and_outcome_invariance": true,
+  "exact_counts": true,
+  "elapsed_seconds": 14.375
+}

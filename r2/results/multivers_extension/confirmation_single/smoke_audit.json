@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "smoke": true,
+  "source_sha256": "e51f64482675965e189fec0f78fc50636b2cd982111980be5337a26d6bfba937",
+  "required_pairs": 32,
+  "bounds": [
+    {
+      "mode": "exhaustive",
+      "pairs": 53953,
+      "omitted_pairs": 0
+    }
+  ],
+  "score_interval": [
+    0,
+    1
+  ],
+  "labels_accessed_by_inference": false,
+  "short_input_attention_graph_preserved": true,
+  "attention_equivalence_audit": {
+    "passed": true,
+    "pairs": 266,
+    "max_absolute_probability_difference": 0.0006103515625,
+    "original_seconds": 85.28799999982584,
+    "adaptive_seconds": 40.68600000010338,
+    "all_real_token_attention_edges_preserved": true,
+    "outcomes_used": false,
+    "implementation_sha256": "9f01cdaea181660c27f1a62e0deabbc1573afb2fab8cb045541b979725fa51e5"
+  },
+  "elapsed_seconds": 4.702999999979511
+}

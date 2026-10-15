@@ -1,0 +1,2 @@
+dataset,seed,calibration_prevalence,test_prevalence,mapped_brier,prior_brier,brier_skill,mapped_ece,prior_ece,test_pairs
+scifact,13,0.009666666666666667,0.0125,0.011451766049867187,0.01235177777777778,0.07286495467314946,0.004119458144280618,0.0028333333333333335,1200

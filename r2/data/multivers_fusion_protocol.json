@@ -1,0 +1,23 @@
+{
+  "version": "2026-10-15-exploratory-probability-fusion-v1",
+  "status": "exploratory; original SciFact evaluation outcomes were already inspected before this extension",
+  "seeds": [13, 17, 29, 7],
+  "candidate_pool": 100,
+  "workload_target": 100,
+  "eligible_rank": 5,
+  "inner_query_folds": 3,
+  "C": [0.01, 0.1, 1.0],
+  "feature_groups": ["mv_probability", "mv_semantic", "mv_direction_consistency"],
+  "mv_probability": ["logit_rationale", "logit_document_evidence"],
+  "mv_semantic": ["mv_probability", "raw_ce", "raw_e5", "raw_bge", "raw_minilm"],
+  "mv_direction_consistency": ["mv_semantic", "logit_nli_relevance", "predicted_document_nli_alignment", "predicted_document_direction_certainty"],
+  "baseline_scores": ["raw_multivers", "raw_multivers_rationale"],
+  "probability_clipping": 0.000001,
+  "training": "Query-weighted balanced logistic regression; standardization fit on training queries only.",
+  "selection": "Mean precision at exactly one item per query in each query-disjoint inner validation fold. Ties prefer a baseline, fewer features and stronger regularization in the declared order. Select one model from MultiVerS-only candidates and one from all candidates independently on fitting queries.",
+  "thresholds": "Fit on the original 30 independent threshold-calibration queries, after all model choices are frozen.",
+  "evaluation": "All four original held-out query partitions; no candidate, hyperparameter, threshold or working-point selection from evaluation labels. Compare against original MultiVerS, raw rationale, and the separately selected MultiVerS-only calibration model.",
+  "smoke": "First run fitting and selection for seed 13 and evaluate only the first 12 held-out identifiers; full run requires a passing smoke audit.",
+  "stopping": "One full run of this declared family. Do not change the family after viewing its held-out outcomes.",
+  "interpretation": "Any gain over the original product must be distinguished from improvement due to adapting MultiVerS outputs alone. Confidence intervals conditional on frozen rules do not account for prior exploratory design choices. Independent new data are required for confirmatory claims."
+}

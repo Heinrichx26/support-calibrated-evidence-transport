@@ -1,0 +1,73 @@
+{
+  "provider_url": "https://scifact.s3.us-west-2.amazonaws.com/longchecker/latest/data.tar.gz?versionId=NtLPjT4MeLa6Kv8n6zEgVB0PxUs._EFD",
+  "version_id": "NtLPjT4MeLa6Kv8n6zEgVB0PxUs._EFD",
+  "bytes": 3610222,
+  "sha256": "0ce25066f18572af3307438a08d0d318a734d97d1d8c27ca43b51e81ae3d683c",
+  "provider_files": [
+    {
+      "path": "data/covidfact/corpus_without_titles.jsonl",
+      "bytes": 637153,
+      "sha256": "8529e6127252106b4eb8e587c99752669ba42b628965a8f87f48de27ca08ac96"
+    },
+    {
+      "path": "data/covidfact/claims_train.jsonl",
+      "bytes": 214972,
+      "sha256": "81641dd2fc8f43f617aebcc35d64c5264837b96e4d637187aed831aa7359d333"
+    },
+    {
+      "path": "data/covidfact/claims_test.jsonl",
+      "bytes": 75373,
+      "sha256": "a79d824eaafe6ffbad84a0aaf71109a5ddd7488d8650f90419d1ebdf36783d99"
+    },
+    {
+      "path": "data/covidfact/corpus.jsonl",
+      "bytes": 678974,
+      "sha256": "1f32e559b62b49a187b38ab9a7d2a4788b2563b19ac0d52347c2f407800c72c5"
+    },
+    {
+      "path": "data/covidfact/corpus_uid_mapping.json",
+      "bytes": 8481,
+      "sha256": "c662bdc36fba0e3753e23b8e2f87cf327d3cab4cce0b3b5c9a9410931d35dfa7"
+    },
+    {
+      "path": "data/covidfact/claims_fewshot.jsonl",
+      "bytes": 10756,
+      "sha256": "d19093b1c2640d490b214921ff3c92bc78d91902da982bde80054bf9b13bd7de"
+    },
+    {
+      "path": "data/healthver/claims_train.jsonl",
+      "bytes": 477064,
+      "sha256": "30dae131d1727a5865d0eb1b17f06595e40405c118c1cd0a6eef10ebd516ad32"
+    },
+    {
+      "path": "data/healthver/claims_test.jsonl",
+      "bytes": 81445,
+      "sha256": "4e12cf948c8402024ccef8826281eebc6a346cae515124ce0a1197f29bb7a405"
+    },
+    {
+      "path": "data/healthver/corpus.jsonl",
+      "bytes": 521752,
+      "sha256": "1d64b6423501f2255c78080b78f7ed3756621f7224a7f03ecccc1e1876cb8440"
+    },
+    {
+      "path": "data/healthver/claims_dev.jsonl",
+      "bytes": 75091,
+      "sha256": "58188d24ec6959509464c42d98c761ac2811083b1bc57af87415d4ef92e80fd6"
+    },
+    {
+      "path": "data/healthver/corpus_uid_mapping.json",
+      "bytes": 6659,
+      "sha256": "6b51005e00a63f441de4148952b9527491d3a93a4cc3b725e51486a995756318"
+    },
+    {
+      "path": "data/healthver/claims_fewshot.jsonl",
+      "bytes": 16294,
+      "sha256": "c331c8a7a744411402c2f47ee51d4d353845da2eedff4a9e0f4fa564bba1ab7c"
+    }
+  ],
+  "dataset_sources": {
+    "healthver": "https://github.com/sarrouti/HealthVer",
+    "covidfact": "https://github.com/asaakyan/covidfact"
+  },
+  "licensing": "The pinned processed archive contains no dataset licence file. Source document text is omitted from this asset and restored from the upstream provider. MultiVerS source code retains its separate MIT licence."
+}

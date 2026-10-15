@@ -1,0 +1,23 @@
+{
+  "version": "2026-10-15-joint-probability-v1",
+  "seed": 2026101593,
+  "objective": "Evaluate whether isolated-sentence verdict probabilities and their agreement with full-abstract probabilities improve sentence evidence precision.",
+  "provenance": "The existing full-abstract and isolated-sentence transformer predictions are fixed. No transformer is retrained. Previous external test outcomes are excluded from every stage.",
+  "fitting": "Use only original fitting IDs. For HealthVer, half the reserved source components are selected by SHA256(seed:reserved:family) modulo two equal zero. Exclude every fitting claim connected to any selected reserved component. For COVID-Fact, use all original fitting IDs and all reserved IDs, which already have disjoint components. Reserved annotations remain unread until all models are frozen.",
+  "screen": "The fixed top-five union of raw rationale, rationale times document evidence, isolated rationale and arithmetic blends of weights 0.25, 0.5, 0.75. Screening is independent of annotations and identical for every learned model.",
+  "features": {
+    "full": "Full-context rationale, document evidence, signed verdict margin, verdict strength, full-context length/position/other evidence mass/maximum/entropy and full score rank/gap.",
+    "single": "Isolated rationale, isolated document evidence, signed verdict margin, verdict strength, isolated score rank/gap and matching sentence-context summaries.",
+    "old_dual": "Exactly the previous dual-context feature set.",
+    "joint": "Union of full and isolated single-context features, with no explicit agreement feature.",
+    "agreement": "Joint features plus conditional support/refute agreement, signed margin product, absolute evidence difference and Jensen-Shannon divergence of the three verdict probabilities."
+  },
+  "capacity": {"learning_rate": 0.05, "rounds": 150, "depths": [2,3], "l2": [5,20], "max_leaves": 7, "minimum_leaf": 30, "monotone_constraints": false},
+  "weights": "Equal total weight per claim. Each feature group is evaluated with query weights and a class-balanced variant under the same tree capacity.",
+  "selection": "Four deterministic source-component folds on eligible fitting claims only. Select each group by mean precision at exactly one admitted sentence per claim on average and at most five per claim. Ties prefer earlier simpler settings. Agreement model is the prespecified proposed method. Full, single, old_dual and joint are matching controls and ablations. Raw scores and three arithmetic blends are also retained.",
+  "smoke": "HealthVer fitting fold zero only. Scores must be finite and invariant to label perturbation and row reversal. Check all probability triples, source separation and exact workload. Continue the finite family only if either the prespecified agreement group exceeds old_dual and the strongest single-context control by at least 0.01, or the prespecified single-verdict group exceeds old_dual and the full-context control by at least 0.01. The joint agreement result remains an ablation when the single-verdict group is selected.",
+  "fallback_selection": "If agreement does not pass its gate but single-verdict features do, the four-fold development run may select the single-verdict group as the proposed operator. The joint and old_dual groups remain mandatory ablations with identical capacity and selection opportunity.",
+  "evaluation": "After smoke passes, complete fitting-only four-fold selection for both datasets. Freeze selected model files, fitting and reserved IDs, code and protocol hashes before opening reserved annotations. Evaluate reserved labels once. Two primary comparisons per dataset: selected agreement versus selected single-context and selected old dual-context. Source-component paired bootstrap with budget reallocation in each replicate, 2000 replicates, two-sided 95% intervals and Bonferroni simultaneous intervals across the four primary comparisons. Compare joint-feature ablation separately.",
+  "interpretation": "Reserved samples previously contributed unlabelled scores to workload thresholds; they are additional source-separated validation, not new official test data. All development searches are exploratory. A manuscript claim requires validation appropriate to its scope. Preserve every failed and successful candidate; do not reselect or tune after reserved evaluation.",
+  "stopping": "One smoke and, only if the substantive gate passes, one full run and one reserved evaluation of this finite family. No repeated use of previous external test outcomes."
+}

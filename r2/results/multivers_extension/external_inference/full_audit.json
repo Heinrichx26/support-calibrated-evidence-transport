@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "smoke": false,
+  "context": "full",
+  "source_sha256": "36d86f0a0e5e87863843ff41bf6c9314714b44e45c02744f6e01bf44817318ad",
+  "input_sha256": "f0b5166a4d4e164c4692e4a781294d28ca6f207ee74ea7700a76dfb5783ddc42",
+  "scores_sha256": "a8cb2e60d0bc7d7194735cf1d4686a46113c463a92a46fb3abf29bcd23159154",
+  "unique_records": 8392,
+  "truncated": 0,
+  "labels_accessed_for_performance": false,
+  "elapsed_seconds": 478.155999999959
+}

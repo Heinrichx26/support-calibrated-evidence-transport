@@ -1,0 +1,13 @@
+{
+  "version": "2026-10-15-adaptive-calibration-v1",
+  "seed": 2026101581,
+  "status": "All 837 previously evaluated SciFact claims are exploratory development data. No subset of these claims is an untouched confirmation set.",
+  "folds": 4,
+  "weighting": "Each claim has equal training weight. Where both pools exist their total weights are equal. Outcomes and source identifiers never enter predictor features.",
+  "selection": "Equal mean of controlled-pool and natural-pool precision at 100 admitted sentences per 100 claims. Maximum eligible rank five. Source-connected claim groups stay in the same fold.",
+  "candidate_family": "Raw full and isolated rationale, raw full product; arithmetic and power-mean fusion; nonnegative logistic fusion; monotone gradient boosting of full, isolated, dual and dual plus context. Each learned single-context control receives the same optimization and model capacity as the corresponding dual model.",
+  "stopping": "One smoke run, one complete grouped development run. External test outcomes remain unopened until model and controls are frozen. Any later trial gets a new recorded protocol and remains exploratory.",
+  "confirmation": "Untouched public HealthVer and CovidFact official test splits, evaluated after development freeze. Scores may be computed without reading annotations. Report each dataset and all declared controls.",
+  "uncertainty": "Source-family paired bootstrap with budget reallocation. Simultaneous intervals for the prespecified primary comparisons.",
+  "smoke_gate": "Finite predictions, row and outcome invariance, exact admission counts, valid source groups. Continue a family only when the smoke comparison shows useful performance."
+}

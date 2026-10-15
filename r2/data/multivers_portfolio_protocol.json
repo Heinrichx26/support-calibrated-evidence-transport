@@ -1,0 +1,21 @@
+{
+  "version": "2026-10-15-final-development-portfolio-v1",
+  "status": "Final bounded development family before reserved-data evaluation.",
+  "seed": 20261015,
+  "inner_folds": 4,
+  "raw_features": ["raw_bm25", "raw_tfidf", "raw_lsa", "raw_entity", "raw_relation", "raw_minilm", "raw_e5", "raw_bge", "raw_ce", "raw_nli_relevance", "raw_nli_entailment", "nli_contradiction"],
+  "portfolio_variants": [
+    {"max_leaf_nodes": 7, "min_samples_leaf": 80, "l2_regularization": 1.0},
+    {"max_leaf_nodes": 7, "min_samples_leaf": 80, "l2_regularization": 10.0},
+    {"max_leaf_nodes": 15, "min_samples_leaf": 40, "l2_regularization": 1.0},
+    {"max_leaf_nodes": 15, "min_samples_leaf": 40, "l2_regularization": 10.0}
+  ],
+  "classifier": {"learning_rate": 0.05, "max_iter": 120, "max_depth": 4, "early_stopping": false},
+  "feature_groups": ["portfolio", "portfolio_context"],
+  "features": "Original 12 scorer outputs plus the full-abstract rationale/document features. Portfolio_context also receives the previously frozen candidate-context metadata. No gold verdict, label, source identifier, candidate order, pool construction flag or local path enters the classifier.",
+  "controls": ["rationale", "product", "full:histogram:1", "full:histogram:10", "blend_rationale:0.75"],
+  "selection": "Original 240 fitting / 60 source-separated calibration queries; same four source-family inner folds. Exact-budget evidence precision, ties follow declared order. Best control is selected independently from controls only.",
+  "smoke": "First two fitting folds; verify finite scores, exact counts, row-order/outcome invariance before full four-fold selection.",
+  "confirmation": "One evaluation on the 537 reserved train claims; controlled pool is primary, natural pool is secondary. Report all declared comparisons, intervals and metric tradeoffs.",
+  "stopping": "Freeze the selected final model and best control after this family. No further development based on reserved-data outcomes. Preserve prior unfavorable experiments."
+}

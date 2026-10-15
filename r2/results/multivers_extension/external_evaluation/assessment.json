@@ -1,0 +1,54 @@
+{
+  "supported_general_increment": false,
+  "all_primary_point_gains_positive": true,
+  "primary_comparisons": [
+    {
+      "dataset": "healthver",
+      "reference": "best_single",
+      "delta_precision": 0.034782608695652195,
+      "ci95_low": -0.029092803030303104,
+      "ci95_high": 0.07080319841875928,
+      "simultaneous_low": -0.045671374253123384,
+      "simultaneous_high": 0.08529204166846999,
+      "primary": true,
+      "source_groups": 47
+    },
+    {
+      "dataset": "healthver",
+      "reference": "best_blend",
+      "delta_precision": 0.19130434782608696,
+      "ci95_low": 0.07575606664252081,
+      "ci95_high": 0.33336038961038944,
+      "simultaneous_low": 0.0532685113519092,
+      "simultaneous_high": 0.37743504809505846,
+      "primary": true,
+      "source_groups": 47
+    },
+    {
+      "dataset": "covidfact",
+      "reference": "best_single",
+      "delta_precision": 0.022364217252396124,
+      "ci95_low": -0.006389776357827448,
+      "ci95_high": 0.05610561056105612,
+      "simultaneous_low": -0.014321285775484008,
+      "simultaneous_high": 0.0633089646517907,
+      "primary": true,
+      "source_groups": 100
+    },
+    {
+      "dataset": "covidfact",
+      "reference": "best_blend",
+      "delta_precision": 0.07987220447284338,
+      "ci95_low": -0.0032268606367278738,
+      "ci95_high": 0.15182577212945164,
+      "simultaneous_low": -0.0192015944047351,
+      "simultaneous_high": 0.17193916524837535,
+      "primary": true,
+      "source_groups": 100
+    }
+  ],
+  "one_shot_test": true,
+  "training_thresholds_unchanged_after_test": true,
+  "source_sha256": "e8256088d00d0f0221b814c2de85710259ce12ba46c60718d82225ad4c7e7a9b",
+  "elapsed_seconds": 4.015999999945052
+}

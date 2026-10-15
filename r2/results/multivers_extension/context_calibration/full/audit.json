@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "smoke": false,
+  "protocol_sha256": "268ba0ea1caf3f7fbb61e5a88b4236cead76e3da832d1e4a85dffd1e0b305f79",
+  "code_sha256": "539d6656292994650216c0187a66bf9b506a64871bc71fd32e7123e3884406fa",
+  "outcome_and_row_order_invariance": true,
+  "source_grouped_inner_selection": true,
+  "original_evaluation_exploratory": true,
+  "elapsed_seconds": 28.280999999959022
+}

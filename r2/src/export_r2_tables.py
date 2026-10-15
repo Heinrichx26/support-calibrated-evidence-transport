@@ -1,4 +1,4 @@
-"""Export all 26 R2 tables from saved experimental results.
+"""Export every R2 table from saved experimental results.
 
 No Word document, manuscript source, or experimental rerun is required.
 Run from an extracted release with Python 3.11 and requirements-admission.txt.
@@ -80,6 +80,72 @@ def readable(name):
     if name.startswith('portfolio_'):
         return 'Logistic portfolio C=' + name.split('_')[-1]
     return METHODS.get(name, name)
+
+
+def external_table_specs():
+    """Return S25-S27 from saved external outcomes, checking their numerators.
+
+    This interface is also used by the document updater. It reads no manuscript,
+    retrains no model, and never substitutes manually entered display values.
+    The final value in each tuple is a concise table note.
+    """
+    root = RES / 'multivers_extension/external_evaluation'
+    summary = pd.read_csv(root / 'summary.csv')
+    exact = summary[summary.analysis == 'exact_budget'].set_index(['dataset', 'method'])
+    labels = {'healthver': 'HealthVer', 'covidfact': 'COVID-Fact'}
+    method_labels = {
+        'selected': 'SCET calibration', 'best_single': 'Selected single context',
+        'best_blend': 'Selected arithmetic blend', 'full_raw': 'Abstract rationale',
+        'full_product': 'Abstract joint score', 'single_raw': 'Sentence rationale',
+        'matched_full': 'Matched abstract context', 'without_context': 'Without context features',
+        'without_focus': 'All-candidate fitting'}
+    metrics = ['evidence_precision', 'coverage', 'evidence_recall', 'all_facts_recall']
+    # Reconstruct all displayed metrics from per-query counts. In particular,
+    # complete-set recall excludes queries with no annotated evidence.
+    for dataset in labels:
+        for method in method_labels:
+            q = pd.read_csv(root / dataset / f'query_{method}_exact_budget.csv')
+            assert not q.query_id.duplicated().any(), (dataset, method)
+            assert q.admitted.sum() == len(q), (dataset, method, 'budget')
+            gold = q[q.gold_count > 0]
+            recomputed = [q.correct.sum() / q.admitted.sum(), q.covered.mean(),
+                          (gold.correct / gold.gold_count).mean(),
+                          q.loc[q.gold_count > 0, 'all_facts'].mean()]
+            stored = exact.loc[(dataset, method)]
+            assert len(q) == stored.queries
+            assert np.allclose(recomputed, stored[metrics].to_numpy(float), atol=1e-12, rtol=0), (dataset, method)
+
+    def rows_for(methods):
+        rows = []
+        for dataset, label in labels.items():
+            for method in methods:
+                row = exact.loc[(dataset, method)]
+                rows.append([label, method_labels[method]] + [fs(row[m]) for m in metrics])
+        return rows
+
+    common = ('Every method admits one sentence per test query on average, with at most five per query. '
+              'Higher values indicate better retention at this workload. '
+              'Set recall is the fraction of queries with annotated evidence for which at least one complete evidence set is admitted.')
+    headers = ['Dataset', 'Method', 'Precision', 'Coverage', 'Recall', 'Set recall']
+    main = ('External calibration at fixed workload', headers,
+            rows_for(['selected', 'best_single', 'best_blend']), common)
+    ablations = ('External score controls and ablations', headers,
+                 rows_for(['full_raw', 'full_product', 'single_raw', 'matched_full', 'without_context', 'without_focus']), common)
+    intervals = pd.read_csv(root / 'paired_intervals.csv')
+    rows = []
+    for dataset, label in labels.items():
+        for reference in ['best_single', 'best_blend']:
+            row = intervals[(intervals.dataset == dataset) & (intervals.reference == reference)].iloc[0]
+            delta = exact.loc[(dataset, 'selected'), 'evidence_precision'] - exact.loc[(dataset, reference), 'evidence_precision']
+            assert np.isclose(delta, row.delta_precision, atol=1e-12, rtol=0)
+            rows.append([label, method_labels[reference], fs(row.delta_precision),
+                         f'[{row.ci95_low:.3f}, {row.ci95_high:.3f}]',
+                         f'[{row.simultaneous_low:.3f}, {row.simultaneous_high:.3f}]'])
+    comparison = ('Paired external precision differences',
+                  ['Dataset', 'Comparator', 'Difference', '95% interval', 'Simultaneous interval'], rows,
+                  'Positive differences favor SCET calibration. Intervals use 2,000 paired source-component resamples with the fixed budget reallocated in each sample. '
+                  'The simultaneous intervals apply Bonferroni correction to four primary comparisons.')
+    return {25: main, 26: ablations, 27: comparison}
 
 def supplementary():
     tables = {}
@@ -238,6 +304,17 @@ def supplementary():
         for x in pd.read_csv(RES / f'strengthening/{ds}_full_k100/risk_bound.csv').to_dict('records'):
             rows.append([ds, str(x['seed']), str(x['calibration_queries']), str(x['error_queries']), 'Nonempty' if x['nonempty_feasible'] else 'Empty rule', fs(x['simultaneous_upper_bound'], 3)])
     tab(22, 'Calibration-side query-risk bounds', ['Dataset', 'Seed', 'Queries', 'Errors', 'Rule', 'Upper bound'], rows)
+    from multivers_extension_tables import tables as extension_tables
+    for number, (title, headers, rows, note) in extension_tables().items():
+        tab(number, title, headers, rows)
+    for number, (title, headers, rows, note) in external_table_specs().items():
+        tab(number, title, headers, rows)
+    from scet_allocation_tables import allocation_table_specs
+    for number, (title, headers, rows, note) in allocation_table_specs().items():
+        tab(number, title, headers, rows)
+    from scet_set_size_tables import gold_set_table_specs
+    for number, (title, headers, rows, note) in gold_set_table_specs().items():
+        tab(number, title, headers, rows)
     return tables
 
 
@@ -248,7 +325,9 @@ def export(smoke=False):
     tables = {f'Table_{i}': (f'Manuscript Table {i}', headers, rows)
               for i, (headers, rows, bold) in enumerate(specs.values(), 1)}
     tables.update(supplementary())
-    assert len(tables) == 26
+    supplementary_numbers = [int(key[1:]) for key in tables if key.startswith('S')]
+    assert set(supplementary_numbers) == set(range(1, max(supplementary_numbers) + 1))
+    assert sum(key.startswith('Table_') for key in tables) == 4
     if smoke:
         tables = {key: tables[key] for key in ['Table_1', 'S1']}
     index = []
