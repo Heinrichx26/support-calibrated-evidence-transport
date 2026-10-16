@@ -1,6 +1,6 @@
 {
-  "Table 1": "results/dataset_facts.json; data/processed/*_full_queries.json",
-  "Table 2": "results/dataset_facts.json; data/processed/*_full_queries.json",
+  "Table 1": "article/Source_unmark/main.tex; results/dataset_facts.json",
+  "Table 2": "data/processed/*_full_queries.json; results/dataset_facts.json",
   "Table 3": "results/experiments/*_full_k100/primary_mean_sd.csv; model_seed*.json (selected single)",
   "Table 4": "results/experiments/*_full_k100/primary_mean_sd.csv; model_seed*.json (risk_control)",
   "S1": "data/r2_protocol.json",
@@ -36,5 +36,9 @@
   "S28": "results/scet_allocation/full/summary.csv; query_*_seed*_*.csv; src/scet_allocation_tables.py",
   "S29": "results/scet_allocation/full/paired_intervals.csv; src/scet_allocation_tables.py",
   "S30": "results/substantive_strengthening/set_size/full/mean_sd.csv; src/scet_set_size_tables.py",
-  "S31": "results/tables/allocation_ranking/S31.csv; results/allocation_ranking/full/decomposition.csv; data/allocation_ranking_dependencies.json; R2_allocation_ranking.zip; python src/export_r2_tables.py --s31-only"
+  "S31": "results/tables/allocation_ranking/S31.csv; results/allocation_ranking/full/decomposition.csv; data/allocation_ranking_dependencies.json; R2_allocation_ranking.zip; python src/export_r2_tables.py --s31-only",
+  "S32": "results/r5_context_gain/evaluation/mean_sd.csv; results/r5_context_gain/controls/full/mean_sd.csv; src/r5_additional_tables.py",
+  "S33": "results/r5_context_gain/controls/full/mean_sd.csv; src/r5_additional_tables.py",
+  "S34": "results/r5_risk_conflict/risk/full/selected_rules.csv; results/r5_context_gain/conditional_risk/full/selected_rules.csv; corresponding evaluation_by_partition.csv; src/r5_additional_tables.py",
+  "S35": "results/r5_risk_conflict/conflict/full/evaluation_mean_sd.csv; paired_intervals.csv; src/r5_additional_tables.py"
 }

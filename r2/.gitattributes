@@ -23,3 +23,10 @@ src/analyze_fever_missingness.py -text
 src/analyze_scet_contribution.py -text
 results/evidence_completion/** -text
 requirements-evidence.txt -text
+
+# Preserve additional-validation source and numerical manifest bytes.
+src/r5_*.py -text
+results/r5_*/** -text
+results/tables/additional_validation/** -text
+requirements-additional-validation.txt -text
+README_ADDITIONAL_VALIDATION.md -text

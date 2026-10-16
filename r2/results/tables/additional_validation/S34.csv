@@ -1,0 +1,12 @@
+Method (seed),Calibration risk upper bound,Calibration coverage lower bound,Test coverage,Test conditional error
+SCET (29),0.1830,0.0729,0.0934,0.1361
+Cross-encoder (17),0.1978,0.0815,0.1028,0.1237
+Cross-encoder (7),0.1747,0.0806,0.0990,0.1227
+"SCET, list features (13)",0.1967,0.3528,0.3852,0.1482
+"SCET, list features (17)",0.1955,0.3493,0.3903,0.1523
+"SCET, list features (29)",0.1762,0.3597,0.3958,0.1449
+"SCET, list features (7)",0.1914,0.4898,0.4953,0.1781
+Cross-encoder features (13),0.1893,0.1313,0.1516,0.1173
+Cross-encoder features (17),0.1954,0.1266,0.1563,0.1207
+Cross-encoder features (29),0.1988,0.1299,0.1488,0.1119
+Cross-encoder features (7),0.1948,0.2440,0.2579,0.1684

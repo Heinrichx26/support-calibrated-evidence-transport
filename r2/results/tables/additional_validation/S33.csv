@@ -1,0 +1,61 @@
+Calibration target,Scoring form,Precision (SD),Items/100 (SD),Set recall (SD),Test error (SD)
+"Query error
+0.10","SCET, list features","0.819
+(0.008)","50.2
+(2.8)","0.582
+(0.024)","0.091
+(0.009)"
+"Query error
+0.10",Cross-encoder features,"0.777
+(0.009)","41.5
+(1.6)","0.454
+(0.011)","0.093
+(0.007)"
+"Query error
+0.10",Cross-encoder list cutoff,"0.777
+(0.010)","41.2
+(2.9)","0.451
+(0.023)","0.092
+(0.011)"
+"Query error
+0.10",Cross-encoder top-one gate,"0.771
+(0.005)","44.6
+(1.5)","0.484
+(0.012)","0.102
+(0.005)"
+"Query error
+0.10",SCET (Table 3),"0.727
+(0.013)","47.4
+(3.0)","0.431
+(0.021)","0.094
+(0.009)"
+"No-evidence
+0.10","SCET, list features","0.871
+(0.006)","30.4
+(2.9)","0.380
+(0.031)","0.094
+(0.011)"
+"No-evidence
+0.10",Cross-encoder features,"0.847
+(0.016)","21.9
+(3.4)","0.265
+(0.037)","0.087
+(0.022)"
+"No-evidence
+0.10",Cross-encoder list cutoff,"0.839
+(0.004)","16.1
+(2.4)","0.196
+(0.026)","0.075
+(0.013)"
+"No-evidence
+0.10",Cross-encoder top-one gate,"0.842
+(0.003)","21.8
+(1.8)","0.265
+(0.020)","0.097
+(0.008)"
+"No-evidence
+0.10",SCET (Table 3),"0.744
+(0.007)","40.3
+(1.3)","0.379
+(0.011)","0.089
+(0.008)"

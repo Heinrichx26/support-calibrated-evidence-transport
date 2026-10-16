@@ -395,6 +395,10 @@ def supplementary():
     if (RES / 'allocation_ranking/full/decomposition.csv').exists():
         title, headers, rows = allocation_ranking_table()
         tab(31, title, headers, rows)
+    if (RES / 'r5_context_gain/conditional_risk/full/audit.json').exists():
+        from r5_additional_tables import tables as additional_tables
+        for name,value in additional_tables().items():
+            tab(int(name[1:]),value['title'],value['headers'],value['rows'])
     return tables
 
 
@@ -413,7 +417,8 @@ def export(smoke=False):
     index = []
     for name, (title, headers, rows) in tables.items():
         assert all(len(row) == len(headers) for row in rows), name
-        path = destination / ('allocation_ranking/S31.csv' if name == 'S31' else name + '.csv')
+        relative = 'allocation_ranking/S31.csv' if name == 'S31' else ('additional_validation/'+name+'.csv' if name in ['S32','S33','S34','S35'] else name+'.csv')
+        path = destination / relative
         path.parent.mkdir(parents=True, exist_ok=True)
         with path.open('w', encoding='utf-8', newline='') as stream:
             writer = csv.writer(stream, lineterminator='\n')

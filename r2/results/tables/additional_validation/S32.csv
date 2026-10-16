@@ -1,0 +1,43 @@
+Scoring form and rule,Items/100 (SD),Precision (SD),Set recall (SD),No-evidence admission (SD)
+"SCET, list features
+Fixed batch","100.0
+(0.0)","0.657
+(0.003)","0.815
+(0.004)","0.545
+(0.020)"
+"Cross-encoder features
+Fixed batch","100.0
+(0.0)","0.616
+(0.003)","0.813
+(0.002)","0.858
+(0.015)"
+"Cross-encoder list cutoff
+Fixed batch","100.0
+(0.0)","0.615
+(0.002)","0.812
+(0.002)","0.853
+(0.005)"
+"SCET (Table 3)
+Fixed batch","100.0
+(0.0)","0.584
+(0.004)","0.691
+(0.003)","0.334
+(0.002)"
+"Raw cross-encoder
+Fixed batch","100.0
+(0.0)","0.540
+(0.002)","0.652
+(0.002)","0.459
+(0.003)"
+"SCET, list features
+Calibrated threshold","98.7
+(2.4)","0.661
+(0.008)","0.812
+(0.007)","0.536
+(0.026)"
+"Cross-encoder features
+Calibrated threshold","100.2
+(1.2)","0.615
+(0.004)","0.813
+(0.005)","0.857
+(0.021)"

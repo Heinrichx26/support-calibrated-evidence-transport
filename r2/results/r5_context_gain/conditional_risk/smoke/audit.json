@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "smoke": true,
+  "code_sha256": "c24bc6f9f8956f96d1093c0b191331836a1ce839128fa2b4ce5a2fe143dfadb1",
+  "plan_sha256": "0260c4454c79d450fc424bcf27523dce6e9bb1457a02e23d05a1213befa9d33e",
+  "inputs": {
+    "model_freeze_sha256": "756775fbc77c0bace33a36490a2f92ceab06cf0aeaf78bffe61ea6bee7398b32",
+    "cached_score_generation_code_sha256": "4f7758a47c1d4caa5d9f544c016803b38476cdf9f9f86684b2f5ae0a4ef68a17",
+    "source_simple_statistics_sha256": "a5a60be6e87a902f379143ba8b8cc9fb67f05abfb1b404216a423cec714ea3b6",
+    "cache_audit_sha256": "95fe7f005f9e13a55e037f8a93c08c37f5b44580500853d8b35136b38d4cd621"
+  },
+  "cache_hashes": {
+    "13": {
+      "fitting": "eb2e10de2d6c901e46ad2a75adf2c6f632d0971109b69a08b0dd1903aa884a86",
+      "calibration": "a7dd2515c506d6dd4240c526ef8551aa134bc3453b1606a6eaeec12bdd2037fc"
+    }
+  },
+  "new_fitting": false,
+  "test_point_selection": false,
+  "smoke_test_cache_access": false,
+  "split_disjointness": true,
+  "order_invariance_checked_in_smoke": true,
+  "threads": 2,
+  "elapsed_seconds": 0.6870000001508743
+}

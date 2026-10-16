@@ -1,0 +1,34 @@
+{
+  "created": "2026-10-16",
+  "purpose": "Fitting-only exploratory assessment of list-level features within scorer selection.",
+  "dataset": "fever",
+  "pool": 100,
+  "seeds": [
+    13,
+    17,
+    29,
+    7
+  ],
+  "screen": "Union of the first five candidates of all twelve raw individual scorers; labels are never used.",
+  "features": "For each permitted view: training-quantile score, reciprocal within-query rank, query maximum score, query first-second score gap, candidate-minus-query-maximum score.",
+  "groups": [
+    "ce",
+    "all"
+  ],
+  "depths": [
+    2,
+    3
+  ],
+  "iterations": 100,
+  "learning_rate": 0.05,
+  "max_leaf_nodes": 7,
+  "min_samples_leaf": 30,
+  "l2": 10,
+  "max_bins": 63,
+  "folds": "Three deterministic fitting-only annotated-page-component folds. This separates shared annotated pages within the fitting sample, not all candidate sources.",
+  "weights": "Equal total candidate weight per query, then equal total class weight.",
+  "selection": "Mean out-of-fold precision at 100 sentences per 100 validation queries, maximum five per query. Ties prefer smaller depth.",
+  "smoke": "FEVER seed13 inner fold0, both groups and depths. Check finite values, label/order invariance, exact budget. Continue if all-view precision exceeds the trained CE group by at least .01.",
+  "evaluation": "Only after complete fitting-only model selection and a saved freeze file. Reuse independent original threshold calibration; report all groups, prospective and exact-batch results. No model re-selection on test.",
+  "scope": "New models are exploratory scoring-form candidates. Existing main-model results remain unchanged."
+}

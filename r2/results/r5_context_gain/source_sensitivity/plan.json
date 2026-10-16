@@ -1,0 +1,36 @@
+{
+  "created": "2026-10-16",
+  "seeds": [
+    13,
+    17,
+    29,
+    7
+  ],
+  "protocols": [
+    "prospective",
+    "fixed_batch"
+  ],
+  "methods": [
+    "all",
+    "capacity_ce",
+    "original_scet",
+    "ce_list_logit"
+  ],
+  "metrics": [
+    "precision",
+    "complete_set_recall",
+    "singleton_set_recall",
+    "multiple_set_recall",
+    "coverage",
+    "no_evidence_admission"
+  ],
+  "primary": "All minus capacity-matched CE precision in prospective and fixed-batch protocols; two comparisons.",
+  "other_comparisons": "All minus each of capacity CE, original SCET and pure CE list-logit for all listed metrics; retain every result as exploratory.",
+  "bootstrap": "1000 annotated-page component multinomial draws; one source weight shared by every query in its component and by every occurrence across partitions.",
+  "bootstrap_seed": 2026101607,
+  "simultaneous": "Bonferroni two-primary family: 97.5% marginal percentile intervals, nominal 95% family coverage. Other intervals are pointwise 95%.",
+  "subgroups": "Original smallest nonempty annotated evidence-set size: one for singleton; at least two for multiple; original denominators retain unavailable evidence.",
+  "missing_source_map": "Assign a unique missing:<query_id> component, and report all missing query IDs.",
+  "conditioning": "Frozen models, observed partitions and frozen admission decisions. Fixed-batch budget is not reallocated during bootstrap.",
+  "scope": "Source-dependence sensitivity; this is not a source-disjoint training/evaluation experiment."
+}

@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "smoke": true,
+  "code_sha256": "4f7758a47c1d4caa5d9f544c016803b38476cdf9f9f86684b2f5ae0a4ef68a17",
+  "inputs": {
+    "training_source_sha256": "79c8d7f565032bf6109abf2ba73a824b9bb0af2f70babf9e847626ef5368cced",
+    "freeze_sha256": "756775fbc77c0bace33a36490a2f92ceab06cf0aeaf78bffe61ea6bee7398b32",
+    "models": {
+      "13_ce": "76c4a058a7186f55bb5893a896e75dfb4cb282d42bc655c60fa6ea38458e00be",
+      "13_all": "d14260ca3e9b6775b4d4c055542a0c3188825747ada7ffd8d3a36064b2ff7fe9",
+      "17_ce": "5ddeee2f8af3e0c689e14602deaa07321f821f6e7d1d03b3290187a723f3aa11",
+      "17_all": "d74628bbad9ef1a48bbdf2aea8ae188691eba9e219c974e1b75119b2993eb130",
+      "29_ce": "7faa79af8316172d97fd4d3837c92cda76677d6fee7abdbf101fc875f9263b14",
+      "29_all": "5d5a071b5c8c078fa3d668732eeb262893b2cded28d43669cab2d374e4e9534b",
+      "7_ce": "4c47d41f832eef8a391e850bb685842dd09ff1d0ca663dd42725ad0292b40d73",
+      "7_all": "02817e5a354710e4bbcbe3b387c0bd6901497d99dbf92ca6e7fb5b9635e468fd"
+    },
+    "scored_data_sha256": "971230db9694627136cf19898718c9d2f5440b49d9de4d07e54d55d64e7fd302",
+    "simple_control_source_sha256": "a5a60be6e87a902f379143ba8b8cc9fb67f05abfb1b404216a423cec714ea3b6"
+  },
+  "plan_sha256": "80b9a15ff4f371e60decf6c657e957f34afea796ca559cad491db9d3a93e3cb4",
+  "new_fitting": false,
+  "test_point_selection": false,
+  "label_and_order_invariance": true,
+  "split_disjointness": true,
+  "threads": 2,
+  "elapsed_seconds": 7.312000000150874,
+  "executable": "python.exe"
+}

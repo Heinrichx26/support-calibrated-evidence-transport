@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "stage": "smoke",
+  "code_sha256": "119d828d5dcfda48ff6cd0bf55de1f7921aa1245faef1643554324fac3cb2c11",
+  "plan": {
+    "version": "r5_refitted_explicit_conflict_ablation_20261016",
+    "datasets": [
+      "scifact",
+      "fever",
+      "hover"
+    ],
+    "seeds": [
+      13,
+      17,
+      29,
+      7
+    ],
+    "variants": [
+      "without_explicit_conflict_indicator",
+      "without_explicit_conflict_and_summaries"
+    ],
+    "common_removal": "delete kappa from portfolio inputs; remove kappa from RAG utility; disable all external conflict penalties",
+    "summary_removal": "second variant additionally deletes inter-view SD and semantic-anchor gap engineered portfolio summaries",
+    "remaining_inputs": "12 raw views and remaining generic summaries; raw NLI probabilities remain. These can retain implicit conflict information.",
+    "selection": "same original 3 query folds, query/class weights, C in [0.1,1,10], selection objective and tie rules",
+    "calibration": "same independent threshold-calibration queries; target100 items per100 queries; rank<=5",
+    "evaluation": [
+      "prospective",
+      "exact_budget"
+    ],
+    "shared_stress": "original frozen common stress subset, unchanged and excluded from the ablated predictor",
+    "threads": 2
+  },
+  "test_outcomes_used_for_selection": false,
+  "core_method_changed": false,
+  "smoke_read_test": false,
+  "smoke_label_and_order_invariance": true,
+  "elapsed_seconds": 0.5630000000819564
+}

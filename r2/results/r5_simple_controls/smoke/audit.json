@@ -1,0 +1,100 @@
+{
+  "passed": true,
+  "stage": "smoke",
+  "code_sha256": "a5a60be6e87a902f379143ba8b8cc9fb67f05abfb1b404216a423cec714ea3b6",
+  "plan": {
+    "version": "20261016_v1",
+    "question": "Does frozen SCET improve on one raw scorer given simple learned list-based allocation and top-one abstention?",
+    "sources": {
+      "fever": [
+        "ce"
+      ],
+      "hover": [
+        "ce",
+        "e5"
+      ],
+      "scifact": [
+        "ce",
+        "multivers"
+      ]
+    },
+    "partitions": [
+      13,
+      17,
+      29,
+      7
+    ],
+    "fitting": "Original fitting IDs only; three identifier-hashed query folds; no calibration/test labels used for training or choosing C.",
+    "C": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "top1_gate_target": "Membership label of the raw scorer first-ranked candidate, predicted using query-list score summaries.",
+    "top1_C_selection": "Minimum query-fold out-of-fold Brier score, then smaller C.",
+    "list_target": "Membership of each of the raw scorer first five candidates; query-balanced weights; no class balancing.",
+    "list_C_selection": "Lexicographic OOF precision, annotated-hit query fraction, annotated items/query at 100 items/100 fitting queries; then smaller C.",
+    "query_features": [
+      "raw_top1",
+      "raw_top1_minus_top2",
+      "raw_top1_minus_top5",
+      "top5_mean",
+      "top5_population_sd",
+      "pool_mean",
+      "pool_population_sd",
+      "log1p_pool_count"
+    ],
+    "list_features": [
+      "raw_candidate_score",
+      "raw_gap_to_top1",
+      "rank_indicators_1_to_5",
+      "query_features"
+    ],
+    "ordering": "Raw scorer candidate order with original fixed tie keys is preserved; cap-five predictions use cumulative minima with nextafter for strict prefix ordering.",
+    "methods": [
+      "raw_cap5",
+      "raw_top1",
+      "list_logit_cap5",
+      "list_logit_top1",
+      "frozen_scet"
+    ],
+    "workload_targets": [
+      25,
+      50,
+      100,
+      200,
+      300,
+      400,
+      500
+    ],
+    "prospective_thresholds": "Independent calibration order statistics, scores and existing tie keys; a top-one policy saturates at 100 items/100 queries.",
+    "fixed_budget": "Label-free batch score order admits min(number of queries, eligible candidates); diagnostic only, separately labelled.",
+    "risk_targets": [
+      0.01,
+      0.025,
+      0.05,
+      0.1,
+      0.2,
+      0.3
+    ],
+    "risk_thresholds": "101 fitting-prediction quantiles plus +/-infinity fixed before calibration labels. Calibration chooses maximum admitted count subject to empirical query-error or no-evidence-admission target. No finite-sample risk guarantee is claimed for these controls.",
+    "risk_metrics": [
+      "query_error_rate",
+      "false_admission_no_evidence"
+    ],
+    "reporting": "All sources, models, Cs, thresholds and specified operating points retained. No test-side model or operating-point choice.",
+    "bootstrap": "1000 paired query-cluster draws, shared across overlapping partitions, frozen decisions. Primary prospective workload 100, exact budget, and calibration risk targets 0.1/0.2; pointwise 95% intervals.",
+    "smoke": "FEVER seed13: first 600 fitting, 200 calibration and 300 test IDs; full starts only after finite predictions, disjoint splits, label/order invariance, prefix and independent calibration checks pass.",
+    "threads": 2
+  },
+  "input_sha256": {
+    "data\\scored\\fever_full_k100.parquet": "971230db9694627136cf19898718c9d2f5440b49d9de4d07e54d55d64e7fd302",
+    "results\\experiments\\fever_full_k100\\model_seed13.json": "14b50d5f1d0d127f9823446e5f106c23458c0021203ccc2c89c69ac142982b65"
+  },
+  "split_disjointness": true,
+  "prediction_label_invariance": true,
+  "raw_list_order_reversal_invariance": true,
+  "new_neural_inference": false,
+  "core_models_modified": false,
+  "elapsed_seconds": 4.344000000040978
+}

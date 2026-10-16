@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "mode": "refit_smoke",
+  "driver_code_sha256": "c9c8ba6972826f8b25c4fc7acba67257a8395d98aa2c3aabe53b77c4bf781be2",
+  "interpreter": "python.exe",
+  "runtime": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "sklearn": "1.9.0"
+  },
+  "numerical_threads": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 2,
+      "prefix": "libscipy_openblas",
+      "filepath": "libscipy_openblas64_-63c857e738469261263c764a36be9436.dll",
+      "version": "0.3.31.188.0",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 2,
+      "prefix": "vcomp",
+      "filepath": "vcomp140.dll",
+      "version": null
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 2,
+      "prefix": "libscipy_openblas",
+      "filepath": "libscipy_openblas-64eda39e79589aedb16f58e5547eb599.dll",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    }
+  ],
+  "code_hash_matches_published_and_current": true,
+  "splits_reconstructed_from_protocol": true,
+  "fitting_queries": 60,
+  "fitting_candidate_rows": 5919,
+  "threshold_queries": 30,
+  "evaluation_queries": 12,
+  "portfolio_fit_calls": 12,
+  "scoring_form_quality_evaluations": 84,
+  "selected_form": "ce",
+  "conflict_penalty": 0,
+  "primary_single": "ce",
+  "all_model_fields_within_1e_10": null,
+  "all_numeric_fields_bit_exact": null,
+  "maximum_numeric_parameter_difference": null,
+  "nonexact_numeric_fields": [],
+  "maximum_evaluation_score_difference_from_published_model": null,
+  "all_recomputed_query_metrics_match_published": null,
+  "query_methods_checked": 0,
+  "invariance": {
+    "queries": 12,
+    "candidate_rows": 1192,
+    "methods": 22,
+    "labels_and_verdict_score_invariant": true,
+    "labels_and_verdict_conflict_invariant": true,
+    "shuffled_scores_ranks_admission_invariant": true
+  },
+  "fresh_bootstrap": {
+    "comparator": "ce",
+    "delta_precision_mean": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0,
+    "repetitions": 100,
+    "unique_query_clusters": 12,
+    "partitions": 1,
+    "recalculated_partition": 13,
+    "remaining_partitions": "None",
+    "conditional_on_frozen_models_and_observed_partitions": true
+  },
+  "scope": "Independent fitting of scale, reliability, inner-fold portfolios, full-fit portfolios, scorer/penalty selection and independent calibration thresholds from published raw view scores; fresh held-out scoring/admission/query metrics/bootstrap.",
+  "not_recomputed": [
+    "Original pretrained neural forward inference",
+    "Other three partition fits and scoring"
+  ],
+  "elapsed_seconds": 3.515000000130385
+}

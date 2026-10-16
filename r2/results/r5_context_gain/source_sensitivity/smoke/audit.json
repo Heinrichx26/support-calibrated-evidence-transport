@@ -1,0 +1,155 @@
+{
+  "passed": true,
+  "smoke": true,
+  "code_sha256": "68b5cd16d6c9e290b52947c0a02a1e82f14389ee36e008c0015760ad9a7fbe3f",
+  "plan_sha256": "2611b384f46b167b345b090b479b852a73276e440abb1ca8539cc78671a4a8f6",
+  "evaluation_audit_sha256": "edded9488bb52301f7cce9b067f61e93c53cab0518db364c0047e8f20a8b5a92",
+  "source_map_sha256": "721941a1dc77a31eb42b51f32543e1a980e9f712102329340ac46cd0e0a5e5a4",
+  "queries_sha256": "16178c07738634d72e4d4cc5b2a31de1ba87fe80c4579741d81d397cd2b22dcd",
+  "evaluated_query_union": 48,
+  "source_components": 48,
+  "largest_component_queries": 1,
+  "source_map_missing_queries": 0,
+  "source_map_missing_query_ids": [],
+  "source_map_query_coverage": 1.0,
+  "unique_missing_components_assigned": 0,
+  "all_prespecified_comparisons_saved": true,
+  "primary_comparisons": 2,
+  "bootstrap_repetitions": 1000,
+  "all_input_dependencies": [
+    {
+      "path": "results\\r5_context_gain\\evaluation\\query_seed13_all_prospective.csv",
+      "sha256": "15880ed62323b172da216a0fbdaf3bdecd5c6c033699d8ac77b31ff182c4f37d"
+    },
+    {
+      "path": "results\\r5_context_gain\\evaluation\\query_seed13_ce_prospective.csv",
+      "sha256": "9cfd13953b053fcf4545b12a83865926517f24c5e129c572af5f99a048426e8e"
+    },
+    {
+      "path": "results\\experiments\\fever_full_k100\\query_seed13_scet.csv",
+      "sha256": "949dc37e88d152758621c6d8edc52575d365e9ca6e8539f82057ff9bedecdb2e"
+    },
+    {
+      "path": "results\\r5_simple_controls\\full\\fever_ce\\seed13\\query_list_logit_cap5_workload_100.parquet",
+      "sha256": "b3595b1b54968d2c35b3479ddcc1268d4ac9e468053d9009c7bf7da33da67491"
+    },
+    {
+      "path": "results\\r5_context_gain\\evaluation\\query_seed13_all_fixed_batch.csv",
+      "sha256": "e84059af29b512b0edcad9d99c60532e144ba39e97d56531aad0cfbc2841d04a"
+    },
+    {
+      "path": "results\\r5_context_gain\\evaluation\\query_seed13_ce_fixed_batch.csv",
+      "sha256": "8ab59e838c111f0f08e65809b16b85cc981d9746de894d482cff45ce669f81f3"
+    },
+    {
+      "path": "results\\strengthening\\fever_full_k100\\query_seed13_scet.csv",
+      "sha256": "59b6b9e6b08d9d804e549e8fc237900afbd3ec85205ecd14d2ab55131c5fc241"
+    },
+    {
+      "path": "results\\r5_simple_controls\\full\\fever_ce\\seed13\\query_list_logit_cap5_exact_budget_100.parquet",
+      "sha256": "5c8e46e67bf56dced118dc7b9946dafac1ef0a06e74500c448487141a1cb31ee"
+    },
+    {
+      "path": "results\\r5_context_gain\\evaluation\\query_seed17_all_prospective.csv",
+      "sha256": "324a1e659b6eda4108ec0f29448a494d7f296579511ffdd946e6c851022d861e"
+    },
+    {
+      "path": "results\\r5_context_gain\\evaluation\\query_seed17_ce_prospective.csv",
+      "sha256": "5a768cbd8a53293f3fdd47a6547d2fa3a8b8aefcdb30954af74e34742e777c93"
+    },
+    {
+      "path": "results\\experiments\\fever_full_k100\\query_seed17_scet.csv",
+      "sha256": "2200301e73bb45c70a4709b326e9c7d1c1aa1119706852384f7e139cdee6e967"
+    },
+    {
+      "path": "results\\r5_simple_controls\\full\\fever_ce\\seed17\\query_list_logit_cap5_workload_100.parquet",
+      "sha256": "f8e5d561d0d1bca884a40cce26fea76ad24f8c9703f0f9d0e9957406fa0c5d45"
+    },
+    {
+      "path": "results\\r5_context_gain\\evaluation\\query_seed17_all_fixed_batch.csv",
+      "sha256": "b4845aa5c5fe5861764e25ed056929c5731bdd2494237976edb6072c8a044097"
+    },
+    {
+      "path": "results\\r5_context_gain\\evaluation\\query_seed17_ce_fixed_batch.csv",
+      "sha256": "3f3bec8595c0056863cfab4a6cc8a1ba1fe226d44162bb086cef29568a5f84ec"
+    },
+    {
+      "path": "results\\strengthening\\fever_full_k100\\query_seed17_scet.csv",
+      "sha256": "35215e488a0b4e33fcc97fad409439500e6aec0c1527be99e339a12d6ffa9c2b"
+    },
+    {
+      "path": "results\\r5_simple_controls\\full\\fever_ce\\seed17\\query_list_logit_cap5_exact_budget_100.parquet",
+      "sha256": "5dc131f5207d37bd33fb44209c28c3d31f7fdbf861237d15452c40aa04f7e2be"
+    },
+    {
+      "path": "results\\r5_context_gain\\evaluation\\query_seed29_all_prospective.csv",
+      "sha256": "d021b16c76de362b8548c0a7f36f80c27404c0b128daa2548824f13187deb103"
+    },
+    {
+      "path": "results\\r5_context_gain\\evaluation\\query_seed29_ce_prospective.csv",
+      "sha256": "98c85e34bbb5d6183c7c9b5c502b6956666487c8f3c0461f2ff37ab3d678f295"
+    },
+    {
+      "path": "results\\experiments\\fever_full_k100\\query_seed29_scet.csv",
+      "sha256": "0797e7d349562170109a70537bd2ed91d8f0b68c083c57686f70b3442aeaaff6"
+    },
+    {
+      "path": "results\\r5_simple_controls\\full\\fever_ce\\seed29\\query_list_logit_cap5_workload_100.parquet",
+      "sha256": "11b1c416e6e8a4d4863f7967009bb5ec7b55fcb0daa35958259fbbe7caf80978"
+    },
+    {
+      "path": "results\\r5_context_gain\\evaluation\\query_seed29_all_fixed_batch.csv",
+      "sha256": "f1a8c9dad43fb96258994e13619e006857f65656e1a9a708a6e3399252410ce4"
+    },
+    {
+      "path": "results\\r5_context_gain\\evaluation\\query_seed29_ce_fixed_batch.csv",
+      "sha256": "3758a9dd03b52d068e65255ccbb6d3c334a9a1ef6de8f5265075ad5627153d19"
+    },
+    {
+      "path": "results\\strengthening\\fever_full_k100\\query_seed29_scet.csv",
+      "sha256": "ed34e8c6816d76fae744a698606d9e95fa56bf544d8366c3291bda7045e57cb9"
+    },
+    {
+      "path": "results\\r5_simple_controls\\full\\fever_ce\\seed29\\query_list_logit_cap5_exact_budget_100.parquet",
+      "sha256": "942f036e8e450b8476736dd12f11bebdccdf2b02a5703e72034290855eb67eb2"
+    },
+    {
+      "path": "results\\r5_context_gain\\evaluation\\query_seed7_all_prospective.csv",
+      "sha256": "76783a797329e8d5a9f882c20a02b11975ad367f774077130c4e42ab66676f37"
+    },
+    {
+      "path": "results\\r5_context_gain\\evaluation\\query_seed7_ce_prospective.csv",
+      "sha256": "fdb2a2c855549e9e34b538d225e99d06e1214fc8085f4183c7212ba71ee3bd53"
+    },
+    {
+      "path": "results\\experiments\\fever_full_k100\\query_seed7_scet.csv",
+      "sha256": "1432904a555f1a45503290c927bf97403eeda93c3c49659f72f73f8ed9424215"
+    },
+    {
+      "path": "results\\r5_simple_controls\\full\\fever_ce\\seed7\\query_list_logit_cap5_workload_100.parquet",
+      "sha256": "9dde2cf968e6d9876aa11e797d2fdca919a5e958bcf0e2689630815e3daa2602"
+    },
+    {
+      "path": "results\\r5_context_gain\\evaluation\\query_seed7_all_fixed_batch.csv",
+      "sha256": "a8b7bcab9c58116110906ebab3a7d9ce8e0a77e129ea99a8579f20a392eee829"
+    },
+    {
+      "path": "results\\r5_context_gain\\evaluation\\query_seed7_ce_fixed_batch.csv",
+      "sha256": "f1fb4e138e8b7afc6c81c00ce48a9c92b7eab31ace107a2d97f0b6ed2682bc79"
+    },
+    {
+      "path": "results\\strengthening\\fever_full_k100\\query_seed7_scet.csv",
+      "sha256": "cca8dfa9b74343f573f1f97dc2648aeaf26952341a6f1c6e4bd61632bc7cbe59"
+    },
+    {
+      "path": "results\\r5_simple_controls\\full\\fever_ce\\seed7\\query_list_logit_cap5_exact_budget_100.parquet",
+      "sha256": "9f534c87389d30b5537ea82e04d67ec18d885725f8e4dd08eb5e28601bb14523"
+    }
+  ],
+  "smallest_original_evidence_set_defines_subgroups": true,
+  "fixed_decision_conditioning": true,
+  "fixed_batch_budget_reallocated": false,
+  "neural_inference_or_refitting": false,
+  "source_disjoint_training_test": false,
+  "elapsed_seconds": 0.8590000001713634
+}

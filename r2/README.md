@@ -1,6 +1,6 @@
 # Current numerical reproduction
 
-Tables 1-4 and S1-S31 contain 35 exported tables. [REPRODUCE_ALL_TABLES.md](REPRODUCE_ALL_TABLES.md) gives the extraction order and hashes of the four published archives, followed by the smoke and complete export commands. All 35 CSVs were independently reconstructed from those archives with identical bytes. The repository retains programs and small numerical summaries; detailed query outcomes, numerical candidate matrices and frozen fitted models are in the release attachments.
+Tables 1-4 and S1-S35 contain 39 exported tables. [REPRODUCE_ALL_TABLES.md](REPRODUCE_ALL_TABLES.md) gives the extraction order and hashes of the five published archives, followed by the smoke and complete export commands. The original 35 CSVs and the four additional CSVs were independently reconstructed with identical bytes. The repository retains programs and small numerical summaries; detailed query outcomes, numerical candidate matrices and frozen fitted models are in the release attachments.
 
 The [complete release](https://github.com/Heinrichx26/support-calibrated-evidence-transport/releases/tag/r2-complete-2026-10-15) supplies the external calibration archive, the frozen sentence-ordering/admission-count analysis, and the S31 table-export update. The [original R2 release](https://github.com/Heinrichx26/support-calibrated-evidence-transport/releases/tag/r2-2026-10-15) supplies the original full scorer matrices. Each archive retains its original manifest and checksum.
 
@@ -8,7 +8,9 @@ Tables S25-S27 report the two external collections, score controls, ablations an
 
 [EVIDENCE_ANALYSIS_REPRODUCTION.md](EVIDENCE_ANALYSIS_REPRODUCTION.md) describes the separately released source-correspondence, candidate-text availability and frozen-decision contribution analyses, including their source snapshot, extraction layout and smoke checks.
 
-The sections below document the original experiments. Use the four-archive extraction procedure for all current table exports.
+[README_ADDITIONAL_VALIDATION.md](README_ADDITIONAL_VALIDATION.md) describes the additional fitted models, same-capacity cross-encoder controls, single-scorer list calibration, joint conditional-risk and coverage bounds, source-component intervals, fully refitted conflict ablations and independent FEVER seed-13 refit. The complete numerical grids and query outcomes are in `R2_additional_validation.zip`; its lightweight verifier reproduces the four new tables and checks saved decisions and risk bounds.
+
+The sections below document the original experiments. Use the five-archive extraction procedure for all current table exports.
 
 # R2 evidence admission experiments
 
@@ -31,7 +33,7 @@ Generate every manuscript and supplementary table directly from the saved result
     python src/export_r2_tables.py --smoke
     python src/export_r2_tables.py
 
-The 35 UTF-8 CSV tables and their hashes are written to results/tables/. Every header and displayed cell has been checked against the corresponding Word table. This export requires no manuscript files and performs no experimental scoring.
+The 39 UTF-8 CSV tables and their hashes are written to results/tables/. Every header and displayed cell has been checked against the corresponding Word table. This export requires no manuscript files and performs no experimental scoring.
 
 Run a smoke check before a full experiment:
 

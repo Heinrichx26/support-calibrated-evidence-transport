@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "mode": "smoke",
+  "driver_code_sha256": "6685d4e228e85ab72b6882b485e282f77115ffbe375ec7feee9ded26e0366fc6",
+  "interpreter": "python.exe",
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.4.4",
+    "pandas": "3.0.3",
+    "scipy": "1.17.1",
+    "pyarrow": "24.0.0",
+    "sklearn": "1.9.0"
+  },
+  "archive_sha256": "7e50b281ba52c6d729f499514062c991d0fe1774885f67561eedcdfff3ad1762",
+  "imported_frozen_scoring_program": "restored_public_archive\\src\\r2_admission.py",
+  "current_program_hash_equals_archive_and_model": true,
+  "scored_input_file_sha256": "971230db9694627136cf19898718c9d2f5440b49d9de4d07e54d55d64e7fd302",
+  "input_content_hash_matches_fitted_model": true,
+  "input_content_sha256": "577ec4a062e15e4eb7b6da42dfae8e5fd4447b3e5fb7dc7575c0952b3b4fbd34",
+  "fitting_queries": 4019,
+  "threshold_queries": 1980,
+  "independent_query_splits": true,
+  "thresholds_recomputed_and_matched": 21,
+  "evaluation_queries_recomputed": 12,
+  "candidate_rows_recomputed": 1192,
+  "methods_query_metrics_recomputed_and_matched": 25,
+  "invariance": {
+    "queries": 12,
+    "candidate_rows": 1192,
+    "methods": 22,
+    "labels_and_verdict_score_invariant": true,
+    "labels_and_verdict_conflict_invariant": true,
+    "shuffled_scores_ranks_admission_invariant": true
+  },
+  "bootstrap": {
+    "comparator": "ce",
+    "delta_precision_mean": 0.10769230769230775,
+    "ci_low": -0.035208333333333376,
+    "ci_high": 0.42414529914529875,
+    "repetitions": 100,
+    "unique_query_clusters": 12,
+    "partitions": 1,
+    "recalculated_partition": 13,
+    "remaining_partitions": "None",
+    "conditional_on_frozen_models_and_observed_partitions": true
+  },
+  "scope": "Published raw neural/lexical view scores -> frozen transformations, conflict and portfolio scoring -> independent calibration thresholds -> admission and ranks -> all query metrics -> fresh bootstrap.",
+  "not_recomputed": [
+    "Raw neural model forward inference",
+    "Fitting transformations/portfolio parameters",
+    "Other three partitions scoring and query outcomes"
+  ],
+  "elapsed_seconds": 13.186999999918044
+}

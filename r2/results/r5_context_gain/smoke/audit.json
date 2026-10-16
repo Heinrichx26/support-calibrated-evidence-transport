@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "smoke": true,
+  "useful_direction": true,
+  "all_minus_trained_ce": 0.05442176870748294,
+  "code_sha256": "79c8d7f565032bf6109abf2ba73a824b9bb0af2f70babf9e847626ef5368cced",
+  "protocol_sha256": "dd39b5ff51c9de41654d9e5048bea9f23fb86e8d6e077b5ac601a1d6cd46a19a",
+  "test_outcomes_read": false,
+  "all_outputs_exploratory": true,
+  "elapsed_seconds": 28.57799999997951
+}

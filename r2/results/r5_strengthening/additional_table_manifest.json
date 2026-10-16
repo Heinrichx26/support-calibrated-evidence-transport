@@ -1,0 +1,34 @@
+[
+  {
+    "table": "S32",
+    "file": "results/tables/additional_validation/S32.csv",
+    "sha256": "31719ad311e467db0e8f071aa7024a3f1909955f16d011a390d506861589bab2",
+    "rows": 7,
+    "columns": 5,
+    "title": "FEVER list features at a common sentence budget"
+  },
+  {
+    "table": "S33",
+    "file": "results/tables/additional_validation/S33.csv",
+    "sha256": "d39634ae77e4ee2ff364eddc52dc57ce8c91c1d9a981c3216d44acd0c36a038e",
+    "rows": 10,
+    "columns": 6,
+    "title": "FEVER admission under empirical calibration error targets"
+  },
+  {
+    "table": "S34",
+    "file": "results/tables/additional_validation/S34.csv",
+    "sha256": "e456484eada99a42a220ef582d00555c3e22fc33a00ef8cab90747080ef9e0fc",
+    "rows": 11,
+    "columns": 5,
+    "title": "Joint conditional-risk and coverage calibration"
+  },
+  {
+    "table": "S35",
+    "file": "results/tables/additional_validation/S35.csv",
+    "sha256": "335178fdb5f48d010ad03ad9e9fbab9e6944429762b4f1303a94bd72c6017f29",
+    "rows": 3,
+    "columns": 3,
+    "title": "Refitted ablation of the explicit conflict indicator"
+  }
+]

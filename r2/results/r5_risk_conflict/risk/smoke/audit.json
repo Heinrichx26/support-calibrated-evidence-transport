@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "stage": "smoke",
+  "code_sha256": "261866b1f1e8e6ccc7e0adfe38393d1fc7ada636107ea769c6883c6344367a29",
+  "plan": {
+    "version": "r5_conditional_query_risk_20261016",
+    "datasets": [
+      "scifact",
+      "fever",
+      "hover"
+    ],
+    "seeds": [
+      13,
+      17,
+      29,
+      7
+    ],
+    "methods": [
+      "scet",
+      "ce",
+      "selected_single"
+    ],
+    "fitting_top_one_quantiles": [
+      0.0,
+      0.049999999999999996,
+      0.09999999999999999,
+      0.15,
+      0.19999999999999998,
+      0.24999999999999997,
+      0.3,
+      0.35,
+      0.39999999999999997,
+      0.44999999999999996,
+      0.49999999999999994,
+      0.5499999999999999,
+      0.6,
+      0.6499999999999999,
+      0.7,
+      0.7499999999999999,
+      0.7999999999999999,
+      0.85,
+      0.8999999999999999,
+      0.95
+    ],
+    "conditional_query_error_target": 0.2,
+    "coverage_lower_target": 0.05,
+    "family_failure_probability": 0.05,
+    "correction_family": "2 one-sided bounds x 20 thresholds x all 3 methods, separately within each fixed partition",
+    "rule_selection": "maximum calibration coverage lower bound among jointly passing rules; ties: lower threshold",
+    "assumptions": "iid future queries from the same candidate protocol; scorer and threshold grid frozen before independent calibration",
+    "empty_output_conditional_risk": "undefined",
+    "threads": 2
+  },
+  "test_outcomes_used_for_model_or_threshold_selection": false,
+  "smoke_accessed_test": false,
+  "smoke_label_and_order_invariance": true,
+  "elapsed_seconds": 0.3279999999795109,
+  "validity": "For each fixed threshold, error count conditional on the random covered-query count is binomial with selective query-error probability. Clopper-Pearson bounds and coverage lower bounds are jointly corrected across all method-threshold pairs. Empty output has undefined conditional error and fails the minimum coverage criterion."
+}
