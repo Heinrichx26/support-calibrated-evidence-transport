@@ -270,5 +270,16 @@
     "rows": 12,
     "columns": 6,
     "sha256": "d9a79bf0ac515cd573053307d4f21cbe3d4316017cd156454687c8949e54feff"
+  },
+  {
+    "table": "S31",
+    "title": "Ordering and admission-count contributions",
+    "file": "allocation_ranking/S31.csv",
+    "rows": 5,
+    "columns": 5,
+    "sha256": "17aec25b99cd6221811bbc873c13b07034948b9e4473f918c0f3eab9be1e60aa",
+    "source": "results/allocation_ranking/full/decomposition.csv",
+    "source_sha256": "5ff7222aaf3c288f5cdabc523adb0f182f8a75927e359bc8a46928242a9dc97e",
+    "export_command": "python src/export_r2_tables.py --s31-only"
   }
 ]

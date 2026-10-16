@@ -1,0 +1,483 @@
+{
+  "passed": true,
+  "mode": "full",
+  "code_sha256": "0f34adee21012e2e937fa6cae01ae59223c523a20e6459d026d3c9340829729b",
+  "plan": {
+    "analysis": "Frozen 2 x 2 crossing of sentence ranks and per-query admitted counts",
+    "datasets": [
+      "fever",
+      "hover"
+    ],
+    "partitions": [
+      13,
+      17,
+      29,
+      7
+    ],
+    "rank_methods": [
+      "raw cross-encoder",
+      "frozen selected SCET scorer"
+    ],
+    "count_methods": [
+      "saved equal-budget cross-encoder counts",
+      "saved equal-budget SCET counts"
+    ],
+    "maximum_rank": 5,
+    "full_budget": "Each cell admits exactly one sentence per held-out query on average",
+    "smoke": "First 20 lexicographically sorted FEVER seed-13 evaluation IDs; inherit saved full-batch counts without reallocating within this subset",
+    "ties": "Original fixed candidate tie keys",
+    "bootstrap_repetitions": 1000,
+    "bootstrap_seed": 2026101603,
+    "resampling": "Paired query-cluster multinomial weights shared wherever a query occurs across the four overlapping partitions; frozen cell decisions",
+    "intervals": "Pointwise 95% percentile intervals, conditional on frozen models, counts, ranks, and observed partitions",
+    "decomposition": "Average the two conditional ranking effects and the two conditional count-allocation effects; their sum equals the net SCET-minus-cross-encoder difference",
+    "interpretation": "Descriptive counterfactual decomposition; hybrid cells are diagnostic configurations, with no new model or operating policy selected",
+    "new_fitting": false,
+    "new_neural_inference": false,
+    "new_threshold_selection": false,
+    "metric_groups": [
+      [
+        "precision",
+        "all"
+      ],
+      [
+        "evidence_recall",
+        "all"
+      ],
+      [
+        "set_recall",
+        "all"
+      ],
+      [
+        "complete_per100",
+        "all"
+      ],
+      [
+        "coverage",
+        "all"
+      ],
+      [
+        "no_evidence_admission",
+        "all"
+      ],
+      [
+        "no_evidence_items_per100",
+        "all"
+      ],
+      [
+        "precision",
+        "singleton"
+      ],
+      [
+        "precision",
+        "multiple"
+      ],
+      [
+        "set_recall",
+        "singleton"
+      ],
+      [
+        "set_recall",
+        "multiple"
+      ]
+    ]
+  },
+  "source_sha256": {
+    "data\\scored\\fever_full_k100.parquet": "971230db9694627136cf19898718c9d2f5440b49d9de4d07e54d55d64e7fd302",
+    "data\\processed\\fever_full_queries.json": "16178c07738634d72e4d4cc5b2a31de1ba87fe80c4579741d81d397cd2b22dcd",
+    "results\\experiments\\fever_full_k100\\model_seed13.json": "14b50d5f1d0d127f9823446e5f106c23458c0021203ccc2c89c69ac142982b65",
+    "results\\strengthening\\fever_full_k100\\query_seed13_scet.csv": "59b6b9e6b08d9d804e549e8fc237900afbd3ec85205ecd14d2ab55131c5fc241",
+    "results\\strengthening\\fever_full_k100\\query_seed13_ce.csv": "ba3129c395c64dc16d609ec77b1d094983c7a5b936b1a723ab52a33bf05af104",
+    "results\\experiments\\fever_full_k100\\model_seed17.json": "be279ea5b4e8439fd728cdd1b34f6025cafee46325b5ad4128c9f2db1604d491",
+    "results\\strengthening\\fever_full_k100\\query_seed17_scet.csv": "35215e488a0b4e33fcc97fad409439500e6aec0c1527be99e339a12d6ffa9c2b",
+    "results\\strengthening\\fever_full_k100\\query_seed17_ce.csv": "23968fde696dcabb2d354ffaaff85efa7db3a277cf709329ba3aa9a4e1bdb928",
+    "results\\experiments\\fever_full_k100\\model_seed29.json": "57d5c806fbfb3f2c53396f3844cdc65e38bc5ae43f651f325e08565f829de0e6",
+    "results\\strengthening\\fever_full_k100\\query_seed29_scet.csv": "ed34e8c6816d76fae744a698606d9e95fa56bf544d8366c3291bda7045e57cb9",
+    "results\\strengthening\\fever_full_k100\\query_seed29_ce.csv": "2e345c6aa7a9a3a7b5c7043ceb0fa7ae6cf1947e2b93439bbabd2bea32642eab",
+    "results\\experiments\\fever_full_k100\\model_seed7.json": "8e17725c488bde1f05281fe2b5198bf9dd8ad933e4591106241d89191adf1e07",
+    "results\\strengthening\\fever_full_k100\\query_seed7_scet.csv": "cca8dfa9b74343f573f1f97dc2648aeaf26952341a6f1c6e4bd61632bc7cbe59",
+    "results\\strengthening\\fever_full_k100\\query_seed7_ce.csv": "55a29eda36491ba0aa518d87a849d3d16e969e055fd2590f29d7a0ef9d196897",
+    "data\\scored\\hover_full_k100.parquet": "4337aaf79c56440ed2a2734e12c5c55704e09b7b2b79581fdadecb92d2abdbf2",
+    "data\\processed\\hover_full_queries.json": "590d9554ac0d067e44faaa58436c0db7a43fab807134246eee84e9ba8feab77c",
+    "results\\experiments\\hover_full_k100\\model_seed13.json": "f1296e008bc6891ac7e46a4f190c15a176e68643ba95754dbcd449fb86bc2627",
+    "results\\strengthening\\hover_full_k100\\query_seed13_scet.csv": "faec488143ad2d8d0a7a9c1e68ff2b44a2520dd4c35b37db1c7b8e0ce7cca48d",
+    "results\\strengthening\\hover_full_k100\\query_seed13_ce.csv": "82b3affd8f8bf01f45d20605a453d0b996dfd63eb2253eacc728ed4116683e0f",
+    "results\\experiments\\hover_full_k100\\model_seed17.json": "8df2b3d15590d2513689012f4bdd660d474d8802fa4306797e9c2822d7de553f",
+    "results\\strengthening\\hover_full_k100\\query_seed17_scet.csv": "26b92f1adb7ed26dbffbe793fe1fb001b907c8ab59539226d4fdc964b4cf245c",
+    "results\\strengthening\\hover_full_k100\\query_seed17_ce.csv": "26b92f1adb7ed26dbffbe793fe1fb001b907c8ab59539226d4fdc964b4cf245c",
+    "results\\experiments\\hover_full_k100\\model_seed29.json": "bb01348e5fe6b18392f9c10f0a754cf14862d568d3f424f33411e00986dfa98b",
+    "results\\strengthening\\hover_full_k100\\query_seed29_scet.csv": "786996dfb422b9c4c6b941e10c8e3233195a9ba2099b44c2accae316abb22fb3",
+    "results\\strengthening\\hover_full_k100\\query_seed29_ce.csv": "db69b30e412d974d34b0f679f9a678bd704b210ca67104b5b762a5902b61617e",
+    "results\\experiments\\hover_full_k100\\model_seed7.json": "f15e91b6531ae28bf91afaa4a1d940acc8c75d52f2be3a33cd199d32c813a2c6",
+    "results\\strengthening\\hover_full_k100\\query_seed7_scet.csv": "b33676b98aeb16bc0f19672a3f34a84b75ff49d7f50c5d0b3cb9fc78c4140f4f",
+    "results\\strengthening\\hover_full_k100\\query_seed7_ce.csv": "109f691b6d672471caadcdf81ebe6f5ca8ea93970effb2f6b07ef9b229b2193f"
+  },
+  "diagonal_checks": [
+    {
+      "dataset": "fever",
+      "seed": 13,
+      "method": "ce",
+      "queries_checked": 13999,
+      "columns": [
+        "admitted",
+        "correct",
+        "all_facts",
+        "covered",
+        "gold_count"
+      ],
+      "exact_match": true
+    },
+    {
+      "dataset": "fever",
+      "seed": 13,
+      "method": "scet",
+      "queries_checked": 13999,
+      "columns": [
+        "admitted",
+        "correct",
+        "all_facts",
+        "covered",
+        "gold_count"
+      ],
+      "exact_match": true
+    },
+    {
+      "dataset": "fever",
+      "seed": 17,
+      "method": "ce",
+      "queries_checked": 13999,
+      "columns": [
+        "admitted",
+        "correct",
+        "all_facts",
+        "covered",
+        "gold_count"
+      ],
+      "exact_match": true
+    },
+    {
+      "dataset": "fever",
+      "seed": 17,
+      "method": "scet",
+      "queries_checked": 13999,
+      "columns": [
+        "admitted",
+        "correct",
+        "all_facts",
+        "covered",
+        "gold_count"
+      ],
+      "exact_match": true
+    },
+    {
+      "dataset": "fever",
+      "seed": 29,
+      "method": "ce",
+      "queries_checked": 13999,
+      "columns": [
+        "admitted",
+        "correct",
+        "all_facts",
+        "covered",
+        "gold_count"
+      ],
+      "exact_match": true
+    },
+    {
+      "dataset": "fever",
+      "seed": 29,
+      "method": "scet",
+      "queries_checked": 13999,
+      "columns": [
+        "admitted",
+        "correct",
+        "all_facts",
+        "covered",
+        "gold_count"
+      ],
+      "exact_match": true
+    },
+    {
+      "dataset": "fever",
+      "seed": 7,
+      "method": "ce",
+      "queries_checked": 13999,
+      "columns": [
+        "admitted",
+        "correct",
+        "all_facts",
+        "covered",
+        "gold_count"
+      ],
+      "exact_match": true
+    },
+    {
+      "dataset": "fever",
+      "seed": 7,
+      "method": "scet",
+      "queries_checked": 13999,
+      "columns": [
+        "admitted",
+        "correct",
+        "all_facts",
+        "covered",
+        "gold_count"
+      ],
+      "exact_match": true
+    },
+    {
+      "dataset": "hover",
+      "seed": 13,
+      "method": "ce",
+      "queries_checked": 2800,
+      "columns": [
+        "admitted",
+        "correct",
+        "all_facts",
+        "covered",
+        "gold_count"
+      ],
+      "exact_match": true
+    },
+    {
+      "dataset": "hover",
+      "seed": 13,
+      "method": "scet",
+      "queries_checked": 2800,
+      "columns": [
+        "admitted",
+        "correct",
+        "all_facts",
+        "covered",
+        "gold_count"
+      ],
+      "exact_match": true
+    },
+    {
+      "dataset": "hover",
+      "seed": 17,
+      "method": "ce",
+      "queries_checked": 2800,
+      "columns": [
+        "admitted",
+        "correct",
+        "all_facts",
+        "covered",
+        "gold_count"
+      ],
+      "exact_match": true
+    },
+    {
+      "dataset": "hover",
+      "seed": 17,
+      "method": "scet",
+      "queries_checked": 2800,
+      "columns": [
+        "admitted",
+        "correct",
+        "all_facts",
+        "covered",
+        "gold_count"
+      ],
+      "exact_match": true
+    },
+    {
+      "dataset": "hover",
+      "seed": 29,
+      "method": "ce",
+      "queries_checked": 2800,
+      "columns": [
+        "admitted",
+        "correct",
+        "all_facts",
+        "covered",
+        "gold_count"
+      ],
+      "exact_match": true
+    },
+    {
+      "dataset": "hover",
+      "seed": 29,
+      "method": "scet",
+      "queries_checked": 2800,
+      "columns": [
+        "admitted",
+        "correct",
+        "all_facts",
+        "covered",
+        "gold_count"
+      ],
+      "exact_match": true
+    },
+    {
+      "dataset": "hover",
+      "seed": 7,
+      "method": "ce",
+      "queries_checked": 2800,
+      "columns": [
+        "admitted",
+        "correct",
+        "all_facts",
+        "covered",
+        "gold_count"
+      ],
+      "exact_match": true
+    },
+    {
+      "dataset": "hover",
+      "seed": 7,
+      "method": "scet",
+      "queries_checked": 2800,
+      "columns": [
+        "admitted",
+        "correct",
+        "all_facts",
+        "covered",
+        "gold_count"
+      ],
+      "exact_match": true
+    }
+  ],
+  "partitions": [
+    {
+      "dataset": "fever",
+      "seed": 13,
+      "queries": 13999,
+      "candidate_rows": 1381180,
+      "selected_form": "portfolio_1",
+      "selected_penalty": 0,
+      "queries_with_different_counts": 5863,
+      "queries_with_different_rank_choices_ce_counts": 2448,
+      "queries_with_different_rank_choices_scet_counts": 2268,
+      "cell_admitted_totals": {
+        "ce_rank_ce_count": 13999,
+        "ce_rank_scet_count": 13999,
+        "scet_rank_ce_count": 13999,
+        "scet_rank_scet_count": 13999
+      }
+    },
+    {
+      "dataset": "fever",
+      "seed": 17,
+      "queries": 13999,
+      "candidate_rows": 1380780,
+      "selected_form": "portfolio_10",
+      "selected_penalty": 0,
+      "queries_with_different_counts": 6111,
+      "queries_with_different_rank_choices_ce_counts": 2590,
+      "queries_with_different_rank_choices_scet_counts": 2359,
+      "cell_admitted_totals": {
+        "ce_rank_ce_count": 13999,
+        "ce_rank_scet_count": 13999,
+        "scet_rank_ce_count": 13999,
+        "scet_rank_scet_count": 13999
+      }
+    },
+    {
+      "dataset": "fever",
+      "seed": 29,
+      "queries": 13999,
+      "candidate_rows": 1381047,
+      "selected_form": "portfolio_1",
+      "selected_penalty": 0.1,
+      "queries_with_different_counts": 5931,
+      "queries_with_different_rank_choices_ce_counts": 2480,
+      "queries_with_different_rank_choices_scet_counts": 2270,
+      "cell_admitted_totals": {
+        "ce_rank_ce_count": 13999,
+        "ce_rank_scet_count": 13999,
+        "scet_rank_ce_count": 13999,
+        "scet_rank_scet_count": 13999
+      }
+    },
+    {
+      "dataset": "fever",
+      "seed": 7,
+      "queries": 13999,
+      "candidate_rows": 1381030,
+      "selected_form": "portfolio_1",
+      "selected_penalty": 0,
+      "queries_with_different_counts": 5989,
+      "queries_with_different_rank_choices_ce_counts": 2414,
+      "queries_with_different_rank_choices_scet_counts": 2232,
+      "cell_admitted_totals": {
+        "ce_rank_ce_count": 13999,
+        "ce_rank_scet_count": 13999,
+        "scet_rank_ce_count": 13999,
+        "scet_rank_scet_count": 13999
+      }
+    },
+    {
+      "dataset": "hover",
+      "seed": 13,
+      "queries": 2800,
+      "candidate_rows": 115019,
+      "selected_form": "e5",
+      "selected_penalty": 0.1,
+      "queries_with_different_counts": 1316,
+      "queries_with_different_rank_choices_ce_counts": 758,
+      "queries_with_different_rank_choices_scet_counts": 756,
+      "cell_admitted_totals": {
+        "ce_rank_ce_count": 2800,
+        "ce_rank_scet_count": 2800,
+        "scet_rank_ce_count": 2800,
+        "scet_rank_scet_count": 2800
+      }
+    },
+    {
+      "dataset": "hover",
+      "seed": 17,
+      "queries": 2800,
+      "candidate_rows": 115213,
+      "selected_form": "ce",
+      "selected_penalty": 0,
+      "queries_with_different_counts": 0,
+      "queries_with_different_rank_choices_ce_counts": 0,
+      "queries_with_different_rank_choices_scet_counts": 0,
+      "cell_admitted_totals": {
+        "ce_rank_ce_count": 2800,
+        "ce_rank_scet_count": 2800,
+        "scet_rank_ce_count": 2800,
+        "scet_rank_scet_count": 2800
+      }
+    },
+    {
+      "dataset": "hover",
+      "seed": 29,
+      "queries": 2800,
+      "candidate_rows": 115146,
+      "selected_form": "e5",
+      "selected_penalty": 0,
+      "queries_with_different_counts": 1383,
+      "queries_with_different_rank_choices_ce_counts": 792,
+      "queries_with_different_rank_choices_scet_counts": 779,
+      "cell_admitted_totals": {
+        "ce_rank_ce_count": 2800,
+        "ce_rank_scet_count": 2800,
+        "scet_rank_ce_count": 2800,
+        "scet_rank_scet_count": 2800
+      }
+    },
+    {
+      "dataset": "hover",
+      "seed": 7,
+      "queries": 2800,
+      "candidate_rows": 115505,
+      "selected_form": "e5",
+      "selected_penalty": 0,
+      "queries_with_different_counts": 1385,
+      "queries_with_different_rank_choices_ce_counts": 799,
+      "queries_with_different_rank_choices_scet_counts": 791,
+      "cell_admitted_totals": {
+        "ce_rank_ce_count": 2800,
+        "ce_rank_scet_count": 2800,
+        "scet_rank_ce_count": 2800,
+        "scet_rank_scet_count": 2800
+      }
+    }
+  ],
+  "nontrivial_count_or_rank_contrast": true,
+  "maximum_candidate_batch": 20000,
+  "maximum_bootstrap_batch": 50,
+  "elapsed_seconds": 55.17200000002049
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "kind": "annotated_page_components",
+    "queries": 19832,
+    "components": 7659,
+    "largest_component_queries": 132,
+    "largest_component_share": 0.006655909640984268,
+    "singleton_components": 6616,
+    "bootstrap_usable": true
+  },
+  {
+    "kind": "all_candidate_page_components",
+    "queries": 19832,
+    "components": 1,
+    "largest_component_queries": 19832,
+    "largest_component_share": 1.0,
+    "singleton_components": 0,
+    "bootstrap_usable": false
+  }
+]

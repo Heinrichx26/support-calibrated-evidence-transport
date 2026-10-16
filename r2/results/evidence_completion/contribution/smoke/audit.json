@@ -1,0 +1,2702 @@
+{
+  "passed": true,
+  "smoke": true,
+  "plan": {
+    "analysis": "Descriptive attribution of already frozen 100-candidate, equal-budget decisions",
+    "datasets": [
+      "fever",
+      "hover",
+      "scifact"
+    ],
+    "seeds": [
+      13,
+      17,
+      29,
+      7
+    ],
+    "individual_scorers": [
+      "bm25",
+      "tfidf",
+      "lsa",
+      "entity",
+      "relation",
+      "minilm",
+      "e5",
+      "bge",
+      "ce",
+      "nli_relevance",
+      "nli_directional",
+      "nli_entailment"
+    ],
+    "budget": "100 admitted sentences per 100 held-out claims; maximum five per claim, with separately labelled top-one controls",
+    "bootstrap_repetitions": 2000,
+    "bootstrap_seed": 2026101505,
+    "intervals": "Pointwise paired percentile 95% intervals; no family-wide significance claim",
+    "resampling": "Shared cluster weights for the same query across overlapping partitions; average the four partition differences",
+    "conditioning": "Frozen fitted scorers, thresholds, selections, admission decisions and observed partitions; no budget reallocation or refitting within resamples",
+    "source_sensitivity": "FEVER connected components of shared originally annotated Wikipedia pages; no-evidence claims are singleton components because no annotated pages exist. Also diagnose components of all candidate pages; do not issue a source-bootstrap interval with fewer than 20 components or a component containing over 50% of queries.",
+    "attribution": "Additive changes in correct items and complete claims by minimum annotated-set size and verdict, normalized by all-query counts",
+    "selection": "No model or rule is selected using these results; every individual scorer is reported"
+  },
+  "source_sha256": "dd00076fa360e6e4f1cb7dec1bb226cbc7f311846eda37b3276c414f9f8d37ab",
+  "displayed_value_checks": [
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "scet",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.3607142857142857,
+      "displayed_value": 0.361
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "scet",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.37142857142857144,
+      "displayed_value": 0.371
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "scet",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.3173724854314195,
+      "displayed_value": 0.317
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "scet",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.3835675003244663,
+      "displayed_value": 0.384
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "selected_single",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.3666666666666667,
+      "displayed_value": 0.367
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "selected_single",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.35,
+      "displayed_value": 0.35
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "selected_single",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.3215976334678421,
+      "displayed_value": 0.322
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "selected_single",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.3952347954476437,
+      "displayed_value": 0.395
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "bm25",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.2571428571428571,
+      "displayed_value": 0.257
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "bm25",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.33095238095238094,
+      "displayed_value": 0.331
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "bm25",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.2478554306900448,
+      "displayed_value": 0.248
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "bm25",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.3427207882703239,
+      "displayed_value": 0.343
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "tfidf",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.2845238095238095,
+      "displayed_value": 0.285
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "tfidf",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.37857142857142856,
+      "displayed_value": 0.379
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "tfidf",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.27378950549330544,
+      "displayed_value": 0.274
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "tfidf",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.35394520268746277,
+      "displayed_value": 0.354
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "lsa",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.0988095238095238,
+      "displayed_value": 0.099
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "lsa",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.33571428571428574,
+      "displayed_value": 0.336
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "lsa",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.08709880535285039,
+      "displayed_value": 0.087
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "lsa",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.12001403237858346,
+      "displayed_value": 0.12
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "entity",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.14166666666666666,
+      "displayed_value": 0.142
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "entity",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.35595238095238096,
+      "displayed_value": 0.356
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "entity",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.13364847250941161,
+      "displayed_value": 0.134
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "entity",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.1798565670082698,
+      "displayed_value": 0.18
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "relation",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.2583333333333333,
+      "displayed_value": 0.258
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "relation",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.35,
+      "displayed_value": 0.35
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "relation",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.24525728186573773,
+      "displayed_value": 0.245
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "relation",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.3089744062267282,
+      "displayed_value": 0.309
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "minilm",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.2761904761904762,
+      "displayed_value": 0.276
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "minilm",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.30952380952380953,
+      "displayed_value": 0.31
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "minilm",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.23609852833958592,
+      "displayed_value": 0.236
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "minilm",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.3035173088578661,
+      "displayed_value": 0.304
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "e5",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.3607142857142857,
+      "displayed_value": 0.361
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "e5",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.33690476190476193,
+      "displayed_value": 0.337
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "e5",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.3334305701775387,
+      "displayed_value": 0.333
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "e5",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.39146521406583323,
+      "displayed_value": 0.391
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "bge",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.35595238095238096,
+      "displayed_value": 0.356
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "bge",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.3261904761904762,
+      "displayed_value": 0.326
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "bge",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.3025976536682299,
+      "displayed_value": 0.303
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "bge",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.3633060624159695,
+      "displayed_value": 0.363
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "ce",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.39285714285714285,
+      "displayed_value": 0.393
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "ce",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.36904761904761907,
+      "displayed_value": 0.369
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "ce",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.3630914970951643,
+      "displayed_value": 0.363
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "ce",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.4418652604991614,
+      "displayed_value": 0.442
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "nli_relevance",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.1619047619047619,
+      "displayed_value": 0.162
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "nli_relevance",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.3726190476190476,
+      "displayed_value": 0.373
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "nli_relevance",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.12328262543771444,
+      "displayed_value": 0.123
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "nli_relevance",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.1721357976388936,
+      "displayed_value": 0.172
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "nli_directional",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.24642857142857144,
+      "displayed_value": 0.246
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "nli_directional",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.4,
+      "displayed_value": 0.4
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "nli_directional",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.24179052497067205,
+      "displayed_value": 0.242
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "nli_directional",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.2958405314442466,
+      "displayed_value": 0.296
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "nli_entailment",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.2488095238095238,
+      "displayed_value": 0.249
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "nli_entailment",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.3988095238095238,
+      "displayed_value": 0.399
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "nli_entailment",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.2447538509893386,
+      "displayed_value": 0.245
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "nli_entailment",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.2977202306923669,
+      "displayed_value": 0.298
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "conflict_pressure",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.32857142857142857,
+      "displayed_value": 0.329
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "conflict_pressure",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.39166666666666666,
+      "displayed_value": 0.392
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "conflict_pressure",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.30665730369408223,
+      "displayed_value": 0.307
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "conflict_pressure",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.3820544007076515,
+      "displayed_value": 0.382
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "multivers",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.6107142857142858,
+      "displayed_value": 0.611
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "multivers",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.4654761904761905,
+      "displayed_value": 0.465
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "multivers",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.5372260712652132,
+      "displayed_value": 0.537
+    },
+    {
+      "table": "S17",
+      "dataset": "scifact",
+      "method": "multivers",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.6349165239645116,
+      "displayed_value": 0.635
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "scet",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.5843453103793128,
+      "displayed_value": 0.584
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "scet",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.6182584470319308,
+      "displayed_value": 0.618
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "scet",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.6617555892789667,
+      "displayed_value": 0.662
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "scet",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.6905522391978413,
+      "displayed_value": 0.691
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "selected_single",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.5404314593899564,
+      "displayed_value": 0.54
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "selected_single",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.6364918922780198,
+      "displayed_value": 0.636
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "selected_single",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.6363299837818213,
+      "displayed_value": 0.636
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "selected_single",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.6524615810493035,
+      "displayed_value": 0.652
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "bm25",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.4169940710050718,
+      "displayed_value": 0.417
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "bm25",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.5641652975212514,
+      "displayed_value": 0.564
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "bm25",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.5204788068603345,
+      "displayed_value": 0.52
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "bm25",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.536460590508865,
+      "displayed_value": 0.536
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "tfidf",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.42658404171726555,
+      "displayed_value": 0.427
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "tfidf",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.6315093935281091,
+      "displayed_value": 0.632
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "tfidf",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.5133984591383628,
+      "displayed_value": 0.513
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "tfidf",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.5468107799058471,
+      "displayed_value": 0.547
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "lsa",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.12470533609543538,
+      "displayed_value": 0.125
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "lsa",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.40451103650260734,
+      "displayed_value": 0.405
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "lsa",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.15210986863118034,
+      "displayed_value": 0.152
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "lsa",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.15967235595447027,
+      "displayed_value": 0.16
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "entity",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.30945067504821777,
+      "displayed_value": 0.309
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "entity",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.5317701264376027,
+      "displayed_value": 0.532
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "entity",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.3689041024057134,
+      "displayed_value": 0.369
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "entity",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.3854863699788812,
+      "displayed_value": 0.385
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "relation",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.42915565397528393,
+      "displayed_value": 0.429
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "relation",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.5970605043217373,
+      "displayed_value": 0.597
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "relation",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.5177940438396855,
+      "displayed_value": 0.518
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "relation",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.5487222882660573,
+      "displayed_value": 0.549
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "minilm",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.4290306450460747,
+      "displayed_value": 0.429
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "minilm",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.5547717694121008,
+      "displayed_value": 0.555
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "minilm",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.4968763031263604,
+      "displayed_value": 0.497
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "minilm",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.5170839379856063,
+      "displayed_value": 0.517
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "e5",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.5111436531180799,
+      "displayed_value": 0.511
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "e5",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.6426709050646475,
+      "displayed_value": 0.643
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "e5",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.6072626953121343,
+      "displayed_value": 0.607
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "e5",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.6397509608655383,
+      "displayed_value": 0.64
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "bge",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.47605186084720336,
+      "displayed_value": 0.476
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "bge",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.588881348667762,
+      "displayed_value": 0.589
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "bge",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.563256997557428,
+      "displayed_value": 0.563
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "bge",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.5818056823244346,
+      "displayed_value": 0.582
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "ce",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.5404314593899564,
+      "displayed_value": 0.54
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "ce",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.6364918922780198,
+      "displayed_value": 0.636
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "ce",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.6363299837818213,
+      "displayed_value": 0.636
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "ce",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.6524615810493035,
+      "displayed_value": 0.652
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "nli_relevance",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.023215943995999716,
+      "displayed_value": 0.023
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "nli_relevance",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.33825630402171586,
+      "displayed_value": 0.338
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "nli_relevance",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.025619870954567685,
+      "displayed_value": 0.026
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "nli_relevance",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.029276178706328627,
+      "displayed_value": 0.029
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "nli_directional",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.39988570612186586,
+      "displayed_value": 0.4
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "nli_directional",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.4442460175726838,
+      "displayed_value": 0.444
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "nli_directional",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.4328727279689025,
+      "displayed_value": 0.433
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "nli_directional",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.44026438335043816,
+      "displayed_value": 0.44
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "nli_entailment",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.39924280305736126,
+      "displayed_value": 0.399
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "nli_entailment",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.4472283734552468,
+      "displayed_value": 0.447
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "nli_entailment",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.43553303390602216,
+      "displayed_value": 0.436
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "nli_entailment",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.44340299757457374,
+      "displayed_value": 0.443
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "conflict_pressure",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.5834702478748482,
+      "displayed_value": 0.583
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "conflict_pressure",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.6198478462747339,
+      "displayed_value": 0.62
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "conflict_pressure",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.6620570314743406,
+      "displayed_value": 0.662
+    },
+    {
+      "table": "S17",
+      "dataset": "fever",
+      "method": "conflict_pressure",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.6907941138308185,
+      "displayed_value": 0.691
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "scet",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.679375,
+      "displayed_value": 0.679
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "scet",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.5549999999999999,
+      "displayed_value": 0.555
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "scet",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.23680442176870747,
+      "displayed_value": 0.237
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "scet",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.06294642857142857,
+      "displayed_value": 0.063
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "selected_single",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.6798214285714286,
+      "displayed_value": 0.68
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "selected_single",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.55625,
+      "displayed_value": 0.556
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "selected_single",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.23703720238095238,
+      "displayed_value": 0.237
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "selected_single",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.06330357142857143,
+      "displayed_value": 0.063
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "bm25",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.5924107142857142,
+      "displayed_value": 0.592
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "bm25",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.45285714285714285,
+      "displayed_value": 0.453
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "bm25",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.18521343537414964,
+      "displayed_value": 0.185
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "bm25",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.037321428571428575,
+      "displayed_value": 0.037
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "tfidf",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.58125,
+      "displayed_value": 0.581
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "tfidf",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.53125,
+      "displayed_value": 0.531
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "tfidf",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.20440858843537413,
+      "displayed_value": 0.204
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "tfidf",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.045267857142857144,
+      "displayed_value": 0.045
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "lsa",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.23267857142857143,
+      "displayed_value": 0.233
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "lsa",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.41714285714285715,
+      "displayed_value": 0.417
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "lsa",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.07659247448979592,
+      "displayed_value": 0.077
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "lsa",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.005089285714285715,
+      "displayed_value": 0.005
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "entity",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.47848214285714286,
+      "displayed_value": 0.478
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "entity",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.5160714285714286,
+      "displayed_value": 0.516
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "entity",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.16557801870748298,
+      "displayed_value": 0.166
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "entity",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.025625,
+      "displayed_value": 0.026
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "relation",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.5074107142857143,
+      "displayed_value": 0.507
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "relation",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.49294642857142856,
+      "displayed_value": 0.493
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "relation",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.18674553571428573,
+      "displayed_value": 0.187
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "relation",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.04491071428571429,
+      "displayed_value": 0.045
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "minilm",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.5638392857142858,
+      "displayed_value": 0.564
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "minilm",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.5086607142857142,
+      "displayed_value": 0.509
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "minilm",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.19255867346938774,
+      "displayed_value": 0.193
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "minilm",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.03044642857142857,
+      "displayed_value": 0.03
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "e5",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.684375,
+      "displayed_value": 0.684
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "e5",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.5472321428571428,
+      "displayed_value": 0.547
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "e5",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.23989370748299318,
+      "displayed_value": 0.24
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "e5",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.06955357142857144,
+      "displayed_value": 0.07
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "bge",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.6284821428571429,
+      "displayed_value": 0.628
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "bge",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.5228571428571429,
+      "displayed_value": 0.523
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "bge",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.2141921768707483,
+      "displayed_value": 0.214
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "bge",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.04491071428571429,
+      "displayed_value": 0.045
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "ce",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.6719642857142858,
+      "displayed_value": 0.672
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "ce",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.5844642857142857,
+      "displayed_value": 0.584
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "ce",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.22957079081632653,
+      "displayed_value": 0.23
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "ce",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.04339285714285714,
+      "displayed_value": 0.043
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "nli_relevance",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.029642857142857144,
+      "displayed_value": 0.03
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "nli_relevance",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.32892857142857146,
+      "displayed_value": 0.329
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "nli_relevance",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.0104156037414966,
+      "displayed_value": 0.01
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "nli_relevance",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.0,
+      "displayed_value": 0.0
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "nli_directional",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.4132142857142857,
+      "displayed_value": 0.413
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "nli_directional",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.43607142857142855,
+      "displayed_value": 0.436
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "nli_directional",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.13216964285714286,
+      "displayed_value": 0.132
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "nli_directional",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.015892857142857143,
+      "displayed_value": 0.016
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "nli_entailment",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.30178571428571427,
+      "displayed_value": 0.302
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "nli_entailment",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.40598214285714285,
+      "displayed_value": 0.406
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "nli_entailment",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.09677317176870748,
+      "displayed_value": 0.097
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "nli_entailment",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.007589285714285714,
+      "displayed_value": 0.008
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "conflict_pressure",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.6832142857142858,
+      "displayed_value": 0.683
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "conflict_pressure",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.5436607142857143,
+      "displayed_value": 0.544
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "conflict_pressure",
+      "group": "all",
+      "metric": "evidence_recall",
+      "current_value": 0.23905697278911564,
+      "displayed_value": 0.239
+    },
+    {
+      "table": "S17",
+      "dataset": "hover",
+      "method": "conflict_pressure",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.06919642857142858,
+      "displayed_value": 0.069
+    },
+    {
+      "table": "S28",
+      "dataset": "scifact",
+      "method": "scet",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.3607142857142857,
+      "displayed_value": 0.361
+    },
+    {
+      "table": "S28",
+      "dataset": "scifact",
+      "method": "scet",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.37142857142857144,
+      "displayed_value": 0.371
+    },
+    {
+      "table": "S28",
+      "dataset": "scifact",
+      "method": "scet",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.3835675003244663,
+      "displayed_value": 0.384
+    },
+    {
+      "table": "S28",
+      "dataset": "scifact",
+      "method": "scet",
+      "group": "no_evidence",
+      "metric": "coverage",
+      "current_value": 0.12724442786942788,
+      "displayed_value": 0.127
+    },
+    {
+      "table": "S28",
+      "dataset": "scifact",
+      "method": "ce_top1",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.39285714285714285,
+      "displayed_value": 0.393
+    },
+    {
+      "table": "S28",
+      "dataset": "scifact",
+      "method": "ce_top1",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 1.0,
+      "displayed_value": 1.0
+    },
+    {
+      "table": "S28",
+      "dataset": "scifact",
+      "method": "ce_top1",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.5916376852135365,
+      "displayed_value": 0.592
+    },
+    {
+      "table": "S28",
+      "dataset": "scifact",
+      "method": "ce_top1",
+      "group": "no_evidence",
+      "metric": "coverage",
+      "current_value": 1.0,
+      "displayed_value": 1.0
+    },
+    {
+      "table": "S28",
+      "dataset": "scifact",
+      "method": "ce",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.39285714285714285,
+      "displayed_value": 0.393
+    },
+    {
+      "table": "S28",
+      "dataset": "scifact",
+      "method": "ce",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.36904761904761907,
+      "displayed_value": 0.369
+    },
+    {
+      "table": "S28",
+      "dataset": "scifact",
+      "method": "ce",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.4418652604991614,
+      "displayed_value": 0.442
+    },
+    {
+      "table": "S28",
+      "dataset": "scifact",
+      "method": "ce",
+      "group": "no_evidence",
+      "metric": "coverage",
+      "current_value": 0.08491758804258805,
+      "displayed_value": 0.085
+    },
+    {
+      "table": "S28",
+      "dataset": "scifact",
+      "method": "multivers_top1",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.44285714285714284,
+      "displayed_value": 0.443
+    },
+    {
+      "table": "S28",
+      "dataset": "scifact",
+      "method": "multivers_top1",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 1.0,
+      "displayed_value": 1.0
+    },
+    {
+      "table": "S28",
+      "dataset": "scifact",
+      "method": "multivers_top1",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.6476223631602889,
+      "displayed_value": 0.648
+    },
+    {
+      "table": "S28",
+      "dataset": "scifact",
+      "method": "multivers_top1",
+      "group": "no_evidence",
+      "metric": "coverage",
+      "current_value": 1.0,
+      "displayed_value": 1.0
+    },
+    {
+      "table": "S28",
+      "dataset": "scifact",
+      "method": "multivers",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.6107142857142858,
+      "displayed_value": 0.611
+    },
+    {
+      "table": "S28",
+      "dataset": "scifact",
+      "method": "multivers",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.4654761904761905,
+      "displayed_value": 0.465
+    },
+    {
+      "table": "S28",
+      "dataset": "scifact",
+      "method": "multivers",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.6349165239645116,
+      "displayed_value": 0.635
+    },
+    {
+      "table": "S28",
+      "dataset": "scifact",
+      "method": "multivers",
+      "group": "no_evidence",
+      "metric": "coverage",
+      "current_value": 0.06183061308061308,
+      "displayed_value": 0.062
+    },
+    {
+      "table": "S28",
+      "dataset": "fever",
+      "method": "scet",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.5843453103793128,
+      "displayed_value": 0.584
+    },
+    {
+      "table": "S28",
+      "dataset": "fever",
+      "method": "scet",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.6182584470319308,
+      "displayed_value": 0.618
+    },
+    {
+      "table": "S28",
+      "dataset": "fever",
+      "method": "scet",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.6905522391978413,
+      "displayed_value": 0.691
+    },
+    {
+      "table": "S28",
+      "dataset": "fever",
+      "method": "scet",
+      "group": "no_evidence",
+      "metric": "coverage",
+      "current_value": 0.3341842765091139,
+      "displayed_value": 0.334
+    },
+    {
+      "table": "S28",
+      "dataset": "fever",
+      "method": "ce_top1",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.5961854418172726,
+      "displayed_value": 0.596
+    },
+    {
+      "table": "S28",
+      "dataset": "fever",
+      "method": "ce_top1",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 1.0,
+      "displayed_value": 1.0
+    },
+    {
+      "table": "S28",
+      "dataset": "fever",
+      "method": "ce_top1",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.8090192034311388,
+      "displayed_value": 0.809
+    },
+    {
+      "table": "S28",
+      "dataset": "fever",
+      "method": "ce_top1",
+      "group": "no_evidence",
+      "metric": "coverage",
+      "current_value": 1.0,
+      "displayed_value": 1.0
+    },
+    {
+      "table": "S28",
+      "dataset": "fever",
+      "method": "ce",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.5404314593899564,
+      "displayed_value": 0.54
+    },
+    {
+      "table": "S28",
+      "dataset": "fever",
+      "method": "ce",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.6364918922780198,
+      "displayed_value": 0.636
+    },
+    {
+      "table": "S28",
+      "dataset": "fever",
+      "method": "ce",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.6524615810493035,
+      "displayed_value": 0.652
+    },
+    {
+      "table": "S28",
+      "dataset": "fever",
+      "method": "ce",
+      "group": "no_evidence",
+      "metric": "coverage",
+      "current_value": 0.4585133594996357,
+      "displayed_value": 0.459
+    },
+    {
+      "table": "S28",
+      "dataset": "hover",
+      "method": "scet",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.679375,
+      "displayed_value": 0.679
+    },
+    {
+      "table": "S28",
+      "dataset": "hover",
+      "method": "scet",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.5549999999999999,
+      "displayed_value": 0.555
+    },
+    {
+      "table": "S28",
+      "dataset": "hover",
+      "method": "scet",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.06294642857142857,
+      "displayed_value": 0.063
+    },
+    {
+      "table": "S28",
+      "dataset": "hover",
+      "method": "ce_top1",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.8335714285714286,
+      "displayed_value": 0.834
+    },
+    {
+      "table": "S28",
+      "dataset": "hover",
+      "method": "ce_top1",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 1.0,
+      "displayed_value": 1.0
+    },
+    {
+      "table": "S28",
+      "dataset": "hover",
+      "method": "ce_top1",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.0,
+      "displayed_value": 0.0
+    },
+    {
+      "table": "S28",
+      "dataset": "hover",
+      "method": "ce",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.6719642857142858,
+      "displayed_value": 0.672
+    },
+    {
+      "table": "S28",
+      "dataset": "hover",
+      "method": "ce",
+      "group": "all",
+      "metric": "coverage",
+      "current_value": 0.5844642857142857,
+      "displayed_value": 0.584
+    },
+    {
+      "table": "S28",
+      "dataset": "hover",
+      "method": "ce",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.04339285714285714,
+      "displayed_value": 0.043
+    },
+    {
+      "table": "S30",
+      "dataset": "scifact",
+      "method": "scet",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.3607142857142857,
+      "displayed_value": 0.361
+    },
+    {
+      "table": "S30",
+      "dataset": "scifact",
+      "method": "scet",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.3835675003244663,
+      "displayed_value": 0.384
+    },
+    {
+      "table": "S30",
+      "dataset": "scifact",
+      "method": "scet",
+      "group": "singleton",
+      "metric": "set_recall",
+      "current_value": 0.3987207382066553,
+      "displayed_value": 0.399
+    },
+    {
+      "table": "S30",
+      "dataset": "scifact",
+      "method": "scet",
+      "group": "multiple",
+      "metric": "set_recall",
+      "current_value": 0.09821428571428571,
+      "displayed_value": 0.098
+    },
+    {
+      "table": "S30",
+      "dataset": "scifact",
+      "method": "ce",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.39285714285714285,
+      "displayed_value": 0.393
+    },
+    {
+      "table": "S30",
+      "dataset": "scifact",
+      "method": "ce",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.4418652604991614,
+      "displayed_value": 0.442
+    },
+    {
+      "table": "S30",
+      "dataset": "scifact",
+      "method": "ce",
+      "group": "singleton",
+      "metric": "set_recall",
+      "current_value": 0.45970594925789376,
+      "displayed_value": 0.46
+    },
+    {
+      "table": "S30",
+      "dataset": "scifact",
+      "method": "ce",
+      "group": "multiple",
+      "metric": "set_recall",
+      "current_value": 0.09821428571428571,
+      "displayed_value": 0.098
+    },
+    {
+      "table": "S30",
+      "dataset": "scifact",
+      "method": "ce_top1",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.39285714285714285,
+      "displayed_value": 0.393
+    },
+    {
+      "table": "S30",
+      "dataset": "scifact",
+      "method": "ce_top1",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.5916376852135365,
+      "displayed_value": 0.592
+    },
+    {
+      "table": "S30",
+      "dataset": "scifact",
+      "method": "ce_top1",
+      "group": "singleton",
+      "metric": "set_recall",
+      "current_value": 0.6207348092739648,
+      "displayed_value": 0.621
+    },
+    {
+      "table": "S30",
+      "dataset": "scifact",
+      "method": "ce_top1",
+      "group": "multiple",
+      "metric": "set_recall",
+      "current_value": 0.0,
+      "displayed_value": 0.0
+    },
+    {
+      "table": "S30",
+      "dataset": "scifact",
+      "method": "scet_top1",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.38571428571428573,
+      "displayed_value": 0.386
+    },
+    {
+      "table": "S30",
+      "dataset": "scifact",
+      "method": "scet_top1",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.5598900468869509,
+      "displayed_value": 0.56
+    },
+    {
+      "table": "S30",
+      "dataset": "scifact",
+      "method": "scet_top1",
+      "group": "singleton",
+      "metric": "set_recall",
+      "current_value": 0.5875582724758934,
+      "displayed_value": 0.588
+    },
+    {
+      "table": "S30",
+      "dataset": "scifact",
+      "method": "scet_top1",
+      "group": "multiple",
+      "metric": "set_recall",
+      "current_value": 0.0,
+      "displayed_value": 0.0
+    },
+    {
+      "table": "S30",
+      "dataset": "fever",
+      "method": "scet",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.5843453103793128,
+      "displayed_value": 0.584
+    },
+    {
+      "table": "S30",
+      "dataset": "fever",
+      "method": "scet",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.6905522391978413,
+      "displayed_value": 0.691
+    },
+    {
+      "table": "S30",
+      "dataset": "fever",
+      "method": "scet",
+      "group": "singleton",
+      "metric": "set_recall",
+      "current_value": 0.7550775931455002,
+      "displayed_value": 0.755
+    },
+    {
+      "table": "S30",
+      "dataset": "fever",
+      "method": "scet",
+      "group": "multiple",
+      "metric": "set_recall",
+      "current_value": 0.04627509312609886,
+      "displayed_value": 0.046
+    },
+    {
+      "table": "S30",
+      "dataset": "fever",
+      "method": "ce",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.5404314593899564,
+      "displayed_value": 0.54
+    },
+    {
+      "table": "S30",
+      "dataset": "fever",
+      "method": "ce",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.6524615810493035,
+      "displayed_value": 0.652
+    },
+    {
+      "table": "S30",
+      "dataset": "fever",
+      "method": "ce",
+      "group": "singleton",
+      "metric": "set_recall",
+      "current_value": 0.7103114311051991,
+      "displayed_value": 0.71
+    },
+    {
+      "table": "S30",
+      "dataset": "fever",
+      "method": "ce",
+      "group": "multiple",
+      "metric": "set_recall",
+      "current_value": 0.07484008955820934,
+      "displayed_value": 0.075
+    },
+    {
+      "table": "S30",
+      "dataset": "fever",
+      "method": "ce_top1",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.5961854418172726,
+      "displayed_value": 0.596
+    },
+    {
+      "table": "S30",
+      "dataset": "fever",
+      "method": "ce_top1",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.8090192034311388,
+      "displayed_value": 0.809
+    },
+    {
+      "table": "S30",
+      "dataset": "fever",
+      "method": "ce_top1",
+      "group": "singleton",
+      "metric": "set_recall",
+      "current_value": 0.8900358191099428,
+      "displayed_value": 0.89
+    },
+    {
+      "table": "S30",
+      "dataset": "fever",
+      "method": "ce_top1",
+      "group": "multiple",
+      "metric": "set_recall",
+      "current_value": 0.0,
+      "displayed_value": 0.0
+    },
+    {
+      "table": "S30",
+      "dataset": "fever",
+      "method": "scet_top1",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.5701121508679191,
+      "displayed_value": 0.57
+    },
+    {
+      "table": "S30",
+      "dataset": "fever",
+      "method": "scet_top1",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.7752464260441742,
+      "displayed_value": 0.775
+    },
+    {
+      "table": "S30",
+      "dataset": "fever",
+      "method": "scet_top1",
+      "group": "singleton",
+      "metric": "set_recall",
+      "current_value": 0.8528828216035793,
+      "displayed_value": 0.853
+    },
+    {
+      "table": "S30",
+      "dataset": "fever",
+      "method": "scet_top1",
+      "group": "multiple",
+      "metric": "set_recall",
+      "current_value": 0.0,
+      "displayed_value": 0.0
+    },
+    {
+      "table": "S30",
+      "dataset": "hover",
+      "method": "scet",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.679375,
+      "displayed_value": 0.679
+    },
+    {
+      "table": "S30",
+      "dataset": "hover",
+      "method": "scet",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.06294642857142857,
+      "displayed_value": 0.063
+    },
+    {
+      "table": "S30",
+      "dataset": "hover",
+      "method": "scet",
+      "group": "multiple",
+      "metric": "set_recall",
+      "current_value": 0.06294642857142857,
+      "displayed_value": 0.063
+    },
+    {
+      "table": "S30",
+      "dataset": "hover",
+      "method": "ce",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.6719642857142858,
+      "displayed_value": 0.672
+    },
+    {
+      "table": "S30",
+      "dataset": "hover",
+      "method": "ce",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.04339285714285714,
+      "displayed_value": 0.043
+    },
+    {
+      "table": "S30",
+      "dataset": "hover",
+      "method": "ce",
+      "group": "multiple",
+      "metric": "set_recall",
+      "current_value": 0.04339285714285714,
+      "displayed_value": 0.043
+    },
+    {
+      "table": "S30",
+      "dataset": "hover",
+      "method": "ce_top1",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.8335714285714286,
+      "displayed_value": 0.834
+    },
+    {
+      "table": "S30",
+      "dataset": "hover",
+      "method": "ce_top1",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.0,
+      "displayed_value": 0.0
+    },
+    {
+      "table": "S30",
+      "dataset": "hover",
+      "method": "ce_top1",
+      "group": "multiple",
+      "metric": "set_recall",
+      "current_value": 0.0,
+      "displayed_value": 0.0
+    },
+    {
+      "table": "S30",
+      "dataset": "hover",
+      "method": "scet_top1",
+      "group": "all",
+      "metric": "precision",
+      "current_value": 0.814375,
+      "displayed_value": 0.814
+    },
+    {
+      "table": "S30",
+      "dataset": "hover",
+      "method": "scet_top1",
+      "group": "all",
+      "metric": "set_recall",
+      "current_value": 0.0,
+      "displayed_value": 0.0
+    },
+    {
+      "table": "S30",
+      "dataset": "hover",
+      "method": "scet_top1",
+      "group": "multiple",
+      "metric": "set_recall",
+      "current_value": 0.0,
+      "displayed_value": 0.0
+    }
+  ],
+  "input_sha256": {
+    "data\\processed\\fever_full_queries.json": "16178c07738634d72e4d4cc5b2a31de1ba87fe80c4579741d81d397cd2b22dcd",
+    "results\\strengthening\\fever_full_k100\\query_seed13_bm25.csv": "d57421db3af811e63b5e046286c0beadf6fb5a79f85d83020483a35cfc3f7ea9",
+    "results\\strengthening\\fever_full_k100\\query_seed13_tfidf.csv": "6541ed7d16b00efa93f346b4d6c20719031c23e0dd4ab4b960b5f32f05e5035c",
+    "results\\strengthening\\fever_full_k100\\query_seed13_lsa.csv": "822b50fb9af5632348eade4a04ff0a0a4021a3cce1489ffac121dba0076bbd80",
+    "results\\strengthening\\fever_full_k100\\query_seed13_entity.csv": "b97d8e2395c33100816306c85773e8541e060ee030632366616b2e6a2e04c603",
+    "results\\strengthening\\fever_full_k100\\query_seed13_relation.csv": "692addc2fe070ebbbd436b51e971bec4282ffcea6999782b04979d4cff9dbb94",
+    "results\\strengthening\\fever_full_k100\\query_seed13_minilm.csv": "b09f4fbebc39dfbb3b6c39ae6d790fd45ad75b0dbd48afee3f42c4b378124368",
+    "results\\strengthening\\fever_full_k100\\query_seed13_e5.csv": "8a667e6041849b665600974d69453cb6fe942d54b1e61acb5c5225107605ce83",
+    "results\\strengthening\\fever_full_k100\\query_seed13_bge.csv": "4c3dd08bb7bde33ed7258aed761f68e927cd630922079683eea18bd99ae512f4",
+    "results\\strengthening\\fever_full_k100\\query_seed13_ce.csv": "ba3129c395c64dc16d609ec77b1d094983c7a5b936b1a723ab52a33bf05af104",
+    "results\\strengthening\\fever_full_k100\\query_seed13_nli_relevance.csv": "d46a65ff7b3d277781a6656f4879abaa5264e76acf6ba37621d1e844d6c80625",
+    "results\\strengthening\\fever_full_k100\\query_seed13_nli_directional.csv": "d6ba1b0e7b322994677119be5a986686e7ab03c31a16e608306107d71d573b14",
+    "results\\strengthening\\fever_full_k100\\query_seed13_nli_entailment.csv": "0dbf564d5f8c5663fa71e58b3834d6eb586bbbecc011d464605cdbc413cc49d7",
+    "results\\strengthening\\fever_full_k100\\query_seed13_selected_single.csv": "ba3129c395c64dc16d609ec77b1d094983c7a5b936b1a723ab52a33bf05af104",
+    "results\\strengthening\\fever_full_k100\\query_seed13_scet.csv": "59b6b9e6b08d9d804e549e8fc237900afbd3ec85205ecd14d2ab55131c5fc241",
+    "results\\strengthening\\fever_full_k100\\query_seed13_conflict_pressure.csv": "7856ab8e2d50759413a3c67846f52e55091d8a70c131dcd3eaaea47aeed2a8e0",
+    "results\\scet_allocation\\full\\query_fever_seed13_scet_cap1.csv": "82bb4f44a2b82c51fb4f318b2cef1281173a17519073eb48ec7262857200189c",
+    "results\\scet_allocation\\full\\query_fever_seed13_ce_cap1.csv": "7d394b62a690b1f13a4ecb55a84ca5981254c88aa46316232da4d7b16217ab3b",
+    "results\\experiments\\fever_full_k100\\model_seed13.json": "14b50d5f1d0d127f9823446e5f106c23458c0021203ccc2c89c69ac142982b65",
+    "results\\strengthening\\fever_full_k100\\query_seed17_bm25.csv": "a22d37d3556be1f46348a266014cf1921ac6f6bb4d92933fbf0c480dc70cf63f",
+    "results\\strengthening\\fever_full_k100\\query_seed17_tfidf.csv": "c613840e5a8ae182d6d0a409af73ec3237f19e0036c63d7ac97567cf6e7c8adb",
+    "results\\strengthening\\fever_full_k100\\query_seed17_lsa.csv": "7b000d5d2ac1b81f4932aed834831f542e488209bbea3d9035f1a5030b732491",
+    "results\\strengthening\\fever_full_k100\\query_seed17_entity.csv": "85273ea10948dd8266c9d1154f67e50fba0bc7febbf21db1a3354821af776d99",
+    "results\\strengthening\\fever_full_k100\\query_seed17_relation.csv": "7ca561ee938b0b110f11ada91a272bafbe9c63f07ce16ce163fbfab4f91b6a8e",
+    "results\\strengthening\\fever_full_k100\\query_seed17_minilm.csv": "f22414e215c54b4c5c64569f65d86ae2de57ba803626414366f1debb8eb15d1f",
+    "results\\strengthening\\fever_full_k100\\query_seed17_e5.csv": "f8df4a86a4d9b3cfcce3958f28ed3eab10207c343dc2e16598ce2bcd25ba4cf0",
+    "results\\strengthening\\fever_full_k100\\query_seed17_bge.csv": "4dc6eae0b40d94c5876388a240787a1fe1cd268030b6c83ffc0209f0d5594b7a",
+    "results\\strengthening\\fever_full_k100\\query_seed17_ce.csv": "23968fde696dcabb2d354ffaaff85efa7db3a277cf709329ba3aa9a4e1bdb928",
+    "results\\strengthening\\fever_full_k100\\query_seed17_nli_relevance.csv": "75ee32373cee7a7fec01d2b4147cf05d6858f5c40dd392c16c2be7e92bc76364",
+    "results\\strengthening\\fever_full_k100\\query_seed17_nli_directional.csv": "e73abe12bce6b5bb79d3736a3f3ef72772fd95b47c828d14e41ca53124d8c8d6",
+    "results\\strengthening\\fever_full_k100\\query_seed17_nli_entailment.csv": "982d43d7153eb322158b12dc1f641f6505e585a2f25233d01610c207e630c0c4",
+    "results\\strengthening\\fever_full_k100\\query_seed17_selected_single.csv": "23968fde696dcabb2d354ffaaff85efa7db3a277cf709329ba3aa9a4e1bdb928",
+    "results\\strengthening\\fever_full_k100\\query_seed17_scet.csv": "35215e488a0b4e33fcc97fad409439500e6aec0c1527be99e339a12d6ffa9c2b",
+    "results\\strengthening\\fever_full_k100\\query_seed17_conflict_pressure.csv": "7fbeca0ecc46e60c52414d64c8109fc6bd676b23d49bc30076cfe238fb3e18b6",
+    "results\\scet_allocation\\full\\query_fever_seed17_scet_cap1.csv": "72e9e13e8073d5120dbeeb90a6c8a6d58746601ec7eb376a1a14941c5dcb7188",
+    "results\\scet_allocation\\full\\query_fever_seed17_ce_cap1.csv": "018a96c2067f8cc6bca14f2e54b1989dbec945879b587f744ded0b99b6d79004",
+    "results\\experiments\\fever_full_k100\\model_seed17.json": "be279ea5b4e8439fd728cdd1b34f6025cafee46325b5ad4128c9f2db1604d491",
+    "results\\strengthening\\fever_full_k100\\query_seed29_bm25.csv": "f3f0adf90e67bf03bd35402029cbdfa078b6921af55e027b1a15c55c66619f8a",
+    "results\\strengthening\\fever_full_k100\\query_seed29_tfidf.csv": "1ed3909289a106f4c43062bdb893d98bd11205b697374363817e38a4cbd663cb",
+    "results\\strengthening\\fever_full_k100\\query_seed29_lsa.csv": "62a5343c0ae67fbe4013a1cc6f49c7b816d3c5ea403714948c34442506bb1890",
+    "results\\strengthening\\fever_full_k100\\query_seed29_entity.csv": "6f6e1522a7af4e2c1b0f186e827c575b76f4db3b9cedd362b3ea4619567d02c2",
+    "results\\strengthening\\fever_full_k100\\query_seed29_relation.csv": "ae9fc83b8d8c81deb4b97e01b49a178dbb609d02a6b44149ceba04b9411a8af9",
+    "results\\strengthening\\fever_full_k100\\query_seed29_minilm.csv": "14d5d3dbbb9542bf63c98c2a535e9178bece43398a4f96969d139c8c3b3f339f",
+    "results\\strengthening\\fever_full_k100\\query_seed29_e5.csv": "35325eb9b45be8d61c9f4b4478846ad995d8fd80cc43787e54418a202e363426",
+    "results\\strengthening\\fever_full_k100\\query_seed29_bge.csv": "2055bee5e184a2782d3172b6b8abb1af98ffb5663d02e6ed8e1a76d0a6f28159",
+    "results\\strengthening\\fever_full_k100\\query_seed29_ce.csv": "2e345c6aa7a9a3a7b5c7043ceb0fa7ae6cf1947e2b93439bbabd2bea32642eab",
+    "results\\strengthening\\fever_full_k100\\query_seed29_nli_relevance.csv": "b395ff663c61e57f0e15d7330beba019f980baa1529e78a084458008084822b8",
+    "results\\strengthening\\fever_full_k100\\query_seed29_nli_directional.csv": "9357ff012652fffe2b5954533ec58dc657bb3affb31e6c6dc8616078889cf514",
+    "results\\strengthening\\fever_full_k100\\query_seed29_nli_entailment.csv": "cd2d829fe0fbf6f3bb0558c6ef88e8e2eb2a78d5a6d36e3343ad9aac60776fac",
+    "results\\strengthening\\fever_full_k100\\query_seed29_selected_single.csv": "2e345c6aa7a9a3a7b5c7043ceb0fa7ae6cf1947e2b93439bbabd2bea32642eab",
+    "results\\strengthening\\fever_full_k100\\query_seed29_scet.csv": "ed34e8c6816d76fae744a698606d9e95fa56bf544d8366c3291bda7045e57cb9",
+    "results\\strengthening\\fever_full_k100\\query_seed29_conflict_pressure.csv": "ed34e8c6816d76fae744a698606d9e95fa56bf544d8366c3291bda7045e57cb9",
+    "results\\scet_allocation\\full\\query_fever_seed29_scet_cap1.csv": "bd4cd3a8c89340add27b8aa53cf064fcbe3697246466c24938adfab2d29d7872",
+    "results\\scet_allocation\\full\\query_fever_seed29_ce_cap1.csv": "b16b91765f661e654c68c261b9b7deb8b35e541587c496d696d7634c9b04301c",
+    "results\\experiments\\fever_full_k100\\model_seed29.json": "57d5c806fbfb3f2c53396f3844cdc65e38bc5ae43f651f325e08565f829de0e6",
+    "results\\strengthening\\fever_full_k100\\query_seed7_bm25.csv": "2fef10519afdcf28bfd3de3c8c0199fb92a02ff5ee934edc76d40ec75f6f4f12",
+    "results\\strengthening\\fever_full_k100\\query_seed7_tfidf.csv": "19b5f8c7e2fc743b30f5b7774eac5a756a979bad7ec266813a44624295eabfad",
+    "results\\strengthening\\fever_full_k100\\query_seed7_lsa.csv": "74e9fbf57ed8541b1ffeaed764d9ac38ec67ab04b3097c3afd8fba763b6bbb8a",
+    "results\\strengthening\\fever_full_k100\\query_seed7_entity.csv": "9f71025ef09e30546998bff5a41966c2cf7c1fedf165b318be61c69084f7a073",
+    "results\\strengthening\\fever_full_k100\\query_seed7_relation.csv": "10879213b4d88fa973fd61209bfb9bb64c3111d149a18eb4d0a48f72cc70a0b4",
+    "results\\strengthening\\fever_full_k100\\query_seed7_minilm.csv": "8fc250789c9770f192e2b696a364967efe142a637a7999b6a4b7bae5fc03c3d5",
+    "results\\strengthening\\fever_full_k100\\query_seed7_e5.csv": "002367463c20cc0bc6522f284e422ca2d17b28a042fb5ce5da2421f7f9f8890c",
+    "results\\strengthening\\fever_full_k100\\query_seed7_bge.csv": "e20549027bec1c1907262bcb9f40906ab572f202ddbc9bb65f50b0ade5d9bdbc",
+    "results\\strengthening\\fever_full_k100\\query_seed7_ce.csv": "55a29eda36491ba0aa518d87a849d3d16e969e055fd2590f29d7a0ef9d196897",
+    "results\\strengthening\\fever_full_k100\\query_seed7_nli_relevance.csv": "88e504d847275856182d404c0354a9cc2b97b905f3dcb4a77fe32eab20d1272c",
+    "results\\strengthening\\fever_full_k100\\query_seed7_nli_directional.csv": "d21478d53560139f543f4a93df0bf2079c8e1125856c54b662469d954ec322a9",
+    "results\\strengthening\\fever_full_k100\\query_seed7_nli_entailment.csv": "f4924b0a1242f8aec3ccddc8593df182924e3ea4e65d567373687df4468b520f",
+    "results\\strengthening\\fever_full_k100\\query_seed7_selected_single.csv": "55a29eda36491ba0aa518d87a849d3d16e969e055fd2590f29d7a0ef9d196897",
+    "results\\strengthening\\fever_full_k100\\query_seed7_scet.csv": "cca8dfa9b74343f573f1f97dc2648aeaf26952341a6f1c6e4bd61632bc7cbe59",
+    "results\\strengthening\\fever_full_k100\\query_seed7_conflict_pressure.csv": "a05a77f11e2d218f797e44372d0254ac668300389c1421bb34d1da37233ddf09",
+    "results\\scet_allocation\\full\\query_fever_seed7_scet_cap1.csv": "793f8d9039f5824b7a1f3539f22125e855c29b831bf7852506ac37558e7e2d0c",
+    "results\\scet_allocation\\full\\query_fever_seed7_ce_cap1.csv": "22b5d6332102eeb823c2e58b8127b44c44b8c0f724757a04c736fabbb527627b",
+    "results\\experiments\\fever_full_k100\\model_seed7.json": "8e17725c488bde1f05281fe2b5198bf9dd8ad933e4591106241d89191adf1e07",
+    "data\\processed\\hover_full_queries.json": "590d9554ac0d067e44faaa58436c0db7a43fab807134246eee84e9ba8feab77c",
+    "results\\strengthening\\hover_full_k100\\query_seed13_bm25.csv": "097cbeff69c99bd099b36ac7527b3b918ab05e48cb05bde1e1cf8741491a439e",
+    "results\\strengthening\\hover_full_k100\\query_seed13_tfidf.csv": "b64349d848f1ea9b3db5114f93f9e6bf103e3871893f1ec8b32fc3f38bf5fce5",
+    "results\\strengthening\\hover_full_k100\\query_seed13_lsa.csv": "b5872e4c0a2faa8cdd2a920f7f57cedb40b3944de43f90c70d3b299e1b4359d1",
+    "results\\strengthening\\hover_full_k100\\query_seed13_entity.csv": "5874cc5d43dfacc2aa14642d482361da61347fd9548486970ed5a5b02fed8777",
+    "results\\strengthening\\hover_full_k100\\query_seed13_relation.csv": "86dcf5249ce8002f76037926efb8f40adaa5a129e94e063bc92518023996fa05",
+    "results\\strengthening\\hover_full_k100\\query_seed13_minilm.csv": "0a0eb902b9449d7a8da346959971b5ff32a76524e53daefa5f0acf28d96702dc",
+    "results\\strengthening\\hover_full_k100\\query_seed13_e5.csv": "635ed125c9ed129f03df14eaa98f75ce9d2ee577916b37bb57d75cfec594932b",
+    "results\\strengthening\\hover_full_k100\\query_seed13_bge.csv": "ddeb216bc50d5be3d2063376d4212731ae8e24cf769fbbbe283db4e9927963c2",
+    "results\\strengthening\\hover_full_k100\\query_seed13_ce.csv": "82b3affd8f8bf01f45d20605a453d0b996dfd63eb2253eacc728ed4116683e0f",
+    "results\\strengthening\\hover_full_k100\\query_seed13_nli_relevance.csv": "b5950caca257c5977e810b81bf66f4806d2d712ac72df2b09215c757e2e99724",
+    "results\\strengthening\\hover_full_k100\\query_seed13_nli_directional.csv": "57616b3d051df8647eecf2bf52d9175e352bb3c36530801844c23f2771f3bcee",
+    "results\\strengthening\\hover_full_k100\\query_seed13_nli_entailment.csv": "4785917b229f4eb060d9f0b2188bd4afefe787b28f7c2d14441dc43e1b9af703",
+    "results\\strengthening\\hover_full_k100\\query_seed13_selected_single.csv": "635ed125c9ed129f03df14eaa98f75ce9d2ee577916b37bb57d75cfec594932b",
+    "results\\strengthening\\hover_full_k100\\query_seed13_scet.csv": "faec488143ad2d8d0a7a9c1e68ff2b44a2520dd4c35b37db1c7b8e0ce7cca48d",
+    "results\\strengthening\\hover_full_k100\\query_seed13_conflict_pressure.csv": "faec488143ad2d8d0a7a9c1e68ff2b44a2520dd4c35b37db1c7b8e0ce7cca48d",
+    "results\\scet_allocation\\full\\query_hover_seed13_scet_cap1.csv": "064b72d85a2c237ccf1184b2fa16d63dc368186f811e05f85042777cf776029f",
+    "results\\scet_allocation\\full\\query_hover_seed13_ce_cap1.csv": "fec2e2ad85a3252289d85e79a03afbc59c405f922bca71addd61c700fc1b0619",
+    "results\\experiments\\hover_full_k100\\model_seed13.json": "f1296e008bc6891ac7e46a4f190c15a176e68643ba95754dbcd449fb86bc2627",
+    "results\\strengthening\\hover_full_k100\\query_seed17_bm25.csv": "5e7870e83dd9083f13985bc755bd3e8e1de38c51cf926ee4ff985b9b93756c44",
+    "results\\strengthening\\hover_full_k100\\query_seed17_tfidf.csv": "da40702387ab0e1d5375df5ddfad3f93556aa54339adb6292f9dfeaa06c64d05",
+    "results\\strengthening\\hover_full_k100\\query_seed17_lsa.csv": "4d8e7f0b1a1d2461485835b1ebbbee9c018a0489f08c3264cf8bfbafb3788f3b",
+    "results\\strengthening\\hover_full_k100\\query_seed17_entity.csv": "4f1957c964d4883e7ea9432a81ccf0fa8b79682e28e41e17d59753232eaeb21c",
+    "results\\strengthening\\hover_full_k100\\query_seed17_relation.csv": "baa80bf9b39b1061d060aacc56b60d287c5056b89ded19df2b69e7df30b1517f",
+    "results\\strengthening\\hover_full_k100\\query_seed17_minilm.csv": "427d35dabdcfc97fb754d102ec268498c282845ea41926f0c9543c0d726b1c98",
+    "results\\strengthening\\hover_full_k100\\query_seed17_e5.csv": "467ab082fa77d734a38e23eb615322cc3ac28ac5480e546578be0f68fed911e2",
+    "results\\strengthening\\hover_full_k100\\query_seed17_bge.csv": "c93d72ad505420f1bb629eb8b1763e449652e69d494fa952d39100b9ac43007a",
+    "results\\strengthening\\hover_full_k100\\query_seed17_ce.csv": "26b92f1adb7ed26dbffbe793fe1fb001b907c8ab59539226d4fdc964b4cf245c",
+    "results\\strengthening\\hover_full_k100\\query_seed17_nli_relevance.csv": "cbec77d528a546ca1040db3928fcc67b4600f94279ac2b5d4396cbd00562f2f6",
+    "results\\strengthening\\hover_full_k100\\query_seed17_nli_directional.csv": "49512973ec690ee86490d81a216af91c12bf4efd58402cbc496407775b3b713f",
+    "results\\strengthening\\hover_full_k100\\query_seed17_nli_entailment.csv": "a06004acc39e49b31830f98b8149bb8a377deda8dfe302442786c2eea7ff98dc",
+    "results\\strengthening\\hover_full_k100\\query_seed17_selected_single.csv": "26b92f1adb7ed26dbffbe793fe1fb001b907c8ab59539226d4fdc964b4cf245c",
+    "results\\strengthening\\hover_full_k100\\query_seed17_scet.csv": "26b92f1adb7ed26dbffbe793fe1fb001b907c8ab59539226d4fdc964b4cf245c",
+    "results\\strengthening\\hover_full_k100\\query_seed17_conflict_pressure.csv": "b27568151a98c9113fddcd38637cc17a28eb042b51ed934655bc98061ad1fd79",
+    "results\\scet_allocation\\full\\query_hover_seed17_scet_cap1.csv": "284ba956472dd74c12fd39844d0c2715019c58420ed283fc976e68aaaaa1113a",
+    "results\\scet_allocation\\full\\query_hover_seed17_ce_cap1.csv": "284ba956472dd74c12fd39844d0c2715019c58420ed283fc976e68aaaaa1113a",
+    "results\\experiments\\hover_full_k100\\model_seed17.json": "8df2b3d15590d2513689012f4bdd660d474d8802fa4306797e9c2822d7de553f",
+    "results\\strengthening\\hover_full_k100\\query_seed29_bm25.csv": "1a3cb695cd58ba85dbe6d62bc2ecc761dd3a311ce464e0bb2b95326cfe0e5036",
+    "results\\strengthening\\hover_full_k100\\query_seed29_tfidf.csv": "477dbb89ee621c0bf81ff48568743f06826ddec01bc93582d4b44dfc1e0e4f0c",
+    "results\\strengthening\\hover_full_k100\\query_seed29_lsa.csv": "783cd9194a4d0805ecb1ad2f563dd1eed19080beac77314299af81f81153a87b",
+    "results\\strengthening\\hover_full_k100\\query_seed29_entity.csv": "f87fdaf8ebf97753ebf6c1445f85a1d6f2871dacef2505aade87ef9ab5a8e540",
+    "results\\strengthening\\hover_full_k100\\query_seed29_relation.csv": "93eb6f45c6a4eafc978c56b1fd56102bab1ea944b523c4d2efa064529af0092a",
+    "results\\strengthening\\hover_full_k100\\query_seed29_minilm.csv": "c62134d472b6ee07e83d446d7bfe5071bbfb8d2a59b904cbaa9e3d1dbd8bbe5b",
+    "results\\strengthening\\hover_full_k100\\query_seed29_e5.csv": "786996dfb422b9c4c6b941e10c8e3233195a9ba2099b44c2accae316abb22fb3",
+    "results\\strengthening\\hover_full_k100\\query_seed29_bge.csv": "6bffc560b43f03aeb52c2cd45727e97502b399fba40de9cdd43cde742024eb93",
+    "results\\strengthening\\hover_full_k100\\query_seed29_ce.csv": "db69b30e412d974d34b0f679f9a678bd704b210ca67104b5b762a5902b61617e",
+    "results\\strengthening\\hover_full_k100\\query_seed29_nli_relevance.csv": "c64e778de14218b03799cb063d40f24398ebed575522e9f0f775fce1dbecdf75",
+    "results\\strengthening\\hover_full_k100\\query_seed29_nli_directional.csv": "9f56a743fc63acd80726cb0dc823a54ae898a5aad353abe9f7db1da74377c533",
+    "results\\strengthening\\hover_full_k100\\query_seed29_nli_entailment.csv": "07d16580c6aee1e6cd173ad5170c46e4e1bbe70492a443d2f56915eab52ed412",
+    "results\\strengthening\\hover_full_k100\\query_seed29_selected_single.csv": "786996dfb422b9c4c6b941e10c8e3233195a9ba2099b44c2accae316abb22fb3",
+    "results\\strengthening\\hover_full_k100\\query_seed29_scet.csv": "786996dfb422b9c4c6b941e10c8e3233195a9ba2099b44c2accae316abb22fb3",
+    "results\\strengthening\\hover_full_k100\\query_seed29_conflict_pressure.csv": "8f5d4204aa5797376bebab89551e958229b470354b236a4cea55431ecd24abbf",
+    "results\\scet_allocation\\full\\query_hover_seed29_scet_cap1.csv": "6c6246f3d0fafe695e3a81c20b5f61453e5abca43517cf7e3b4e744a84f0a629",
+    "results\\scet_allocation\\full\\query_hover_seed29_ce_cap1.csv": "96d544f9b7655e732a8024cf38be5a8232937a331eabbadede7904d961516edb",
+    "results\\experiments\\hover_full_k100\\model_seed29.json": "bb01348e5fe6b18392f9c10f0a754cf14862d568d3f424f33411e00986dfa98b",
+    "results\\strengthening\\hover_full_k100\\query_seed7_bm25.csv": "bcfac7cb19248c8088b8be151d534a2207517619c4eb789bc2a0e2defc48960d",
+    "results\\strengthening\\hover_full_k100\\query_seed7_tfidf.csv": "cbe9683d20fa541b41d051dd405de0fd782a68cb45d4f76cbd30ee6e2274b224",
+    "results\\strengthening\\hover_full_k100\\query_seed7_lsa.csv": "c9f481739ff63a4b1834bd3f2e6531ec8c6e37f31bc681f48c8afe6b6bffe75b",
+    "results\\strengthening\\hover_full_k100\\query_seed7_entity.csv": "9a7ec91e0450abfceec7b91cef1ae2371223fd48bcbddfd815fe4d4ba508e996",
+    "results\\strengthening\\hover_full_k100\\query_seed7_relation.csv": "91f139053d9b505f740b0c93208beb2d41ba8da80da3a630b190ee353858e6ee",
+    "results\\strengthening\\hover_full_k100\\query_seed7_minilm.csv": "b14ccf5523aceeac45b4d377f8fab69b0425535cee9e7a1130aaf9b9dde330c3",
+    "results\\strengthening\\hover_full_k100\\query_seed7_e5.csv": "b33676b98aeb16bc0f19672a3f34a84b75ff49d7f50c5d0b3cb9fc78c4140f4f",
+    "results\\strengthening\\hover_full_k100\\query_seed7_bge.csv": "b646ac61f15c0f3f787973a662218b6c1d1b1c24f18fd8fc203a3e93de27ee21",
+    "results\\strengthening\\hover_full_k100\\query_seed7_ce.csv": "109f691b6d672471caadcdf81ebe6f5ca8ea93970effb2f6b07ef9b229b2193f",
+    "results\\strengthening\\hover_full_k100\\query_seed7_nli_relevance.csv": "eac57868c4c745642a631760000d0a9105ced2a249cd177468c653d234b6f816",
+    "results\\strengthening\\hover_full_k100\\query_seed7_nli_directional.csv": "66548e6425720c0c13cce379f0990ef1598a15a8f8c386be09a501e9af70c424",
+    "results\\strengthening\\hover_full_k100\\query_seed7_nli_entailment.csv": "4475458d2be35f16eaf03655a268a6adb409609f07da48d5c632d56960b40652",
+    "results\\strengthening\\hover_full_k100\\query_seed7_selected_single.csv": "b33676b98aeb16bc0f19672a3f34a84b75ff49d7f50c5d0b3cb9fc78c4140f4f",
+    "results\\strengthening\\hover_full_k100\\query_seed7_scet.csv": "b33676b98aeb16bc0f19672a3f34a84b75ff49d7f50c5d0b3cb9fc78c4140f4f",
+    "results\\strengthening\\hover_full_k100\\query_seed7_conflict_pressure.csv": "ce4433349f8d5ccf516eb308f46b07c3629612dbbad582240574469c939d6ed0",
+    "results\\scet_allocation\\full\\query_hover_seed7_scet_cap1.csv": "23c71e08a16a5b81c036238bb08a4f9b1390a041630109ae8da704c3c9b2f681",
+    "results\\scet_allocation\\full\\query_hover_seed7_ce_cap1.csv": "99ace40fb7b4c218f10cecf824f7f0c803e4e0df91dfef86a94115c5758f6237",
+    "results\\experiments\\hover_full_k100\\model_seed7.json": "f15e91b6531ae28bf91afaa4a1d940acc8c75d52f2be3a33cd199d32c813a2c6",
+    "data\\processed\\scifact_full_queries.json": "a39ec115aca27a14000ab986baa92437cf02a3e272cde612ba86a9a748302aa2",
+    "results\\strengthening\\scifact_full_k100\\query_seed13_bm25.csv": "003c27b9a3a394e8a90479237d9fd4ac13a83e0bb12944832c73640ecc1183e3",
+    "results\\strengthening\\scifact_full_k100\\query_seed13_tfidf.csv": "2871ee3f527b519c164c408013125828d48f9fdf2fb3da4ec2ffb88f3718b78a",
+    "results\\strengthening\\scifact_full_k100\\query_seed13_lsa.csv": "35cba1b79f0d6153d274851bb08cb8b3810fa3be5a11866f07af84d90081b7f0",
+    "results\\strengthening\\scifact_full_k100\\query_seed13_entity.csv": "d2cf372b8c512668e9a694353a39cfe8bc5281018947d4d6f0ceb3346af3fddf",
+    "results\\strengthening\\scifact_full_k100\\query_seed13_relation.csv": "f3174bda9a7174bd4939b2287a27ebdeeaab8e5e7eb01cc67ae6d02ea03cfdc6",
+    "results\\strengthening\\scifact_full_k100\\query_seed13_minilm.csv": "d803b59d5f6043e518c6a2f27418dfb20802552334c67352d0d31fd6399a8848",
+    "results\\strengthening\\scifact_full_k100\\query_seed13_e5.csv": "b0d8c6ae10d531fe4dfecbf6b7a2b9dbac1535a8a844715c49e58d7eed309040",
+    "results\\strengthening\\scifact_full_k100\\query_seed13_bge.csv": "170c3cc15a3cd9840c8af811ded383253e5333b843827346b4e22fe38ccec525",
+    "results\\strengthening\\scifact_full_k100\\query_seed13_ce.csv": "6f39704f584afa19df4ff7638ee8c56bc8524d67df585724c650d40de4659cf1",
+    "results\\strengthening\\scifact_full_k100\\query_seed13_nli_relevance.csv": "ffb15d628bc77c5d0ee9fce20fee73dd797b0a19ea455a0b911de15f9b01d194",
+    "results\\strengthening\\scifact_full_k100\\query_seed13_nli_directional.csv": "ec769fef53237448ae1ec48b800de95e88ec0bf8018b216c5be3d823acf5f221",
+    "results\\strengthening\\scifact_full_k100\\query_seed13_nli_entailment.csv": "4845fae0dadd538b7cb9efe762360edb77a9b532978d05fac20f4fb8cafe846f",
+    "results\\strengthening\\scifact_full_k100\\query_seed13_selected_single.csv": "170c3cc15a3cd9840c8af811ded383253e5333b843827346b4e22fe38ccec525",
+    "results\\strengthening\\scifact_full_k100\\query_seed13_scet.csv": "0be2ecf05b05c83834c08651c710e750e8678c0aab41a0d0fae69bbca7d86b3f",
+    "results\\strengthening\\scifact_full_k100\\query_seed13_conflict_pressure.csv": "0a5a1538d1486a52cd3ea00fc2ef44ebf2fdaad2adf787fb9168a33370840aab",
+    "results\\scet_allocation\\full\\query_scifact_seed13_scet_cap1.csv": "5651f0481e645486d1b4d36f3207c96b2751463ee6cd28fe12f180a2139c2a3f",
+    "results\\scet_allocation\\full\\query_scifact_seed13_ce_cap1.csv": "eb3cdb53f3472bff67508d8e070d0460f1fef80342176a8efab28b6d9c3dc9c1",
+    "results\\multivers_extension\\k100\\query_seed13_multivers_exact_budget.csv": "00b3103b36f379c3ea0eadf3d2b7cbd968eb9b35698f7e87ab64e2470a94891b",
+    "results\\multivers_extension\\k100\\query_seed13_scet_multivers_exact_budget.csv": "00b3103b36f379c3ea0eadf3d2b7cbd968eb9b35698f7e87ab64e2470a94891b",
+    "results\\scet_allocation\\full\\query_scifact_seed13_multivers_cap1.csv": "8a2d4dbea6946cb8442b1177e49634b722210ba88aa3d3db1584c28937d5840e",
+    "results\\experiments\\scifact_full_k100\\model_seed13.json": "0101279f164714f7887127fce0832aa8c17c2d03b007d3b3cd84fbeb6b9478b3",
+    "results\\strengthening\\scifact_full_k100\\query_seed17_bm25.csv": "808458a4951b74a910ae1810f599263d42fac4de569faac57ea44edbad9a7545",
+    "results\\strengthening\\scifact_full_k100\\query_seed17_tfidf.csv": "5e708676550b39a28f922204a43fb6c54627ee891b20ef05d7f36722a3ea3980",
+    "results\\strengthening\\scifact_full_k100\\query_seed17_lsa.csv": "0d41c43102b386013c887a5ef6b66da44be1a594ded58939699faf190226e28d",
+    "results\\strengthening\\scifact_full_k100\\query_seed17_entity.csv": "a6ede6b35b57e204309249c9fcf4399713dee8413ae8c98f8648b7d2fbc70a23",
+    "results\\strengthening\\scifact_full_k100\\query_seed17_relation.csv": "4849d33b22deea02158a12c2156998dd3d54d17e88d14a33a074513187cf7a71",
+    "results\\strengthening\\scifact_full_k100\\query_seed17_minilm.csv": "a9912f5d038568bda994ca39d52be5c2c3d69b7446591cd2fa9dc12386a597be",
+    "results\\strengthening\\scifact_full_k100\\query_seed17_e5.csv": "1be70192c421bddb3b7e45036eba22d3063f1fca5535ac3f0dfc0ca0ceed5e82",
+    "results\\strengthening\\scifact_full_k100\\query_seed17_bge.csv": "3f66eb87fd9aaac9d7458b0b681b88664f7d06481659b0f10e1e150636825430",
+    "results\\strengthening\\scifact_full_k100\\query_seed17_ce.csv": "dd576befae79c69dda5faa9117e20bbc6eecd799ff856ef793a221dc7bf06daa",
+    "results\\strengthening\\scifact_full_k100\\query_seed17_nli_relevance.csv": "d31ef1ba5af8515f041b036e1ca1bfddb2ca99e32dbd6b19a12da88adf36dc4a",
+    "results\\strengthening\\scifact_full_k100\\query_seed17_nli_directional.csv": "e01ea6f22abcad0e4191e569aebef309edacde78f1b2333203662a8f2211af1a",
+    "results\\strengthening\\scifact_full_k100\\query_seed17_nli_entailment.csv": "ad9f6566c34b1eb430e1a76b0e078d614c7a66451782af770d8e295d93af6515",
+    "results\\strengthening\\scifact_full_k100\\query_seed17_selected_single.csv": "3f66eb87fd9aaac9d7458b0b681b88664f7d06481659b0f10e1e150636825430",
+    "results\\strengthening\\scifact_full_k100\\query_seed17_scet.csv": "e173b3b0728c550e1a063704dbd339455c0cf642dca7b5a091a3edddb47a57d2",
+    "results\\strengthening\\scifact_full_k100\\query_seed17_conflict_pressure.csv": "92e562e977a8cc5b3ef75893320845cc627bda75ead20bee77db27e1b43845f2",
+    "results\\scet_allocation\\full\\query_scifact_seed17_scet_cap1.csv": "38b2e409c365afb898226dcc3aa544599e2044c7d1ea6082a1b200994302a648",
+    "results\\scet_allocation\\full\\query_scifact_seed17_ce_cap1.csv": "9fb49888c1590bdc8784778c17c77a2de860a8dbc4e6cbf1fb41b7ac7a9f5f6c",
+    "results\\multivers_extension\\k100\\query_seed17_multivers_exact_budget.csv": "be3de937651d79015ca53adf77180335322a4d21d6113c06be6216420515df02",
+    "results\\multivers_extension\\k100\\query_seed17_scet_multivers_exact_budget.csv": "be3de937651d79015ca53adf77180335322a4d21d6113c06be6216420515df02",
+    "results\\scet_allocation\\full\\query_scifact_seed17_multivers_cap1.csv": "71a2d445ea92c7c3c3340f56b7575e16d5dcf9954533743a12e5eb5327f8ddb8",
+    "results\\experiments\\scifact_full_k100\\model_seed17.json": "b62770d027363cfc4f5d461bd703de61cd71a45ca9f3d3f3133b9527b31e2c95",
+    "results\\strengthening\\scifact_full_k100\\query_seed29_bm25.csv": "ce254099031a41430d1132a690b73396fc1a6ee66430ddbfd1a0588e6f099a5b",
+    "results\\strengthening\\scifact_full_k100\\query_seed29_tfidf.csv": "fdb8f6abc87d3336be6e879bde5085d3ce4c0a7a472af42591986010e5900afc",
+    "results\\strengthening\\scifact_full_k100\\query_seed29_lsa.csv": "b359849179d90217595f9b6fe7b13648009e837e6fb2e1e7a2de3c2e31b64109",
+    "results\\strengthening\\scifact_full_k100\\query_seed29_entity.csv": "0ce05a3f8a746e4bb27d67c519d129abdc2db4ef97d4b207e726515ec7fe8642",
+    "results\\strengthening\\scifact_full_k100\\query_seed29_relation.csv": "c9c994cf2e699a0d7b1ed1dd233c9850a407fda0870a15b4eab5b6ef4ca1c2ef",
+    "results\\strengthening\\scifact_full_k100\\query_seed29_minilm.csv": "53a8e36208e82ebd88bad550ddcfc38558efb1de2d695d2e2f3c48aee4d95b23",
+    "results\\strengthening\\scifact_full_k100\\query_seed29_e5.csv": "55cc17c3735dd023abe383dfa87322cd26cc041c5db0948937160f2a579094c5",
+    "results\\strengthening\\scifact_full_k100\\query_seed29_bge.csv": "d191e1c58259617aad09c9d6ecab93c4844672dd6cc9e6609e75c06e7d2de60d",
+    "results\\strengthening\\scifact_full_k100\\query_seed29_ce.csv": "eeed279ce7e9d51f987b794e947b41a1608d28c7a2269313619563e3ffa8aa75",
+    "results\\strengthening\\scifact_full_k100\\query_seed29_nli_relevance.csv": "2086793f9bd3f3f5c5149cbc428b9161661e2b87841166bb7de242d98546c553",
+    "results\\strengthening\\scifact_full_k100\\query_seed29_nli_directional.csv": "e83d36e8a8c6c8aba71962c373609a1c2069f5d23ca87b1cc1555866a7768aa5",
+    "results\\strengthening\\scifact_full_k100\\query_seed29_nli_entailment.csv": "fcfbae75d9e6b2e1787e8d81396052653c643c8ae7eeaa75ed74cbbb8b9775fd",
+    "results\\strengthening\\scifact_full_k100\\query_seed29_selected_single.csv": "eeed279ce7e9d51f987b794e947b41a1608d28c7a2269313619563e3ffa8aa75",
+    "results\\strengthening\\scifact_full_k100\\query_seed29_scet.csv": "b2316c0f373253d79328f6b3a9030493dfb8d4c8d22a8d881346c0494b32d147",
+    "results\\strengthening\\scifact_full_k100\\query_seed29_conflict_pressure.csv": "f8006936b10b7f0e40e7db07d58c231ca04a7345ef84dd21046c6c3bbfd78181",
+    "results\\scet_allocation\\full\\query_scifact_seed29_scet_cap1.csv": "c99a7d3dde163805bf678054113dafb7f9793f1b756f64228e017f83f00ce449",
+    "results\\scet_allocation\\full\\query_scifact_seed29_ce_cap1.csv": "d13492ee1d9efab9f351aa8439f3030f4b267a7e75cafe6804b25c1b2b774937",
+    "results\\multivers_extension\\k100\\query_seed29_multivers_exact_budget.csv": "021483e3b64fb6b7b998985708228cb8f90e5291b0a1fb8acca4f538e974367c",
+    "results\\multivers_extension\\k100\\query_seed29_scet_multivers_exact_budget.csv": "021483e3b64fb6b7b998985708228cb8f90e5291b0a1fb8acca4f538e974367c",
+    "results\\scet_allocation\\full\\query_scifact_seed29_multivers_cap1.csv": "cd1b39b74fa5938488935d30f6025e0216d28aaee8a872e4012fcd3bb3f1724f",
+    "results\\experiments\\scifact_full_k100\\model_seed29.json": "f09e80cce6d82d1c430d48727255e3348fc4803d038e650653c42d2c302bc372",
+    "results\\strengthening\\scifact_full_k100\\query_seed7_bm25.csv": "0979596eacd9408387d1f37e73a510c319d8dc918dc9505045cc39ea728eca86",
+    "results\\strengthening\\scifact_full_k100\\query_seed7_tfidf.csv": "3d70777467a18fc2582742173194f1d02a1afc1ee40f0c26bc289ca2d7ae3afe",
+    "results\\strengthening\\scifact_full_k100\\query_seed7_lsa.csv": "e9579f097d62899d04289b9d6a2d912502242ecc55f35c257f1b5f455ac74545",
+    "results\\strengthening\\scifact_full_k100\\query_seed7_entity.csv": "8870dfa95166f35d49fd9cb0210bc73e39e82c08aa5ff441f4b5c7632b748d00",
+    "results\\strengthening\\scifact_full_k100\\query_seed7_relation.csv": "84665ae40561e5e95a34694348c6fc3d8c17c1201312ae5c14f97979794ed0ff",
+    "results\\strengthening\\scifact_full_k100\\query_seed7_minilm.csv": "dd49cb727e4e71beea9fc2069e78789808f5061c89263f4dd9e7f57ac5b423b1",
+    "results\\strengthening\\scifact_full_k100\\query_seed7_e5.csv": "e956d3587f4900dbc1554bd4fb668ddef53debb28aedecc23045a4144fb67d2d",
+    "results\\strengthening\\scifact_full_k100\\query_seed7_bge.csv": "ee79e1ed978cf07574707e1848a4f44d405ed8a4dfc1e4891553848d9bb6c223",
+    "results\\strengthening\\scifact_full_k100\\query_seed7_ce.csv": "6420728a4558b33b3259e84e809a1fd46d984c43585114896218cc162a128173",
+    "results\\strengthening\\scifact_full_k100\\query_seed7_nli_relevance.csv": "7df695216bff483365cf019bc52d5c7ae2d1b5385326437bd427821a87e7717f",
+    "results\\strengthening\\scifact_full_k100\\query_seed7_nli_directional.csv": "1fa9c0e39435ff151e386d2cfd6ecf79d25f06c28c789b86ba46d0a09a1205c5",
+    "results\\strengthening\\scifact_full_k100\\query_seed7_nli_entailment.csv": "8c0a9a9b0e02da5f9bf4c961bf901b37f560e32fbc10a83c5a6c5f474820b4b9",
+    "results\\strengthening\\scifact_full_k100\\query_seed7_selected_single.csv": "6420728a4558b33b3259e84e809a1fd46d984c43585114896218cc162a128173",
+    "results\\strengthening\\scifact_full_k100\\query_seed7_scet.csv": "a71f395878044e98912e8fb97768a1dc0f0a2ef494bc75337a0f42ded5ec2a8c",
+    "results\\strengthening\\scifact_full_k100\\query_seed7_conflict_pressure.csv": "c626cb25577e39361e903c46280173ca4dd7755a916c7c87405932a07704390a",
+    "results\\scet_allocation\\full\\query_scifact_seed7_scet_cap1.csv": "cc6152be2a13df4b295e890d9640a73abb4d595e9c66cb14e74ee81c8ad94b5d",
+    "results\\scet_allocation\\full\\query_scifact_seed7_ce_cap1.csv": "67d29a4c2085fa49d50daf9e70a390a4ff96773311b47bbe1b863f0a90e36313",
+    "results\\multivers_extension\\k100\\query_seed7_multivers_exact_budget.csv": "fd8831c9686077b5c0c6581b66c129bc1405d9c047e00e124a74364a95480834",
+    "results\\multivers_extension\\k100\\query_seed7_scet_multivers_exact_budget.csv": "fd8831c9686077b5c0c6581b66c129bc1405d9c047e00e124a74364a95480834",
+    "results\\scet_allocation\\full\\query_scifact_seed7_multivers_cap1.csv": "082eb4607faf471ddcfd10c2066c286b99662bc33e657ab0df314e9b7ef6070e",
+    "results\\experiments\\scifact_full_k100\\model_seed7.json": "4c8fa744dc2973f61166d8f8c41bd6dd99fd7f32fae1ffc1899f450f18e12fbb"
+  },
+  "models_fitted": false,
+  "thresholds_changed": false,
+  "new_predictions_computed": false,
+  "elapsed_seconds": 6.39000000001397
+}

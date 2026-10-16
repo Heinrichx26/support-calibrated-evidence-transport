@@ -1,0 +1,10 @@
+dataset,metric,difference_scet_minus_ce,ci_low,ci_high,bootstrap_draws,unit,scope
+scifact,stress_unannotated_fraction,-0.0417124542124542,-0.14244975681987176,0.07930607726351886,1000,query cluster shared across overlapping partitions,conditional on frozen shared-stress and admission decisions
+scifact,stress_query_coverage,0.05357142857142857,0.029374777905536577,0.079204285956087,1000,query cluster shared across overlapping partitions,conditional on frozen shared-stress and admission decisions
+scifact,stress_query_error_rate,0.02976190476190476,0.010397673456477343,0.05033372363620499,1000,query cluster shared across overlapping partitions,conditional on frozen shared-stress and admission decisions
+fever,stress_unannotated_fraction,0.04449009245539745,-0.006665188832334219,0.09696407791574481,1000,query cluster shared across overlapping partitions,conditional on frozen shared-stress and admission decisions
+fever,stress_query_coverage,0.011072219444246018,0.00904970110813969,0.013335155715284494,1000,query cluster shared across overlapping partitions,conditional on frozen shared-stress and admission decisions
+fever,stress_query_error_rate,0.007286234731052218,0.0055584447340629155,0.009094081616857862,1000,query cluster shared across overlapping partitions,conditional on frozen shared-stress and admission decisions
+hover,stress_unannotated_fraction,-0.11726487021851956,-0.17221859561663702,-0.05272037843040433,1000,query cluster shared across overlapping partitions,conditional on frozen shared-stress and admission decisions
+hover,stress_query_coverage,-0.0009821428571428585,-0.005730841758450414,0.004058486307257604,1000,query cluster shared across overlapping partitions,conditional on frozen shared-stress and admission decisions
+hover,stress_query_error_rate,-0.0047321428571428575,-0.007935946832284737,-0.0013514879205248154,1000,query cluster shared across overlapping partitions,conditional on frozen shared-stress and admission decisions

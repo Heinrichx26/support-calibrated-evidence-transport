@@ -40,6 +40,83 @@ def ms(row, col, digits=3, multiline=False):
     sep = '\n' if multiline else ' '
     return fs(row[col + '_mean'], digits) + sep + '(' + fs(row[col + '_std'], digits) + ')'
 
+def allocation_ranking_table():
+    """Format S31 from saved point estimates and intervals without analysis."""
+    source = RES / 'allocation_ranking/full/decomposition.csv'
+    with source.open(encoding='utf-8', newline='') as stream:
+        records = list(csv.DictReader(stream))
+    lookup = {}
+    for record in records:
+        key = tuple(record[field] for field in ['dataset', 'metric', 'group', 'contrast'])
+        assert key not in lookup, key
+        lookup[key] = record
+    specifications = [
+        ('fever', 'precision', 'all', 'FEVER', 'Precision'),
+        ('fever', 'set_recall', 'all', 'FEVER', 'Set recall'),
+        ('fever', 'set_recall', 'multiple', 'FEVER', 'Set recall, multiple sentences'),
+        ('hover', 'precision', 'all', 'HoVer', 'Precision'),
+        ('hover', 'set_recall', 'all', 'HoVer', 'Set recall'),
+    ]
+    contrasts = ['net_scet_minus_ce', 'symmetric_ranking', 'symmetric_count_allocation']
+    rows = []
+    for dataset, metric, group, label, outcome in specifications:
+        row = [label, outcome]
+        points = []
+        for contrast in contrasts:
+            result = lookup[(dataset, metric, group, contrast)]
+            values = [float(result[field]) for field in ['difference', 'ci95_low', 'ci95_high']]
+            assert np.isfinite(values).all(), (dataset, metric, group, contrast)
+            point, lower, upper = values
+            assert lower <= point <= upper
+            assert int(result['bootstrap_repetitions']) == int(result['valid_draws']) == 1000
+            assert 'frozen cell decisions' in result['interval_scope']
+            row.append(f'{point:.4f}\n[{lower:.4f}, {upper:.4f}]')
+            points.append(point)
+        assert np.isclose(points[0], points[1] + points[2], atol=1e-12, rtol=0)
+        rows.append(row)
+    return ('Ordering and admission-count contributions',
+            ['Dataset', 'Outcome', 'Net difference', 'Ordering contribution', 'Count contribution'],
+            rows)
+
+
+def export_s31_only():
+    """Add S31 and its indices while preserving every existing table CSV."""
+    destination = RES / 'tables'
+    path = destination / 'allocation_ranking/S31.csv'
+    index_path = destination / 'index.json'
+    result_index_path = RES / 'table_to_result_index.json'
+    index = json.loads(index_path.read_text(encoding='utf-8'))
+    result_index = json.loads(result_index_path.read_text(encoding='utf-8'))
+    before = {p: (hashlib.sha256(p.read_bytes()).hexdigest(), p.stat().st_mtime_ns)
+              for p in destination.rglob('*.csv') if p != path}
+    title, headers, rows = allocation_ranking_table()
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open('w', encoding='utf-8', newline='') as stream:
+        csv.writer(stream, lineterminator='\n').writerows([headers] + rows)
+    entry = {'table': 'S31', 'title': title,
+             'file': path.relative_to(destination).as_posix(), 'rows': len(rows),
+             'columns': len(headers), 'sha256': hashlib.sha256(path.read_bytes()).hexdigest(),
+             'source': 'results/allocation_ranking/full/decomposition.csv',
+             'source_sha256': hashlib.sha256((RES / 'allocation_ranking/full/decomposition.csv').read_bytes()).hexdigest(),
+             'export_command': 'python src/export_r2_tables.py --s31-only'}
+    index = [item for item in index if item['table'] != 'S31'] + [entry]
+    result_index.update({
+        'S25': 'results/multivers_extension/external_evaluation/summary.csv; */query_*_exact_budget.csv; src/export_r2_tables.py (external_table_specs)',
+        'S26': 'results/multivers_extension/external_evaluation/summary.csv; */query_*_exact_budget.csv; src/export_r2_tables.py (external_table_specs)',
+        'S27': 'results/multivers_extension/external_evaluation/paired_intervals.csv; src/export_r2_tables.py (external_table_specs)',
+        'S28': 'results/scet_allocation/full/summary.csv; query_*_seed*_*.csv; src/scet_allocation_tables.py',
+        'S29': 'results/scet_allocation/full/paired_intervals.csv; src/scet_allocation_tables.py',
+        'S30': 'results/substantive_strengthening/set_size/full/mean_sd.csv; src/scet_set_size_tables.py',
+        'S31': 'results/tables/allocation_ranking/S31.csv; results/allocation_ranking/full/decomposition.csv; data/allocation_ranking_dependencies.json; R2_allocation_ranking.zip; python src/export_r2_tables.py --s31-only',
+    })
+    index_path.write_text(json.dumps(index, indent=2) + '\n', encoding='utf-8')
+    result_index_path.write_text(json.dumps(result_index, indent=2) + '\n', encoding='utf-8')
+    assert before == {p: (hashlib.sha256(p.read_bytes()).hexdigest(), p.stat().st_mtime_ns)
+                      for p in destination.rglob('*.csv') if p != path}
+    print(json.dumps({'table': entry, 'preserved_existing_csv_files': len(before),
+                      'indexed_tables': len(index), 'experimental_analysis_run': False}, indent=2))
+
+
 def main_tables(info):
     t1 = [['SciFact', 'Abstract sentence', 'Annotated evidence; stance groups', 'Original scientific abstract'], ['FEVER', 'Wikipedia sentence', 'Annotated evidence; claim verdict', 'June 2017 snapshot'], ['HoVer', 'Context sentence', 'Annotated multi-hop set; claim verdict', 'Original HotpotQA contexts']]
     t2 = []
@@ -315,6 +392,9 @@ def supplementary():
     from scet_set_size_tables import gold_set_table_specs
     for number, (title, headers, rows, note) in gold_set_table_specs().items():
         tab(number, title, headers, rows)
+    if (RES / 'allocation_ranking/full/decomposition.csv').exists():
+        title, headers, rows = allocation_ranking_table()
+        tab(31, title, headers, rows)
     return tables
 
 
@@ -333,11 +413,12 @@ def export(smoke=False):
     index = []
     for name, (title, headers, rows) in tables.items():
         assert all(len(row) == len(headers) for row in rows), name
-        path = destination / (name + '.csv')
+        path = destination / ('allocation_ranking/S31.csv' if name == 'S31' else name + '.csv')
+        path.parent.mkdir(parents=True, exist_ok=True)
         with path.open('w', encoding='utf-8', newline='') as stream:
             writer = csv.writer(stream, lineterminator='\n')
             writer.writerows([headers] + rows)
-        index.append({'table': name, 'title': title, 'file': path.name,
+        index.append({'table': name, 'title': title, 'file': path.relative_to(destination).as_posix(),
                       'rows': len(rows), 'columns': len(headers),
                       'sha256': hashlib.sha256(path.read_bytes()).hexdigest()})
     (destination / 'index.json').write_text(json.dumps(index, indent=2), encoding='utf-8')
@@ -346,6 +427,12 @@ def export(smoke=False):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--smoke', action='store_true', help='Write two representative tables first')
-    export(parser.parse_args().smoke)
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument('--smoke', action='store_true', help='Write two representative tables first')
+    mode.add_argument('--s31-only', action='store_true', help='Add S31 and indices without rewriting any existing table CSV')
+    args = parser.parse_args()
+    if args.s31_only:
+        export_s31_only()
+    else:
+        export(args.smoke)
 

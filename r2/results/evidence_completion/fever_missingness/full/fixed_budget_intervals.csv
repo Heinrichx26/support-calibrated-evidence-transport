@@ -1,0 +1,5 @@
+subset,comparator,delta_precision,ci_low,ci_high,unique_query_clusters,repetitions,bootstrap_scope
+all_candidates_complete,ce,0.04854826321991823,0.04054409401311148,0.055758216768575876,14253,1000,exact workload reallocated within every query-cluster resample; frozen fitted score forms
+all_candidates_complete,e5,0.0760561291442764,0.06694919449882775,0.08423704816766402,14253,1000,exact workload reallocated within every query-cluster resample; frozen fitted score forms
+all_candidates_complete,bm25,0.17283998115748278,0.16332930060219855,0.18191024977485143,14253,1000,exact workload reallocated within every query-cluster resample; frozen fitted score forms
+all_candidates_complete,nli_relevance,0.5656649252434794,0.5562358141286649,0.5748999462572223,14253,1000,exact workload reallocated within every query-cluster resample; frozen fitted score forms

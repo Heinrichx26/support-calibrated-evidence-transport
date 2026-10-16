@@ -1,0 +1,506 @@
+{
+  "schema_version": 1,
+  "scope": "Every archive member except this manifest; no self hash is claimed.",
+  "files": [
+    {
+      "path": "data/interim/evidence_retrieval/fever_full_candidates_k100.csv",
+      "bytes": 66664080,
+      "sha256": "fcf002ac6269f238c3927a4575fe00b88f5af377a8e25690a36aea24f8b62296"
+    },
+    {
+      "path": "data/raw_open/evidence_retrieval/fever/shared_task_dev.jsonl",
+      "bytes": 4349935,
+      "sha256": "e89865bfe1b4dd054e03dd57d7241a6fde24862905f31117cf0cd719f7c78df7"
+    },
+    {
+      "path": "r2/data/processed/fever_full_queries.json",
+      "bytes": 6974473,
+      "sha256": "16178c07738634d72e4d4cc5b2a31de1ba87fe80c4579741d81d397cd2b22dcd"
+    },
+    {
+      "path": "r2/data/processed/hover_full_queries.json",
+      "bytes": 2480694,
+      "sha256": "590d9554ac0d067e44faaa58436c0db7a43fab807134246eee84e9ba8feab77c"
+    },
+    {
+      "path": "r2/data/processed/scifact_full_queries.json",
+      "bytes": 114356,
+      "sha256": "a39ec115aca27a14000ab986baa92437cf02a3e272cde612ba86a9a748302aa2"
+    },
+    {
+      "path": "r2/data/r2_protocol.json",
+      "bytes": 1340,
+      "sha256": "2e80d08a9e891f58dcfd60e4a87a5676563ab24f8325da2a459fceca218d7652"
+    },
+    {
+      "path": "r2/data/raw/fever/download_manifest.json",
+      "bytes": 261,
+      "sha256": "5cf6af465e14f43500bdf711d648e23cc61b8af2c53f25d5712d9b3117b16395"
+    },
+    {
+      "path": "r2/data/raw/fever/verified_sentences.parquet",
+      "bytes": 10167760,
+      "sha256": "ccbcc32acdb4e33bf767ae502de998ec6c7cb4f33a9841d1fcea6308d7f77227"
+    },
+    {
+      "path": "r2/requirements-admission.txt",
+      "bytes": 166,
+      "sha256": "810bc5646e1464bd94260d80f8239a6f27bb3d6fe5135f1da5ea15f90c801312"
+    },
+    {
+      "path": "r2/requirements-evidence.txt",
+      "bytes": 53,
+      "sha256": "bdf9d2acaf578aa72c9a126df5f8197a24ec7156e4cad580ca9322d3f18cbf2b"
+    },
+    {
+      "path": "r2/results/evidence_completion/contribution/full/analysis_plan.json",
+      "bytes": 1636,
+      "sha256": "1a8382c07543cd750ae17be27af28e26957552acbe5de744ef57192f866cf1df"
+    },
+    {
+      "path": "r2/results/evidence_completion/contribution/full/audit.json",
+      "bytes": 95054,
+      "sha256": "dae402f6e5b3237450267e257632b708da29cc0e5c93676bd614cb53cd132e21"
+    },
+    {
+      "path": "r2/results/evidence_completion/contribution/full/by_partition.csv",
+      "bytes": 185916,
+      "sha256": "252ea90b769a2ea1bdd489523c754091a6d97316e76164eff06f4400800b7e1b"
+    },
+    {
+      "path": "r2/results/evidence_completion/contribution/full/fever_source_components.csv",
+      "bytes": 323878,
+      "sha256": "721941a1dc77a31eb42b51f32543e1a980e9f712102329340ac46cd0e0a5e5a4"
+    },
+    {
+      "path": "r2/results/evidence_completion/contribution/full/mean_sd.csv",
+      "bytes": 106859,
+      "sha256": "5081923941c9dc99f78250f69aa8d3b79c17b5ac2cfd14a9a3fdeebfbf5000c1"
+    },
+    {
+      "path": "r2/results/evidence_completion/contribution/full/paired_by_partition.csv",
+      "bytes": 70512,
+      "sha256": "40f3a32d3d998da4ba1e28af87c8b34623590fa8c421c19e92e35ff0bc69eb99"
+    },
+    {
+      "path": "r2/results/evidence_completion/contribution/full/paired_intervals.csv",
+      "bytes": 46716,
+      "sha256": "5ff27b3cc10efc105fcd8a0383828b48a1ad67957ca4fa47e145c987cee9b29c"
+    },
+    {
+      "path": "r2/results/evidence_completion/contribution/full/partition_overlap.csv",
+      "bytes": 152,
+      "sha256": "66c457763c99116d585bdb9c5bb0d881e1ecc36526a24ce3de3afe4198ffd2ff"
+    },
+    {
+      "path": "r2/results/evidence_completion/contribution/full/source_dependency.json",
+      "bytes": 505,
+      "sha256": "640dc52b410c8c174a9238bb33bc80c8d919be7f89ffa49d635199da3b9f60a1"
+    },
+    {
+      "path": "r2/results/evidence_completion/contribution/smoke/analysis_plan.json",
+      "bytes": 1636,
+      "sha256": "1a8382c07543cd750ae17be27af28e26957552acbe5de744ef57192f866cf1df"
+    },
+    {
+      "path": "r2/results/evidence_completion/contribution/smoke/audit.json",
+      "bytes": 95051,
+      "sha256": "098d1b591be886d17aaeaafb75ce87da831bfd9538d6479835f8a5ff60fa982a"
+    },
+    {
+      "path": "r2/results/evidence_completion/contribution/smoke/by_partition.csv",
+      "bytes": 185916,
+      "sha256": "252ea90b769a2ea1bdd489523c754091a6d97316e76164eff06f4400800b7e1b"
+    },
+    {
+      "path": "r2/results/evidence_completion/contribution/smoke/mean_sd.csv",
+      "bytes": 106859,
+      "sha256": "5081923941c9dc99f78250f69aa8d3b79c17b5ac2cfd14a9a3fdeebfbf5000c1"
+    },
+    {
+      "path": "r2/results/evidence_completion/contribution/smoke/paired_by_partition.csv",
+      "bytes": 70512,
+      "sha256": "40f3a32d3d998da4ba1e28af87c8b34623590fa8c421c19e92e35ff0bc69eb99"
+    },
+    {
+      "path": "r2/results/evidence_completion/correspondence_conflict/full/annotation_correspondence.csv",
+      "bytes": 3762253,
+      "sha256": "4cd23a4a13f8b0065f6e582e7e5b647efd51a3d6d431c9e3a466f6db7daca24c"
+    },
+    {
+      "path": "r2/results/evidence_completion/correspondence_conflict/full/examples.json",
+      "bytes": 7723,
+      "sha256": "d460da314887f3729aa60fba50ee6476e6316f17ae1a0f692725b68e412a481b"
+    },
+    {
+      "path": "r2/results/evidence_completion/correspondence_conflict/full/pool_duplicate_check.json",
+      "bytes": 247,
+      "sha256": "4d20838f351809d231a783cac9683a4b27540e0e0df103748c8f2540ca3a8dfc"
+    },
+    {
+      "path": "r2/results/evidence_completion/correspondence_conflict/full/shared_stress_definitions.csv",
+      "bytes": 632,
+      "sha256": "94c7fa30c1bdfffa6873c758afddee40ca616f9634238b3a2741c4c4f46373bc"
+    },
+    {
+      "path": "r2/results/evidence_completion/correspondence_conflict/full/source_identity_audit.csv",
+      "bytes": 5449521,
+      "sha256": "66d493c2005242e51340be5161bc5ed92d984e0756c3a0f7744107a468e19f82"
+    },
+    {
+      "path": "r2/results/evidence_completion/correspondence_conflict/full/stress_by_partition.csv",
+      "bytes": 3514,
+      "sha256": "36b90bf0bdf4ea4b284a282ee0d5cf64e52d5f2ce32737af3dcb47e1b647f182"
+    },
+    {
+      "path": "r2/results/evidence_completion/correspondence_conflict/full/stress_mean_sd.csv",
+      "bytes": 2811,
+      "sha256": "8e27e7df822c4dd0d9b34fd446ff5ca58003118c995c46bbbe72e685f0061350"
+    },
+    {
+      "path": "r2/results/evidence_completion/correspondence_conflict/full/stress_paired_intervals.csv",
+      "bytes": 1984,
+      "sha256": "4a0bf0674813de7120ccdeee5f41530308f49926597d093fa7c5ec019a896b5b"
+    },
+    {
+      "path": "r2/results/evidence_completion/correspondence_conflict/full/summary.json",
+      "bytes": 13846,
+      "sha256": "746ad6997bbf9fe26ca0621acfd427a59bc66c0daeeded42f22b58958271f64b"
+    },
+    {
+      "path": "r2/results/evidence_completion/correspondence_conflict/literature/fever.json",
+      "bytes": 3654,
+      "sha256": "52f5f38f69e59b7affc92afc5c285270519e8ffeb8e0661defcdb339382ca2bb"
+    },
+    {
+      "path": "r2/results/evidence_completion/correspondence_conflict/literature/fever_smoke.json",
+      "bytes": 1058,
+      "sha256": "c9d12a9b8bb9ce335f9c78b6f8fc5d8f2132a03f76771d5787095ab568cd6a56"
+    },
+    {
+      "path": "r2/results/evidence_completion/correspondence_conflict/literature/fever_task.json",
+      "bytes": 2903,
+      "sha256": "373831822fdeef1aa482015151a822a43f6b4e8762381fbced79685e7610de0c"
+    },
+    {
+      "path": "r2/results/evidence_completion/correspondence_conflict/literature/selective_crossref.json",
+      "bytes": 6026,
+      "sha256": "942f0c1745ada5f68eca9f57d252399e105c60eec45494de2c04a23cba6c3552"
+    },
+    {
+      "path": "r2/results/evidence_completion/correspondence_conflict/literature/selective_publisher_metadata.json",
+      "bytes": 35722,
+      "sha256": "f0de31d558bffb2161051459893e0d80d887ef4db4498b6cc45284112cdf9b71"
+    },
+    {
+      "path": "r2/results/evidence_completion/correspondence_conflict/literature/selective_smoke.json",
+      "bytes": 931,
+      "sha256": "e2435dfccb4abc28575a4bca1e568a8e9a49c3e024128d5563c1e6fdb219bf5a"
+    },
+    {
+      "path": "r2/results/evidence_completion/correspondence_conflict/literature/selectivenet.json",
+      "bytes": 3302,
+      "sha256": "a8e836e2696446b047eafafedd6fc5ba52b4b77603639b9f82eca35a5539cdb8"
+    },
+    {
+      "path": "r2/results/evidence_completion/correspondence_conflict/smoke/annotation_correspondence.csv",
+      "bytes": 5247,
+      "sha256": "d9267dd2d0ad92393c3e83513e4d5620666f607d2616a3f544af3a51d01274c8"
+    },
+    {
+      "path": "r2/results/evidence_completion/correspondence_conflict/smoke/examples.json",
+      "bytes": 4290,
+      "sha256": "a5a5e69943bc5aade52677d4d4637d537e80d27145c7c643230d739468f5d0de"
+    },
+    {
+      "path": "r2/results/evidence_completion/correspondence_conflict/smoke/shared_stress_definitions.csv",
+      "bytes": 139,
+      "sha256": "6487df8aca705d2ca2e483b66d360caf70056bd9d22091c9d78237babb33d3dd"
+    },
+    {
+      "path": "r2/results/evidence_completion/correspondence_conflict/smoke/source_identity_audit.csv",
+      "bytes": 2005,
+      "sha256": "31d3830eaba51ae5331634182200fdb908765399b10878e2099de35066a195a6"
+    },
+    {
+      "path": "r2/results/evidence_completion/correspondence_conflict/smoke/stress_by_partition.csv",
+      "bytes": 548,
+      "sha256": "31ae11b6c4454873776370788dfc10b619b90e38e7860c65f38a8e7ca7dcb981"
+    },
+    {
+      "path": "r2/results/evidence_completion/correspondence_conflict/smoke/stress_mean_sd.csv",
+      "bytes": 1009,
+      "sha256": "e1643465df8bb7136b2ecccc7e7821b1f07ff37659267fd8bd95e92743643e53"
+    },
+    {
+      "path": "r2/results/evidence_completion/correspondence_conflict/smoke/stress_paired_intervals.csv",
+      "bytes": 2,
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    },
+    {
+      "path": "r2/results/evidence_completion/correspondence_conflict/smoke/summary.json",
+      "bytes": 4262,
+      "sha256": "06473b7f0e2d0d1ca156ff6c282cd6cf8c16392ca1c26d7ff9ce1db5c8ed3970"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/analysis_manifest.json",
+      "bytes": 1715,
+      "sha256": "8c5c10e4f6e17610cfdad0ac77275b0a59d38ae2fb4535ab86c9700bf7ec4c00"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/candidate_provenance.csv",
+      "bytes": 515,
+      "sha256": "284a8baa906df631fad4d3af02b38a6c79ac3225662b3480a0f9ab08144c24b2"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/evaluation_denominators.csv",
+      "bytes": 1153,
+      "sha256": "4127a1d1d0814ea2befd5a51b5abf5cced276fb98021380e2b14eebeef18a40b"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/fixed_budget_intervals.csv",
+      "bytes": 866,
+      "sha256": "d0c2807b7183bbde777b8da0bd09125b87eba2641278107e5a3f3a28ad21773f"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/fixed_budget_mean_sd.csv",
+      "bytes": 3871,
+      "sha256": "391e6ed2982b74f9e8933945e662e22f0e281530f8f857319f108291ebebc300"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/fixed_budget_per_partition.csv",
+      "bytes": 6073,
+      "sha256": "e385fe05d7cb226d566577f0cedf58fb223f04abfb8524391ce93cd8ab56c51c"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/fixed_budget_verdict_mean_sd.csv",
+      "bytes": 8781,
+      "sha256": "aa6ebe4f9d0195c1d8e0655dc29a997cc1a7681e92367ded2cc0ee3a2fda5719"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/fixed_budget_verdict_per_partition.csv",
+      "bytes": 15452,
+      "sha256": "0a2e75d9f78c667d3d30d38dc9dc8b5c454919b4b491bf9ed53467dde6c6f87a"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/fixed_query_seed13_bm25.csv",
+      "bytes": 573566,
+      "sha256": "da8cd81556daa58ea955cda420b584055d0359a056d2fb915b391b45288c7d5e"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/fixed_query_seed13_ce.csv",
+      "bytes": 562239,
+      "sha256": "62c682390f89e84c28f24d4e310437036f2c168f716477b35bc1e6c52653f845"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/fixed_query_seed13_e5.csv",
+      "bytes": 568417,
+      "sha256": "bf0fc14a3b92f64eab346b17b0dcae91e37183d1de1803ca9615f8b2c82696f5"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/fixed_query_seed13_nli_relevance.csv",
+      "bytes": 634378,
+      "sha256": "7c25d8457346476e010ac8574be3fc12431394943600160fa91bd1bb16dcbdce"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/fixed_query_seed13_scet.csv",
+      "bytes": 566234,
+      "sha256": "6a54fcfa0ef819ff73e71c10b9b65e7336950aa98229f9ffd158b317039cd11c"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/fixed_query_seed17_bm25.csv",
+      "bytes": 573771,
+      "sha256": "6c91151a9fc9807df468dfba789c8a2d7ae4a20072728abd01f10a7affe931a2"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/fixed_query_seed17_ce.csv",
+      "bytes": 562135,
+      "sha256": "b5b80a3e69cf631acade0026fb1f389417416d88b913795f25f19eddb93978db"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/fixed_query_seed17_e5.csv",
+      "bytes": 567579,
+      "sha256": "ed2ee87f413f198fa4bd782b9c4167fbd9111e1b9135fe6bca7e3f3a569a2c71"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/fixed_query_seed17_nli_relevance.csv",
+      "bytes": 633015,
+      "sha256": "6ea2827c3afcd571885c4f91cfdceda8e5a2636142c4cbe950119084696a6f93"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/fixed_query_seed17_scet.csv",
+      "bytes": 567063,
+      "sha256": "58588aedf3fdc833fd83c7cacc18b3a9fc07b21f07c2e789d175c74042f086ff"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/fixed_query_seed29_bm25.csv",
+      "bytes": 575766,
+      "sha256": "5004b58200b28350ffeaf29700eac6b98a44565ab99c00ecab30a828a990ee2c"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/fixed_query_seed29_ce.csv",
+      "bytes": 564228,
+      "sha256": "9a1388402cf4f6f0cc4d768f349fc8adfe1d351cb3ad7e85c96be4264cd09618"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/fixed_query_seed29_e5.csv",
+      "bytes": 569746,
+      "sha256": "d08e96d9b0029e15a2c52c7896abe1ed99ee3fe39d34a2353a25e543a2677ab9"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/fixed_query_seed29_nli_relevance.csv",
+      "bytes": 636963,
+      "sha256": "b3833925fa6c6bef0577175f07eed38c67243d62bcdfa96e9f427a0d91eda601"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/fixed_query_seed29_scet.csv",
+      "bytes": 567675,
+      "sha256": "df36eaceae3034fd0115694c8b3e470f88f0879896e8bb4f1bd389c396b4fdc4"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/fixed_query_seed7_bm25.csv",
+      "bytes": 572723,
+      "sha256": "60612a524dadca76b3b4e3d68f08ff1f5480e00df15bbf0a5464248f12d497e4"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/fixed_query_seed7_ce.csv",
+      "bytes": 561576,
+      "sha256": "48f7fbda864a36863353f7e544957ee7dad8140ce6ee40c73b7a29987c54ae70"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/fixed_query_seed7_e5.csv",
+      "bytes": 567203,
+      "sha256": "c5e4af920c5db8f28932116aad5e6f018abc3e6ba10451833f99736fa5ab0699"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/fixed_query_seed7_nli_relevance.csv",
+      "bytes": 633277,
+      "sha256": "d98e97510168fd71f5e7be1dfd1e8cadccc45438ffcb983bedf21d10e3b3437f"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/fixed_query_seed7_scet.csv",
+      "bytes": 565418,
+      "sha256": "7e326a96b450ccc35b366ad25cc7fb83b9bc30b199eea36b713a8065415099c1"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/independent_numeric_audit.json",
+      "bytes": 6094,
+      "sha256": "4f01803a3e217a6d6c8be772ad6f5fffd80574be9ace8701c9b093211146df7f"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/missing_rows_histogram.csv",
+      "bytes": 1541,
+      "sha256": "0f7a4f6b17fff168b9132222c65ec08edb1f41f2d77ddaec3d2e18d7c411db8c"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/missingness_by_verdict.csv",
+      "bytes": 562,
+      "sha256": "860f507a5843833be54ac394bad285905aaa41f1e59f1162eb307df6dd29b1ce"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/prospective_intervals.csv",
+      "bytes": 3655,
+      "sha256": "e73ad8cf401648d054eb52d5d17f21d0446b8b682eacc63700d0233b7166a495"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/prospective_mean_sd.csv",
+      "bytes": 16836,
+      "sha256": "3369dfb3f1e44ca684d08b4d2b2f3b137ec7adfe7a823419929e1d6ee1348d97"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/prospective_per_partition.csv",
+      "bytes": 29809,
+      "sha256": "b97063d4f0cef8a4255eb12c039cc6d1ad0b16f70358026f1d710cf88a31780e"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/prospective_verdict_mean_sd.csv",
+      "bytes": 40311,
+      "sha256": "bcd4e122b92d27ef0325b7c0ec71f27e2b8224cb5f70ce1316a73a0277dc9e0f"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/prospective_verdict_per_partition.csv",
+      "bytes": 74162,
+      "sha256": "1483729796f82336306c07b528374215d03a0749828d9f6687f1bee2760d011f"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/query_availability.csv",
+      "bytes": 1040389,
+      "sha256": "d1f60f652f5edc5659d7e899468c61b3f98117cc3256630cb08e1d08e40bd4ca"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/full/subset_composition.csv",
+      "bytes": 1264,
+      "sha256": "ad9f120ada78817f281ba72059ee2630fa24aaf1435516eeffd0dfaa71950011"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/smoke/analysis_manifest.json",
+      "bytes": 1716,
+      "sha256": "5af0343057e15d98b251209d82d270409f6c3402a85666e96e507e0b9a994501"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/smoke/candidate_provenance.csv",
+      "bytes": 515,
+      "sha256": "284a8baa906df631fad4d3af02b38a6c79ac3225662b3480a0f9ab08144c24b2"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/smoke/missing_rows_histogram.csv",
+      "bytes": 1541,
+      "sha256": "0f7a4f6b17fff168b9132222c65ec08edb1f41f2d77ddaec3d2e18d7c411db8c"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/smoke/missingness_by_verdict.csv",
+      "bytes": 562,
+      "sha256": "860f507a5843833be54ac394bad285905aaa41f1e59f1162eb307df6dd29b1ce"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/smoke/query_availability.csv",
+      "bytes": 1040389,
+      "sha256": "d1f60f652f5edc5659d7e899468c61b3f98117cc3256630cb08e1d08e40bd4ca"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/smoke/smoke_checks.json",
+      "bytes": 1316,
+      "sha256": "4b3cc322521c797dfed59c70d1a751d0e37381db5c04443911b54c2ab561cdeb"
+    },
+    {
+      "path": "r2/results/evidence_completion/fever_missingness/smoke/subset_composition.csv",
+      "bytes": 1264,
+      "sha256": "ad9f120ada78817f281ba72059ee2630fa24aaf1435516eeffd0dfaa71950011"
+    },
+    {
+      "path": "r2/results/evidence_completion/reproducibility_inventory.json",
+      "bytes": 157659,
+      "sha256": "1d7345cc61b74eb8d31141a8be5ecde51192bea4de12f7d2ece80208cc665ab8"
+    },
+    {
+      "path": "r2/src/analyze_fever_missingness.py",
+      "bytes": 19566,
+      "sha256": "655d5c7ceecefae2391cb0b5f8afdf87a74815d292db1e8a5a55d08d9bff865f"
+    },
+    {
+      "path": "r2/src/analyze_scet_contribution.py",
+      "bytes": 32740,
+      "sha256": "dd00076fa360e6e4f1cb7dec1bb226cbc7f311846eda37b3276c414f9f8d37ab"
+    },
+    {
+      "path": "r2/src/r2_admission.py",
+      "bytes": 14034,
+      "sha256": "a64b81cc8c03f28984af85b406bc5465a11d7846768979d8ebcee4491ef98e32"
+    },
+    {
+      "path": "r2/src/r2_statistics.py",
+      "bytes": 3840,
+      "sha256": "543589effaf492c6fd59994b37679496414bab20d9156ce3145b26c44579488a"
+    },
+    {
+      "path": "r2/src/verify_evidence_correspondence.py",
+      "bytes": 18927,
+      "sha256": "4c5ce890f2a7d26daf7c5ec3756f07ad512b72509687e7acbc45b42956d83f04"
+    },
+    {
+      "path": "README_R2_EVIDENCE.md",
+      "bytes": 5571,
+      "sha256": "78f1e61fb46c8f047e19e1f7aa3f66a701a5bf57fc70b7a16d22f04545df5a1c"
+    }
+  ]
+}

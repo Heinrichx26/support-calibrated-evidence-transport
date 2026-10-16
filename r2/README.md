@@ -1,10 +1,14 @@
-# Current complete numerical release
+# Current numerical reproduction
 
-The current frozen code, result summaries and all 34 exported tables are supplied by the [complete R2 release](https://github.com/Heinrichx26/support-calibrated-evidence-transport/releases/tag/r2-complete-2026-10-15). Download its `R2_external_calibration_reproducibility.zip` and checksum and follow [EXTERNAL_CALIBRATION_REPRODUCTION.md](EXTERNAL_CALIBRATION_REPRODUCTION.md). Extract into a new directory before replaying the external experiments or exporting every current table. The repository retains small files; raw probabilities, numerical candidate matrices, frozen model files and detailed query outcomes are in the release asset.
+Tables 1-4 and S1-S31 contain 35 exported tables. [REPRODUCE_ALL_TABLES.md](REPRODUCE_ALL_TABLES.md) gives the extraction order and hashes of the four published archives, followed by the smoke and complete export commands. All 35 CSVs were independently reconstructed from those archives with identical bytes. The repository retains programs and small numerical summaries; detailed query outcomes, numerical candidate matrices and frozen fitted models are in the release attachments.
 
-Tables S25–S27 report the two external collections, score controls, ablations and four primary simultaneous precision intervals. Tables S28–S30 report exploratory allocation and complete evidence-set analyses. All saved exploratory trials, including unsuccessful ranking-objective development, are retained. The source archive and checkpoint versions and their full hashes are fixed in the provided manifests.
+The [complete release](https://github.com/Heinrichx26/support-calibrated-evidence-transport/releases/tag/r2-complete-2026-10-15) supplies the external calibration archive, the frozen sentence-ordering/admission-count analysis, and the S31 table-export update. The [original R2 release](https://github.com/Heinrichx26/support-calibrated-evidence-transport/releases/tag/r2-2026-10-15) supplies the original full scorer matrices. Each archive retains its original manifest and checksum.
 
-The original full input matrices for rerunning the original seven experiment configurations remain in the earlier archive linked below. The instructions that follow document those original experiments; use the complete asset's table exporter for all current tables.
+Tables S25-S27 report the two external collections, score controls, ablations and four primary simultaneous precision intervals. Tables S28-S30 report exploratory allocation and complete evidence-set analyses. Table S31 reports the frozen comparison of sentence ordering and per-query admission counts; [README_ALLOCATION_RANKING.md](README_ALLOCATION_RANKING.md) gives its exact dependencies and recomputation commands. Saved unsuccessful trials and the full comparison record remain available.
+
+[EVIDENCE_ANALYSIS_REPRODUCTION.md](EVIDENCE_ANALYSIS_REPRODUCTION.md) describes the separately released source-correspondence, candidate-text availability and frozen-decision contribution analyses, including their source snapshot, extraction layout and smoke checks.
+
+The sections below document the original experiments. Use the four-archive extraction procedure for all current table exports.
 
 # R2 evidence admission experiments
 
@@ -27,7 +31,7 @@ Generate every manuscript and supplementary table directly from the saved result
     python src/export_r2_tables.py --smoke
     python src/export_r2_tables.py
 
-The 34 UTF-8 CSV tables and their hashes are written to results/tables/. Every header and displayed cell has been checked against the corresponding Word table. This export requires no manuscript files and performs no experimental scoring.
+The 35 UTF-8 CSV tables and their hashes are written to results/tables/. Every header and displayed cell has been checked against the corresponding Word table. This export requires no manuscript files and performs no experimental scoring.
 
 Run a smoke check before a full experiment:
 

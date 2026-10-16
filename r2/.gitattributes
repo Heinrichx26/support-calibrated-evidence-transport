@@ -8,3 +8,18 @@
 *.pdf_tex text eol=lf
 *.pdf binary
 *.png binary
+# Preserve exact bytes for the hashed analysis attachments.
+src/analyze_allocation_ranking.py -text
+src/export_r2_tables.py -text
+results/allocation_ranking/** -text
+results/tables/S31_package_manifest.json -text
+results/tables/index.json -text
+data/allocation_ranking_dependencies.json -text
+README_ALLOCATION_RANKING.md -text
+README_TABLE_S31.md -text
+requirements-allocation-ranking.txt -text
+src/verify_evidence_correspondence.py -text
+src/analyze_fever_missingness.py -text
+src/analyze_scet_contribution.py -text
+results/evidence_completion/** -text
+requirements-evidence.txt -text

@@ -1,0 +1,21 @@
+subset,comparator,delta_precision,ci_low,ci_high,unique_query_clusters,repetitions,bootstrap_scope
+all,ce,0.046098544725715396,0.038469929541066254,0.053325906597921524,19832,1000,frozen prospective admission; shared query weights across overlapping partitions
+all,e5,0.07805740627782459,0.0699614639973672,0.0862268838483761,19832,1000,frozen prospective admission; shared query weights across overlapping partitions
+all,bm25,0.16824938028011382,0.15889655201902528,0.1775958577358437,19832,1000,frozen prospective admission; shared query weights across overlapping partitions
+all,nli_relevance,0.5634799235632965,0.554581978609773,0.5719685986318801,19832,1000,frozen prospective admission; shared query weights across overlapping partitions
+gold_complete,ce,0.04616784910672522,0.03882005123676006,0.05360341531699949,19693,1000,frozen prospective admission; shared query weights across overlapping partitions
+gold_complete,e5,0.07809409079175711,0.06986654682797594,0.08655807900551629,19693,1000,frozen prospective admission; shared query weights across overlapping partitions
+gold_complete,bm25,0.1680288805483101,0.1580133098650989,0.17724776116132818,19693,1000,frozen prospective admission; shared query weights across overlapping partitions
+gold_complete,nli_relevance,0.5630967851892235,0.5541851930186701,0.5710162853086931,19693,1000,frozen prospective admission; shared query weights across overlapping partitions
+all_candidates_complete,ce,0.06594073771839137,0.05667659340550356,0.07512222321360092,14253,1000,frozen prospective admission; shared query weights across overlapping partitions
+all_candidates_complete,e5,0.09402758935628622,0.08393545101515383,0.1039380350087113,14253,1000,frozen prospective admission; shared query weights across overlapping partitions
+all_candidates_complete,bm25,0.19672135821911518,0.18684251576913946,0.20770020344953652,14253,1000,frozen prospective admission; shared query weights across overlapping partitions
+all_candidates_complete,nli_relevance,0.5822916639789204,0.57263574193529,0.5932937533850956,14253,1000,frozen prospective admission; shared query weights across overlapping partitions
+candidate_incomplete,ce,0.003388011788680867,-0.01032809240223901,0.017467131982857143,5579,1000,frozen prospective admission; shared query weights across overlapping partitions
+candidate_incomplete,e5,0.04505881899395964,0.03101376536479154,0.0593981828694542,5579,1000,frozen prospective admission; shared query weights across overlapping partitions
+candidate_incomplete,bm25,0.09753472995422674,0.07990921225352807,0.11512634598365777,5579,1000,frozen prospective admission; shared query weights across overlapping partitions
+candidate_incomplete,nli_relevance,0.5220568359757545,0.5062682197735973,0.5373739023497058,5579,1000,frozen prospective admission; shared query weights across overlapping partitions
+candidate_incomplete_gold_complete,ce,0.0036357089036717083,-0.010873748174971751,0.018233670678826207,5440,1000,frozen prospective admission; shared query weights across overlapping partitions
+candidate_incomplete_gold_complete,e5,0.045181001553847217,0.030440035040966665,0.05991648940421083,5440,1000,frozen prospective admission; shared query weights across overlapping partitions
+candidate_incomplete_gold_complete,bm25,0.09668884682887698,0.0793721934053414,0.1163945933914118,5440,1000,frozen prospective admission; shared query weights across overlapping partitions
+candidate_incomplete_gold_complete,nli_relevance,0.5208037062014258,0.5062747753343199,0.5363375233592313,5440,1000,frozen prospective admission; shared query weights across overlapping partitions

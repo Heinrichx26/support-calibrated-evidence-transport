@@ -1,6 +1,8 @@
 # External calibration and complete experiment record
 
-This asset is self-contained for Tables S25-S27 and supplies the saved summaries needed to export all 34 current tables. It also retains every saved exploratory calibration family, the previous confirmation outcomes, all external raw predictions, frozen model selections, fitted calibrators, prospective thresholds, per-query outcomes and all declared pairwise comparisons. Manuscripts and review correspondence are excluded. New allocation and evidence-set analyses are listed in results/external_asset_scope.json when included.
+This asset is self-contained for Tables S25-S27 and supplies the saved summaries needed to export Tables 1-4 and S1-S30 (34 tables). It also retains every saved exploratory calibration family, the previous confirmation outcomes, all external raw predictions, frozen model selections, fitted calibrators, prospective thresholds, per-query outcomes and all declared pairwise comparisons. Manuscripts and review correspondence are excluded. New allocation and evidence-set analyses are listed in results/external_asset_scope.json when included.
+
+Table S31 is supplied by a later attachment. [REPRODUCE_ALL_TABLES.md](REPRODUCE_ALL_TABLES.md) gives the four-archive procedure for all 35 current tables. The instructions below describe the unchanged external-calibration archive.
 
 ## Restore and verify
 

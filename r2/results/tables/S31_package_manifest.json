@@ -1,0 +1,22 @@
+[
+  {
+    "path": "src/export_r2_tables.py",
+    "bytes": 33285,
+    "sha256": "ad8fda4f87752d376d1057f56f98748850fa0b9f3544d7413ffd0a98e475927f"
+  },
+  {
+    "path": "results/tables/allocation_ranking/S31.csv",
+    "bytes": 585,
+    "sha256": "17aec25b99cd6221811bbc873c13b07034948b9e4473f918c0f3eab9be1e60aa"
+  },
+  {
+    "path": "results/tables/index.json",
+    "bytes": 8264,
+    "sha256": "9bc35110f4197afd1768572ca43fc36e5ee251912db1ebcd5b2d51e0933fd124"
+  },
+  {
+    "path": "results/table_to_result_index.json",
+    "bytes": 3637,
+    "sha256": "347c39faf120cc2496877f73088e8bd48149436c5f6aa9819fb39c97f765472a"
+  }
+]

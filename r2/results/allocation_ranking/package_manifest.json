@@ -1,0 +1,127 @@
+[
+  {
+    "path": "README_ALLOCATION_RANKING.md",
+    "bytes": 2914,
+    "sha256": "cee7b4241e784df089cae48d8c8a5c126a8bb93e175dd227fb12732e6eca885c"
+  },
+  {
+    "path": "data/allocation_ranking_dependencies.json",
+    "bytes": 8854,
+    "sha256": "767caec9b5fa43c89e0c535d0cb7269af29c2943d160e0b83df963255e57790e"
+  },
+  {
+    "path": "requirements-allocation-ranking.txt",
+    "bytes": 51,
+    "sha256": "903c8e67929361df81c4b530960f42d911d78c67ddc1cb1e85f732707c3fe525"
+  },
+  {
+    "path": "results/allocation_ranking/full/audit.json",
+    "bytes": 15198,
+    "sha256": "23eafa22fd0d67bfd9c5dd11b57568620b77e858e4fd50b510719510bd9037bd"
+  },
+  {
+    "path": "results/allocation_ranking/full/by_partition.csv",
+    "bytes": 7300,
+    "sha256": "8cd7d0e0ff55be097968d8742bade660c0bba2b884f72b1784bfe18153077166"
+  },
+  {
+    "path": "results/allocation_ranking/full/cell_intervals.csv",
+    "bytes": 9913,
+    "sha256": "b01c1ce9d7c89c94315781b8bf2262e7d8cf73e9cd1a7bae67b5cae9b629c4d1"
+  },
+  {
+    "path": "results/allocation_ranking/full/decomposition.csv",
+    "bytes": 31014,
+    "sha256": "5ff7222aaf3c288f5cdabc523adb0f182f8a75927e359bc8a46928242a9dc97e"
+  },
+  {
+    "path": "results/allocation_ranking/full/fever_cell_intervals.csv",
+    "bytes": 5771,
+    "sha256": "d4c7d77a263f6676a03d4c0fbdd1dfbb2afcbbfe2ede506c98dcb35dfaaf54c7"
+  },
+  {
+    "path": "results/allocation_ranking/full/fever_decomposition.csv",
+    "bytes": 18177,
+    "sha256": "f83b448da2bb6ca40b99e042c67275bea28dacb8202b4417e521ab5d9374e9f7"
+  },
+  {
+    "path": "results/allocation_ranking/full/hover_cell_intervals.csv",
+    "bytes": 4171,
+    "sha256": "e1deb177f5dfe5148bcf7c86d8c4e2221c6cd21f5a31b6f376db93307a0b2c08"
+  },
+  {
+    "path": "results/allocation_ranking/full/hover_decomposition.csv",
+    "bytes": 12969,
+    "sha256": "2b5a15da00229d6c2cafcfd3b10f152ddbe2becbf096911eef8abe46f5c56df2"
+  },
+  {
+    "path": "results/allocation_ranking/full/query_fever_seed13.csv",
+    "bytes": 4320992,
+    "sha256": "bfff6bb7dabca84b8a8f3fad34581e254cef559ec737775da208a1d9e02c29c0"
+  },
+  {
+    "path": "results/allocation_ranking/full/query_fever_seed17.csv",
+    "bytes": 4321468,
+    "sha256": "2dd61ce6351c6e110461ea84ae9fc018c61b3bc3eb9b1e60d52633e2f9c789e4"
+  },
+  {
+    "path": "results/allocation_ranking/full/query_fever_seed29.csv",
+    "bytes": 4317236,
+    "sha256": "ba9f7bc1c24e4389b2e461b3e376cbd35898bc442ae9d57f1726441500bb22be"
+  },
+  {
+    "path": "results/allocation_ranking/full/query_fever_seed7.csv",
+    "bytes": 4264736,
+    "sha256": "a9399b9c042626a6a7c4f3c81553093d7f19af98341b6280f9251f7ac5753cea"
+  },
+  {
+    "path": "results/allocation_ranking/full/query_hover_seed13.csv",
+    "bytes": 1198664,
+    "sha256": "396f1271aabadbcbf172e88c16ddb50cd7339323e53ed7b36c56ed2834ee7ba2"
+  },
+  {
+    "path": "results/allocation_ranking/full/query_hover_seed17.csv",
+    "bytes": 1198184,
+    "sha256": "2029b981513568ce4b9cdd67c8f37370db19218e0bd8c913b493850b89fa84a3"
+  },
+  {
+    "path": "results/allocation_ranking/full/query_hover_seed29.csv",
+    "bytes": 1198712,
+    "sha256": "b37f6e1f024150a6f08d13e9e5292aee959245228a08e5569d710486e404bf46"
+  },
+  {
+    "path": "results/allocation_ranking/full/query_hover_seed7.csv",
+    "bytes": 1187696,
+    "sha256": "838974d10887782c45909c955b471d8e219374447acb44fd72352ccbb55eb5d6"
+  },
+  {
+    "path": "results/allocation_ranking/full/report.md",
+    "bytes": 6745,
+    "sha256": "595dee845d46051c007ea4e750f8dc87f5144c7550a23e5e8fd75108f5c34b5f"
+  },
+  {
+    "path": "results/allocation_ranking/smoke/audit.json",
+    "bytes": 4543,
+    "sha256": "4f3df992e878183f3a0fb5766831553946aed5ea1fffa3c0e2e0eaa13e041338"
+  },
+  {
+    "path": "results/allocation_ranking/smoke/by_partition.csv",
+    "bytes": 915,
+    "sha256": "9b082ca387f8b42348f2491d828c9516feb780c59653da8d23a1f9140ab9bb38"
+  },
+  {
+    "path": "results/allocation_ranking/smoke/query_fever_seed13.csv",
+    "bytes": 6440,
+    "sha256": "262b645076ac492884ddc835b19348709291685033f71ea014c463c3c4798931"
+  },
+  {
+    "path": "results/allocation_ranking/smoke/report.md",
+    "bytes": 1324,
+    "sha256": "e3f5b2522391923e0e8a71d4d9e823abf9b1df8d210e04deec64637f00ae371d"
+  },
+  {
+    "path": "src/analyze_allocation_ranking.py",
+    "bytes": 25759,
+    "sha256": "0f34adee21012e2e937fa6cae01ae59223c523a20e6459d026d3c9340829729b"
+  }
+]

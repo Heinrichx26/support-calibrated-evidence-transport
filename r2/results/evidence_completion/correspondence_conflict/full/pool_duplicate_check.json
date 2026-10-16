@@ -1,0 +1,14 @@
+[
+  {
+    "pool_cap": 100,
+    "rows": 1972857,
+    "duplicate_query_candidate_rows": 0,
+    "query_count": 19998
+  },
+  {
+    "pool_cap": 500,
+    "rows": 489521,
+    "duplicate_query_candidate_rows": 0,
+    "query_count": 1000
+  }
+]

@@ -1,0 +1,4 @@
+claim_verdict,queries,original_rows,verified_rows,missing_rows,missing_row_fraction,missing_gold,missing_other,queries_with_any_missing,all_candidates_complete,all_candidates_complete_fraction,annotated_evidence_complete,queries_with_annotated_evidence
+NOT_ENOUGH_INFO,6666,666600,656806,9794,0.014692469246924692,0,9794,1910,4756,0.7134713471347135,6666,0
+REFUTES,6666,666600,657734,8866,0.0133003300330033,123,8743,1908,4758,0.7137713771377138,6599,6666
+SUPPORTS,6666,666600,658317,8283,0.012425742574257426,104,8179,1814,4852,0.7278727872787278,6594,6666

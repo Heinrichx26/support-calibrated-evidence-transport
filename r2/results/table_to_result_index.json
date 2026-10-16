@@ -30,10 +30,11 @@
   "Figure 1": "results/figures/figure1_workflow.drawio; figure1_workflow.svg; src/make_r2_figures.py",
   "Figure 2": "results/experiments/*_full_k100/primary.csv; model_seed*.json; src/make_r2_figures.py",
   "Figures 3 and 4": "results/experiments/*_full_k100/volume_mean_sd.csv; src/make_r2_figures.py",
-  "S25": "results/multivers_extension/external_evaluation/summary.csv; */query_*_exact_budget.csv",
-  "S26": "results/multivers_extension/external_evaluation/summary.csv; */query_*_exact_budget.csv",
-  "S27": "results/multivers_extension/external_evaluation/paired_intervals.csv; */scores_*.parquet; */freeze.json; data/multivers_external_analysis.json",
-  "S28": "results/scet_allocation/full/summary.csv; query_*.csv; data/scet_allocation_protocol.json",
-  "S29": "results/scet_allocation/full/paired_intervals.csv; query_*.csv; data/scet_allocation_protocol.json",
-  "S30": "results/substantive_strengthening/set_size/full/mean_sd.csv; by_partition.csv; query_outcomes.csv"
+  "S25": "results/multivers_extension/external_evaluation/summary.csv; */query_*_exact_budget.csv; src/export_r2_tables.py (external_table_specs)",
+  "S26": "results/multivers_extension/external_evaluation/summary.csv; */query_*_exact_budget.csv; src/export_r2_tables.py (external_table_specs)",
+  "S27": "results/multivers_extension/external_evaluation/paired_intervals.csv; src/export_r2_tables.py (external_table_specs)",
+  "S28": "results/scet_allocation/full/summary.csv; query_*_seed*_*.csv; src/scet_allocation_tables.py",
+  "S29": "results/scet_allocation/full/paired_intervals.csv; src/scet_allocation_tables.py",
+  "S30": "results/substantive_strengthening/set_size/full/mean_sd.csv; src/scet_set_size_tables.py",
+  "S31": "results/tables/allocation_ranking/S31.csv; results/allocation_ranking/full/decomposition.csv; data/allocation_ranking_dependencies.json; R2_allocation_ranking.zip; python src/export_r2_tables.py --s31-only"
 }

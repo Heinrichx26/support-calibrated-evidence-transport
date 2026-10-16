@@ -1,0 +1,149 @@
+{
+  "passed": true,
+  "mode": "smoke",
+  "code_sha256": "0f34adee21012e2e937fa6cae01ae59223c523a20e6459d026d3c9340829729b",
+  "plan": {
+    "analysis": "Frozen 2 x 2 crossing of sentence ranks and per-query admitted counts",
+    "datasets": [
+      "fever",
+      "hover"
+    ],
+    "partitions": [
+      13,
+      17,
+      29,
+      7
+    ],
+    "rank_methods": [
+      "raw cross-encoder",
+      "frozen selected SCET scorer"
+    ],
+    "count_methods": [
+      "saved equal-budget cross-encoder counts",
+      "saved equal-budget SCET counts"
+    ],
+    "maximum_rank": 5,
+    "full_budget": "Each cell admits exactly one sentence per held-out query on average",
+    "smoke": "First 20 lexicographically sorted FEVER seed-13 evaluation IDs; inherit saved full-batch counts without reallocating within this subset",
+    "ties": "Original fixed candidate tie keys",
+    "bootstrap_repetitions": 1000,
+    "bootstrap_seed": 2026101603,
+    "resampling": "Paired query-cluster multinomial weights shared wherever a query occurs across the four overlapping partitions; frozen cell decisions",
+    "intervals": "Pointwise 95% percentile intervals, conditional on frozen models, counts, ranks, and observed partitions",
+    "decomposition": "Average the two conditional ranking effects and the two conditional count-allocation effects; their sum equals the net SCET-minus-cross-encoder difference",
+    "interpretation": "Descriptive counterfactual decomposition; hybrid cells are diagnostic configurations, with no new model or operating policy selected",
+    "new_fitting": false,
+    "new_neural_inference": false,
+    "new_threshold_selection": false,
+    "metric_groups": [
+      [
+        "precision",
+        "all"
+      ],
+      [
+        "evidence_recall",
+        "all"
+      ],
+      [
+        "set_recall",
+        "all"
+      ],
+      [
+        "complete_per100",
+        "all"
+      ],
+      [
+        "coverage",
+        "all"
+      ],
+      [
+        "no_evidence_admission",
+        "all"
+      ],
+      [
+        "no_evidence_items_per100",
+        "all"
+      ],
+      [
+        "precision",
+        "singleton"
+      ],
+      [
+        "precision",
+        "multiple"
+      ],
+      [
+        "set_recall",
+        "singleton"
+      ],
+      [
+        "set_recall",
+        "multiple"
+      ]
+    ]
+  },
+  "source_sha256": {
+    "data\\scored\\fever_full_k100.parquet": "971230db9694627136cf19898718c9d2f5440b49d9de4d07e54d55d64e7fd302",
+    "data\\processed\\fever_full_queries.json": "16178c07738634d72e4d4cc5b2a31de1ba87fe80c4579741d81d397cd2b22dcd",
+    "results\\experiments\\fever_full_k100\\model_seed13.json": "14b50d5f1d0d127f9823446e5f106c23458c0021203ccc2c89c69ac142982b65",
+    "results\\strengthening\\fever_full_k100\\query_seed13_scet.csv": "59b6b9e6b08d9d804e549e8fc237900afbd3ec85205ecd14d2ab55131c5fc241",
+    "results\\strengthening\\fever_full_k100\\query_seed13_ce.csv": "ba3129c395c64dc16d609ec77b1d094983c7a5b936b1a723ab52a33bf05af104"
+  },
+  "diagonal_checks": [
+    {
+      "dataset": "fever",
+      "seed": 13,
+      "method": "ce",
+      "queries_checked": 20,
+      "columns": [
+        "admitted",
+        "correct",
+        "all_facts",
+        "covered",
+        "gold_count"
+      ],
+      "exact_match": true
+    },
+    {
+      "dataset": "fever",
+      "seed": 13,
+      "method": "scet",
+      "queries_checked": 20,
+      "columns": [
+        "admitted",
+        "correct",
+        "all_facts",
+        "covered",
+        "gold_count"
+      ],
+      "exact_match": true
+    }
+  ],
+  "partitions": [
+    {
+      "dataset": "fever",
+      "seed": 13,
+      "queries": 20,
+      "candidate_rows": 1980,
+      "selected_form": "portfolio_1",
+      "selected_penalty": 0,
+      "queries_with_different_counts": 7,
+      "queries_with_different_rank_choices_ce_counts": 2,
+      "queries_with_different_rank_choices_scet_counts": 3,
+      "cell_admitted_totals": {
+        "ce_rank_ce_count": 21,
+        "ce_rank_scet_count": 20,
+        "scet_rank_ce_count": 21,
+        "scet_rank_scet_count": 20
+      },
+      "streaming_matches_single_frame": true,
+      "label_flip_selection_invariant": true,
+      "order_reversal_selection_invariant": true,
+      "frozen_scores_label_invariant": true
+    }
+  ],
+  "nontrivial_count_or_rank_contrast": true,
+  "maximum_candidate_batch": 20000,
+  "maximum_bootstrap_batch": 50,
+  "elapsed_seconds": 1.125
+}

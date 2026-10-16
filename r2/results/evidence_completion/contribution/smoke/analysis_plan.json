@@ -1,0 +1,37 @@
+{
+  "analysis": "Descriptive attribution of already frozen 100-candidate, equal-budget decisions",
+  "datasets": [
+    "fever",
+    "hover",
+    "scifact"
+  ],
+  "seeds": [
+    13,
+    17,
+    29,
+    7
+  ],
+  "individual_scorers": [
+    "bm25",
+    "tfidf",
+    "lsa",
+    "entity",
+    "relation",
+    "minilm",
+    "e5",
+    "bge",
+    "ce",
+    "nli_relevance",
+    "nli_directional",
+    "nli_entailment"
+  ],
+  "budget": "100 admitted sentences per 100 held-out claims; maximum five per claim, with separately labelled top-one controls",
+  "bootstrap_repetitions": 2000,
+  "bootstrap_seed": 2026101505,
+  "intervals": "Pointwise paired percentile 95% intervals; no family-wide significance claim",
+  "resampling": "Shared cluster weights for the same query across overlapping partitions; average the four partition differences",
+  "conditioning": "Frozen fitted scorers, thresholds, selections, admission decisions and observed partitions; no budget reallocation or refitting within resamples",
+  "source_sensitivity": "FEVER connected components of shared originally annotated Wikipedia pages; no-evidence claims are singleton components because no annotated pages exist. Also diagnose components of all candidate pages; do not issue a source-bootstrap interval with fewer than 20 components or a component containing over 50% of queries.",
+  "attribution": "Additive changes in correct items and complete claims by minimum annotated-set size and verdict, normalized by all-query counts",
+  "selection": "No model or rule is selected using these results; every individual scorer is reported"
+}

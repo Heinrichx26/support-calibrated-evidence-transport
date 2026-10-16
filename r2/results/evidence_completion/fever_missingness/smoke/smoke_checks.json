@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "availability_defined_queries": 19998,
+  "all_candidates_complete_queries": 14366,
+  "sample_ids": [
+    "10147",
+    "104150",
+    "105895",
+    "115782",
+    "145707",
+    "146582",
+    "187800",
+    "193540",
+    "205745",
+    "22569",
+    "53388",
+    "58299",
+    "79610",
+    "82594"
+  ],
+  "checks": [
+    {
+      "method": "scet",
+      "queries": 14,
+      "verified_pairs": 1342,
+      "saved_frozen_outcomes_match": true,
+      "fixed_budget_items": 14
+    },
+    {
+      "method": "ce",
+      "queries": 14,
+      "verified_pairs": 1342,
+      "saved_frozen_outcomes_match": true,
+      "fixed_budget_items": 14
+    },
+    {
+      "method": "e5",
+      "queries": 14,
+      "verified_pairs": 1342,
+      "saved_frozen_outcomes_match": true,
+      "fixed_budget_items": 14
+    },
+    {
+      "method": "bm25",
+      "queries": 14,
+      "verified_pairs": 1342,
+      "saved_frozen_outcomes_match": true,
+      "fixed_budget_items": 14
+    },
+    {
+      "method": "nli_relevance",
+      "queries": 14,
+      "verified_pairs": 1342,
+      "saved_frozen_outcomes_match": true,
+      "fixed_budget_items": 14
+    }
+  ],
+  "reproduced_primary_delta": 0.046098544725715396,
+  "reference_primary_delta": 0.046098544725715396
+}

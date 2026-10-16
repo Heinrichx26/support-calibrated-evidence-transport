@@ -1,0 +1,4 @@
+dataset,unique_queries,total_partition_occurrences,queries_in_multiple_partitions
+fever,19832,55996,18383
+hover,3961,11200,3667
+scifact,296,840,270

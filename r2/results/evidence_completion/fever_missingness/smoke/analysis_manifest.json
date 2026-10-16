@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "mode": "smoke",
+  "seconds": 5.454000000027008,
+  "selection": "All subsets fixed by original candidate identities and snapshot text availability, before outcome comparison.",
+  "subsets": {
+    "all": 19998,
+    "gold_complete": 19859,
+    "all_candidates_complete": 14366,
+    "candidate_incomplete": 5632,
+    "candidate_incomplete_gold_complete": 5493
+  },
+  "gold_complete_definition": "Every original annotated sentence identity has verified text, including claims with no annotated evidence.",
+  "all_candidates_complete_definition": "All 100 original candidate identities have verified June 2017 snapshot text; this also implies all annotated sentences have verified text in this controlled pool.",
+  "prospective": "Original fitting, calibration, scoring form, thresholds, tie keys and held-out outcomes remain frozen. Metrics are subset-restricted only.",
+  "fixed_budget": "Original fitting and score forms remain frozen. Exactly one admitted item per subset held-out query on average, maximum five per query; workload is allocated within each subset. Individual views use raw scores.",
+  "recall_denominator": "Original annotated sentences per query, averaged over queries with annotated evidence; set recall requires one complete original evidence group.",
+  "query_counts": "Four overlapping outer partitions; per-partition counts and their mean are reported separately from distinct source queries.",
+  "bootstrap": "1000 paired query-cluster draws with common query weights across overlapping partitions. Prospective decisions frozen; fixed-budget allocation repeated in each resample.",
+  "new_model_inference": false,
+  "new_model_fitting": false
+}

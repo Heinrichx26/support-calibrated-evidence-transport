@@ -1,0 +1,118 @@
+{
+  "original_queries": 19998,
+  "recorded_queries": 19998,
+  "raw_nonnull_annotation_entries": 28625,
+  "repeated_query_sentence_entries_across_annotation_groups": 6367,
+  "repeated_pair_entries_within_groups": 0,
+  "repeated_evidence_groups": 5313,
+  "unique_query_sentence_pairs_original": 22258,
+  "unique_query_sentence_pairs_recorded": 22258,
+  "queries_absent_from_recorded_pool": [],
+  "annotation_join_mismatches": 0,
+  "unresolved_distinct_sentence_ids": 0,
+  "unresolved_distinct_pages": 0,
+  "unresolved_distinct_queries": 0,
+  "unresolved_occurrences_by_verdict": {},
+  "full_evidence_queries": 19859,
+  "annotation_status_by_verdict": [
+    {
+      "claim_verdict": "REFUTES",
+      "status": "resolved",
+      "query_sentence_pairs": 16
+    },
+    {
+      "claim_verdict": "SUPPORTS",
+      "status": "resolved",
+      "query_sentence_pairs": 12
+    }
+  ],
+  "mode": "smoke",
+  "passed": true,
+  "code_sha256": "4c5ce890f2a7d26daf7c5ec3756f07ad512b72509687e7acbc45b42956d83f04",
+  "source_identity_count": 12,
+  "source_status_unique_id": {
+    "resolved": 12
+  },
+  "annotation_status_query_sentence_pairs": {
+    "resolved": 28
+  },
+  "duplicate_cache_identities": 0,
+  "source_ids_with_repeated_sentence_lines": 0,
+  "source_ids_with_ambiguous_nonempty_text": 0,
+  "pool_checks": [
+    {
+      "pool_cap": 100,
+      "rows": 25000,
+      "label_assertions": 25000,
+      "source_text_assertions": 6,
+      "mismatches": 0
+    }
+  ],
+  "stress_mean_sd": [
+    {
+      "dataset": "fever",
+      "method": "ce",
+      "partitions": 1,
+      "queries_mean": 13999.0,
+      "queries_sd": 0.0,
+      "stress_admitted_mean": 292.0,
+      "stress_admitted_sd": 0.0,
+      "stress_correct_mean": 163.0,
+      "stress_correct_sd": 0.0,
+      "stress_unannotated_mean": 129.0,
+      "stress_unannotated_sd": 0.0,
+      "stress_precision_mean": 0.5582191780821918,
+      "stress_precision_sd": 0.0,
+      "stress_unannotated_fraction_mean": 0.4417808219178082,
+      "stress_unannotated_fraction_sd": 0.0,
+      "stress_output_queries_mean": 258.0,
+      "stress_output_queries_sd": 0.0,
+      "stress_query_coverage_mean": 0.01842988784913208,
+      "stress_query_coverage_sd": 0.0,
+      "stress_unannotated_queries_mean": 115.0,
+      "stress_unannotated_queries_sd": 0.0,
+      "stress_query_error_rate_mean": 0.008214872490892207,
+      "stress_query_error_rate_sd": 0.0,
+      "all_admitted_mean": 13884.0,
+      "all_admitted_sd": 0.0,
+      "stress_fraction_of_output_mean": 0.021031403053874964,
+      "stress_fraction_of_output_sd": 0.0
+    },
+    {
+      "dataset": "fever",
+      "method": "scet",
+      "partitions": 1,
+      "queries_mean": 13999.0,
+      "queries_sd": 0.0,
+      "stress_admitted_mean": 670.0,
+      "stress_admitted_sd": 0.0,
+      "stress_correct_mean": 324.0,
+      "stress_correct_sd": 0.0,
+      "stress_unannotated_mean": 346.0,
+      "stress_unannotated_sd": 0.0,
+      "stress_precision_mean": 0.4835820895522388,
+      "stress_precision_sd": 0.0,
+      "stress_unannotated_fraction_mean": 0.5164179104477612,
+      "stress_unannotated_fraction_sd": 0.0,
+      "stress_output_queries_mean": 506.0,
+      "stress_output_queries_sd": 0.0,
+      "stress_query_coverage_mean": 0.03614543895992571,
+      "stress_query_coverage_sd": 0.0,
+      "stress_unannotated_queries_mean": 286.0,
+      "stress_unannotated_queries_sd": 0.0,
+      "stress_query_error_rate_mean": 0.02043003071647975,
+      "stress_query_error_rate_sd": 0.0,
+      "all_admitted_mean": 14300.0,
+      "all_admitted_sd": 0.0,
+      "stress_fraction_of_output_mean": 0.04685314685314685,
+      "stress_fraction_of_output_sd": 0.0
+    }
+  ],
+  "stress_paired_intervals": [],
+  "definitions": {
+    "annotation_occurrence": "One unique query, original page ID and sentence ID tuple; repeated alternative groups share this tuple.",
+    "unannotated": "An item outside the supplied annotated verification-evidence set.",
+    "stress_query_coverage": "Fraction of all held-out queries receiving any shared-stress item.",
+    "stress_query_error": "A held-out query receiving any shared-stress item outside its annotated evidence set."
+  }
+}
