@@ -1,0 +1,61 @@
+{
+  "smoke": {
+    "queries": 60,
+    "annotation_components": 50,
+    "evidence_bearing_queries": 40,
+    "evidence_bearing_fully_verified": 38,
+    "queries_with_missing_gold": 2,
+    "queries_with_exactly_100_candidates": 50,
+    "input_columns": [
+      "query_id",
+      "query_text",
+      "candidate_id",
+      "evidence_text",
+      "evidence_source",
+      "text_provenance",
+      "sentence_sha256",
+      "tie_key"
+    ],
+    "unique_claim_texts": 60
+  },
+  "calibration": {
+    "queries": 600,
+    "annotation_components": 267,
+    "evidence_bearing_queries": 400,
+    "evidence_bearing_fully_verified": 382,
+    "queries_with_missing_gold": 18,
+    "queries_with_exactly_100_candidates": 548,
+    "input_columns": [
+      "query_id",
+      "query_text",
+      "candidate_id",
+      "evidence_text",
+      "evidence_source",
+      "text_provenance",
+      "sentence_sha256",
+      "tie_key"
+    ],
+    "unique_claim_texts": 600
+  },
+  "evaluation": {
+    "queries": 3000,
+    "annotation_components": 1307,
+    "evidence_bearing_queries": 2000,
+    "evidence_bearing_fully_verified": 1880,
+    "queries_with_missing_gold": 120,
+    "queries_with_exactly_100_candidates": 2686,
+    "input_columns": [
+      "query_id",
+      "query_text",
+      "candidate_id",
+      "evidence_text",
+      "evidence_source",
+      "text_provenance",
+      "sentence_sha256",
+      "tie_key"
+    ],
+    "unique_claim_texts": 3000
+  },
+  "passed": true,
+  "independent_metadata_recheck": true
+}

@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "split": "smoke",
+  "queries": 60,
+  "rows_before_text_exclusion": 6000,
+  "rows": 5958,
+  "missing_text_rows": 42,
+  "gold_candidate_rows": 49,
+  "gold_pairs_missing_snapshot": 2,
+  "labels": {
+    "SUPPORTS": 20,
+    "REFUTES": 20,
+    "NOT_ENOUGH_INFO": 20
+  },
+  "candidate_pages": 2477,
+  "candidate_pages_shared_with_old_k100": 2404,
+  "annotated_pages_shared_with_old_k100": 0,
+  "unlabelled_input": true,
+  "source_page_exclusion_asserted_before_selection": true,
+  "sample_plan_sha256": "bbd86350d0d2c02dea2696f3c8c01f07f6793f53b1f2a30a2269899bc02b9ea3",
+  "files_sha256": {
+    "smoke_inputs.parquet": "61a31a11bc6afa715714c75785f5faed8b4cf65f472dc021af1735d17c3ab326",
+    "smoke_labels.parquet": "3a6db8a6e2ea4e0c4c414eecda1a6fd3bd464c11c5fdde858ea16cfb5b0adf0c",
+    "smoke_queries.json": "7ce8400cabdf3305b16c83d7d4d2250d7e709aebd8760dd52b2284b7d6797284"
+  }
+}

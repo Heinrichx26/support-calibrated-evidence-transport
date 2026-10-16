@@ -40,5 +40,7 @@
   "S32": "results/r5_context_gain/evaluation/mean_sd.csv; results/r5_context_gain/controls/full/mean_sd.csv; src/r5_additional_tables.py",
   "S33": "results/r5_context_gain/controls/full/mean_sd.csv; src/r5_additional_tables.py",
   "S34": "results/r5_risk_conflict/risk/full/selected_rules.csv; results/r5_context_gain/conditional_risk/full/selected_rules.csv; corresponding evaluation_by_partition.csv; src/r5_additional_tables.py",
-  "S35": "results/r5_risk_conflict/conflict/full/evaluation_mean_sd.csv; paired_intervals.csv; src/r5_additional_tables.py"
+  "S35": "results/r5_risk_conflict/conflict/full/evaluation_mean_sd.csv; paired_intervals.csv; src/r5_additional_tables.py",
+  "S36": "results/independent_confirmation/evaluation_full/mean_sd.csv; src/export_independent_confirmation_tables.py",
+  "S37": "results/independent_confirmation/evaluation_full/primary_intervals.csv; src/export_independent_confirmation_tables.py"
 }

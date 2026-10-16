@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "smoke": true,
+  "verifier_sha256": "3d68ba14b5476807d5a07c410875170a03f605f8178d252d65398e0273690a16",
+  "manifest_members_verified": 5,
+  "model_candidate_predictions_reconstructed": 4800,
+  "query_decisions_reconstructed": 1920,
+  "numeric_values_verified": 13888,
+  "all_paired_intervals_reconstructed": 108,
+  "primary_intervals": 4,
+  "tables_reconstructed_byte_exact": [
+    "S36",
+    "S37"
+  ],
+  "complete_table_index_entries": 41,
+  "pretrained_neural_inference_performed": false,
+  "models_refitted": false,
+  "elapsed_seconds": 6.937999999849126
+}

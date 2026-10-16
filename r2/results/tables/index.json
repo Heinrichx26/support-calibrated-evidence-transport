@@ -310,5 +310,21 @@
     "rows": 3,
     "columns": 3,
     "sha256": "335178fdb5f48d010ad03ad9e9fbab9e6944429762b4f1303a94bd72c6017f29"
+  },
+  {
+    "table": "S36",
+    "title": "Independent FEVER confirmation",
+    "file": "independent_confirmation/S36.csv",
+    "sha256": "685439c36ad153b0cef5eb3f5c8b9b289c96f27b9ec85db47ade51f34f6c8a30",
+    "rows": 8,
+    "columns": 6
+  },
+  {
+    "table": "S37",
+    "title": "Prespecified comparisons on independent FEVER claims",
+    "file": "independent_confirmation/S37.csv",
+    "sha256": "9362316953ae8265832f298be441f40b466d1ad099fa3b989ff56b1d1dba3568",
+    "rows": 4,
+    "columns": 5
   }
 ]

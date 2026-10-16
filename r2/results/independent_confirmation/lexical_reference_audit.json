@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "maximum_absolute_difference": {
+    "raw_bm25": 1.9073486328125e-06,
+    "raw_tfidf": 5.960464477539063e-08,
+    "raw_lsa": 2.8014183044433594e-06,
+    "raw_entity": 0.0,
+    "raw_relation": 0.0
+  },
+  "lexical_state_sha256": "6296499a078ea672a7a556a74d27eae7a397954ef5c4b06282bc135bba7698af",
+  "reference_input_sha256": "5e3947bd5f7a6070296bae7b1891008df3178d3707ddbf0b22f2f1a6c12d6c58",
+  "new_confirmation_candidates_used_for_fitting": false
+}

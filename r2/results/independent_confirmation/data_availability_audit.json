@@ -1,0 +1,72 @@
+{
+  "purpose": "Data availability and overlap audit; no prediction outcomes or fitted models were computed.",
+  "files_sha256": {
+    "train.jsonl": "eba7e8f87076753f8494718b9a857827af7bf73e76c9e4b75420207d26e588b6",
+    "shared_task_dev.jsonl": "e89865bfe1b4dd054e03dd57d7241a6fde24862905f31117cf0cd719f7c78df7"
+  },
+  "official_train": {
+    "queries": 145449,
+    "labels": {
+      "SUPPORTS": 80035,
+      "REFUTES": 29775,
+      "NOT ENOUGH INFO": 35639
+    },
+    "annotated_pairs": 204041,
+    "unique_annotated_pages": 12549
+  },
+  "official_dev": {
+    "queries": 19998,
+    "labels": {
+      "NOT ENOUGH INFO": 6666,
+      "SUPPORTS": 6666,
+      "REFUTES": 6666
+    },
+    "annotated_pairs": 22258,
+    "unique_annotated_pages": 2892
+  },
+  "new_id_and_normalized_claim": {
+    "queries": 145446,
+    "labels": {
+      "SUPPORTS": 80032,
+      "REFUTES": 29775,
+      "NOT ENOUGH INFO": 35639
+    },
+    "annotated_pairs": 204035,
+    "unique_annotated_pages": 12548
+  },
+  "new_claim_and_no_annotated_page_shared_with_dev": {
+    "queries": 133030,
+    "labels": {
+      "SUPPORTS": 70918,
+      "REFUTES": 26473,
+      "NOT ENOUGH INFO": 35639
+    },
+    "annotated_pairs": 168475,
+    "unique_annotated_pages": 9967
+  },
+  "new_claim_and_no_annotated_page_shared_with_any_previous_k100_candidate": {
+    "queries": 48234,
+    "labels": {
+      "NOT ENOUGH INFO": 35639,
+      "SUPPORTS": 9188,
+      "REFUTES": 3407
+    },
+    "annotated_pairs": 17229,
+    "unique_annotated_pages": 633
+  },
+  "new_claim_all_gold_pairs_already_text_verified": {
+    "queries": 90591,
+    "labels": {
+      "SUPPORTS": 66067,
+      "REFUTES": 24524
+    },
+    "annotated_pairs": 152624,
+    "unique_annotated_pages": 8536
+  },
+  "old_dev_annotated_pages": 2892,
+  "old_k100_candidate_pages": 11997,
+  "old_k100_candidate_sentence_ids": 33786,
+  "verified_cache_sentence_ids": 35942,
+  "train_gold_pair_overlap_with_old_candidate_sentence_ids": 27722,
+  "note": "Page exclusion uses evidence annotation only for the overlap audit. A new experiment should select claims by identifier and freeze predictions before joining evaluation labels."
+}

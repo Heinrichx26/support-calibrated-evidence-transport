@@ -1,0 +1,149 @@
+{
+  "passed": true,
+  "code_sha256": "fb2879e2a30a7ddcfb210cc5de758d1cc07d883bf825ee0c405df30ed7401387",
+  "actual_confirmation_labels_or_results_read": false,
+  "hand_built_queries": 2,
+  "sentences_per_query": 5,
+  "budgets_checked": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "prefix_and_exact_budget_verified": true,
+  "optimal_for_concave_envelope_verified_by_exhaustive_enumeration": true,
+  "optimal_for_original_nonconcave_utility": false,
+  "original_utility_counterexample_budget": 1,
+  "original_utility_gap": 0.2,
+  "true_label_lookup_and_stale_group_cache_removal_verified": true,
+  "checks": [
+    {
+      "budget": 0,
+      "prefix_lengths": [
+        0,
+        0
+      ],
+      "concave_envelope_value": 0.0,
+      "maximum_concave_envelope_value": 0.0,
+      "original_utility_value": 0.0,
+      "maximum_original_utility_value": 0.0
+    },
+    {
+      "budget": 1,
+      "prefix_lengths": [
+        1,
+        0
+      ],
+      "concave_envelope_value": 0.4,
+      "maximum_concave_envelope_value": 0.4,
+      "original_utility_value": 0.1,
+      "maximum_original_utility_value": 0.3
+    },
+    {
+      "budget": 2,
+      "prefix_lengths": [
+        2,
+        0
+      ],
+      "concave_envelope_value": 0.8,
+      "maximum_concave_envelope_value": 0.8,
+      "original_utility_value": 0.8,
+      "maximum_original_utility_value": 0.8
+    },
+    {
+      "budget": 3,
+      "prefix_lengths": [
+        2,
+        1
+      ],
+      "concave_envelope_value": 1.1,
+      "maximum_concave_envelope_value": 1.1,
+      "original_utility_value": 1.1,
+      "maximum_original_utility_value": 1.1
+    },
+    {
+      "budget": 4,
+      "prefix_lengths": [
+        3,
+        1
+      ],
+      "concave_envelope_value": 1.1,
+      "maximum_concave_envelope_value": 1.1,
+      "original_utility_value": 1.1,
+      "maximum_original_utility_value": 1.1
+    },
+    {
+      "budget": 5,
+      "prefix_lengths": [
+        3,
+        2
+      ],
+      "concave_envelope_value": 1.1,
+      "maximum_concave_envelope_value": 1.1,
+      "original_utility_value": 1.1,
+      "maximum_original_utility_value": 1.1
+    },
+    {
+      "budget": 6,
+      "prefix_lengths": [
+        4,
+        2
+      ],
+      "concave_envelope_value": 1.1,
+      "maximum_concave_envelope_value": 1.1,
+      "original_utility_value": 1.1,
+      "maximum_original_utility_value": 1.1
+    },
+    {
+      "budget": 7,
+      "prefix_lengths": [
+        4,
+        3
+      ],
+      "concave_envelope_value": 1.1,
+      "maximum_concave_envelope_value": 1.1,
+      "original_utility_value": 1.1,
+      "maximum_original_utility_value": 1.1
+    },
+    {
+      "budget": 8,
+      "prefix_lengths": [
+        5,
+        3
+      ],
+      "concave_envelope_value": 1.1,
+      "maximum_concave_envelope_value": 1.1,
+      "original_utility_value": 1.1,
+      "maximum_original_utility_value": 1.1
+    },
+    {
+      "budget": 9,
+      "prefix_lengths": [
+        5,
+        4
+      ],
+      "concave_envelope_value": 1.1,
+      "maximum_concave_envelope_value": 1.1,
+      "original_utility_value": 1.1,
+      "maximum_original_utility_value": 1.1
+    },
+    {
+      "budget": 10,
+      "prefix_lengths": [
+        5,
+        5
+      ],
+      "concave_envelope_value": 1.1,
+      "maximum_concave_envelope_value": 1.1,
+      "original_utility_value": 1.1,
+      "maximum_original_utility_value": 1.1
+    }
+  ]
+}

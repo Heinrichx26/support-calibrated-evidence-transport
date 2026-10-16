@@ -1,12 +1,13 @@
-# Reproduce Tables 1-4 and S1-S35
+# Reproduce Tables 1-4 and S1-S37
 
-Use Python 3.11. The five archives below contain the saved numerical inputs and programs used for all 39 tables. Extract them into one new directory in the listed order, allowing the later archives to replace earlier files.
+Use Python 3.12. The six archives below contain the saved numerical inputs and programs used for all 41 tables. Extract them into one new directory in the listed order, allowing the later archives to replace earlier files.
 
 1. `R2_public_reproducibility.zip` from the [original R2 release](https://github.com/Heinrichx26/support-calibrated-evidence-transport/releases/tag/r2-2026-10-15).
 2. `R2_external_calibration_reproducibility.zip` from the [complete release](https://github.com/Heinrichx26/support-calibrated-evidence-transport/releases/tag/r2-complete-2026-10-15).
 3. `R2_allocation_ranking.zip` from the same complete release.
 4. `R2_table_S31.zip` from the same complete release.
 5. `R2_additional_validation.zip` from the same complete release.
+6. `R2_independent_confirmation.zip` from the same complete release.
 
 Verify each archive's SHA-256 before extraction:
 
@@ -15,16 +16,17 @@ Verify each archive's SHA-256 before extraction:
     06738047f5cd1b590ffd1bca5a037de402bd69e6ba5e3c32b67bcbad8248b870  R2_allocation_ranking.zip
     80ef0e9bdf5e6394fa5d774bc1699ce20ee91b1f94ac1e8b02bbc1ca8592e284  R2_table_S31.zip
     330a91f9645ffc654a80449e3b68398a8f234e792fc2c70bbfff1d5324adfc1c  R2_additional_validation.zip
+    d51ec8cdeb3af030c8db850dff0ff90f22900849078944885885bbd90eb6f468  R2_independent_confirmation.zip
 
 From the extracted directory, install the table-export dependencies and perform the smoke export before exporting every table:
 
 ```sh
-python -m pip install -r requirements-additional-validation.txt
+python -m pip install -r requirements-independent-confirmation.txt
 python src/export_r2_tables.py --smoke
 python src/export_r2_tables.py
 ```
 
-The complete export writes 39 CSV tables and `results/tables/index.json`. Table S31 is at `results/tables/allocation_ranking/S31.csv`; Tables S32-S35 are at `results/tables/additional_validation/`. The index supplies a SHA-256 for each CSV. The repository's [verification record](results/table_replay_verification.json) documents an independent restoration of the four original archives: all 35 reconstructed CSVs matched the retained table bytes exactly. The additional archive independently reconstructs the four new CSVs; [README_ADDITIONAL_VALIDATION.md](README_ADDITIONAL_VALIDATION.md) gives its member-hash and numerical-verification commands. Table export reads saved numerical outcomes, including saved uncertainty estimates.
+The complete export writes 41 CSV tables and `results/tables/index.json`. Table S31 is at `results/tables/allocation_ranking/S31.csv`; Tables S32-S35 are at `results/tables/additional_validation/`. Tables S36–S37 are at `results/tables/independent_confirmation/`. The index supplies a SHA-256 for each CSV. The repository's [verification record](results/table_replay_verification.json) documents an independent restoration of the four original archives: all 35 reconstructed CSVs matched the retained table bytes exactly. The additional archive independently reconstructs the four new CSVs; [README_ADDITIONAL_VALIDATION.md](README_ADDITIONAL_VALIDATION.md) gives its member-hash and numerical-verification commands. [README_INDEPENDENT_CONFIRMATION.md](README_INDEPENDENT_CONFIRMATION.md) documents the independent confirmation archive. Its verifier reconstructs all query outcomes and intervals and checks S36–S37 byte for byte. The 39 earlier table CSVs retain their previous hashes. Table export reads saved numerical outcomes, including saved uncertainty estimates.
 
 To regenerate S31 alone from the saved decomposition:
 

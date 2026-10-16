@@ -1,0 +1,14 @@
+{
+  "archive": "R2_independent_confirmation.zip",
+  "bytes": 162978912,
+  "sha256": "d51ec8cdeb3af030c8db850dff0ff90f22900849078944885885bbd90eb6f468",
+  "download_url": "https://github.com/Heinrichx26/support-calibrated-evidence-transport/releases/download/r2-complete-2026-10-15/R2_independent_confirmation.zip",
+  "release_tag": "r2-complete-2026-10-15",
+  "tables": [
+    "S36",
+    "S37"
+  ],
+  "table_count_after_overlay": 41,
+  "uncompressed_manifest": "INDEPENDENT_CONFIRMATION_MANIFEST.json",
+  "all_historical_assets_preserved": true
+}

@@ -1,0 +1,5 @@
+Comparison,Workload rule,Outcome,Difference,Simultaneous interval
+List features minus cross-encoder features,Calibrated threshold,Precision,0.0498,"[0.0332, 0.0663]"
+List features minus cross-encoder features,Fixed batch,Precision,0.0390,"[0.0220, 0.0553]"
+Evidence-set utility minus cross-encoder evidence-set utility,Fixed batch,Precision,0.0178,"[0.0050, 0.0312]"
+Evidence-set utility minus list features,Fixed batch,Multiple-set recall,0.1548,"[0.0694, 0.2916]"

@@ -1,0 +1,29 @@
+{
+  "technical_passed": true,
+  "direction_passed": false,
+  "selected_beta": 2.0,
+  "selected_mean": {
+    "beta": 2.0,
+    "seed": 13.0,
+    "fold": 0.0,
+    "queries": 1323.0,
+    "evidence_precision": 0.6575963718820862,
+    "volume_per_100": 100.0,
+    "annotated_per_100": 65.75963718820861,
+    "coverage": 0.8707482993197279,
+    "zero_admission_rate": 0.12925170068027214,
+    "query_error_rate": 0.3129251700680272,
+    "false_admission_no_evidence": 0.6882217090069284,
+    "evidence_recall": 0.8049865272056284,
+    "all_facts_recall": 0.8415730337078652,
+    "multiple_set_recall": 0.03409090909090909,
+    "singleton_set_recall": 0.9301745635910225
+  },
+  "ce_beta_zero_precision_minus_01": 0.6128269085411943,
+  "multiple_set_gain_over_all_beta_zero": 0.0,
+  "code_sha256": "c5a5830bb7a438b0971326670a9aca431bf2e451c84c7cec22d80173a52383b5",
+  "protocol_sha256": "4847db464d4a010b476ab1a0be0375f0aff327da31a2bdadbb94dc6ddc300255",
+  "calibration_and_evaluation_outcomes_read": false,
+  "all_attempts_retained": true,
+  "elapsed_seconds": 26.844000000040978
+}

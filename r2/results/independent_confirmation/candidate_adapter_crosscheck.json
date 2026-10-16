@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "candidate_identity_matches_original_adapter": {
+    "135027": true,
+    "137786": true,
+    "184741": true
+  },
+  "queries": 3,
+  "purpose": "Independent implementation cross-check using original candidate constructor"
+}

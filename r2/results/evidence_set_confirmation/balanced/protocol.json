@@ -1,0 +1,32 @@
+{
+  "created": "2026-10-16",
+  "question": "Can fitting-only prediction of complete evidence prefixes improve multi-sentence retention at the same sentence budget?",
+  "dataset": "fever",
+  "seeds": [
+    13,
+    17,
+    29,
+    7
+  ],
+  "candidate_screen": "Union of the first five candidates of all twelve raw individual scorers; labels are never used.",
+  "base_models": "Same existing list-feature model, depth three, refitted only on each inner training fold; all-view and same-capacity CE-feature control.",
+  "base_features": "For each permitted view: training-quantile score, reciprocal within-query rank, query maximum score, query first-second score gap, candidate-minus-query-maximum score.",
+  "query_model": "100-iteration histogram gradient boosting, depth two, seven leaves, min leaf 30, learning rate .05, L2 10; equal total fitting weight for queries with no evidence, minimum singleton set, and minimum multi-sentence set.",
+  "query_features": "Top-five base probabilities followed by the corresponding base-model features, padded with zero, plus screened candidate count; no labels in features.",
+  "target": "Smallest base-score prefix of size one to five containing any complete annotated evidence set; zero if no such prefix exists.",
+  "utility": "Sum of calibrated expected correct sentence probabilities plus beta times the stratum-weighted classifier cumulative output for a complete prefix. The latter is a ranking utility under the fitting weights. A least concave majorant makes marginal utilities nonincreasing.",
+  "betas": [
+    0.0,
+    1.0,
+    4.0,
+    16.0
+  ],
+  "budget": "Exactly 100 sentences per 100 queries, with at most five per query. Fixed hash ties and strictly decreasing within-query utilities preserve prefixes.",
+  "folds": "Three deterministic fitting-only annotated-page-component folds from the existing protocol.",
+  "choice": "Among all-view beta candidates with mean OOF precision at least the CE beta-zero mean minus .01, maximize mean complete-set recall, then multi-sentence recall, then precision, then smaller beta. All controls and failures retained.",
+  "smoke": "Seed13 inner fold zero only. Technical checks and at least .005 higher multi-sentence recall than beta zero while precision is within .01 of CE beta zero are required before development.",
+  "evaluation": "No calibration or evaluation query labels are read at this stage. A later evaluation needs a saved selected-model freeze and its own explicit prospective calibration protocol.",
+  "threads": 1,
+  "relation_to_previous_attempt": "A single finite follow-up motivated only by the saved fitting-only failure of unweighted prefix utility; the original failed attempt is retained.",
+  "source_sha256": "09d188e083973537fca651131f2901cbbc9fb866aca1ef6996dd50ae48d506c1"
+}

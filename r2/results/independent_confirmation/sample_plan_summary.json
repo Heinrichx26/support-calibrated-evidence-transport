@@ -1,0 +1,66 @@
+{
+  "created": "2026-10-16",
+  "selection_salt": "20261016:independent-source-confirmation:v1",
+  "scope": "Previously unevaluated FEVER training claims; every annotated evidence page is absent from every prior FEVER k100 candidate. The three verdicts have equal counts.",
+  "eligibility": "Exclude development query IDs, normalized development claim texts, and any train claim with an annotated page in the original development k100 candidate pool. Deduplicate normalized train claim texts.",
+  "grouping": "Connected annotated-page components assigned by SHA256 into 10% smoke, 20% calibration, 70% evaluation, then deterministic per-verdict ID sampling. Evidence-free queries form single-query components.",
+  "candidate_protocol": "Reuse original train-plus-development evidence-sentence pool and original lexical candidate selection, including annotated evidence augmentation. Then restore original June 2017 sentence text and exclude unavailable text rows. No scoring outcomes select queries.",
+  "scoring_input": "Identifiers, tie key, claim text, restored evidence text, source and provenance only; labels and verdicts stored separately.",
+  "targets_per_verdict": {
+    "smoke": 20,
+    "calibration": 200,
+    "evaluation": 1000
+  },
+  "eligible_counts": {
+    "SUPPORTS": 8535,
+    "REFUTES": 3242,
+    "NOT ENOUGH INFO": 33884
+  },
+  "available_per_split": {
+    "smoke": {
+      "SUPPORTS": 952,
+      "REFUTES": 350,
+      "NOT ENOUGH INFO": 3338
+    },
+    "calibration": {
+      "SUPPORTS": 1322,
+      "REFUTES": 532,
+      "NOT ENOUGH INFO": 6870
+    },
+    "evaluation": {
+      "SUPPORTS": 6261,
+      "REFUTES": 2360,
+      "NOT ENOUGH INFO": 23676
+    }
+  },
+  "selected_counts": {
+    "smoke": {
+      "SUPPORTS": 20,
+      "REFUTES": 20,
+      "NOT ENOUGH INFO": 20
+    },
+    "calibration": {
+      "SUPPORTS": 200,
+      "REFUTES": 200,
+      "NOT ENOUGH INFO": 200
+    },
+    "evaluation": {
+      "SUPPORTS": 1000,
+      "REFUTES": 1000,
+      "NOT ENOUGH INFO": 1000
+    }
+  },
+  "old_candidate_page_count": 11997,
+  "new_annotated_page_count": {
+    "smoke": 33,
+    "calibration": 69,
+    "evaluation": 362
+  },
+  "source_sha256": {
+    "data\\raw_open\\evidence_retrieval\\fever\\train.jsonl": "eba7e8f87076753f8494718b9a857827af7bf73e76c9e4b75420207d26e588b6",
+    "data\\raw_open\\evidence_retrieval\\fever\\shared_task_dev.jsonl": "e89865bfe1b4dd054e03dd57d7241a6fde24862905f31117cf0cd719f7c78df7",
+    "data\\raw_open\\evidence_retrieval\\fever\\wikipedia_sentence_cache.json": "b344300a2b76976e2d81769bc9e2bbe682cadbe9c379357fb2959afa7f86991d",
+    "修改R2\\data\\processed\\fever_full_k100.parquet": "5e3947bd5f7a6070296bae7b1891008df3178d3707ddbf0b22f2f1a6c12d6c58"
+  },
+  "preparation_code_sha256": "a0e7bd26f01cd886baa6c6243bb0de6d2375d1e7dade6f5153e8a37ca4d7f04c"
+}

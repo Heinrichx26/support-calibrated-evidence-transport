@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "stage": "evaluation",
+  "scoring_source_sha256": "d51d37c1dadab7fa022fb59c357b9f745d488809703844e7815d8a6ab70afc70",
+  "input_sha256": "2c00824fb3f6948fe1b67454ebc5d583ed8bd44e704e428e35b97bd4cba78dd0",
+  "models": {
+    "model_seed13_all.pkl": "d14260ca3e9b6775b4d4c055542a0c3188825747ada7ffd8d3a36064b2ff7fe9",
+    "model_seed13_ce.pkl": "76c4a058a7186f55bb5893a896e75dfb4cb282d42bc655c60fa6ea38458e00be",
+    "model_seed17_all.pkl": "d74628bbad9ef1a48bbdf2aea8ae188691eba9e219c974e1b75119b2993eb130",
+    "model_seed17_ce.pkl": "5ddeee2f8af3e0c689e14602deaa07321f821f6e7d1d03b3290187a723f3aa11",
+    "model_seed29_all.pkl": "5d5a071b5c8c078fa3d668732eeb262893b2cded28d43669cab2d374e4e9534b",
+    "model_seed29_ce.pkl": "7faa79af8316172d97fd4d3837c92cda76677d6fee7abdbf101fc875f9263b14",
+    "model_seed7_all.pkl": "02817e5a354710e4bbcbe3b387c0bd6901497d99dbf92ca6e7fb5b9635e468fd",
+    "model_seed7_ce.pkl": "4c47d41f832eef8a391e850bb685842dd09ff1d0ca663dd42725ad0292b40d73"
+  },
+  "model_selection_permitted": false,
+  "evaluation_annotations_read": false,
+  "scored_sha256": "2b22d171ca78f2992e06cf1a32fb021fd5631160eb978f02998a390912ae4663",
+  "lexical_reference_sha256": "6296499a078ea672a7a556a74d27eae7a397954ef5c4b06282bc135bba7698af",
+  "queries": 3000,
+  "candidate_rows": 298682,
+  "screened_rows": 76899,
+  "finite_and_order_invariant_models": [
+    "13_ce",
+    "13_all",
+    "17_ce",
+    "17_all",
+    "29_ce",
+    "29_all",
+    "7_ce",
+    "7_all"
+  ],
+  "input_contains_labels": false
+}

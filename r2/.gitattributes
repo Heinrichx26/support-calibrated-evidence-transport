@@ -30,3 +30,4 @@ results/r5_*/** -text
 results/tables/additional_validation/** -text
 requirements-additional-validation.txt -text
 README_ADDITIONAL_VALIDATION.md -text
+results/tables/independent_confirmation/*.csv -text

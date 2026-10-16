@@ -1,0 +1,46 @@
+{
+  "created": "2026-10-16",
+  "seeds": [
+    13,
+    17,
+    29,
+    7
+  ],
+  "models": "All eight original list-feature and eight fitting-selected evidence-set models are frozen; no new-data model or beta choice.",
+  "population": "New FEVER training claims with normalized text distinct from original development and all annotated pages absent from every prior FEVER k100 candidate page; support/refute/NEI equally sampled.",
+  "calibration": "The 600 independent calibration claims determine score/tie thresholds at 100 sentences per 100 queries, max five per query. Calibration labels are not used.",
+  "evaluation": "The 3000 independent evaluation claims are evaluated once after model, program, data and threshold hashes are recorded. Exact-batch allocation uses scores and tie keys only.",
+  "primaries": [
+    {
+      "method": "list_all",
+      "reference": "list_ce",
+      "protocol": "prospective",
+      "metric": "evidence_precision"
+    },
+    {
+      "method": "list_all",
+      "reference": "list_ce",
+      "protocol": "fixed_batch",
+      "metric": "evidence_precision"
+    },
+    {
+      "method": "set_all",
+      "reference": "set_ce",
+      "protocol": "fixed_batch",
+      "metric": "evidence_precision"
+    },
+    {
+      "method": "set_all",
+      "reference": "list_all",
+      "protocol": "fixed_batch",
+      "metric": "multiple_set_recall"
+    }
+  ],
+  "bootstrap_repetitions": 2000,
+  "bootstrap_seed": 2026101609,
+  "bootstrap": "Paired annotated-page-component multinomial bootstrap; evidence-free claims are individual components. Draw one shared component count per replicate, assign it to member claims, normalize within verdict to preserve the equally sampled verdict strata, and share the resulting query weights across every method and all four frozen models. Trained models and admission decisions stay fixed.",
+  "intervals": "Four primary contrasts use two-sided Bonferroni 95% simultaneous intervals (0.00625,0.99375 quantiles); all other intervals are pointwise 95%.",
+  "risk": "Report actual unconditional query error and error among covered queries. No independent-identically-distributed finite-sample risk guarantee is assigned to the new stratified grouped sample.",
+  "smoke": "60 separate claims; technical and numerical verification only. The fitting-only development experiment established the direction. Smoke gain never changes model, beta, sample or endpoint choice.",
+  "all_results_retained": true
+}
