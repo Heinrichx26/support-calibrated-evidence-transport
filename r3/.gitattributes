@@ -1,0 +1,2 @@
+# Preserve exact bytes for the checksummed result files.
+results/** -text

@@ -1,0 +1,2 @@
+subset,comparator,delta_precision,ci_low,ci_high,unique_query_clusters,repetitions,bootstrap_scope
+candidate_incomplete,ce,0.0360224422375312,0.0236481344939704,0.0470690984030737,5579,1000,exact workload reallocated within every query-cluster resample; fixed fitted score forms

@@ -1,0 +1,13 @@
+dataset,seed,form,penalty,selected_single,fitting_n,calibration_n
+scifact,13,portfolio_0.1,0.0,bge,60,30
+scifact,17,bge,0.0,bge,60,30
+scifact,29,portfolio_1,0.0,ce,60,30
+scifact,7,ce,0.0,ce,60,30
+fever,13,portfolio_1,0.0,ce,4019,1980
+fever,17,portfolio_10,0.0,ce,4019,1980
+fever,29,portfolio_1,0.1,ce,4019,1980
+fever,7,portfolio_1,0.0,ce,4019,1980
+hover,13,e5,0.1,e5,804,396
+hover,17,ce,0.0,ce,804,396
+hover,29,e5,0.0,e5,804,396
+hover,7,e5,0.0,e5,804,396

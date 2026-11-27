@@ -1,0 +1,10 @@
+{
+  "partition_seeds": [
+    13,
+    17,
+    29,
+    7
+  ],
+  "source_release_commit": "cadee9083971e6d4f980cd8dcd071c3dc2937f5b",
+  "description": "The archive contains score tables, query outcomes, and source examples used in the reported analyses."
+}

@@ -1,6 +1,8 @@
 # Support-Calibrated Evidence Transport
 
-Current experiments, source code and result tables are in [r2/](r2/README.md).
+The article "Workload-Constrained Evidence Admission for Claim Verification" has been accepted for publication in Information Processing & Management. Release [r3-final-2026-11-28](https://github.com/Heinrichx26/support-calibrated-evidence-transport/releases/tag/r3-final-2026-11-28) corresponds to the accepted article. The analyses added for the article are in [r3/](r3/README.md), and they use the frozen models and outcomes in [r2/](r2/README.md).
+
+Earlier experiments, source code and result tables are in [r2/](r2/README.md).
 
 The [complete numerical reproduction release](https://github.com/Heinrichx26/support-calibrated-evidence-transport/releases/tag/r2-complete-2026-10-15), together with the [original R2 archive](https://github.com/Heinrichx26/support-calibrated-evidence-transport/releases/tag/r2-2026-10-15), supplies the code and saved numerical inputs for Tables 1-4 and S1-S37. Follow [REPRODUCE_ALL_TABLES.md](r2/REPRODUCE_ALL_TABLES.md) for the six-archive extraction order, SHA-256 checks and smoke/full table-export commands. All 41 table CSVs have been reconstructed byte for byte. [Additional validation](r2/README_ADDITIONAL_VALIDATION.md) documents the list-feature controls, conditional-risk calibration, refitted conflict ablations and independent FEVER refit.
 

@@ -1,0 +1,15 @@
+{
+  "rows": 1972857,
+  "distinct_sentences": 33786,
+  "original_evidence_queries": 13332,
+  "evidence_available_queries": 13229,
+  "queries_with_all_annotated_text_missing": 103,
+  "top1_hit": 0.9030916924937638,
+  "recall5_original_denominator": 0.9438113678768574,
+  "recall5_available_denominator": 0.9446994462386678,
+  "recall5_claim_hit": 0.9947085947539497,
+  "same_page_unannotated_fraction": 0.029668398283224387,
+  "annotated_score_median": 5.71875,
+  "nei_top_above_median": 0.454995499549955,
+  "contradiction_gt_half_unannotated": 0.7805519303105454
+}
